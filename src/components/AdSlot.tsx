@@ -1,0 +1,30 @@
+import { cn } from "@/lib/utils";
+
+interface AdSlotProps {
+  id: string;
+  className?: string;
+  type?: "banner" | "square" | "sticky";
+}
+
+export function AdSlot({ id, className, type = "banner" }: AdSlotProps) {
+  // AADS / AdSense placeholder
+  // In a real scenario, you would insert the script tag or component here
+  
+  return (
+    <div
+      className={cn(
+        "flex items-center justify-center bg-zinc-900 border border-zinc-800 text-zinc-500 text-sm font-mono overflow-hidden relative",
+        type === "banner" && "w-full h-[90px] md:h-[120px]",
+        type === "square" && "w-full aspect-square max-w-[300px] mx-auto",
+        type === "sticky" && "fixed bottom-0 left-0 w-full h-[60px] z-50 bg-zinc-950 border-t border-zinc-800",
+        className
+      )}
+    >
+      {/* 
+        TODO: Insert AADS Code Here 
+        Example: <iframe src="https://ad.aads.com/..." width="100%" height="100%" /> 
+      */}
+      <span className="opacity-50">Advertisement ({id})</span>
+    </div>
+  );
+}
