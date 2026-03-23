@@ -2,6 +2,95 @@ import { Article } from "./articles";
 
 export const bitcoinArticles: Article[] = [
   {
+    id: "btc-11",
+    slug: "bitcoin-hoje-novo-movimento-institucional-surpreende-mercado-nas-ultimas-horas",
+    title: "Bitcoin Hoje: Novo Movimento Institucional Surpreende o Mercado nas Últimas Horas",
+    excerpt: "Uma injeção massiva de capital institucional nas primeiras horas do dia reconfigura o cenário de curto prazo para a principal criptomoeda do mercado.",
+    content: `
+      <div class="mb-8 p-4 bg-zinc-900/50 border border-zinc-800 rounded-xl flex items-center justify-between text-sm text-zinc-400">
+        <span class="flex items-center font-medium text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2 shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span> 
+          Atualizado em tempo real (Hoje, 10:16)
+        </span>
+        <span class="font-mono text-xs">Leitura: 4 min</span>
+      </div>
+
+      <p class="text-lg text-zinc-300 mb-6 leading-relaxed font-medium">Nas últimas horas, o mercado crypto testemunhou um novo movimento do mercado que pegou muitos traders de surpresa. O Bitcoin (BTC) registrou um fluxo de compra institucional atípico para o horário, impulsionando os preços e liquidando posições vendidas em diversas corretoras globais.</p>
+
+      <p>O que parecia ser uma manhã de consolidação padrão rapidamente se transformou em um rali de curto prazo. Dados recentes indicam que a pressão compradora não veio do varejo, mas sim de grandes carteiras institucionais (baleias) e fundos de índice (ETFs).</p>
+
+      <h2>O Que Aconteceu e Por Que Aconteceu?</h2>
+      <p>Segundo analistas do mercado, o gatilho para essa movimentação repentina foi uma combinação de fatores macroeconômicos e escassez de oferta nas plataformas de negociação. Nas primeiras horas do dia, mais de 15.000 BTC foram retirados de exchanges centralizadas, o maior volume diário registrado neste trimestre.</p>
+
+      <p>Essa fuga de capital das corretoras para carteiras frias (cold wallets) reduz drasticamente a liquidez disponível. Em termos simples: com menos moedas disponíveis para venda, qualquer ordem de compra institucional de grande porte causa um impacto desproporcional no preço, empurrando as cotações para cima.</p>
+
+      <p>Relatórios divulgados pela <a href="https://www.bloomberg.com/crypto" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">Bloomberg Crypto</a> e análises on-chain da <a href="https://www.coindesk.com" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">CoinDesk</a> confirmam que tesourarias corporativas estão aproveitando qualquer recuo de preço para acumular o ativo, antecipando um cenário de flexibilização monetária global e fortalecendo as perspectivas para as criptomoedas 2026.</p>
+
+      <div class="my-8 p-6 bg-emerald-900/10 border-l-4 border-emerald-500 rounded-r-xl">
+        <h4 class="text-emerald-400 font-bold mb-2 flex items-center">👉 Leia também:</h4>
+        <a href="/artigo/inflacao-americana-futuro-investimentos-2026" class="text-zinc-300 hover:text-white transition-colors text-lg font-medium">Como a inflação americana está moldando o futuro dos investimentos em 2026</a>
+      </div>
+
+      <h2>O Impacto no Mercado e Cenários Futuros</h2>
+      <p>O impacto imediato desse movimento foi a liquidação de mais de US$ 150 milhões em posições de short (aposta na queda) no mercado de derivativos. Isso gerou o clássico efeito de "short squeeze", onde vendedores a descoberto são forçados a recomprar o ativo para cobrir suas perdas, acelerando ainda mais a alta.</p>
+
+      <p>Olhando para o futuro, o cenário permanece otimista, mas exige cautela. Se a demanda dos ETFs continuar no ritmo atual e a oferta nas corretoras seguir caindo, poderemos ver um choque de oferta sem precedentes até o final do ano. No entanto, correções de curto prazo são normais e saudáveis para a manutenção da tendência de alta.</p>
+
+      <hr class="border-zinc-800/50 my-12" />
+
+      <!-- SEÇÕES EXTRAS NÍVEL PORTAL -->
+      <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 mb-8 shadow-lg">
+        <h3 class="text-xl font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-2xl">📊</span> Panorama do Mercado</h3>
+        <ul class="list-none space-y-3 text-zinc-300">
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Fuga de Liquidez:</strong> Mais de 15.000 BTC retirados de corretoras nas últimas horas.</li>
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Short Squeeze:</strong> Liquidação massiva de posições vendidas impulsiona o preço no curto prazo.</li>
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Acumulação:</strong> Instituições continuam comprando agressivamente, ignorando a volatilidade diária.</li>
+        </ul>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-10">
+        <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-lg">
+          <h3 class="text-lg font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-xl">🔥</span> Em Alta Hoje</h3>
+          <div class="space-y-5">
+            <div class="border-b border-zinc-800/50 pb-4">
+               <h4 class="font-semibold text-zinc-100 text-sm mb-1">Volume de ETFs</h4>
+               <p class="text-xs text-zinc-400 leading-relaxed">Entradas líquidas nos fundos de índice de Bitcoin superam as expectativas do mercado.</p>
+            </div>
+            <div class="border-b border-zinc-800/50 pb-4">
+               <h4 class="font-semibold text-zinc-100 text-sm mb-1">Dominância do BTC</h4>
+               <p class="text-xs text-zinc-400 leading-relaxed">Bitcoin atrai o capital de investidores, reduzindo temporariamente o fluxo para altcoins.</p>
+            </div>
+            <div>
+               <h4 class="font-semibold text-zinc-100 text-sm mb-1">Taxas de Financiamento</h4>
+               <p class="text-xs text-zinc-400 leading-relaxed">Mercado de futuros volta a apresentar taxas positivas, indicando otimismo dos traders.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-lg">
+          <h3 class="text-lg font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-xl">📈</span> Tendência Observada</h3>
+          <div class="space-y-4">
+            <div class="bg-black/40 p-5 rounded-xl border border-zinc-800/50 hover:border-emerald-500/30 transition-colors">
+              <h4 class="font-semibold text-emerald-400 text-sm mb-2">Choque de Oferta Iminente</h4>
+              <p class="text-xs text-zinc-300 leading-relaxed">A divergência entre a alta demanda institucional e a baixa oferta líquida nas corretoras está criando um ambiente propício para valorizações aceleradas. A métrica de moedas inativas reforça que os detentores de longo prazo não estão dispostos a vender nos preços atuais.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-red-950/20 border border-red-900/30 rounded-2xl p-6 text-sm">
+        <h4 class="text-red-400 font-bold mb-3 flex items-center text-base">⚠️ Aviso de Risco e Isenção de Responsabilidade</h4>
+        <p class="text-zinc-400 leading-relaxed">As informações contidas neste artigo são de caráter exclusivamente jornalístico e educacional. O <strong>CryptoPremium</strong> não faz recomendações de compra ou venda de ativos financeiros. O mercado de criptomoedas é altamente volátil e investimentos podem resultar em perda parcial ou total do capital. Realize sua própria pesquisa (DYOR) e consulte um profissional financeiro certificado antes de tomar decisões de investimento.</p>
+      </div>
+    `,
+    category: "bitcoin",
+    imageUrl: "https://images.unsplash.com/photo-1516245834210-c4c142787335?auto=format&fit=crop&q=80&w=1200",
+    author: "Carlos Mendes – Analista de Criptoativos",
+    date: new Date().toISOString(),
+    readTime: "4 min",
+    trending: true,
+  },
+  {
     id: "btc-10",
     slug: "analise-on-chain-baleias-bitcoin-acumulam-2026",
     title: "Análise On-Chain: Baleias de Bitcoin Acumulam em Níveis Históricos",
