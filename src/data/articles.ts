@@ -23,6 +23,51 @@ export const categories = [
 
 export const articles: Article[] = [
   {
+    id: "6",
+    slug: "bitcoin-rumo-aos-100-mil-impacto-economia-global-2026",
+    title: "Bitcoin Rumo aos US$ 100 Mil? Entenda o Impacto da Economia Global nas Criptomoedas em 2026",
+    excerpt: "Com a inflação persistente e mudanças nas taxas de juros, especialistas apontam que o Bitcoin e as principais altcoins podem atingir novos recordes históricos ainda este ano.",
+    content: `
+      <p>O mercado financeiro digital está em efervescência. Após um período de consolidação, o <strong>Bitcoin</strong> volta a capturar a atenção de investidores institucionais e de varejo. A grande pergunta que domina as mesas de operação é: estamos prestes a ver a principal criptomoeda do mundo romper a barreira dos US$ 100 mil?</p>
+      
+      <p>Para entender esse movimento, não basta olhar apenas para os gráficos. É preciso analisar o cenário macroeconômico global, que atualmente atua como o principal combustível para a valorização dos ativos digitais.</p>
+      
+      <h2>O Peso das Decisões do Fed e a Inflação</h2>
+      
+      <p>Historicamente, o mercado de criptomoedas reage de forma intensa às políticas monetárias dos Estados Unidos. Quando o Federal Reserve (Fed) sinaliza cortes nas taxas de juros, a liquidez global aumenta. Dinheiro mais barato significa maior apetite ao risco.</p>
+      
+      <p>De acordo com uma <a href="https://www.investopedia.com/articles/investing/123015/why-bitcoin-price-so-volatile.asp" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline">análise recente da Investopedia sobre a volatilidade do Bitcoin</a>, a criptomoeda tem se comportado cada vez mais como um ativo de proteção contra a inflação, semelhante ao ouro, mas com a vantagem da liquidez digital.</p>
+      
+      <p>Com a inflação persistente em diversas economias desenvolvidas, grandes fundos de investimento estão diversificando seus portfólios, e o Bitcoin tem sido o principal beneficiado dessa migração de capital.</p>
+      
+      <h2>Altcoins: A Reboque do Gigante</h2>
+      
+      <p>Quando o Bitcoin sobe e estabelece novos patamares de suporte, o capital tende a fluir para as <strong>altcoins</strong>. Projetos sólidos focados em infraestrutura Web3, Inteligência Artificial e Finanças Descentralizadas (DeFi) estão apresentando ganhos percentuais ainda maiores.</p>
+      
+      <p>Especialistas do <a href="https://www.infomoney.com.br/mercados/criptomoedas/" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline">InfoMoney destacam que o mercado de altcoins</a> está amadurecendo, com investidores buscando utilidade real em vez de apenas especulação. Redes que oferecem escalabilidade e baixas taxas estão liderando essa nova onda de adoção.</p>
+      
+      <h2>Adoção Institucional e ETFs</h2>
+      
+      <p>Outro fator crucial para a sustentação dos preços atuais é a consolidação dos ETFs (Exchange Traded Funds) de Bitcoin à vista. A aprovação desses instrumentos financeiros abriu as portas para trilhões de dólares do mercado tradicional.</p>
+      
+      <p>Fundos de pensão e gestoras de patrimônio, que antes viam o mercado crypto com ceticismo, agora alocam uma porcentagem de seus portfólios em ativos digitais como medida de diversificação e proteção.</p>
+      
+      <h2>Conclusão: O Que Esperar de 2026?</h2>
+      
+      <p>A convergência de fatores macroeconômicos favoráveis, adoção institucional crescente e o choque de oferta natural do Bitcoin criam um cenário extremamente otimista para 2026.</p>
+      
+      <p>Embora a marca de US$ 100 mil pareça ambiciosa, a matemática da escassez aliada à demanda crescente torna esse alvo não apenas possível, mas provável, segundo diversos analistas de mercado.</p>
+      
+      <p>No entanto, a regra de ouro permanece: o mercado de criptomoedas é volátil. Investidores devem manter uma estratégia de longo prazo, realizar aportes fracionados (DCA) e nunca investir recursos destinados a despesas essenciais.</p>
+    `,
+    category: "economia-global",
+    imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
+    author: "Redação CryptoPremium",
+    date: new Date().toISOString(),
+    readTime: "5 min",
+    trending: true,
+  },
+  {
     id: "1",
     slug: "bitcoin-pode-explodir-em-2026",
     title: "Bitcoin pode explodir em 2026? Analistas apontam novo ciclo de alta",

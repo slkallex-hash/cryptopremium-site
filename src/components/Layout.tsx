@@ -26,8 +26,8 @@ export function Layout() {
         </div>
         <div className="flex items-center space-x-4">
           <Link to="#" className="hover:text-emerald-400 transition-colors">Newsletter</Link>
-          <Link to="#" className="hover:text-emerald-400 transition-colors">Contato</Link>
-          <Link to="#" className="hover:text-emerald-400 transition-colors">Anuncie</Link>
+          <Link to="/contato" className="hover:text-emerald-400 transition-colors">Contato</Link>
+          <Link to="/contato" className="hover:text-emerald-400 transition-colors">Anuncie</Link>
         </div>
       </div>
 
@@ -68,10 +68,10 @@ export function Layout() {
             </nav>
 
             <div className="flex items-center space-x-2">
-              <button className="p-2.5 rounded-full text-zinc-400 hover:text-white hover:bg-zinc-900 transition-colors">
+              <button onClick={() => alert('A busca será ativada em breve!')} className="p-2.5 rounded-full text-zinc-400 hover:text-white hover:bg-zinc-900 transition-colors">
                 <Search className="w-5 h-5" />
               </button>
-              <button className="p-2.5 rounded-full text-zinc-400 hover:text-white hover:bg-zinc-900 transition-colors relative">
+              <button onClick={() => alert('Você não tem novas notificações.')} className="p-2.5 rounded-full text-zinc-400 hover:text-white hover:bg-zinc-900 transition-colors relative">
                 <Bell className="w-5 h-5" />
                 <span className="absolute top-2 right-2.5 w-2 h-2 bg-emerald-500 rounded-full border-2 border-[#09090b]"></span>
               </button>
@@ -154,20 +154,20 @@ export function Layout() {
             <div className="col-span-1 md:col-span-2">
               <h3 className="text-white font-display font-bold mb-6 tracking-wide">Empresa</h3>
               <ul className="space-y-4">
-                <li><a href="#" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Sobre Nós</a></li>
-                <li><a href="#" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Expediente</a></li>
-                <li><a href="#" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Anuncie</a></li>
-                <li><a href="#" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Contato</a></li>
+                <li><Link to="/sobre" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Sobre Nós</Link></li>
+                <li><Link to="/sobre" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Expediente</Link></li>
+                <li><Link to="/contato" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Anuncie</Link></li>
+                <li><Link to="/contato" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Contato</Link></li>
               </ul>
             </div>
 
             <div className="col-span-1 md:col-span-2">
               <h3 className="text-white font-display font-bold mb-6 tracking-wide">Legal</h3>
               <ul className="space-y-4">
-                <li><a href="#" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Termos de Uso</a></li>
-                <li><a href="#" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Privacidade</a></li>
-                <li><a href="#" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Aviso de Risco</a></li>
-                <li><a href="#" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Cookies</a></li>
+                <li><Link to="/termos" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Termos de Uso</Link></li>
+                <li><Link to="/privacidade" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Privacidade</Link></li>
+                <li><Link to="/termos" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Aviso de Risco</Link></li>
+                <li><Link to="/privacidade" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Cookies</Link></li>
               </ul>
             </div>
           </div>
