@@ -27,7 +27,7 @@ export function Article() {
     );
   }
 
-  const categoryName = categories.find(c => c.id === article.category)?.name;
+  const categoryName = categories.find(c => c.slug === article.category || c.id === article.category)?.name;
 
   return (
     <article className="max-w-4xl mx-auto">

@@ -69,7 +69,7 @@ export function Home() {
                     {article.title}
                   </h3>
                   <div className="flex items-center text-xs text-zinc-500 font-medium uppercase tracking-wider">
-                    <span className="text-emerald-500/80">{categories.find(c => c.id === article.category)?.name}</span>
+                    <span className="text-emerald-500/80">{categories.find(c => c.slug === article.category || c.id === article.category)?.name}</span>
                     <span className="mx-2 text-zinc-700">•</span>
                     <span>{article.readTime}</span>
                   </div>
@@ -112,7 +112,7 @@ export function Home() {
                 />
                 <div className="absolute top-4 left-4">
                   <span className="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white bg-black/60 backdrop-blur-md rounded-sm border border-white/10">
-                    {categories.find(c => c.id === article.category)?.name}
+                    {categories.find(c => c.slug === article.category || c.id === article.category)?.name}
                   </span>
                 </div>
               </div>

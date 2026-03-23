@@ -59,7 +59,7 @@ export function Layout() {
               {categories.filter(c => c.id !== 'noticias-urgentes').slice(0, 6).map((category) => (
                 <Link
                   key={category.id}
-                  to={`/category/${category.id}`}
+                  to={`/category/${category.slug}`}
                   className="px-4 py-2 rounded-full text-sm font-medium text-zinc-400 hover:text-white hover:bg-zinc-900/80 transition-all"
                 >
                   {category.name}
@@ -86,7 +86,7 @@ export function Layout() {
               {categories.map((category) => (
                 <Link
                   key={category.id}
-                  to={`/category/${category.id}`}
+                  to={`/category/${category.slug}`}
                   className="block px-3 py-3 text-base font-medium text-zinc-300 hover:text-emerald-400 hover:bg-zinc-900 rounded-md"
                 >
                   {category.name}
@@ -143,7 +143,7 @@ export function Layout() {
               <ul className="space-y-4">
                 {categories.slice(0, 4).map(cat => (
                   <li key={cat.id}>
-                    <Link to={`/category/${cat.id}`} className="text-zinc-400 hover:text-emerald-400 text-sm flex items-center transition-colors">
+                    <Link to={`/category/${cat.slug}`} className="text-zinc-400 hover:text-emerald-400 text-sm flex items-center transition-colors">
                       {cat.name}
                     </Link>
                   </li>

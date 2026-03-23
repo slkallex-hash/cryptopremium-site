@@ -5,9 +5,9 @@ import { Clock, ChevronRight } from "lucide-react";
 import { useEffect } from "react";
 
 export function Category() {
-  const { id } = useParams<{ id: string }>();
-  const category = categories.find(c => c.id === id);
-  const categoryArticles = articles.filter(a => a.category === id);
+  const { slug } = useParams<{ slug: string }>();
+  const category = categories.find(c => c.slug === slug || c.id === slug);
+  const categoryArticles = articles.filter(a => a.category === category?.slug || a.category === category?.id);
 
   // Scroll to top on mount
   useEffect(() => {
@@ -15,7 +15,7 @@ export function Category() {
     if (category) {
       document.title = `${category.name} | CryptoPremium`;
     }
-  }, [id, category]);
+  }, [slug, category]);
 
   if (!category) {
     return (
