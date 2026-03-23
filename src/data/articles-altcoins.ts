@@ -2,6 +2,95 @@ import { Article } from "./articles";
 
 export const altcoinsArticles: Article[] = [
   {
+    id: "alt-11",
+    slug: "ethereum-dispara-mercado-reage-novo-movimento-institucional-2026",
+    title: "Ethereum Dispara: Mercado Reage a Novo Movimento Institucional nas Últimas Horas",
+    excerpt: "O mercado reage fortemente nas últimas horas com um novo fluxo de capital institucional focado no Ethereum. Entenda as causas e os próximos cenários para a principal altcoin.",
+    content: `
+      <div class="mb-8 p-4 bg-zinc-900/50 border border-zinc-800 rounded-xl flex items-center justify-between text-sm text-zinc-400">
+        <span class="flex items-center font-medium text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2 shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span> 
+          Atualizado em tempo real (Hoje, 11:01)
+        </span>
+        <span class="font-mono text-xs">Leitura: 4 min</span>
+      </div>
+
+      <p class="text-lg text-zinc-300 mb-6 leading-relaxed font-medium">Nas últimas horas, o mercado reage de forma agressiva a um novo movimento institucional focado no Ethereum (ETH). O volume de negociação da principal altcoin disparou, rompendo resistências importantes e liquidando posições vendidas em diversas corretoras globais.</p>
+
+      <p>O que parecia ser um início de semana morno rapidamente se transformou em um rali de curto prazo. Dados recentes indicam que a pressão compradora não é especulativa, mas sim estrutural, vinda de grandes carteiras institucionais e fundos de índice (ETFs) que voltaram a acumular o ativo de forma agressiva.</p>
+
+      <h2>O Que Aconteceu e Por Que Aconteceu?</h2>
+      <p>Segundo dados recentes do mercado divulgados pela <a href="https://glassnode.com/" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">Glassnode</a>, o gatilho para essa movimentação repentina foi uma transferência massiva de ETH das exchanges centralizadas para contratos de staking institucional. Nas primeiras horas do dia, mais de 250.000 ETH foram retirados de circulação líquida.</p>
+
+      <p>Essa fuga de capital reduz drasticamente a oferta disponível para negociação. Quando grandes gestoras movem capital para pools de staking, elas sinalizam uma visão de longo prazo, buscando o rendimento passivo (yield) da rede e removendo a pressão vendedora imediata.</p>
+
+      <p>Relatórios da <a href="https://www.coindesk.com" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">CoinDesk</a> confirmam que tesourarias corporativas estão aproveitando a clareza regulatória recente para aumentar sua exposição ao Ethereum, antecipando uma adoção em massa de contratos inteligentes e tokenização de ativos (RWA) no sistema financeiro tradicional.</p>
+
+      <div class="my-8 p-6 bg-emerald-900/10 border-l-4 border-emerald-500 rounded-r-xl">
+        <h4 class="text-emerald-400 font-bold mb-2 flex items-center">👉 Leia também:</h4>
+        <a href="/artigo/bitcoin-hoje-novo-movimento-institucional-surpreende-mercado-nas-ultimas-horas" class="text-zinc-300 hover:text-white transition-colors text-lg font-medium">Bitcoin Hoje: Novo Movimento Institucional Surpreende o Mercado nas Últimas Horas</a>
+      </div>
+
+      <h2>O Impacto no Mercado e Cenários Futuros</h2>
+      <p>O impacto imediato desse movimento foi a liquidação de mais de US$ 85 milhões em posições de short (aposta na queda) no mercado de derivativos de ETH. Esse "short squeeze" forçou os vendedores a descoberto a recomprar o ativo, acelerando ainda mais a alta nas últimas horas.</p>
+
+      <p>Analistas apontam que o cenário futuro para o Ethereum permanece altamente otimista. Se a demanda institucional continuar no ritmo atual e a taxa de queima de taxas (burn rate) da rede se mantiver elevada, poderemos ver um choque de oferta deflacionário sem precedentes nos próximos meses. Contudo, correções técnicas de curto prazo são esperadas e consideradas saudáveis para a manutenção da tendência de alta.</p>
+
+      <hr class="border-zinc-800/50 my-12" />
+
+      <!-- SEÇÕES EXTRAS NÍVEL PORTAL -->
+      <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 mb-8 shadow-lg">
+        <h3 class="text-xl font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-2xl">📊</span> Panorama do Mercado</h3>
+        <ul class="list-none space-y-3 text-zinc-300">
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Fuga de Liquidez:</strong> Mais de 250.000 ETH retirados de corretoras e enviados para staking nas últimas horas.</li>
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Short Squeeze:</strong> Liquidação massiva de posições vendidas impulsiona o preço do Ethereum no curto prazo.</li>
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Acumulação Institucional:</strong> Fundos tradicionais continuam comprando agressivamente, focando no rendimento passivo da rede.</li>
+        </ul>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-10">
+        <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-lg">
+          <h3 class="text-lg font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-xl">🔥</span> Em Alta Hoje</h3>
+          <div class="space-y-5">
+            <div class="border-b border-zinc-800/50 pb-4">
+               <h4 class="font-semibold text-zinc-100 text-sm mb-1">Volume de Staking</h4>
+               <p class="text-xs text-zinc-400 leading-relaxed">Entradas líquidas em protocolos de Liquid Staking superam as expectativas do mercado.</p>
+            </div>
+            <div class="border-b border-zinc-800/50 pb-4">
+               <h4 class="font-semibold text-zinc-100 text-sm mb-1">Taxas de Financiamento</h4>
+               <p class="text-xs text-zinc-400 leading-relaxed">Mercado de futuros de ETH volta a apresentar taxas positivas, indicando forte otimismo dos traders.</p>
+            </div>
+            <div>
+               <h4 class="font-semibold text-zinc-100 text-sm mb-1">Atividade nas Layer 2</h4>
+               <p class="text-xs text-zinc-400 leading-relaxed">Redes de segunda camada como Arbitrum e Base registram picos de transações acompanhando a alta do ETH.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-lg">
+          <h3 class="text-lg font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-xl">📈</span> Tendência Observada</h3>
+          <div class="space-y-4">
+            <div class="bg-black/40 p-5 rounded-xl border border-zinc-800/50 hover:border-emerald-500/30 transition-colors">
+              <h4 class="font-semibold text-emerald-400 text-sm mb-2">Choque de Oferta Deflacionário</h4>
+              <p class="text-xs text-zinc-300 leading-relaxed">A divergência entre a alta demanda institucional por staking e a queima contínua de taxas na rede está criando um ambiente propício para valorizações aceleradas. A métrica de moedas inativas reforça que os detentores não estão dispostos a vender nos preços atuais.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-red-950/20 border border-red-900/30 rounded-2xl p-6 text-sm">
+        <h4 class="text-red-400 font-bold mb-3 flex items-center text-base">⚠️ Aviso de Risco e Isenção de Responsabilidade</h4>
+        <p class="text-zinc-400 leading-relaxed">As informações contidas neste artigo são de caráter exclusivamente jornalístico e educacional. O <strong>CryptoPremium</strong> não faz recomendações de compra ou venda de ativos financeiros. O mercado de criptomoedas é altamente volátil e investimentos podem resultar em perda parcial ou total do capital. Realize sua própria pesquisa (DYOR) e consulte um profissional financeiro certificado antes de tomar decisões de investimento.</p>
+      </div>
+    `,
+    category: "altcoins",
+    imageUrl: "https://images.unsplash.com/photo-1622736696590-0f2d488d0111?auto=format&fit=crop&q=80&w=1200",
+    author: "Carlos Mendes – Analista de Criptoativos",
+    date: new Date().toISOString(),
+    readTime: "4 min",
+    trending: true,
+  },
+  {
     id: "alt-10",
     slug: "avalanche-parceria-games-subnets-2026",
     title: "Avalanche (AVAX) Fecha Parceria com Gigante de Games para Lançamento de Subnets",
