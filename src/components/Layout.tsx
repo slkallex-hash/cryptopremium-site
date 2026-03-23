@@ -176,9 +176,10 @@ export function Layout() {
             <p className="text-zinc-500 text-sm mb-4 md:mb-0">
               &copy; {new Date().getFullYear()} CryptoPremium. Todos os direitos reservados.
             </p>
-            <p className="text-zinc-600 text-[11px] text-center md:text-right max-w-2xl leading-relaxed">
-              Aviso Legal: O conteúdo deste portal tem caráter estritamente informativo e educacional. Não constitui aconselhamento financeiro, de investimento ou recomendação de compra e venda de ativos. Criptomoedas são ativos de alto risco e volatilidade.
-            </p>
+            <div className="text-zinc-600 text-[11px] text-center md:text-right max-w-2xl leading-relaxed">
+              <p className="font-bold text-zinc-500 mb-1">⚠️ Aviso de Risco e Isenção de Responsabilidade</p>
+              <p>O conteúdo publicado no CryptoPremium possui caráter estritamente jornalístico, informativo e educacional. Nenhuma publicação deste site deve ser interpretada como aconselhamento financeiro, indicação de investimento ou recomendação de compra e venda de ativos digitais. O mercado de criptomoedas é altamente volátil e investimentos podem resultar em perda parcial ou total do capital. Recomendamos que você realize sua própria pesquisa (DYOR) e consulte um profissional financeiro certificado antes de tomar qualquer decisão. O CryptoPremium não se responsabiliza por perdas ou lucros cessantes decorrentes da utilização das informações aqui contidas.</p>
+            </div>
           </div>
         </div>
       </footer>

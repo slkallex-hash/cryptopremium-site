@@ -91,6 +91,77 @@ export function Home() {
       {/* Middle Banner Ad */}
       <AdSlot id="home-middle-banner" type="banner" className="my-12 rounded-xl" />
 
+      {/* CryptoPremium Play (Videos) */}
+      <section className="bg-zinc-950 border border-zinc-800/50 rounded-3xl p-8 md:p-12 my-16 shadow-2xl shadow-black">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-3">
+              CryptoPremium <span className="text-emerald-400">Play</span>
+            </h2>
+            <p className="text-zinc-400 text-lg">Assista às nossas análises de mercado, tutoriais práticos e resumos semanais em vídeo.</p>
+          </div>
+          <a href="#" className="inline-flex items-center text-emerald-400 font-bold hover:text-emerald-300 transition-colors">
+            Ver todos os vídeos <ChevronRight className="w-5 h-5 ml-1" />
+          </a>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* Video 1 */}
+          <a href="#" className="group block">
+            <div className="relative rounded-2xl overflow-hidden mb-4 aspect-video bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500/50 transition-colors">
+              <img src="https://picsum.photos/seed/crypto1/600/338" alt="Video thumbnail" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-14 h-14 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center border border-white/20 group-hover:scale-110 group-hover:bg-emerald-500 transition-all">
+                  <div className="w-0 h-0 border-y-8 border-y-transparent border-l-[14px] border-l-white ml-1"></div>
+                </div>
+              </div>
+              <div className="absolute bottom-3 right-3 bg-black/80 text-white text-xs font-bold px-2 py-1 rounded">
+                12:45
+              </div>
+            </div>
+            <h3 className="text-lg font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2">
+              O Efeito dos ETFs de Ethereum no Bolso do Investidor
+            </h3>
+          </a>
+
+          {/* Video 2 */}
+          <a href="#" className="group block">
+            <div className="relative rounded-2xl overflow-hidden mb-4 aspect-video bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500/50 transition-colors">
+              <img src="https://picsum.photos/seed/crypto2/600/338" alt="Video thumbnail" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-14 h-14 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center border border-white/20 group-hover:scale-110 group-hover:bg-emerald-500 transition-all">
+                  <div className="w-0 h-0 border-y-8 border-y-transparent border-l-[14px] border-l-white ml-1"></div>
+                </div>
+              </div>
+              <div className="absolute bottom-3 right-3 bg-black/80 text-white text-xs font-bold px-2 py-1 rounded">
+                08:20
+              </div>
+            </div>
+            <h3 className="text-lg font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2">
+              Como declarar Bitcoin no Imposto de Renda (Regra dos 35k)
+            </h3>
+          </a>
+
+          {/* Video 3 */}
+          <a href="#" className="group block">
+            <div className="relative rounded-2xl overflow-hidden mb-4 aspect-video bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500/50 transition-colors">
+              <img src="https://picsum.photos/seed/crypto3/600/338" alt="Video thumbnail" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-14 h-14 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center border border-white/20 group-hover:scale-110 group-hover:bg-emerald-500 transition-all">
+                  <div className="w-0 h-0 border-y-8 border-y-transparent border-l-[14px] border-l-white ml-1"></div>
+                </div>
+              </div>
+              <div className="absolute bottom-3 right-3 bg-black/80 text-white text-xs font-bold px-2 py-1 rounded">
+                15:10
+              </div>
+            </div>
+            <h3 className="text-lg font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2">
+              O Fluxo do Staking: Renda Passiva Explicada Passo a Passo
+            </h3>
+          </a>
+        </div>
+      </section>
+
       {/* Recent News Section */}
       <section>
         <div className="flex items-center justify-between border-b border-zinc-800/50 pb-4 mb-8">

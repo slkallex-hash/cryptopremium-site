@@ -112,6 +112,42 @@ export function Article() {
           {/* Middle Content Ad */}
           <AdSlot id="article-middle-banner" type="banner" className="my-12 rounded-xl" />
 
+          {/* Author Bio */}
+          <div className="mt-12 p-6 bg-zinc-900/50 border border-zinc-800/50 rounded-2xl flex flex-col sm:flex-row items-center sm:items-start gap-6">
+            <div className="w-20 h-20 shrink-0 rounded-full bg-zinc-800 overflow-hidden border-2 border-emerald-500/20">
+              <img src={`https://picsum.photos/seed/${article.author.replace(/\s+/g, '').toLowerCase()}/200/200`} alt={article.author} className="w-full h-full object-cover" />
+            </div>
+            <div className="text-center sm:text-left flex-1">
+              <h3 className="text-xl font-bold text-white mb-1">{article.author}</h3>
+              <p className="text-emerald-400 text-sm font-medium mb-3">
+                {article.author.includes('Mendes') ? 'Analista de Criptoativos' : article.author.includes('Costa') ? 'Jornalista Econômica' : 'Especialista em Blockchain'}
+              </p>
+              <p className="text-zinc-400 text-sm leading-relaxed mb-4">
+                {article.author.includes('Mendes') 
+                  ? 'Especialista em dados on-chain e tendências macroeconômicas. Ajuda investidores a decifrarem os ciclos do Bitcoin com base em dados reais e institucionais.' 
+                  : article.author.includes('Costa') 
+                  ? 'Cobre o impacto das políticas monetárias globais, regulação de criptomoedas e a entrada de capital institucional e ETFs no mercado digital.' 
+                  : 'Desenvolvedor Web3 focado em dissecar whitepapers e traduzir a complexidade dos contratos inteligentes e redes de segunda camada para o público geral.'}
+              </p>
+              <div className="flex items-center justify-center sm:justify-start gap-3">
+                <a href="#" className="text-zinc-500 hover:text-emerald-400 transition-colors"><Twitter className="w-4 h-4" /></a>
+                <a href="#" className="text-zinc-500 hover:text-emerald-400 transition-colors"><LinkIcon className="w-4 h-4" /></a>
+              </div>
+            </div>
+          </div>
+
+          {/* Risk Disclaimer (for specific categories) */}
+          {['investimentos', 'renda-online', 'altcoins'].includes(article.category) && (
+            <div className="mt-8 p-6 bg-zinc-900/30 border-l-4 border-l-amber-500 border-y border-r border-zinc-800/50 rounded-r-2xl">
+              <h4 className="text-amber-500 font-bold flex items-center mb-2">
+                <span className="text-lg mr-2">⚠️</span> Aviso de Risco
+              </h4>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                O conteúdo publicado no CryptoPremium possui caráter estritamente jornalístico, informativo e educacional. Nenhuma publicação deste site deve ser interpretada como aconselhamento financeiro. O mercado de criptomoedas é altamente volátil. Recomendamos que você realize sua própria pesquisa (DYOR) e consulte um profissional financeiro certificado antes de tomar qualquer decisão.
+              </p>
+            </div>
+          )}
+
           {/* Tags */}
           <div className="mt-12 pt-8 border-t border-zinc-800/50 flex flex-wrap gap-3">
             <span className="px-4 py-1.5 bg-zinc-900 border border-zinc-800 rounded-full text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-white hover:border-emerald-500 cursor-pointer transition-colors">#Crypto</span>
