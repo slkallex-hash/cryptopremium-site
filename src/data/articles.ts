@@ -132,7 +132,7 @@ export const articles: Article[] = [
       <h2>Trabalhar na Web3</h2>
       <p>A demanda por desenvolvedores, designers, community managers e criadores de conteúdo no ecossistema Web3 continua altíssima, muitas vezes pagando salários em stablecoins.</p>
     `,
-    category: "investimentos",
+    category: "criptomoedas",
     imageUrl: "https://images.unsplash.com/photo-1621504450181-5d356f61d307?auto=format&fit=crop&q=80&w=1000",
     author: "Rafael Souza",
     date: "2026-03-20T09:15:00Z",
