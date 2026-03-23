@@ -8,7 +8,7 @@ export function About() {
           <TrendingUp className="w-8 h-8 text-zinc-950" strokeWidth={2.5} />
         </div>
         <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-6 tracking-tight">
-          Sobre o CryptoPremium
+          Sobre o CryptoPremium: Nossa Bússola no Mercado Cripto
         </h1>
         <p className="text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
           Sua fonte definitiva e confiável de informações sobre o mercado de criptomoedas, economia global e investimentos digitais.
@@ -21,7 +21,7 @@ export function About() {
             <Target className="w-6 h-6 mr-3 text-emerald-400" /> Nossa História
           </h2>
           <p className="text-zinc-300 leading-relaxed mb-0">
-            O CryptoPremium nasceu da necessidade urgente de combater a desinformação no mercado financeiro digital. Fundado por um grupo de especialistas em blockchain e jornalistas econômicos, percebemos que o investidor brasileiro carecia de uma fonte que unisse o rigor do jornalismo tradicional com a velocidade da Web3. Hoje, trabalhamos 24/7 para traduzir a complexidade das criptomoedas em informações claras e acionáveis.
+            Nascido da necessidade de informações claras em um mercado frequentemente dominado por ruídos e especulações, o CryptoPremium surgiu com um propósito simples: traduzir a complexidade da Web3 e dos ativos digitais para o investidor cotidiano. Começamos como um pequeno boletim informativo e, graças ao nosso compromisso com a verdade e a análise baseada em dados, evoluímos para um dos portais de notícias e educação financeira que mais crescem no Brasil.
           </p>
         </div>
 
@@ -31,7 +31,7 @@ export function About() {
               <Target className="w-5 h-5 mr-3 text-emerald-400" /> Nossa Missão
             </h3>
             <p className="text-zinc-300 leading-relaxed mb-0">
-              Democratizar o acesso à informação financeira de alta qualidade, capacitando investidores de todos os níveis a tomarem decisões seguras na nova economia digital.
+              Democratizar o acesso à informação de qualidade sobre criptomoedas, blockchain e finanças descentralizadas, capacitando nossos leitores a tomarem decisões financeiras inteligentes, seguras e fundamentadas.
             </p>
           </div>
 
@@ -40,7 +40,7 @@ export function About() {
               <TrendingUp className="w-5 h-5 mr-3 text-emerald-400" /> Nossa Visão
             </h3>
             <p className="text-zinc-300 leading-relaxed mb-0">
-              Ser o maior e mais confiável portal de notícias sobre criptomoedas, economia global e tecnologia do Brasil, reconhecido pela precisão de seus dados e independência editorial.
+              Ser o portal de notícias e educação cripto mais confiável e acessível da América Latina até 2030, reconhecido pela excelência jornalística e inovação na entrega de conteúdo.
             </p>
           </div>
 
@@ -49,9 +49,9 @@ export function About() {
               <Shield className="w-5 h-5 mr-3 text-emerald-400" /> Nossos Valores
             </h3>
             <ul className="text-zinc-300 leading-relaxed mb-0 space-y-2 list-none pl-0">
-              <li><strong className="text-white">Precisão:</strong> Baseamos nossos artigos em dados on-chain e fontes primárias.</li>
-              <li><strong className="text-white">Transparência:</strong> Separação rigorosa entre conteúdo editorial e material patrocinado.</li>
-              <li><strong className="text-white">Educação:</strong> O conhecimento é o ativo mais valioso contra a volatilidade.</li>
+              <li><strong className="text-white">Precisão:</strong> Checamos fatos, dados on-chain e fontes primárias antes de qualquer publicação.</li>
+              <li><strong className="text-white">Transparência:</strong> Somos claros sobre nossos vieses, isenções de responsabilidade e metodologias de análise.</li>
+              <li><strong className="text-white">Educação:</strong> Acreditamos que um investidor educado é um investidor protegido. Nosso foco é ensinar, não apenas noticiar.</li>
             </ul>
           </div>
         </div>
@@ -65,9 +65,9 @@ export function About() {
                 <img src="https://picsum.photos/seed/carlos/200/200" alt="Carlos Mendes" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl font-bold text-white mb-1">Carlos Mendes</h3>
-              <p className="text-emerald-400 text-sm font-medium mb-4">Analista de Mercado Sênior</p>
+              <p className="text-emerald-400 text-sm font-medium mb-4">Analista Chefe de Mercado</p>
               <p className="text-zinc-400 text-sm leading-relaxed">
-                Com 8 anos de experiência no mercado financeiro tradicional e Web3, Carlos é especialista em análise on-chain e macroeconomia.
+                Com mais de 10 anos de experiência no mercado financeiro tradicional e 6 anos dedicados exclusivamente a criptoativos, Carlos é especialista em análise técnica e tendências macroeconômicas.
               </p>
             </div>
             {/* Marina Costa */}
@@ -76,9 +76,9 @@ export function About() {
                 <img src="https://picsum.photos/seed/marina/200/200" alt="Marina Costa" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl font-bold text-white mb-1">Marina Costa</h3>
-              <p className="text-emerald-400 text-sm font-medium mb-4">Jornalista Financeira</p>
+              <p className="text-emerald-400 text-sm font-medium mb-4">Jornalista Econômica Sênior</p>
               <p className="text-zinc-400 text-sm leading-relaxed">
-                Focada em regulação e adoção institucional, Marina cobre as movimentações de Wall Street e o impacto das políticas de Bancos Centrais.
+                Vencedora de prêmios de jornalismo investigativo, Marina cobre o impacto regulatório, adoção institucional e as intersecções entre a economia global e o Bitcoin.
               </p>
             </div>
             {/* Thiago Silva */}
@@ -87,9 +87,9 @@ export function About() {
                 <img src="https://picsum.photos/seed/thiago/200/200" alt="Thiago Silva" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl font-bold text-white mb-1">Thiago Silva</h3>
-              <p className="text-emerald-400 text-sm font-medium mb-4">Especialista em Tecnologia</p>
+              <p className="text-emerald-400 text-sm font-medium mb-4">Especialista em Blockchain e Web3</p>
               <p className="text-zinc-400 text-sm leading-relaxed">
-                Desenvolvedor Blockchain focado em dissecar whitepapers e traduzir a complexidade dos contratos inteligentes e protocolos DeFi.
+                Desenvolvedor e pesquisador de contratos inteligentes, Thiago traduz as inovações tecnológicas de redes como Ethereum e Solana para uma linguagem acessível a todos.
               </p>
             </div>
           </div>

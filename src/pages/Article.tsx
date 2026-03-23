@@ -69,7 +69,11 @@ export function Article() {
             </div>
             <div>
               <p className="text-white font-bold">{article.author}</p>
-              <p className="text-zinc-500 text-sm">{new Date(article.date).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+              <p className="text-zinc-500 text-sm">
+                Publicado em {new Date(article.date).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}
+                <span className="mx-2">•</span>
+                Atualizado há 2 horas
+              </p>
             </div>
           </div>
           
@@ -120,14 +124,14 @@ export function Article() {
             <div className="text-center sm:text-left flex-1">
               <h3 className="text-xl font-bold text-white mb-1">{article.author}</h3>
               <p className="text-emerald-400 text-sm font-medium mb-3">
-                {article.author.includes('Mendes') ? 'Analista de Criptoativos' : article.author.includes('Costa') ? 'Jornalista Econômica' : 'Especialista em Blockchain'}
+                {article.author.includes('Mendes') ? 'Analista Chefe de Mercado' : article.author.includes('Costa') ? 'Jornalista Econômica Sênior' : 'Especialista em Blockchain e Web3'}
               </p>
               <p className="text-zinc-400 text-sm leading-relaxed mb-4">
                 {article.author.includes('Mendes') 
-                  ? 'Especialista em dados on-chain e tendências macroeconômicas. Ajuda investidores a decifrarem os ciclos do Bitcoin com base em dados reais e institucionais.' 
+                  ? 'Especialista em análise técnica e macroeconomia cripto. Ajuda investidores a lerem os gráficos e entenderem os ciclos de mercado desde 2018.' 
                   : article.author.includes('Costa') 
-                  ? 'Cobre o impacto das políticas monetárias globais, regulação de criptomoedas e a entrada de capital institucional e ETFs no mercado digital.' 
-                  : 'Desenvolvedor Web3 focado em dissecar whitepapers e traduzir a complexidade dos contratos inteligentes e redes de segunda camada para o público geral.'}
+                  ? 'Cobre a adoção institucional e a regulação de ativos digitais. Focada em trazer a verdade por trás das manchetes do mercado financeiro.' 
+                  : 'Pesquisador de finanças descentralizadas (DeFi) e contratos inteligentes. Descomplica a tecnologia por trás das maiores inovações do setor.'}
               </p>
               <div className="flex items-center justify-center sm:justify-start gap-3">
                 <a href="#" className="text-zinc-500 hover:text-emerald-400 transition-colors"><Twitter className="w-4 h-4" /></a>

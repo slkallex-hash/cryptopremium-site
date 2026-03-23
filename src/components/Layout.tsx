@@ -1,5 +1,5 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
-import { Menu, X, Bell, Search, TrendingUp, ChevronRight, Mail, Globe } from "lucide-react";
+import { Menu, X, Bell, Search, TrendingUp, ChevronRight, Mail, Globe, Shield, Twitter, Linkedin, Youtube } from "lucide-react";
 import { useState, useEffect } from "react";
 import { CryptoTicker } from "./CryptoTicker";
 import { AdSlot } from "./AdSlot";
@@ -56,7 +56,10 @@ export function Layout() {
 
             {/* Desktop Nav */}
             <nav className="hidden md:flex space-x-1">
-              {categories.filter(c => c.id !== 'noticias-urgentes').slice(0, 6).map((category) => (
+              <Link to="/sobre" className="px-4 py-2 rounded-full text-sm font-medium text-zinc-400 hover:text-white hover:bg-zinc-900/80 transition-all">
+                Sobre Nós
+              </Link>
+              {categories.filter(c => c.id !== 'noticias-urgentes').slice(0, 5).map((category) => (
                 <Link
                   key={category.id}
                   to={`/category/${category.slug}`}
@@ -152,11 +155,11 @@ export function Layout() {
             </div>
             
             <div className="col-span-1 md:col-span-2">
-              <h3 className="text-white font-display font-bold mb-6 tracking-wide">Empresa</h3>
+              <h3 className="text-white font-display font-bold mb-6 tracking-wide">Institucional</h3>
               <ul className="space-y-4">
                 <li><Link to="/sobre" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Sobre Nós</Link></li>
-                <li><Link to="/sobre" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Expediente</Link></li>
-                <li><Link to="/contato" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Anuncie</Link></li>
+                <li><Link to="/sobre" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Nossa Equipe</Link></li>
+                <li><Link to="/contato" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Trabalhe Conosco</Link></li>
                 <li><Link to="/contato" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Contato</Link></li>
               </ul>
             </div>
@@ -172,10 +175,22 @@ export function Layout() {
             </div>
           </div>
           
-          <div className="border-t border-zinc-900 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-zinc-500 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} CryptoPremium. Todos os direitos reservados.
-            </p>
+          <div className="border-t border-zinc-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div className="flex flex-col items-center md:items-start gap-4">
+              <p className="text-zinc-500 text-sm">
+                &copy; {new Date().getFullYear()} CryptoPremium. Todos os direitos reservados.
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="flex items-center gap-1 text-xs text-zinc-500 bg-zinc-900/50 px-3 py-1.5 rounded-full border border-zinc-800">
+                  <Shield className="w-3.5 h-3.5 text-emerald-500" /> Site Seguro - SSL
+                </div>
+                <div className="flex items-center gap-2">
+                  <a href="#" className="w-8 h-8 rounded-full bg-zinc-900 flex items-center justify-center text-zinc-400 hover:text-white hover:bg-[#1DA1F2] transition-colors"><Twitter className="w-4 h-4" /></a>
+                  <a href="#" className="w-8 h-8 rounded-full bg-zinc-900 flex items-center justify-center text-zinc-400 hover:text-white hover:bg-[#0077B5] transition-colors"><Linkedin className="w-4 h-4" /></a>
+                  <a href="#" className="w-8 h-8 rounded-full bg-zinc-900 flex items-center justify-center text-zinc-400 hover:text-white hover:bg-[#FF0000] transition-colors"><Youtube className="w-4 h-4" /></a>
+                </div>
+              </div>
+            </div>
             <div className="text-zinc-600 text-[11px] text-center md:text-right max-w-2xl leading-relaxed">
               <p className="font-bold text-zinc-500 mb-1">⚠️ Aviso de Risco e Isenção de Responsabilidade</p>
               <p>O conteúdo publicado no CryptoPremium possui caráter estritamente jornalístico, informativo e educacional. Nenhuma publicação deste site deve ser interpretada como aconselhamento financeiro, indicação de investimento ou recomendação de compra e venda de ativos digitais. O mercado de criptomoedas é altamente volátil e investimentos podem resultar em perda parcial ou total do capital. Recomendamos que você realize sua própria pesquisa (DYOR) e consulte um profissional financeiro certificado antes de tomar qualquer decisão. O CryptoPremium não se responsabiliza por perdas ou lucros cessantes decorrentes da utilização das informações aqui contidas.</p>

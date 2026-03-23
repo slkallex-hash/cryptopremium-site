@@ -160,9 +160,10 @@ export function Home() {
                 12:45
               </div>
             </div>
-            <h3 className="text-lg font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2">
-              O Efeito dos ETFs de Ethereum no Bolso do Investidor
+            <h3 className="text-lg font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2 mb-1">
+              Como declarar imposto de cripto 2026
             </h3>
+            <p className="text-sm text-zinc-400 line-clamp-2">Evite multas da Receita Federal. Aprenda o passo a passo atualizado para declarar suas moedas, NFTs e rendimentos em DeFi neste ano.</p>
           </a>
 
           {/* Video 2 */}
@@ -178,9 +179,10 @@ export function Home() {
                 08:20
               </div>
             </div>
-            <h3 className="text-lg font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2">
-              Como declarar Bitcoin no Imposto de Renda (Regra dos 35k)
+            <h3 className="text-lg font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2 mb-1">
+              Bitcoin rompe resistência: o que esperar?
             </h3>
+            <p className="text-sm text-zinc-400 line-clamp-2">O BTC acaba de cruzar uma zona crítica de preço. Nosso analista Carlos Mendes projeta os próximos alvos e os riscos de correção.</p>
           </a>
 
           {/* Video 3 */}
@@ -196,9 +198,10 @@ export function Home() {
                 15:10
               </div>
             </div>
-            <h3 className="text-lg font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2">
-              O Fluxo do Staking: Renda Passiva Explicada Passo a Passo
+            <h3 className="text-lg font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2 mb-1">
+              Staking para iniciantes: passo a passo
             </h3>
+            <p className="text-sm text-zinc-400 line-clamp-2">Descubra como gerar renda passiva com suas criptomoedas de forma segura. Um guia prático sobre como fazer staking nas principais redes.</p>
           </a>
         </div>
       </section>
