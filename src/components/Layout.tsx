@@ -4,9 +4,11 @@ import { useState, useEffect } from "react";
 import { CryptoTicker } from "./CryptoTicker";
 import { AdSlot } from "./AdSlot";
 import { categories } from "@/data/articles";
+import { SearchModal } from "./SearchModal";
 
 export function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -17,19 +19,8 @@ export function Layout() {
 
   return (
     <div className="min-h-screen bg-[#09090b] text-zinc-100 font-sans selection:bg-emerald-500/30 selection:text-emerald-200">
-      {/* Top Bar (Date & Global Market Status) */}
-      <div className="hidden md:flex items-center justify-between px-4 py-1.5 bg-black text-[11px] text-zinc-400 font-medium uppercase tracking-wider border-b border-zinc-900">
-        <div className="flex items-center space-x-4">
-          <span className="flex items-center"><Globe className="w-3 h-3 mr-1.5" /> Mercado Global: <span className="text-emerald-400 ml-1">Aberto</span></span>
-          <span className="w-1 h-1 rounded-full bg-zinc-800"></span>
-          <span>{today}</span>
-        </div>
-        <div className="flex items-center space-x-4">
-          <Link to="#" className="hover:text-emerald-400 transition-colors">Newsletter</Link>
-          <Link to="/contato" className="hover:text-emerald-400 transition-colors">Contato</Link>
-          <Link to="/contato" className="hover:text-emerald-400 transition-colors">Anuncie</Link>
-        </div>
-      </div>
+      {/* Search Modal */}
+      <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
 
       <CryptoTicker />
       
@@ -71,10 +62,10 @@ export function Layout() {
             </nav>
 
             <div className="flex items-center space-x-2">
-              <button onClick={() => alert('A busca será ativada em breve!')} className="p-2.5 rounded-full text-zinc-400 hover:text-white hover:bg-zinc-900 transition-colors">
+              <button onClick={() => setIsSearchOpen(true)} className="p-2.5 rounded-full text-zinc-400 hover:text-white hover:bg-zinc-900 transition-colors">
                 <Search className="w-5 h-5" />
               </button>
-              <button onClick={() => alert('Você não tem novas notificações.')} className="p-2.5 rounded-full text-zinc-400 hover:text-white hover:bg-zinc-900 transition-colors relative">
+              <button className="p-2.5 rounded-full text-zinc-400 hover:text-white hover:bg-zinc-900 transition-colors relative">
                 <Bell className="w-5 h-5" />
                 <span className="absolute top-2 right-2.5 w-2 h-2 bg-emerald-500 rounded-full border-2 border-[#09090b]"></span>
               </button>
@@ -128,16 +119,17 @@ export function Layout() {
                   <Mail className="w-4 h-4 mr-2 text-emerald-400" /> Assine nossa Newsletter
                 </label>
                 <p className="text-xs text-zinc-500 mb-1">Receba o fechamento do mercado diariamente.</p>
-                <div className="flex mt-2">
+                <form className="flex mt-2" onSubmit={(e) => { e.preventDefault(); alert('Inscrição realizada com sucesso!'); }}>
                   <input 
                     type="email" 
+                    required
                     placeholder="Seu e-mail profissional" 
                     className="bg-black border border-zinc-800 text-zinc-100 px-4 py-2.5 rounded-l-lg focus:outline-none focus:border-emerald-500/50 w-full text-sm transition-colors"
                   />
-                  <button className="bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold px-5 py-2.5 rounded-r-lg transition-colors text-sm">
+                  <button type="submit" className="bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold px-5 py-2.5 rounded-r-lg transition-colors text-sm">
                     Assinar
                   </button>
-                </div>
+                </form>
               </div>
             </div>
             
@@ -158,19 +150,16 @@ export function Layout() {
               <h3 className="text-white font-display font-bold mb-6 tracking-wide">Institucional</h3>
               <ul className="space-y-4">
                 <li><Link to="/sobre" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Sobre Nós</Link></li>
-                <li><Link to="/sobre" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Nossa Equipe</Link></li>
-                <li><Link to="/contato" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Trabalhe Conosco</Link></li>
                 <li><Link to="/contato" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Contato</Link></li>
+                <li><Link to="/contato" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Anuncie</Link></li>
               </ul>
             </div>
 
             <div className="col-span-1 md:col-span-2">
               <h3 className="text-white font-display font-bold mb-6 tracking-wide">Legal</h3>
               <ul className="space-y-4">
-                <li><Link to="/termos" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Termos de Uso</Link></li>
-                <li><Link to="/privacidade" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Privacidade</Link></li>
-                <li><Link to="/termos" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Aviso de Risco</Link></li>
-                <li><Link to="/privacidade" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Cookies</Link></li>
+                <li><Link to="/termos" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Termos e Riscos</Link></li>
+                <li><Link to="/privacidade" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Privacidade e Cookies</Link></li>
               </ul>
             </div>
           </div>
@@ -192,8 +181,12 @@ export function Layout() {
               </div>
             </div>
             <div className="text-zinc-600 text-[11px] text-center md:text-right max-w-2xl leading-relaxed">
-              <p className="font-bold text-zinc-500 mb-1">⚠️ Aviso de Risco e Isenção de Responsabilidade</p>
-              <p>O conteúdo publicado no CryptoPremium possui caráter estritamente jornalístico, informativo e educacional. Nenhuma publicação deste site deve ser interpretada como aconselhamento financeiro, indicação de investimento ou recomendação de compra e venda de ativos digitais. O mercado de criptomoedas é altamente volátil e investimentos podem resultar em perda parcial ou total do capital. Recomendamos que você realize sua própria pesquisa (DYOR) e consulte um profissional financeiro certificado antes de tomar qualquer decisão. O CryptoPremium não se responsabiliza por perdas ou lucros cessantes decorrentes da utilização das informações aqui contidas.</p>
+              <div className="bg-zinc-900/30 border border-zinc-800/50 p-4 rounded-xl text-left md:text-right">
+                <p className="font-bold text-zinc-400 mb-2 flex items-center md:justify-end">
+                  <Shield className="w-4 h-4 mr-2 text-emerald-500" /> Aviso de Risco e Isenção de Responsabilidade
+                </p>
+                <p className="text-zinc-500">O conteúdo publicado no CryptoPremium possui caráter estritamente jornalístico, informativo e educacional. Nenhuma publicação deste site deve ser interpretada como aconselhamento financeiro, indicação de investimento ou recomendação de compra e venda de ativos digitais. O mercado de criptomoedas é altamente volátil e investimentos podem resultar em perda parcial ou total do capital. Recomendamos que você realize sua própria pesquisa (DYOR) e consulte um profissional financeiro certificado antes de tomar qualquer decisão.</p>
+              </div>
             </div>
           </div>
         </div>

@@ -1,12 +1,14 @@
 import { useParams, Link } from "react-router-dom";
 import { articles, categories } from "@/data/articles";
+import { authors } from "@/data/authors";
 import { AdSlot } from "@/components/AdSlot";
-import { Clock, Share2, Twitter, Facebook, Link as LinkIcon, ChevronRight, User, Linkedin, Github, Mail } from "lucide-react";
+import { Clock, Share2, Twitter, Facebook, Link as LinkIcon, ChevronRight, User, Linkedin, Instagram, Mail } from "lucide-react";
 import { useEffect } from "react";
 
 export function Article() {
   const { slug } = useParams<{ slug: string }>();
   const article = articles.find(a => a.slug === slug);
+  const author = authors.find(a => a.name === article?.author);
 
   // Scroll to top on mount
   useEffect(() => {
@@ -31,6 +33,32 @@ export function Article() {
 
   return (
     <article className="max-w-4xl mx-auto">
+      {/* JSON-LD Structured Data */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          "headline": article.title,
+          "description": article.excerpt,
+          "image": [article.imageUrl],
+          "datePublished": article.date,
+          "dateModified": new Date().toISOString(),
+          "author": [{
+            "@type": "Person",
+            "name": article.author,
+            "url": author ? `${window.location.origin}/author/${author.id}` : window.location.origin
+          }],
+          "publisher": {
+            "@type": "Organization",
+            "name": "CryptoPremium",
+            "logo": {
+              "@type": "ImageObject",
+              "url": `${window.location.origin}/logo.png`
+            }
+          }
+        })}
+      </script>
+
       {/* Top Banner Ad */}
       <AdSlot id="article-top-banner" type="banner" className="mb-8 rounded-xl" />
 
@@ -64,11 +92,22 @@ export function Article() {
 
         <div className="flex flex-col md:flex-row md:items-center justify-between py-6 border-y border-zinc-800/50 gap-4">
           <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 rounded-full bg-zinc-900 flex items-center justify-center border border-zinc-800">
-              <User className="w-5 h-5 text-zinc-500" />
-            </div>
+            <Link to={author ? `/author/${author.id}` : "#"} className="w-12 h-12 rounded-full bg-zinc-900 overflow-hidden border border-zinc-800 hover:border-emerald-500 transition-colors">
+              {author ? (
+                <img src={author.imageUrl} alt={author.name} className="w-full h-full object-cover" />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center">
+                  <User className="w-5 h-5 text-zinc-500" />
+                </div>
+              )}
+            </Link>
             <div>
-              <p className="text-white font-bold">{article.author}</p>
+              <div className="flex items-center gap-1.5">
+                <Link to={author ? `/author/${author.id}` : "#"} className="text-white font-bold hover:text-emerald-400 transition-colors">{article.author}</Link>
+                <div className="flex items-center bg-emerald-500/10 text-emerald-400 px-1.5 py-0.5 rounded text-[9px] font-black uppercase tracking-tighter border border-emerald-500/20">
+                  Verificado
+                </div>
+              </div>
               <p className="text-zinc-500 text-sm">
                 Publicado em {new Date(article.date).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}
                 <span className="mx-2">•</span>
@@ -117,30 +156,45 @@ export function Article() {
           <AdSlot id="article-middle-banner" type="banner" className="my-12 rounded-xl" />
 
           {/* Author Bio */}
-          <div className="mt-12 p-6 bg-zinc-900/50 border border-zinc-800/50 rounded-2xl flex flex-col sm:flex-row items-center sm:items-start gap-6">
-            <div className="w-20 h-20 shrink-0 rounded-full bg-zinc-800 overflow-hidden border-2 border-emerald-500/20">
-              <img src={`https://picsum.photos/seed/${article.author.replace(/\s+/g, '').toLowerCase()}/200/200`} alt={article.author} className="w-full h-full object-cover" />
-            </div>
-            <div className="text-center sm:text-left flex-1">
-              <h3 className="text-xl font-bold text-white mb-1">{article.author}</h3>
-              <p className="text-emerald-400 text-sm font-medium mb-3">
-                {article.author.includes('Mendes') ? 'Analista Chefe de Mercado' : article.author.includes('Costa') ? 'Jornalista Econômica Sênior' : 'Especialista em Blockchain e Web3'}
-              </p>
-              <p className="text-zinc-400 text-sm leading-relaxed mb-4">
-                {article.author.includes('Mendes') 
-                  ? 'Especialista em análise técnica e macroeconomia cripto. Ajuda investidores a lerem os gráficos e entenderem os ciclos de mercado desde 2018.' 
-                  : article.author.includes('Costa') 
-                  ? 'Cobre a adoção institucional e a regulação de ativos digitais. Focada em trazer a verdade por trás das manchetes do mercado financeiro.' 
-                  : 'Pesquisador de finanças descentralizadas (DeFi) e contratos inteligentes. Descomplica a tecnologia por trás das maiores inovações do setor.'}
-              </p>
-              <div className="flex items-center justify-center sm:justify-start gap-3">
-                <a href="#" className="text-zinc-500 hover:text-emerald-400 transition-colors"><Twitter className="w-4 h-4" /></a>
-                <a href="#" className="text-zinc-500 hover:text-[#0077b5] transition-colors"><Linkedin className="w-4 h-4" /></a>
-                <a href="#" className="text-zinc-500 hover:text-white transition-colors"><Github className="w-4 h-4" /></a>
-                <a href="#" className="text-zinc-500 hover:text-emerald-400 transition-colors"><Mail className="w-4 h-4" /></a>
+          {author && (
+            <div className="mt-12 p-8 bg-zinc-900/40 border border-zinc-800/50 rounded-3xl flex flex-col sm:flex-row items-center sm:items-start gap-8 relative overflow-hidden group">
+              <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                <User className="w-24 h-24 text-emerald-500" />
+              </div>
+              <Link to={`/author/${author.id}`} className="w-24 h-24 shrink-0 rounded-2xl bg-zinc-800 overflow-hidden border-2 border-emerald-500/20 hover:border-emerald-500 transition-all shadow-xl">
+                <img src={author.imageUrl} alt={author.name} className="w-full h-full object-cover" />
+              </Link>
+              <div className="text-center sm:text-left flex-1 relative z-10">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
+                  <Link to={`/author/${author.id}`} className="text-2xl font-bold text-white hover:text-emerald-400 transition-colors">{author.name}</Link>
+                  <span className="inline-flex items-center bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-widest border border-emerald-500/20 w-fit mx-auto sm:mx-0">
+                    Autor Verificado
+                  </span>
+                </div>
+                <p className="text-emerald-400 text-xs font-black uppercase tracking-[0.2em] mb-4">
+                  {author.role}
+                </p>
+                <p className="text-zinc-400 text-base leading-relaxed mb-6 italic">
+                  "{author.bio}"
+                </p>
+                <div className="flex items-center justify-center sm:justify-start gap-6">
+                  {author.social.twitter && (
+                    <a href={author.social.twitter} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors flex items-center gap-2 text-xs font-bold uppercase tracking-widest">
+                      <Twitter className="w-4 h-4" /> Twitter
+                    </a>
+                  )}
+                  {author.social.linkedin && (
+                    <a href={author.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors flex items-center gap-2 text-xs font-bold uppercase tracking-widest">
+                      <Linkedin className="w-4 h-4" /> LinkedIn
+                    </a>
+                  )}
+                  <Link to={`/author/${author.id}`} className="ml-auto text-emerald-400 text-xs font-black uppercase tracking-widest hover:text-white transition-colors flex items-center gap-1">
+                    Perfil Completo <ChevronRight className="w-3 h-3" />
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
+          )}
 
           {/* Risk Disclaimer (for specific categories) */}
           {['investimentos', 'renda-online', 'altcoins'].includes(article.category) && (

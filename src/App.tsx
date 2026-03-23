@@ -12,6 +12,7 @@ import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 import { TermsOfUse } from "./pages/TermsOfUse";
+import { AuthorPage } from "./pages/AuthorPage";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="article/:slug" element={<Article />} />
           <Route path="category/:slug" element={<Category />} />
+          <Route path="author/:authorId" element={<AuthorPage />} />
           <Route path="sobre" element={<About />} />
           <Route path="contato" element={<Contact />} />
           <Route path="privacidade" element={<PrivacyPolicy />} />
