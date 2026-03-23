@@ -13,7 +13,12 @@ export function Home() {
   const featuredArticle = articles[0];
   const highlightArticles = articles.slice(1, 3);
   const recentArticles = articles.slice(3, 9);
-  const educationalArticles = articles.filter(a => a.category === 'investimentos').slice(0, 3);
+  const educationalSlugs = [
+    'o-que-e-carteira-fria-cold-wallet',
+    'como-analisar-whitepaper-criptomoedas',
+    'entendendo-taxas-gas-ethereum-redes'
+  ];
+  const educationalArticles = articles.filter(a => educationalSlugs.includes(a.slug));
 
   return (
     <div className="space-y-12">
@@ -141,16 +146,16 @@ export function Home() {
             </h2>
             <p className="text-zinc-400 text-lg">Assista às nossas análises de mercado, tutoriais práticos e resumos semanais em vídeo.</p>
           </div>
-          <a href="#" className="inline-flex items-center text-emerald-400 font-bold hover:text-emerald-300 transition-colors">
+          <Link to="/category/investimentos" className="inline-flex items-center text-emerald-400 font-bold hover:text-emerald-300 transition-colors">
             Ver todos os vídeos <ChevronRight className="w-5 h-5 ml-1" />
-          </a>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Video 1 */}
-          <a href="#" className="group block">
+          <Link to="/article/o-que-e-carteira-fria-cold-wallet" className="group block">
             <div className="relative rounded-2xl overflow-hidden mb-4 aspect-video bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500/50 transition-colors">
-              <img src="https://picsum.photos/seed/crypto1/600/338" alt="Video thumbnail" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
+              <img src="https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=800" alt="Video thumbnail" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-14 h-14 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center border border-white/20 group-hover:scale-110 group-hover:bg-emerald-500 transition-all">
                   <div className="w-0 h-0 border-y-8 border-y-transparent border-l-[14px] border-l-white ml-1"></div>
@@ -161,15 +166,15 @@ export function Home() {
               </div>
             </div>
             <h3 className="text-lg font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2 mb-1">
-              Como declarar imposto de cripto 2026
+              O que é Carteira Fria (Cold Wallet) e por que você precisa de uma
             </h3>
-            <p className="text-sm text-zinc-400 line-clamp-2">Evite multas da Receita Federal. Aprenda o passo a passo atualizado para declarar suas moedas, NFTs e rendimentos em DeFi neste ano.</p>
-          </a>
+            <p className="text-sm text-zinc-400 line-clamp-2">Aprenda a proteger seus ativos digitais de hackers e falências de corretoras. Um guia completo sobre hardware wallets.</p>
+          </Link>
 
           {/* Video 2 */}
-          <a href="#" className="group block">
+          <Link to="/article/como-analisar-whitepaper-criptomoedas" className="group block">
             <div className="relative rounded-2xl overflow-hidden mb-4 aspect-video bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500/50 transition-colors">
-              <img src="https://picsum.photos/seed/crypto2/600/338" alt="Video thumbnail" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="Video thumbnail" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-14 h-14 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center border border-white/20 group-hover:scale-110 group-hover:bg-emerald-500 transition-all">
                   <div className="w-0 h-0 border-y-8 border-y-transparent border-l-[14px] border-l-white ml-1"></div>
@@ -180,15 +185,15 @@ export function Home() {
               </div>
             </div>
             <h3 className="text-lg font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2 mb-1">
-              Bitcoin rompe resistência: o que esperar?
+              Como analisar o Whitepaper de um projeto cripto antes de investir
             </h3>
-            <p className="text-sm text-zinc-400 line-clamp-2">O BTC acaba de cruzar uma zona crítica de preço. Nosso analista Carlos Mendes projeta os próximos alvos e os riscos de correção.</p>
-          </a>
+            <p className="text-sm text-zinc-400 line-clamp-2">Não invista no escuro. Descubra como ler e interpretar o documento fundamental de qualquer criptomoeda para separar projetos reais de golpes.</p>
+          </Link>
 
           {/* Video 3 */}
-          <a href="#" className="group block">
+          <Link to="/article/entendendo-taxas-gas-ethereum-redes" className="group block">
             <div className="relative rounded-2xl overflow-hidden mb-4 aspect-video bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500/50 transition-colors">
-              <img src="https://picsum.photos/seed/crypto3/600/338" alt="Video thumbnail" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
+              <img src="https://images.unsplash.com/photo-1639762681485-074b7f4ec651?auto=format&fit=crop&q=80&w=800" alt="Video thumbnail" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-14 h-14 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center border border-white/20 group-hover:scale-110 group-hover:bg-emerald-500 transition-all">
                   <div className="w-0 h-0 border-y-8 border-y-transparent border-l-[14px] border-l-white ml-1"></div>
@@ -199,10 +204,10 @@ export function Home() {
               </div>
             </div>
             <h3 className="text-lg font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2 mb-1">
-              Staking para iniciantes: passo a passo
+              Entendendo as Taxas de Gas: Como não perder dinheiro em transações
             </h3>
-            <p className="text-sm text-zinc-400 line-clamp-2">Descubra como gerar renda passiva com suas criptomoedas de forma segura. Um guia prático sobre como fazer staking nas principais redes.</p>
-          </a>
+            <p className="text-sm text-zinc-400 line-clamp-2">Desmistificando o custo das transações em blockchain. Aprenda como o Gas funciona, por que ele varia e estratégias para economizar.</p>
+          </Link>
         </div>
       </section>
 

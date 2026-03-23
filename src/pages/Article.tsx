@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { articles, categories } from "@/data/articles";
 import { AdSlot } from "@/components/AdSlot";
-import { Clock, Share2, Twitter, Facebook, Link as LinkIcon, ChevronRight, User } from "lucide-react";
+import { Clock, Share2, Twitter, Facebook, Link as LinkIcon, ChevronRight, User, Linkedin, Github, Mail } from "lucide-react";
 import { useEffect } from "react";
 
 export function Article() {
@@ -135,7 +135,9 @@ export function Article() {
               </p>
               <div className="flex items-center justify-center sm:justify-start gap-3">
                 <a href="#" className="text-zinc-500 hover:text-emerald-400 transition-colors"><Twitter className="w-4 h-4" /></a>
-                <a href="#" className="text-zinc-500 hover:text-emerald-400 transition-colors"><LinkIcon className="w-4 h-4" /></a>
+                <a href="#" className="text-zinc-500 hover:text-[#0077b5] transition-colors"><Linkedin className="w-4 h-4" /></a>
+                <a href="#" className="text-zinc-500 hover:text-white transition-colors"><Github className="w-4 h-4" /></a>
+                <a href="#" className="text-zinc-500 hover:text-emerald-400 transition-colors"><Mail className="w-4 h-4" /></a>
               </div>
             </div>
           </div>

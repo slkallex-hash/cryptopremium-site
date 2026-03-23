@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import { FileText } from "lucide-react";
 
 export function TermsOfUse() {
+  useEffect(() => {
+    document.title = "Termos de Uso | CryptoPremium";
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">

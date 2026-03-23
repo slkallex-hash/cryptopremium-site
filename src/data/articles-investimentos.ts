@@ -1016,5 +1016,262 @@ export const investimentosArticles: Article[] = [
     author: "Marina Costa – Gestora de Portfólio",
     date: new Date(Date.now() - 777600000).toISOString(),
     readTime: "5 min",
+  },
+  {
+    id: "inv-11",
+    slug: "o-que-e-carteira-fria-cold-wallet",
+    title: "O que é Carteira Fria (Cold Wallet) e por que você precisa de uma",
+    excerpt: "Entenda a diferença entre Hot e Cold Wallets e aprenda como proteger definitivamente suas criptomoedas contra hackers e falências de corretoras.",
+    content: `
+      <div class="mb-8 p-4 bg-zinc-900/50 border border-zinc-800 rounded-xl flex items-center justify-between text-sm text-zinc-400">
+        <span class="flex items-center font-medium text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2 shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span> 
+          Guia Educacional
+        </span>
+        <span class="font-mono text-xs">Leitura: 6 min</span>
+      </div>
+
+      <p class="text-lg text-zinc-300 mb-6 leading-relaxed font-medium">"Not your keys, not your coins" (Não são suas chaves, não são suas moedas). Este é o mantra mais antigo e importante do mercado de criptomoedas. Se você deixa seus ativos em uma exchange (corretora), você não possui criptomoedas; você possui uma promessa de que a corretora lhe entregará as criptomoedas quando você pedir.</p>
+
+      <p>A falência da FTX em 2022 foi um lembrete brutal dessa realidade, custando bilhões aos investidores que confiavam na plataforma. A única forma de ter posse verdadeira e segurança absoluta sobre seus ativos digitais é através da autocustódia, e a ferramenta definitiva para isso é a Carteira Fria (Cold Wallet).</p>
+
+      <h2>Hot Wallets vs. Cold Wallets: A Diferença Fundamental</h2>
+      
+      <p>Para entender a importância de uma Cold Wallet, precisamos primeiro entender sua contraparte:</p>
+      
+      <ul class="list-none space-y-4 text-zinc-300 mb-8">
+        <li class="bg-zinc-900/30 p-4 rounded-xl border border-zinc-800/50">
+          <strong class="text-emerald-400 block mb-1">Hot Wallets (Carteiras Quentes):</strong> São aplicativos ou extensões de navegador (como MetaMask, Trust Wallet, Phantom) que estão <strong>constantemente conectadas à internet</strong>. Elas são excelentes para interagir com aplicativos descentralizados (dApps), comprar NFTs e fazer trades rápidos. O problema? Como estão online, são vulneráveis a malwares, phishing e ataques hackers.
+        </li>
+        <li class="bg-zinc-900/30 p-4 rounded-xl border border-zinc-800/50">
+          <strong class="text-emerald-400 block mb-1">Cold Wallets (Carteiras Frias):</strong> São dispositivos físicos (hardware wallets), semelhantes a um pendrive (como Ledger, Trezor, Keystone), que mantêm suas chaves privadas <strong>totalmente offline</strong>. Elas nunca se conectam diretamente à internet. Mesmo que o seu computador esteja infectado com o pior vírus do mundo, o hacker não consegue roubar suas criptomoedas, pois a transação precisa ser aprovada fisicamente (apertando um botão) no próprio dispositivo.
+        </li>
+      </ul>
+
+      <!-- PAUSA PARA ANÚNCIO 1 -->
+      <div class="my-10 border-y border-dashed border-zinc-800 py-6 flex flex-col items-center justify-center bg-zinc-900/20 rounded-xl">
+        <span class="text-[10px] text-zinc-600 uppercase tracking-[0.2em] font-bold mb-1">Advertisement</span>
+        <span class="text-sm text-zinc-500">Espaço reservado para parceiros</span>
+      </div>
+
+      <h2>Como funciona uma Cold Wallet na prática?</h2>
+      <p>Muitos iniciantes acham que as criptomoedas ficam "dentro" do dispositivo físico, como arquivos em um pendrive. Isso é um mito. As criptomoedas vivem exclusivamente na Blockchain.</p>
+      
+      <p>O que a Cold Wallet guarda é a sua <strong>Chave Privada</strong> (a senha mestre que prova que você é o dono daqueles fundos na blockchain). Quando você quer enviar Bitcoin para alguém, o processo ocorre da seguinte forma:</p>
+      
+      <ol class="list-decimal pl-6 space-y-2 text-zinc-300 mb-8">
+        <li>Você cria a transação no aplicativo do computador ou celular.</li>
+        <li>O aplicativo envia a transação "não assinada" para a Cold Wallet conectada (via cabo USB ou Bluetooth).</li>
+        <li>A Cold Wallet exibe os detalhes da transação na sua telinha física.</li>
+        <li>Você verifica se o endereço de destino está correto e aperta o botão físico no dispositivo para "assinar" (aprovar) a transação usando a chave privada que está isolada lá dentro.</li>
+        <li>A transação assinada retorna ao computador e é enviada para a blockchain.</li>
+      </ol>
+      
+      <p>A chave privada nunca sai do dispositivo. Ela nunca toca o seu computador ou a internet.</p>
+
+      <h2>A Seed Phrase (Frase Semente): O Seu Verdadeiro Backup</h2>
+      <p>O que acontece se você perder a sua Cold Wallet, se ela quebrar ou for roubada? Você perde tudo? <strong>Não.</strong></p>
+      
+      <p>Quando você configura uma Cold Wallet pela primeira vez, ela gera uma <strong>Seed Phrase</strong> (geralmente 12 ou 24 palavras em inglês). Esta frase é o backup mestre de todas as suas chaves privadas. Se você perder o dispositivo físico, basta comprar um novo (de qualquer marca), inserir as 24 palavras, e todas as suas criptomoedas estarão lá.</p>
+      
+      <blockquote class="border-l-4 border-red-500 pl-5 my-8 italic text-zinc-300 bg-red-900/10 py-4 pr-4 rounded-r-xl">
+        <strong>Regra de Ouro:</strong> Quem tem as 24 palavras, tem o dinheiro. Nunca digite sua Seed Phrase no computador, no celular, não tire foto, não salve na nuvem. Escreva no papel (ou em placas de metal próprias para isso) e guarde em um cofre ou local extremamente seguro.
+      </blockquote>
+
+      <h2>Quando você deve comprar uma Cold Wallet?</h2>
+      <p>Não existe um valor exato, mas a regra geral do mercado é: <strong>se o valor que você tem em criptomoedas faria você chorar ou perder o sono se fosse roubado, é hora de comprar uma Cold Wallet.</strong></p>
+      <p>Para a maioria das pessoas, quando o portfólio ultrapassa a marca de US$ 1.000 a US$ 2.000, o investimento de US$ 70 a US$ 150 em uma hardware wallet torna-se não apenas justificável, mas obrigatório.</p>
+
+      <!-- PAUSA PARA ANÚNCIO 2 -->
+      <div class="my-10 border-y border-dashed border-zinc-800 py-6 flex flex-col items-center justify-center bg-zinc-900/20 rounded-xl">
+        <span class="text-[10px] text-zinc-600 uppercase tracking-[0.2em] font-bold mb-1">Advertisement</span>
+        <span class="text-sm text-zinc-500">Espaço reservado para parceiros</span>
+      </div>
+
+      <hr class="border-zinc-800/50 my-12" />
+
+      <!-- SEÇÕES EXTRAS NÍVEL PORTAL -->
+      <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 mb-8 shadow-lg">
+        <h3 class="text-xl font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-2xl">🛡️</span> Dicas de Segurança</h3>
+        <ul class="list-none space-y-3 text-zinc-300">
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Compre direto da fonte:</strong> NUNCA compre hardware wallets usadas, no Mercado Livre, Amazon ou revendedores não oficiais. Compre sempre no site oficial da fabricante (Ledger, Trezor, etc) para evitar dispositivos adulterados.</li>
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Separação de funções:</strong> Use a Cold Wallet como seu "cofre" (para guardar o grosso do patrimônio a longo prazo) e uma Hot Wallet como sua "carteira de bolso" (com pouco saldo, para interagir com dApps no dia a dia).</li>
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Teste a recuperação:</strong> Após configurar a carteira e anotar as 24 palavras, envie um valor muito pequeno (ex: $5), resete o dispositivo e tente recuperar com as palavras para garantir que você anotou tudo corretamente antes de enviar o resto do seu patrimônio.</li>
+        </ul>
+      </div>
+
+      <div class="bg-red-950/20 border border-red-900/30 rounded-2xl p-6 text-sm">
+        <h4 class="text-red-400 font-bold mb-3 flex items-center text-base">⚠️ Aviso de Risco e Isenção de Responsabilidade</h4>
+        <p class="text-zinc-400 leading-relaxed">As informações contidas neste artigo são de caráter exclusivamente educacional. A autocustódia exige responsabilidade total do usuário. A perda da Seed Phrase resulta na perda irreversível dos fundos, sem possibilidade de recuperação por suporte técnico. O <strong>CryptoPremium</strong> não se responsabiliza por perdas decorrentes de mau uso de carteiras ou anotação incorreta de chaves de recuperação.</p>
+      </div>
+    `,
+    category: "investimentos",
+    imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
+    author: "Thiago Silva – Especialista em Blockchain e Web3",
+    date: new Date(Date.now() - 86400000).toISOString(),
+    readTime: "6 min",
+  },
+  {
+    id: "inv-12",
+    slug: "como-analisar-whitepaper-criptomoedas",
+    title: "Como analisar o Whitepaper de um projeto cripto antes de investir",
+    excerpt: "Não invista no escuro. Aprenda a ler e extrair as informações mais importantes do documento fundador de qualquer criptomoeda para separar projetos reais de golpes.",
+    content: `
+      <div class="mb-8 p-4 bg-zinc-900/50 border border-zinc-800 rounded-xl flex items-center justify-between text-sm text-zinc-400">
+        <span class="flex items-center font-medium text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2 shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span> 
+          Guia Educacional
+        </span>
+        <span class="font-mono text-xs">Leitura: 7 min</span>
+      </div>
+
+      <p class="text-lg text-zinc-300 mb-6 leading-relaxed font-medium">No mercado tradicional, antes de investir em uma empresa, você analisa seus balanços financeiros, relatórios trimestrais e o plano de negócios. No mercado de criptomoedas, o equivalente a tudo isso está condensado em um único documento: o <strong>Whitepaper</strong>.</p>
+
+      <p>O Whitepaper é o documento fundador de um projeto cripto. Ele deve explicar, de forma técnica e comercial, qual problema o projeto resolve, como a tecnologia funciona, quem é a equipe por trás e como a economia do token (tokenomics) está estruturada. Ignorar o whitepaper é o equivalente a comprar um carro usado de olhos vendados.</p>
+
+      <p>Muitos investidores iniciantes evitam os whitepapers por acharem que são complexos demais ou cheios de jargões matemáticos. No entanto, você não precisa ser um criptógrafo para extrair o valor de um whitepaper. Você só precisa saber onde procurar as "Red Flags" (sinais de alerta) e as "Green Flags" (sinais positivos).</p>
+
+      <h2>O Checklist de Leitura: 5 Pontos Críticos</h2>
+      
+      <p>Ao abrir um whitepaper, foque sua atenção nas seguintes seções:</p>
+
+      <h3>1. O Problema e a Solução (A Proposta de Valor)</h3>
+      <p>Logo na introdução, o documento deve responder a duas perguntas simples: <strong>Qual problema real do mundo ou da tecnologia este projeto está tentando resolver? E por que a tecnologia Blockchain é estritamente necessária para essa solução?</strong></p>
+      <p>Se o projeto propõe "um Uber descentralizado" ou "um dentista na blockchain", mas não consegue explicar claramente por que um banco de dados tradicional não faria o mesmo trabalho de forma mais barata e rápida, é um forte sinal de alerta. Projetos sérios resolvem problemas reais de confiança, censura, escalabilidade ou interoperabilidade.</p>
+
+      <h3>2. O Mecanismo de Consenso e a Tecnologia</h3>
+      <p>Como a rede chega a um acordo sobre o que é verdade? É Proof of Work (PoW) como o Bitcoin? Proof of Stake (PoS) como o Ethereum? Ou um mecanismo novo e experimental?</p>
+      <p>Você não precisa entender o código, mas deve buscar clareza. O whitepaper explica como a rede se protege contra ataques (como o ataque de 51%)? Como ela planeja escalar para milhões de usuários sem que as taxas fiquem absurdas? Se a seção técnica for apenas um amontoado de palavras da moda ("Sinergia quântica com IA descentralizada no metaverso") sem explicações lógicas, fuja.</p>
+
+      <!-- PAUSA PARA ANÚNCIO 1 -->
+      <div class="my-10 border-y border-dashed border-zinc-800 py-6 flex flex-col items-center justify-center bg-zinc-900/20 rounded-xl">
+        <span class="text-[10px] text-zinc-600 uppercase tracking-[0.2em] font-bold mb-1">Advertisement</span>
+        <span class="text-sm text-zinc-500">Espaço reservado para parceiros</span>
+      </div>
+
+      <h3>3. Tokenomics (A Economia do Token)</h3>
+      <p>Esta é, indiscutivelmente, a seção mais importante para um investidor. O Tokenomics define a oferta, a demanda e a distribuição da moeda. Procure por:</p>
+      <ul class="list-disc pl-6 space-y-2 text-zinc-300 mb-6">
+        <li><strong>Utilidade (Utility):</strong> Para que serve o token? Ele é usado para pagar taxas na rede? Dá direito a voto (governança)? Ou é apenas uma moeda "meme" sem utilidade real? Se o token não tem uma razão forte para existir dentro do ecossistema, seu preço eventualmente cairá a zero.</li>
+        <li><strong>Oferta Máxima (Max Supply):</strong> Existe um limite de moedas que serão criadas (como os 21 milhões do Bitcoin) ou a emissão é infinita? Se for infinita, qual é a taxa de inflação anual?</li>
+        <li><strong>Distribuição Inicial:</strong> Como as moedas foram divididas? Se a equipe fundadora e os investidores de capital de risco (VCs) detêm 60% ou 70% de todos os tokens, o projeto é altamente centralizado e você corre o risco de ser usado como "liquidez de saída" quando eles decidirem vender (dump). Uma distribuição justa favorece a comunidade.</li>
+        <li><strong>Vesting (Período de Bloqueio):</strong> Os tokens da equipe estão bloqueados por meses ou anos? Isso garante que eles tenham incentivo para continuar trabalhando no projeto a longo prazo.</li>
+      </ul>
+
+      <h3>4. O Roadmap (Cronograma)</h3>
+      <p>O projeto tem um cronograma claro de desenvolvimento? O que eles prometem entregar no próximo trimestre? No próximo ano? Um bom roadmap é realista e focado em entregas tecnológicas, não em "marketing" ou "listagem em grandes corretoras".</p>
+
+      <h3>5. A Equipe (Team)</h3>
+      <p>Quem está construindo isso? O whitepaper deve listar os fundadores e desenvolvedores principais. Pesquise essas pessoas no LinkedIn e no Twitter. Eles têm experiência prévia em criptografia, engenharia de software ou finanças? Eles já estiveram envolvidos em projetos que falharam ou foram acusados de fraude no passado?</p>
+      <p><em>Nota:</em> Projetos anônimos não são necessariamente ruins (o próprio criador do Bitcoin, Satoshi Nakamoto, é anônimo), mas exigem um nível muito maior de auditoria de código e confiança na comunidade de desenvolvedores.</p>
+
+      <!-- PAUSA PARA ANÚNCIO 2 -->
+      <div class="my-10 border-y border-dashed border-zinc-800 py-6 flex flex-col items-center justify-center bg-zinc-900/20 rounded-xl">
+        <span class="text-[10px] text-zinc-600 uppercase tracking-[0.2em] font-bold mb-1">Advertisement</span>
+        <span class="text-sm text-zinc-500">Espaço reservado para parceiros</span>
+      </div>
+
+      <hr class="border-zinc-800/50 my-12" />
+
+      <!-- SEÇÕES EXTRAS NÍVEL PORTAL -->
+      <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 mb-8 shadow-lg">
+        <h3 class="text-xl font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-2xl">🚩</span> Sinais de Alerta (Red Flags)</h3>
+        <ul class="list-none space-y-3 text-zinc-300">
+          <li class="flex items-start"><span class="text-red-500 mr-2 mt-1">❌</span> <strong>Plágio:</strong> Trechos inteiros copiados do whitepaper do Bitcoin ou do Ethereum sem dar crédito.</li>
+          <li class="flex items-start"><span class="text-red-500 mr-2 mt-1">❌</span> <strong>Foco em Preço:</strong> O documento fala mais sobre "retornos garantidos", "lucros" e "ir para a lua" do que sobre tecnologia e resolução de problemas.</li>
+          <li class="flex items-start"><span class="text-red-500 mr-2 mt-1">❌</span> <strong>Falta de Clareza Técnica:</strong> Uso excessivo de jargões de marketing para esconder a ausência de uma arquitetura de software viável.</li>
+          <li class="flex items-start"><span class="text-red-500 mr-2 mt-1">❌</span> <strong>Tokenomics Oculto:</strong> O documento não explica claramente como os tokens serão distribuídos ou qual é a inflação da rede.</li>
+        </ul>
+      </div>
+
+      <div class="bg-red-950/20 border border-red-900/30 rounded-2xl p-6 text-sm">
+        <h4 class="text-red-400 font-bold mb-3 flex items-center text-base">⚠️ Aviso de Risco e Isenção de Responsabilidade</h4>
+        <p class="text-zinc-400 leading-relaxed">As informações contidas neste artigo são de caráter exclusivamente educacional. A leitura de um whitepaper não garante o sucesso de um projeto, pois a execução técnica e a adoção de mercado são fatores imprevisíveis. O <strong>CryptoPremium</strong> não faz recomendações de compra. Realize sua própria pesquisa (DYOR) e nunca invista dinheiro que você não pode perder.</p>
+      </div>
+    `,
+    category: "investimentos",
+    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200",
+    author: "Carlos Mendes – Analista Chefe de Mercado",
+    date: new Date(Date.now() - 172800000).toISOString(),
+    readTime: "7 min",
+  },
+  {
+    id: "inv-13",
+    slug: "entendendo-taxas-gas-ethereum-redes",
+    title: "Entendendo as Taxas de Gas: Como não perder dinheiro em transações",
+    excerpt: "O que é o 'Gas', por que ele fica tão caro às vezes e quais as melhores estratégias para economizar nas taxas de rede ao usar DeFi e NFTs.",
+    content: `
+      <div class="mb-8 p-4 bg-zinc-900/50 border border-zinc-800 rounded-xl flex items-center justify-between text-sm text-zinc-400">
+        <span class="flex items-center font-medium text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2 shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span> 
+          Guia Educacional
+        </span>
+        <span class="font-mono text-xs">Leitura: 5 min</span>
+      </div>
+
+      <p class="text-lg text-zinc-300 mb-6 leading-relaxed font-medium">Um dos maiores choques para quem entra no mundo das Finanças Descentralizadas (DeFi) ou dos NFTs é o momento de confirmar a primeira transação e se deparar com uma "Taxa de Rede" (Network Fee) ou "Gas Fee" que, às vezes, pode ser mais cara que o próprio valor que está sendo transferido. Mas afinal, o que é esse "Gas" e por que ele existe?</p>
+
+      <h2>O que é o Gas? A Gasolina da Blockchain</h2>
+      <p>Imagine a blockchain do Ethereum (ou de outras redes de contratos inteligentes) como um gigantesco computador global descentralizado. Para que esse computador funcione, milhares de validadores ao redor do mundo emprestam seu poder de processamento e energia elétrica para processar transações e executar códigos.</p>
+      
+      <p>O "Gas" é a unidade de medida que calcula o esforço computacional necessário para realizar uma ação nessa rede. Assim como um carro precisa de gasolina para ir do ponto A ao ponto B, uma transação na blockchain precisa de "Gas" para ser processada e registrada permanentemente.</p>
+      
+      <p>Ações simples, como enviar Ethereum para um amigo, exigem pouco Gas. Ações complexas, como interagir com um contrato inteligente de empréstimo em DeFi ou cunhar (mintar) um novo NFT, exigem muito mais poder computacional e, portanto, consomem muito mais Gas.</p>
+
+      <h2>Por que as taxas ficam tão caras? (A Lei da Oferta e Demanda)</h2>
+      <p>O espaço dentro de cada "bloco" da blockchain é limitado. O Ethereum, por exemplo, consegue processar apenas cerca de 15 a 30 transações por segundo na sua camada principal (Layer 1).</p>
+      
+      <p>Quando há um lançamento muito aguardado de uma coleção de NFTs ou uma grande movimentação no mercado que faz todo mundo querer comprar ou vender ao mesmo tempo, a rede fica congestionada. Como o espaço é limitado, os usuários começam a oferecer "gorjetas" maiores aos validadores para que suas transações sejam priorizadas e incluídas no próximo bloco. É um sistema de leilão: quem paga mais taxa, passa na frente. Isso é o que causa os famosos picos de taxas abusivas.</p>
+
+      <!-- PAUSA PARA ANÚNCIO 1 -->
+      <div class="my-10 border-y border-dashed border-zinc-800 py-6 flex flex-col items-center justify-center bg-zinc-900/20 rounded-xl">
+        <span class="text-[10px] text-zinc-600 uppercase tracking-[0.2em] font-bold mb-1">Advertisement</span>
+        <span class="text-sm text-zinc-500">Espaço reservado para parceiros</span>
+      </div>
+
+      <h2>Estratégias para Economizar em Taxas de Gas</h2>
+      
+      <p>Você não precisa ficar refém das altas taxas. Aqui estão as melhores práticas para economizar:</p>
+
+      <h3>1. Escolha o Horário Certo</h3>
+      <p>A rede Ethereum tem horários de pico, geralmente coincidindo com o horário comercial dos Estados Unidos. Finais de semana (especialmente madrugadas de sábado para domingo) costumam ter a rede mais ociosa e, consequentemente, as taxas mais baratas. Use ferramentas como o <strong>Etherscan Gas Tracker</strong> ou extensões de navegador para monitorar o preço do Gas em tempo real (medido em "Gwei") antes de fazer uma transação não urgente.</p>
+
+      <h3>2. Ajuste a Velocidade da Transação</h3>
+      <p>Na sua carteira (como a MetaMask), ao confirmar uma transação, você geralmente tem a opção de escolher a velocidade: Lenta, Média ou Rápida. Se você está apenas transferindo fundos para sua Cold Wallet e não tem pressa, escolha a opção "Lenta" (Low). A transação pode demorar alguns minutos a mais, mas você pagará consideravelmente menos.</p>
+      <p><em>Aviso:</em> Não use a opção lenta para trades em corretoras descentralizadas (DEXs) como a Uniswap, pois a variação de preço durante a demora pode fazer sua transação falhar (slippage), e você perderá a taxa paga mesmo assim.</p>
+
+      <h3>3. Utilize Redes de Segunda Camada (Layer 2)</h3>
+      <p>Esta é a solução definitiva. As redes Layer 2 (L2), como <strong>Arbitrum, Optimism, Base e Polygon</strong>, foram criadas especificamente para resolver o problema das taxas altas do Ethereum. Elas processam milhares de transações fora da rede principal de forma extremamente barata (geralmente custando centavos) e depois agrupam e enviam o resultado final para a segurança da rede Ethereum.</p>
+      <p>Sempre que possível, prefira usar aplicativos DeFi e comprar NFTs que estejam hospedados nessas redes L2 em vez da rede principal (Layer 1).</p>
+
+      <h3>4. Agrupe suas Transações</h3>
+      <p>Se você precisa reivindicar recompensas de staking (claim) e depois reinvesti-las, ou fazer várias aprovações de tokens, tente planejar para fazer isso de uma vez só em momentos de Gas baixo, em vez de fazer pequenas transações diárias que vão corroer seus lucros em taxas.</p>
+
+      <!-- PAUSA PARA ANÚNCIO 2 -->
+      <div class="my-10 border-y border-dashed border-zinc-800 py-6 flex flex-col items-center justify-center bg-zinc-900/20 rounded-xl">
+        <span class="text-[10px] text-zinc-600 uppercase tracking-[0.2em] font-bold mb-1">Advertisement</span>
+        <span class="text-sm text-zinc-500">Espaço reservado para parceiros</span>
+      </div>
+
+      <hr class="border-zinc-800/50 my-12" />
+
+      <!-- SEÇÕES EXTRAS NÍVEL PORTAL -->
+      <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 mb-8 shadow-lg">
+        <h3 class="text-xl font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-2xl">💡</span> O que é Gwei?</h3>
+        <p class="text-zinc-300 leading-relaxed">
+          Você verá muito a palavra "Gwei" ao olhar rastreadores de taxas. Gwei é simplesmente uma fração muito pequena de um Ether (ETH). Assim como 1 Real é dividido em 100 centavos, 1 ETH é dividido em 1 bilhão de Gwei. É a medida padrão usada para cotar o preço do Gas. Um Gas de "15 Gwei" é considerado barato, enquanto "100 Gwei" indica uma rede extremamente congestionada e cara.
+        </p>
+      </div>
+
+      <div class="bg-red-950/20 border border-red-900/30 rounded-2xl p-6 text-sm">
+        <h4 class="text-red-400 font-bold mb-3 flex items-center text-base">⚠️ Aviso de Risco e Isenção de Responsabilidade</h4>
+        <p class="text-zinc-400 leading-relaxed">As informações contidas neste artigo são de caráter exclusivamente educacional. O <strong>CryptoPremium</strong> não se responsabiliza por transações travadas, taxas perdidas (failed transactions) ou erros operacionais cometidos por usuários ao ajustar manualmente os limites de Gas em suas carteiras. Sempre verifique as taxas estimadas antes de confirmar qualquer operação na blockchain.</p>
+      </div>
+    `,
+    category: "investimentos",
+    imageUrl: "https://images.unsplash.com/photo-1639762681485-074b7f4ec08d?auto=format&fit=crop&q=80&w=1200",
+    author: "Thiago Silva – Especialista em Blockchain e Web3",
+    date: new Date(Date.now() - 259200000).toISOString(),
+    readTime: "5 min",
   }
 ];
