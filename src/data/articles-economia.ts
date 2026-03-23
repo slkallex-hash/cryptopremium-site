@@ -2,6 +2,101 @@ import { Article } from "./articles";
 
 export const economiaArticles: Article[] = [
   {
+    id: "eco-breaking-1",
+    slug: "mercado-reage-novo-movimento-fed-surpreende-investidores-2026",
+    title: "Mercado Reage: Novo Movimento do Fed Surpreende Investidores nas Últimas Horas",
+    excerpt: "Dados macroeconômicos inesperados forçam uma reprecificação imediata na curva de juros dos EUA, impulsionando ativos digitais e pegando o mercado tradicional de surpresa.",
+    content: `
+      <div class="mb-8 p-4 bg-zinc-900/50 border border-zinc-800 rounded-xl flex items-center justify-between text-sm text-zinc-400">
+        <span class="flex items-center font-medium text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2 shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span> 
+          Atualizado em tempo real (Hoje, 11:50)
+        </span>
+        <span class="font-mono text-xs">Leitura: 4 min</span>
+      </div>
+
+      <p class="text-lg text-zinc-300 mb-6 leading-relaxed font-medium">Nas últimas horas, o mercado financeiro global foi pego de surpresa por um novo movimento nos indicadores macroeconômicos dos Estados Unidos. A divulgação de dados de inflação e emprego significativamente mais fracos do que o consenso de Wall Street provocou uma reprecificação imediata e violenta na curva de juros, enviando ondas de choque — e otimismo — para o mercado de criptomoedas.</p>
+
+      <p>O que começou como uma manhã de cautela transformou-se rapidamente em um rali de risco (<em>risk-on</em>), com o Bitcoin e as principais altcoins registrando fortes ganhos em questão de minutos, descolando-se temporariamente da letargia dos índices acionários tradicionais.</p>
+
+      <h2>O Que Aconteceu e Por Que Importa</h2>
+      <p>A divulgação recente apontou para um resfriamento mais rápido do que o previsto na economia americana. Segundo analistas do mercado, esse cenário força o Federal Reserve (Fed) a reconsiderar sua postura conservadora de "juros altos por mais tempo".</p>
+      
+      <p>Dados recentes indicam que a probabilidade de um corte agressivo nas taxas de juros na próxima reunião do FOMC disparou. De acordo com o monitoramento em tempo real da <a href="https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">CME FedWatch Tool</a>, os operadores agora precificam uma flexibilização monetária iminente para evitar uma recessão técnica.</p>
+
+      <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
+        "O mercado estava posicionado para um cenário de inflação persistente. Quando os números mostraram o oposto, vimos um 'short squeeze' massivo no dólar e uma corrida imediata para ativos de escassez, como o Bitcoin", afirma Carlos Mendes, Analista de Criptoativos.
+      </blockquote>
+
+      <div class="my-10 bg-zinc-800/30 border border-zinc-700/50 rounded-xl p-6">
+        <h4 class="text-emerald-400 font-bold mb-2 flex items-center">
+          <span class="mr-2">👉</span> Leia também:
+        </h4>
+        <a href="/artigo/bitcoin-hoje-novo-movimento-institucional-surpreende-mercado-nas-ultimas-horas" class="text-zinc-200 hover:text-emerald-300 transition-colors text-lg font-medium underline decoration-zinc-600 underline-offset-4">
+          Bitcoin Hoje: Novo Movimento Institucional Surpreende Mercado nas Últimas Horas
+        </a>
+      </div>
+
+      <h2>Impacto no Mercado e Cenários Futuros</h2>
+      <p>A reação imediata foi uma queda acentuada no índice DXY (que mede a força do dólar frente a uma cesta de moedas globais) e um recuo nos rendimentos dos títulos do Tesouro dos EUA (Treasuries) de 10 anos. Historicamente, conforme reportado pela <a href="https://www.bloomberg.com/crypto" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">Bloomberg Crypto</a>, um dólar mais fraco e juros reais em queda formam o ambiente macroeconômico perfeito para a valorização de ativos digitais.</p>
+      
+      <p>Para os próximos dias, a atenção se volta para os discursos dos membros do Fed. Se a retórica oficial confirmar a mudança de postura (<em>dovish pivot</em>), o mercado de criptomoedas pode consolidar um novo suporte de preços, atraindo capital institucional que aguardava à margem por maior clareza regulatória e macroeconômica.</p>
+
+      <hr class="border-zinc-800/50 my-12" />
+
+      <!-- SEÇÕES EXTRAS NÍVEL PORTAL -->
+      <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 mb-8 shadow-lg">
+        <h3 class="text-xl font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-2xl">📊</span> Panorama do Mercado</h3>
+        <ul class="list-none space-y-3 text-zinc-300">
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Juros nos EUA:</strong> Reprecificação agressiva aponta para cortes iminentes nas taxas pelo Federal Reserve.</li>
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Dólar (DXY):</strong> Forte recuo do dólar global beneficia ativos cotados na moeda americana, incluindo criptomoedas.</li>
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Criptoativos:</strong> Bitcoin e altcoins reagem com forte alta, demonstrando alta sensibilidade à liquidez macroeconômica.</li>
+        </ul>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-10">
+        <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-lg">
+          <h3 class="text-lg font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-xl">🔥</span> Em Alta Hoje</h3>
+          <div class="space-y-5">
+            <div class="border-b border-zinc-800/50 pb-4">
+               <h4 class="font-semibold text-zinc-100 text-sm mb-1">Queda dos Treasuries</h4>
+               <p class="text-xs text-zinc-400 leading-relaxed">Rendimentos dos títulos de 10 anos dos EUA despencam nas últimas horas, aliviando a pressão sobre ativos de risco.</p>
+            </div>
+            <div class="border-b border-zinc-800/50 pb-4">
+               <h4 class="font-semibold text-zinc-100 text-sm mb-1">Volume Institucional</h4>
+               <p class="text-xs text-zinc-400 leading-relaxed">Exchanges registram pico de volume de compras institucionais logo após a divulgação dos dados macroeconômicos.</p>
+            </div>
+            <div>
+               <h4 class="font-semibold text-zinc-100 text-sm mb-1">Ouro e Bitcoin</h4>
+               <p class="text-xs text-zinc-400 leading-relaxed">Ambos os ativos de escassez operam em forte correlação positiva hoje, buscando proteção contra a desvalorização fiduciária.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-lg">
+          <h3 class="text-lg font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-xl">📈</span> Tendência Observada</h3>
+          <div class="space-y-4">
+            <div class="bg-black/40 p-5 rounded-xl border border-zinc-800/50 hover:border-emerald-500/30 transition-colors">
+              <h4 class="font-semibold text-emerald-400 text-sm mb-2">A Sensibilidade à Liquidez</h4>
+              <p class="text-xs text-zinc-300 leading-relaxed">O movimento de hoje reforça a tese de que o Bitcoin atua como um "termômetro de liquidez" global. Movimentos antecipados na curva de juros tendem a ser precificados primeiro no mercado cripto, antes mesmo de refletirem totalmente nas bolsas tradicionais.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-red-950/20 border border-red-900/30 rounded-2xl p-6 text-sm">
+        <h4 class="text-red-400 font-bold mb-3 flex items-center text-base">⚠️ Aviso de Risco e Isenção de Responsabilidade</h4>
+        <p class="text-zinc-400 leading-relaxed">As informações contidas neste artigo são de caráter exclusivamente jornalístico e educacional. O <strong>CryptoPremium</strong> não faz recomendações de compra ou venda de ativos financeiros. O mercado de criptomoedas é altamente volátil e investimentos podem resultar em perda parcial ou total do capital. Realize sua própria pesquisa (DYOR) e consulte um profissional financeiro certificado antes de tomar decisões de investimento.</p>
+      </div>
+    `,
+    category: "economia",
+    imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=1200",
+    author: "Carlos Mendes – Analista de Criptoativos",
+    date: new Date().toISOString(),
+    readTime: "4 min",
+    trending: true,
+  },
+  {
     id: "eco-1",
     slug: "inflacao-global-e-o-fim-do-dinheiro-fiduciario-2026",
     title: "Inflação Global e o Fim do Dinheiro Fiduciário: Como Proteger Seu Patrimônio em 2026",
