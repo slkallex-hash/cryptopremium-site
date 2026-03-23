@@ -11,15 +11,16 @@ export function Home() {
   }, []);
 
   const featuredArticle = articles[0];
-  const trendingArticles = articles.filter(a => a.trending).slice(0, 4);
-  const recentArticles = articles.slice(1);
+  const highlightArticles = articles.slice(1, 3);
+  const recentArticles = articles.slice(3, 9);
+  const educationalArticles = articles.filter(a => a.category === 'investimentos').slice(0, 3);
 
   return (
     <div className="space-y-12">
       {/* Top Banner Ad */}
       <AdSlot id="home-top-banner" type="banner" className="mb-8 rounded-xl" />
 
-      {/* Featured Section */}
+      {/* Bloco 1: Manchete principal + 2 destaques */}
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Main Highlight */}
         <div className="lg:col-span-2 relative group overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800/50">
@@ -50,22 +51,27 @@ export function Home() {
           </Link>
         </div>
 
-        {/* Trending Sidebar */}
+        {/* 2 Destaques */}
         <div className="flex flex-col space-y-6">
           <div className="flex items-center justify-between border-b border-zinc-800/50 pb-4">
             <h2 className="text-xl font-display font-bold flex items-center">
               <TrendingUp className="w-5 h-5 mr-2 text-emerald-400" />
-              Em Alta
+              Em Foco
             </h2>
           </div>
-          <div className="flex-1 flex flex-col justify-between space-y-6">
-            {trendingArticles.map((article, index) => (
-              <Link key={article.id} to={`/article/${article.slug}`} className="group flex space-x-5 items-start">
-                <span className="text-5xl font-display font-bold text-zinc-800 group-hover:text-emerald-500/30 transition-colors leading-none">
-                  0{index + 1}
-                </span>
-                <div className="pt-1">
-                  <h3 className="text-base font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2 mb-2 leading-snug">
+          <div className="flex-1 flex flex-col space-y-6">
+            {highlightArticles.map((article) => (
+              <Link key={article.id} to={`/article/${article.slug}`} className="group flex flex-col space-y-3">
+                <div className="relative h-40 overflow-hidden rounded-xl">
+                  <img 
+                    src={article.imageUrl} 
+                    alt={article.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2 mb-2 leading-snug">
                     {article.title}
                   </h3>
                   <div className="flex items-center text-xs text-zinc-500 font-medium uppercase tracking-wider">
@@ -77,9 +83,6 @@ export function Home() {
               </Link>
             ))}
           </div>
-          
-          {/* Sidebar Square Ad */}
-          <AdSlot id="home-sidebar-square" type="square" className="mt-auto rounded-xl" />
         </div>
       </section>
 
@@ -88,10 +91,48 @@ export function Home() {
         <RealTimeNewsFeed />
       </section>
 
+      {/* Bloco 2: Últimas notícias (lista limpa) */}
+      <section>
+        <div className="flex items-center justify-between border-b border-zinc-800/50 pb-4 mb-8">
+          <h2 className="text-2xl font-display font-bold">Últimas Notícias</h2>
+          <Link to="/category/noticias-urgentes" className="text-sm font-medium text-emerald-400 hover:text-emerald-300 flex items-center transition-colors">
+            Ver todas <ChevronRight className="w-4 h-4 ml-1" />
+          </Link>
+        </div>
+
+        <div className="flex flex-col space-y-6">
+          {recentArticles.map((article) => (
+            <Link key={article.id} to={`/article/${article.slug}`} className="group flex flex-col md:flex-row gap-6 items-center bg-zinc-900/30 p-4 rounded-2xl border border-zinc-800/50 hover:border-zinc-700 transition-all hover:bg-zinc-900/50">
+              <div className="relative w-full md:w-64 h-40 shrink-0 overflow-hidden rounded-xl">
+                <img 
+                  src={article.imageUrl} 
+                  alt={article.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+              <div className="flex-1">
+                <div className="flex items-center text-xs text-zinc-500 font-medium mb-2 uppercase tracking-wider">
+                  <span className="text-emerald-500/80">{categories.find(c => c.slug === article.category || c.id === article.category)?.name}</span>
+                  <span className="mx-2 text-zinc-700">•</span>
+                  <Clock className="w-3.5 h-3.5 mr-1.5" /> {article.readTime}
+                </div>
+                <h3 className="text-xl font-display font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors mb-2 line-clamp-2 leading-snug">
+                  {article.title}
+                </h3>
+                <p className="text-zinc-400 text-sm line-clamp-2 leading-relaxed">
+                  {article.excerpt}
+                </p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* Middle Banner Ad */}
       <AdSlot id="home-middle-banner" type="banner" className="my-12 rounded-xl" />
 
-      {/* CryptoPremium Play (Videos) */}
+      {/* Bloco 3: CryptoPremium Play (Videos) */}
       <section className="bg-zinc-950 border border-zinc-800/50 rounded-3xl p-8 md:p-12 my-16 shadow-2xl shadow-black">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
           <div>
@@ -162,45 +203,44 @@ export function Home() {
         </div>
       </section>
 
-      {/* Recent News Section */}
+      {/* Bloco 4: Artigos educativos (guias para iniciantes) */}
       <section>
         <div className="flex items-center justify-between border-b border-zinc-800/50 pb-4 mb-8">
-          <h2 className="text-2xl font-display font-bold">Últimas Notícias</h2>
-          <Link to="/category/noticias-urgentes" className="text-sm font-medium text-emerald-400 hover:text-emerald-300 flex items-center transition-colors">
-            Ver todas <ChevronRight className="w-4 h-4 ml-1" />
+          <h2 className="text-2xl font-display font-bold text-emerald-400">Guias para Iniciantes</h2>
+          <Link to="/category/investimentos" className="text-sm font-medium text-zinc-400 hover:text-white flex items-center transition-colors">
+            Ver todos <ChevronRight className="w-4 h-4 ml-1" />
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {recentArticles.map((article) => (
-            <Link key={article.id} to={`/article/${article.slug}`} className="group flex flex-col bg-[#09090b] rounded-2xl overflow-hidden border border-zinc-800/50 hover:border-zinc-700 transition-all hover:shadow-xl hover:shadow-black/50">
-              <div className="relative h-52 overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {educationalArticles.map((article) => (
+            <Link key={article.id} to={`/article/${article.slug}`} className="group flex flex-col bg-[#09090b] rounded-2xl overflow-hidden border border-zinc-800/50 hover:border-emerald-500/50 transition-all hover:shadow-xl hover:shadow-emerald-900/20">
+              <div className="relative h-48 overflow-hidden">
                 <img 
                   src={article.imageUrl} 
                   alt={article.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white bg-black/60 backdrop-blur-md rounded-sm border border-white/10">
-                    {categories.find(c => c.slug === article.category || c.id === article.category)?.name}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#09090b] to-transparent opacity-80" />
+                <div className="absolute bottom-4 left-4 right-4">
+                  <span className="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-zinc-950 bg-emerald-400 rounded-sm mb-2 inline-block">
+                    Educacional
                   </span>
+                  <h3 className="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors line-clamp-2 leading-snug">
+                    {article.title}
+                  </h3>
                 </div>
               </div>
-              <div className="p-6 flex flex-col flex-1">
-                <div className="flex items-center text-xs text-zinc-500 font-medium mb-3 uppercase tracking-wider">
-                  <Clock className="w-3.5 h-3.5 mr-1.5" /> {article.readTime}
-                  <span className="mx-2 text-zinc-800">•</span>
-                  {new Date(article.date).toLocaleDateString('pt-BR', { month: 'short', day: 'numeric' })}
-                </div>
-                <h3 className="text-xl font-display font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors mb-3 line-clamp-2 leading-snug">
-                  {article.title}
-                </h3>
-                <p className="text-zinc-400 text-sm line-clamp-3 mb-6 flex-1 leading-relaxed">
+              <div className="p-5 flex flex-col flex-1">
+                <p className="text-zinc-400 text-sm line-clamp-3 mb-4 flex-1 leading-relaxed">
                   {article.excerpt}
                 </p>
-                <div className="mt-auto flex items-center text-emerald-400 text-sm font-bold uppercase tracking-wider">
-                  Ler artigo <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                <div className="mt-auto flex items-center justify-between text-xs font-medium text-zinc-500">
+                  <span className="flex items-center"><Clock className="w-3.5 h-3.5 mr-1" /> {article.readTime}</span>
+                  <span className="text-emerald-400 uppercase tracking-wider font-bold group-hover:translate-x-1 transition-transform flex items-center">
+                    Ler Guia <ChevronRight className="w-3 h-3 ml-1" />
+                  </span>
                 </div>
               </div>
             </Link>

@@ -18,30 +18,41 @@ export function About() {
       <div className="prose prose-invert prose-emerald max-w-none">
         <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-2xl p-8 mb-12">
           <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
-            <Target className="w-6 h-6 mr-3 text-emerald-400" /> Nossa Missão
+            <Target className="w-6 h-6 mr-3 text-emerald-400" /> Nossa História
           </h2>
           <p className="text-zinc-300 leading-relaxed mb-0">
-            O CryptoPremium nasceu com um propósito claro: desmistificar o complexo universo dos ativos digitais. Nossa missão é informar, educar e atualizar investidores de todos os níveis — desde iniciantes até traders experientes — com notícias precisas, análises aprofundadas e tendências macroeconômicas que realmente importam. Acreditamos que a informação de qualidade é a chave para a liberdade financeira na nova economia digital.
+            O CryptoPremium nasceu da necessidade urgente de combater a desinformação no mercado financeiro digital. Fundado por um grupo de especialistas em blockchain e jornalistas econômicos, percebemos que o investidor brasileiro carecia de uma fonte que unisse o rigor do jornalismo tradicional com a velocidade da Web3. Hoje, trabalhamos 24/7 para traduzir a complexidade das criptomoedas em informações claras e acionáveis.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-2xl p-8">
             <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-              <Shield className="w-5 h-5 mr-3 text-emerald-400" /> Credibilidade e Transparência
+              <Target className="w-5 h-5 mr-3 text-emerald-400" /> Nossa Missão
             </h3>
             <p className="text-zinc-300 leading-relaxed mb-0">
-              Nosso compromisso número um é com a verdade e a precisão dos fatos. Em um mercado altamente volátil e repleto de ruídos, nossa equipe editorial trabalha incansavelmente para filtrar as informações, baseando-se em dados on-chain, relatórios institucionais e fontes verificadas. Não fazemos recomendações de investimento; fornecemos o conhecimento necessário para que você tome suas próprias decisões com segurança.
+              Democratizar o acesso à informação financeira de alta qualidade, capacitando investidores de todos os níveis a tomarem decisões seguras na nova economia digital.
             </p>
           </div>
 
           <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-2xl p-8">
             <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-              <TrendingUp className="w-5 h-5 mr-3 text-emerald-400" /> Foco no Futuro
+              <TrendingUp className="w-5 h-5 mr-3 text-emerald-400" /> Nossa Visão
             </h3>
             <p className="text-zinc-300 leading-relaxed mb-0">
-              A tecnologia blockchain e as criptomoedas estão reescrevendo as regras do sistema financeiro global. O CryptoPremium está na vanguarda dessa revolução, cobrindo não apenas o Bitcoin e as principais altcoins, mas também inovações em DeFi (Finanças Descentralizadas), NFTs, Web3 e o impacto das políticas dos bancos centrais na economia digital.
+              Ser o maior e mais confiável portal de notícias sobre criptomoedas, economia global e tecnologia do Brasil, reconhecido pela precisão de seus dados e independência editorial.
             </p>
+          </div>
+
+          <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-2xl p-8">
+            <h3 className="text-xl font-bold text-white mb-4 flex items-center">
+              <Shield className="w-5 h-5 mr-3 text-emerald-400" /> Nossos Valores
+            </h3>
+            <ul className="text-zinc-300 leading-relaxed mb-0 space-y-2 list-none pl-0">
+              <li><strong className="text-white">Precisão:</strong> Baseamos nossos artigos em dados on-chain e fontes primárias.</li>
+              <li><strong className="text-white">Transparência:</strong> Separação rigorosa entre conteúdo editorial e material patrocinado.</li>
+              <li><strong className="text-white">Educação:</strong> O conhecimento é o ativo mais valioso contra a volatilidade.</li>
+            </ul>
           </div>
         </div>
 
