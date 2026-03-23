@@ -56,7 +56,7 @@ export function Layout() {
 
             {/* Desktop Nav */}
             <nav className="hidden md:flex space-x-1">
-              {categories.slice(0, 5).map((category) => (
+              {categories.filter(c => c.id !== 'noticias-urgentes').slice(0, 6).map((category) => (
                 <Link
                   key={category.id}
                   to={`/category/${category.id}`}
