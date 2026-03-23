@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { articles, categories } from "@/data/articles";
 import { AdSlot } from "@/components/AdSlot";
+import { RealTimeNewsFeed } from "@/components/RealTimeNewsFeed";
 import { Clock, TrendingUp, ChevronRight } from "lucide-react";
 import { useEffect } from "react";
 
@@ -80,6 +81,11 @@ export function Home() {
           {/* Sidebar Square Ad */}
           <AdSlot id="home-sidebar-square" type="square" className="mt-auto rounded-xl" />
         </div>
+      </section>
+
+      {/* Live News Feed */}
+      <section>
+        <RealTimeNewsFeed />
       </section>
 
       {/* Middle Banner Ad */}
