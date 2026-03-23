@@ -508,5 +508,505 @@ export const economiaArticles: Article[] = [
     author: "Marina Costa – Gestora de Portfólio",
     date: new Date(Date.now() - 345600000).toISOString(),
     readTime: "5 min",
+  },
+  {
+    id: "eco-6",
+    slug: "impacto-ia-economia-global-produtividade-desemprego",
+    title: "O Impacto da Inteligência Artificial na Economia Global: Explosão de Produtividade ou Desemprego em Massa?",
+    excerpt: "A adoção acelerada de IA generativa promete redefinir o PIB global, mas especialistas alertam para a necessidade urgente de requalificação da força de trabalho.",
+    content: `
+      <div class="mb-8 p-4 bg-zinc-900/50 border border-zinc-800 rounded-xl flex items-center justify-between text-sm text-zinc-400">
+        <span class="flex items-center font-medium text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2 shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span> 
+          Atualizado em tempo real
+        </span>
+        <span class="font-mono text-xs">Leitura: 6 min</span>
+      </div>
+
+      <p class="text-lg text-zinc-300 mb-6 leading-relaxed font-medium">A revolução da Inteligência Artificial (IA) deixou de ser um tema restrito a laboratórios de tecnologia para se tornar a principal força motriz da economia global. Empresas de todos os setores estão correndo para integrar modelos de linguagem e automação em seus processos, buscando ganhos exponenciais de eficiência.</p>
+
+      <p>No entanto, essa transição tecnológica levanta uma questão econômica fundamental: a IA será um catalisador para um novo ciclo de crescimento e prosperidade, ou o estopim para uma crise estrutural de desemprego?</p>
+
+      <h2>O Salto de Produtividade</h2>
+      <p>Historicamente, grandes inovações tecnológicas (como a máquina a vapor, a eletricidade e a internet) resultaram em aumentos massivos de produtividade. A IA generativa promete fazer o mesmo, mas em uma escala de tempo muito mais comprimida.</p>
+      
+      <p>Um relatório recente do Goldman Sachs estima que a adoção generalizada de IA pode impulsionar o PIB global em até 7% (cerca de US$ 7 trilhões) ao longo da próxima década. Esse crescimento virá da automação de tarefas cognitivas repetitivas, permitindo que profissionais foquem em estratégia, criatividade e resolução de problemas complexos.</p>
+
+      <!-- PAUSA PARA ANÚNCIO 1 -->
+      <div class="my-10 border-y border-dashed border-zinc-800 py-6 flex flex-col items-center justify-center bg-zinc-900/20 rounded-xl">
+        <span class="text-[10px] text-zinc-600 uppercase tracking-[0.2em] font-bold mb-1">Advertisement</span>
+        <span class="text-sm text-zinc-500">Espaço reservado para parceiros</span>
+      </div>
+
+      <h2>O Desafio da Transição no Mercado de Trabalho</h2>
+      <p>O otimismo com a produtividade contrasta com a ansiedade no mercado de trabalho. Diferente das revoluções industriais anteriores, que automatizaram o trabalho braçal, a IA ameaça diretamente o trabalho intelectual (white-collar jobs) — desde programadores juniores e redatores até analistas financeiros e advogados.</p>
+      
+      <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
+        "Não estamos diante do fim do trabalho, mas sim de uma reestruturação violenta. A IA não substituirá o profissional, mas o profissional que usa IA substituirá aquele que não usa. A requalificação (reskilling) em massa é o maior desafio econômico desta década", afirma Thiago Silva, Analista de Macroeconomia.
+      </blockquote>
+
+      <p>Governos e corporações enfrentam a pressão de criar redes de segurança social e programas de treinamento para evitar que uma parcela significativa da população seja economicamente marginalizada durante essa transição.</p>
+
+      <h2>O Papel da Web3 e da Economia de Criadores</h2>
+      <p>Em resposta à automação corporativa, muitos profissionais estão migrando para a "economia de criadores" e para modelos de trabalho descentralizados (Web3). A capacidade de monetizar habilidades únicas, construir comunidades e deter a propriedade digital (através de NFTs e tokens) oferece uma alternativa viável ao emprego corporativo tradicional.</p>
+
+      <!-- PAUSA PARA ANÚNCIO 2 -->
+      <div class="my-10 border-y border-dashed border-zinc-800 py-6 flex flex-col items-center justify-center bg-zinc-900/20 rounded-xl">
+        <span class="text-[10px] text-zinc-600 uppercase tracking-[0.2em] font-bold mb-1">Advertisement</span>
+        <span class="text-sm text-zinc-500">Espaço reservado para parceiros</span>
+      </div>
+
+      <hr class="border-zinc-800/50 my-12" />
+
+      <!-- SEÇÕES EXTRAS NÍVEL PORTAL -->
+      <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 mb-8 shadow-lg">
+        <h3 class="text-xl font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-2xl">📊</span> Resumo do Mercado</h3>
+        <ul class="list-none space-y-3 text-zinc-300">
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Crescimento:</strong> IA pode adicionar trilhões de dólares ao PIB global na próxima década.</li>
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Disrupção:</strong> Automação ameaça empregos intelectuais (white-collar), exigindo requalificação urgente.</li>
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Adaptação:</strong> O diferencial competitivo será a capacidade de integrar ferramentas de IA ao fluxo de trabalho.</li>
+        </ul>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-10">
+        <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-lg">
+          <h3 class="text-lg font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-xl">🔥</span> Em Alta Hoje</h3>
+          <div class="space-y-5">
+            <div class="border-b border-zinc-800/50 pb-4">
+              <h4 class="font-semibold text-zinc-100 text-sm mb-1">Investimentos em IA</h4>
+              <p class="text-xs text-zinc-400 leading-relaxed">Big Techs anunciam aportes bilionários em infraestrutura de data centers e chips especializados para treinar modelos de linguagem.</p>
+            </div>
+            <div class="border-b border-zinc-800/50 pb-4">
+              <h4 class="font-semibold text-zinc-100 text-sm mb-1">Regulação Europeia</h4>
+              <p class="text-xs text-zinc-400 leading-relaxed">União Europeia avança com o AI Act, estabelecendo regras rígidas para o desenvolvimento e uso de inteligência artificial no bloco.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-zinc-100 text-sm mb-1">Ações de Semicondutores</h4>
+              <p class="text-xs text-zinc-400 leading-relaxed">Empresas fabricantes de chips (como NVIDIA e AMD) continuam a liderar os ganhos nas bolsas globais, impulsionadas pela demanda do setor de IA.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-lg">
+          <h3 class="text-lg font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-xl">💡</span> Oportunidade Observada</h3>
+          <div class="space-y-4">
+            <div class="bg-black/40 p-5 rounded-xl border border-zinc-800/50 hover:border-emerald-500/30 transition-colors">
+              <h4 class="font-semibold text-emerald-400 text-sm mb-2">Interseção Cripto e IA</h4>
+              <p class="text-xs text-zinc-300 leading-relaxed">Projetos que combinam blockchain (para verificação de identidade e proveniência de dados) com IA (para automação e análise) estão atraindo forte capital de risco. A descentralização do poder computacional (DePIN) é um dos setores mais promissores.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-red-950/20 border border-red-900/30 rounded-2xl p-6 text-sm">
+        <h4 class="text-red-400 font-bold mb-3 flex items-center text-base">⚠️ Aviso de Risco e Isenção de Responsabilidade</h4>
+        <p class="text-zinc-400 leading-relaxed">As informações contidas neste artigo são de caráter exclusivamente jornalístico e educacional. O <strong>CryptoPremium</strong> não faz recomendações de compra ou venda de ativos financeiros. O mercado de criptomoedas é altamente volátil e investimentos podem resultar em perda parcial ou total do capital. Realize sua própria pesquisa (DYOR) e consulte um profissional financeiro certificado antes de tomar decisões de investimento.</p>
+      </div>
+    `,
+    category: "economia",
+    imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200",
+    author: "Thiago Silva – Analista de Macroeconomia",
+    date: new Date(Date.now() - 432000000).toISOString(),
+    readTime: "6 min",
+  },
+  {
+    id: "eco-7",
+    slug: "crise-imobiliaria-china-efeito-domino-global",
+    title: "A Crise Imobiliária na China e o Efeito Dominó na Economia Global",
+    excerpt: "O colapso de gigantes do setor imobiliário chinês levanta temores de contágio financeiro. Como isso afeta os mercados globais e as commodities?",
+    content: `
+      <div class="mb-8 p-4 bg-zinc-900/50 border border-zinc-800 rounded-xl flex items-center justify-between text-sm text-zinc-400">
+        <span class="flex items-center font-medium text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2 shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span> 
+          Atualizado em tempo real
+        </span>
+        <span class="font-mono text-xs">Leitura: 5 min</span>
+      </div>
+
+      <p class="text-lg text-zinc-300 mb-6 leading-relaxed font-medium">Por décadas, o mercado imobiliário foi o principal motor do milagre econômico chinês, respondendo por quase um terço do PIB do país. No entanto, o modelo baseado em endividamento excessivo e especulação desenfreada atingiu seu limite, culminando no colapso de gigantes do setor, como a Evergrande e a Country Garden.</p>
+
+      <p>A implosão dessa bolha não é apenas um problema doméstico. A China é a segunda maior economia do mundo e a principal consumidora de commodities globais. O impacto de sua desaceleração já está sendo sentido nos mercados financeiros internacionais.</p>
+
+      <h2>O Fim do Modelo de Crescimento a Qualquer Custo</h2>
+      <p>A crise foi, em grande parte, induzida pelo próprio governo chinês. Em uma tentativa de frear a especulação e reduzir o risco sistêmico, Pequim implementou a política das "Três Linhas Vermelhas", restringindo severamente o acesso das construtoras a novos financiamentos.</p>
+      
+      <p>Sem crédito novo para rolar dívidas antigas e finalizar projetos em andamento, as incorporadoras entraram em default (calote). O resultado são milhões de apartamentos inacabados, compradores revoltados e fornecedores não pagos, criando uma crise de confiança que paralisou o setor.</p>
+
+      <!-- PAUSA PARA ANÚNCIO 1 -->
+      <div class="my-10 border-y border-dashed border-zinc-800 py-6 flex flex-col items-center justify-center bg-zinc-900/20 rounded-xl">
+        <span class="text-[10px] text-zinc-600 uppercase tracking-[0.2em] font-bold mb-1">Advertisement</span>
+        <span class="text-sm text-zinc-500">Espaço reservado para parceiros</span>
+      </div>
+
+      <h2>O Efeito Contágio Global</h2>
+      <p>O temor imediato dos mercados globais foi um "Momento Lehman Brothers" chinês — um colapso financeiro sistêmico. Embora o governo chinês tenha recursos para evitar uma quebra desordenada do sistema bancário local, o contágio econômico é inevitável.</p>
+      
+      <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
+        "A China está exportando deflação. Com a demanda interna fraca e o setor de construção paralisado, o país reduziu drasticamente a importação de minério de ferro, cobre e outras commodities, impactando diretamente países exportadores como o Brasil e a Austrália", explica Marina Costa, Especialista em Geopolítica Financeira.
+      </blockquote>
+
+      <p>Além disso, a desaceleração chinesa afeta empresas multinacionais (de tecnologia a artigos de luxo) que dependem do consumo da classe média do país para sustentar seus lucros.</p>
+
+      <h2>A Busca por Novos Motores de Crescimento</h2>
+      <p>Para compensar a queda no setor imobiliário, Pequim está redirecionando investimentos maciços para a manufatura de alta tecnologia, veículos elétricos e energia renovável. No entanto, essa transição levará anos, e o crescimento do PIB chinês deve permanecer estruturalmente mais baixo do que nas décadas anteriores.</p>
+
+      <!-- PAUSA PARA ANÚNCIO 2 -->
+      <div class="my-10 border-y border-dashed border-zinc-800 py-6 flex flex-col items-center justify-center bg-zinc-900/20 rounded-xl">
+        <span class="text-[10px] text-zinc-600 uppercase tracking-[0.2em] font-bold mb-1">Advertisement</span>
+        <span class="text-sm text-zinc-500">Espaço reservado para parceiros</span>
+      </div>
+
+      <hr class="border-zinc-800/50 my-12" />
+
+      <!-- SEÇÕES EXTRAS NÍVEL PORTAL -->
+      <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 mb-8 shadow-lg">
+        <h3 class="text-xl font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-2xl">📊</span> Resumo do Mercado</h3>
+        <ul class="list-none space-y-3 text-zinc-300">
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Colapso:</strong> Gigantes imobiliárias chinesas entram em default devido a restrições de crédito.</li>
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Commodities:</strong> Desaceleração da construção civil na China reduz a demanda global por minério de ferro e metais básicos.</li>
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Transição:</strong> Governo chinês tenta substituir o motor imobiliário por investimentos em alta tecnologia e energia verde.</li>
+        </ul>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-10">
+        <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-lg">
+          <h3 class="text-lg font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-xl">🔥</span> Em Alta Hoje</h3>
+          <div class="space-y-5">
+            <div class="border-b border-zinc-800/50 pb-4">
+              <h4 class="font-semibold text-zinc-100 text-sm mb-1">Estímulos Econômicos</h4>
+              <p class="text-xs text-zinc-400 leading-relaxed">Banco Popular da China (PBOC) corta taxas de juros e injeta liquidez no sistema bancário para tentar reanimar a economia.</p>
+            </div>
+            <div class="border-b border-zinc-800/50 pb-4">
+              <h4 class="font-semibold text-zinc-100 text-sm mb-1">Fuga de Capitais</h4>
+              <p class="text-xs text-zinc-400 leading-relaxed">Investidores estrangeiros retiram bilhões de dólares do mercado de ações chinês, buscando segurança em outros mercados asiáticos (como Índia e Japão).</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-zinc-100 text-sm mb-1">Impacto no Brasil</h4>
+              <p class="text-xs text-zinc-400 leading-relaxed">Ações da Vale e de outras mineradoras sofrem pressão de venda devido à incerteza sobre a demanda chinesa por minério.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-lg">
+          <h3 class="text-lg font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-xl">💡</span> Oportunidade Observada</h3>
+          <div class="space-y-4">
+            <div class="bg-black/40 p-5 rounded-xl border border-zinc-800/50 hover:border-emerald-500/30 transition-colors">
+              <h4 class="font-semibold text-emerald-400 text-sm mb-2">Diversificação de Portfólio</h4>
+              <p class="text-xs text-zinc-300 leading-relaxed">Com a desaceleração estrutural da China, gestores globais estão realocando capital para mercados emergentes alternativos (como Índia, México e Vietnã) que se beneficiam do movimento de "friendshoring" (reestruturação das cadeias de suprimentos globais).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-red-950/20 border border-red-900/30 rounded-2xl p-6 text-sm">
+        <h4 class="text-red-400 font-bold mb-3 flex items-center text-base">⚠️ Aviso de Risco e Isenção de Responsabilidade</h4>
+        <p class="text-zinc-400 leading-relaxed">As informações contidas neste artigo são de caráter exclusivamente jornalístico e educacional. O <strong>CryptoPremium</strong> não faz recomendações de compra ou venda de ativos financeiros. O mercado de criptomoedas é altamente volátil e investimentos podem resultar em perda parcial ou total do capital. Realize sua própria pesquisa (DYOR) e consulte um profissional financeiro certificado antes de tomar decisões de investimento.</p>
+      </div>
+    `,
+    category: "economia",
+    imageUrl: "https://images.unsplash.com/photo-1548611716-4022880abdd2?auto=format&fit=crop&q=80&w=1200",
+    author: "Marina Costa – Especialista em Geopolítica Financeira",
+    date: new Date(Date.now() - 518400000).toISOString(),
+    readTime: "5 min",
+  },
+  {
+    id: "eco-8",
+    slug: "retorno-padrao-ouro-bancos-centrais-acumulam-reservas",
+    title: "O Retorno do Padrão-Ouro? Bancos Centrais Acumulam Reservas em Níveis Recordes",
+    excerpt: "A compra massiva de ouro físico por nações emergentes sinaliza uma profunda desconfiança no sistema financeiro baseado no dólar.",
+    content: `
+      <div class="mb-8 p-4 bg-zinc-900/50 border border-zinc-800 rounded-xl flex items-center justify-between text-sm text-zinc-400">
+        <span class="flex items-center font-medium text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2 shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span> 
+          Atualizado em tempo real
+        </span>
+        <span class="font-mono text-xs">Leitura: 4 min</span>
+      </div>
+
+      <p class="text-lg text-zinc-300 mb-6 leading-relaxed font-medium">O ouro, a relíquia bárbara que muitos economistas modernos consideravam obsoleta, está de volta ao centro do palco financeiro global. Nos últimos anos, bancos centrais ao redor do mundo, liderados por China, Rússia e Índia, têm comprado ouro físico em um ritmo não visto desde a década de 1960.</p>
+
+      <p>Esse movimento coordenado de acumulação não é uma mera diversificação de portfólio; é uma declaração geopolítica e um sintoma de profunda desconfiança na estabilidade do sistema monetário baseado no dólar (fiat).</p>
+
+      <h2>A Desdolarização na Prática</h2>
+      <p>O congelamento das reservas cambiais da Rússia pelos Estados Unidos e seus aliados europeus foi um divisor de águas. A ação demonstrou que as reservas mantidas em dólares ou euros não são propriedade incondicional do país detentor, mas sim ativos sujeitos a sanções políticas.</p>
+      
+      <p>Em resposta, nações do Sul Global aceleraram a repatriação de seu ouro (retirando-o de cofres em Londres e Nova York) e aumentaram agressivamente suas compras no mercado aberto. O ouro físico, mantido dentro das fronteiras nacionais, é o único ativo de reserva que não carrega risco de contraparte e não pode ser congelado por potências estrangeiras.</p>
+
+      <!-- PAUSA PARA ANÚNCIO 1 -->
+      <div class="my-10 border-y border-dashed border-zinc-800 py-6 flex flex-col items-center justify-center bg-zinc-900/20 rounded-xl">
+        <span class="text-[10px] text-zinc-600 uppercase tracking-[0.2em] font-bold mb-1">Advertisement</span>
+        <span class="text-sm text-zinc-500">Espaço reservado para parceiros</span>
+      </div>
+
+      <h2>Um Novo Bretton Woods?</h2>
+      <p>Especula-se nos bastidores financeiros que o bloco dos BRICS estaria preparando o lançamento de uma moeda comercial comum, possivelmente lastreada em uma cesta de commodities ou diretamente no ouro. Embora a viabilidade prática de tal moeda seja debatida, a simples intenção já pressiona o valor do metal precioso para cima.</p>
+      
+      <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
+        "Não estamos voltando ao padrão-ouro clássico, onde o dinheiro de papel era conversível em ouro nas agências bancárias. O que estamos vendo é a emergência de um sistema multipolar onde o ouro atua como o ativo de liquidação final entre nações que não confiam umas nas outras", analisa Thiago Silva, Analista de Macroeconomia.
+      </blockquote>
+
+      <p>Essa forte demanda institucional criou um piso sólido para o preço do ouro, desvinculando-o parcialmente de sua correlação histórica inversa com as taxas de juros reais dos Estados Unidos.</p>
+
+      <h2>O Paralelo com o Bitcoin</h2>
+      <p>A narrativa que impulsiona a compra de ouro pelos bancos centrais é a mesma que atrai investidores institucionais para o Bitcoin: a necessidade de um ativo escasso, neutro e resistente à censura. Enquanto os governos acumulam o "ouro analógico", corporações e fundos de investimento acumulam o "ouro digital" (Bitcoin) pela sua superioridade em portabilidade e auditabilidade.</p>
+
+      <!-- PAUSA PARA ANÚNCIO 2 -->
+      <div class="my-10 border-y border-dashed border-zinc-800 py-6 flex flex-col items-center justify-center bg-zinc-900/20 rounded-xl">
+        <span class="text-[10px] text-zinc-600 uppercase tracking-[0.2em] font-bold mb-1">Advertisement</span>
+        <span class="text-sm text-zinc-500">Espaço reservado para parceiros</span>
+      </div>
+
+      <hr class="border-zinc-800/50 my-12" />
+
+      <!-- SEÇÕES EXTRAS NÍVEL PORTAL -->
+      <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 mb-8 shadow-lg">
+        <h3 class="text-xl font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-2xl">📊</span> Resumo do Mercado</h3>
+        <ul class="list-none space-y-3 text-zinc-300">
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Acumulação:</strong> Bancos centrais registram compras recordes de ouro físico.</li>
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Geopolítica:</strong> Movimento é impulsionado pelo medo de sanções e pela busca de independência do dólar.</li>
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Risco Zero:</strong> Ouro físico armazenado localmente é o único ativo de reserva sem risco de contraparte.</li>
+        </ul>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-10">
+        <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-lg">
+          <h3 class="text-lg font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-xl">🔥</span> Em Alta Hoje</h3>
+          <div class="space-y-5">
+            <div class="border-b border-zinc-800/50 pb-4">
+              <h4 class="font-semibold text-zinc-100 text-sm mb-1">Cotação Histórica</h4>
+              <p class="text-xs text-zinc-400 leading-relaxed">Preço do ouro no mercado internacional (XAU/USD) atinge novas máximas históricas, superando a marca de US$ 2.400 por onça-troy.</p>
+            </div>
+            <div class="border-b border-zinc-800/50 pb-4">
+              <h4 class="font-semibold text-zinc-100 text-sm mb-1">Demanda no Varejo</h4>
+              <p class="text-xs text-zinc-400 leading-relaxed">Consumidores na China e na Índia aumentam a compra de joias e barras de ouro como proteção contra a desvalorização de suas moedas locais.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-zinc-100 text-sm mb-1">ETFs de Ouro</h4>
+              <p class="text-xs text-zinc-400 leading-relaxed">Apesar da alta do metal físico, ETFs de ouro no ocidente registram saídas de capital, indicando que a alta é impulsionada principalmente por compras institucionais no oriente.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-lg">
+          <h3 class="text-lg font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-xl">💡</span> Oportunidade Observada</h3>
+          <div class="space-y-4">
+            <div class="bg-black/40 p-5 rounded-xl border border-zinc-800/50 hover:border-emerald-500/30 transition-colors">
+              <h4 class="font-semibold text-emerald-400 text-sm mb-2">Alocação Estratégica</h4>
+              <p class="text-xs text-zinc-300 leading-relaxed">Especialistas recomendam que investidores de varejo mantenham uma pequena parcela do portfólio (5% a 10%) em ativos reais escassos (ouro físico ou Bitcoin) como um seguro contra a inflação estrutural e a instabilidade geopolítica.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-red-950/20 border border-red-900/30 rounded-2xl p-6 text-sm">
+        <h4 class="text-red-400 font-bold mb-3 flex items-center text-base">⚠️ Aviso de Risco e Isenção de Responsabilidade</h4>
+        <p class="text-zinc-400 leading-relaxed">As informações contidas neste artigo são de caráter exclusivamente jornalístico e educacional. O <strong>CryptoPremium</strong> não faz recomendações de compra ou venda de ativos financeiros. O mercado de criptomoedas é altamente volátil e investimentos podem resultar em perda parcial ou total do capital. Realize sua própria pesquisa (DYOR) e consulte um profissional financeiro certificado antes de tomar decisões de investimento.</p>
+      </div>
+    `,
+    category: "economia",
+    imageUrl: "https://images.unsplash.com/photo-1610315990650-14535e25c111?auto=format&fit=crop&q=80&w=1200",
+    author: "Thiago Silva – Analista de Macroeconomia",
+    date: new Date(Date.now() - 604800000).toISOString(),
+    readTime: "4 min",
+  },
+  {
+    id: "eco-9",
+    slug: "guerra-fria-tecnologica-semicondutores-eua-china",
+    title: "A Nova Guerra Fria: Semicondutores e a Disputa Tecnológica entre EUA e China",
+    excerpt: "Os microchips tornaram-se o novo petróleo. Entenda como a batalha pelo controle da produção de semicondutores está redefinindo a economia global.",
+    content: `
+      <div class="mb-8 p-4 bg-zinc-900/50 border border-zinc-800 rounded-xl flex items-center justify-between text-sm text-zinc-400">
+        <span class="flex items-center font-medium text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2 shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span> 
+          Atualizado em tempo real
+        </span>
+        <span class="font-mono text-xs">Leitura: 6 min</span>
+      </div>
+
+      <p class="text-lg text-zinc-300 mb-6 leading-relaxed font-medium">No século XX, o controle sobre as reservas de petróleo ditava a geopolítica global. No século XXI, o recurso mais estratégico do planeta é infinitamente menor, mas infinitamente mais complexo: os semicondutores (microchips). Eles são o cérebro de tudo, desde smartphones e carros elétricos até mísseis balísticos e data centers de Inteligência Artificial.</p>
+
+      <p>A percepção de que a supremacia econômica e militar futura depende do acesso a chips de última geração desencadeou uma verdadeira "Guerra Fria Tecnológica" entre os Estados Unidos e a China, com consequências profundas para as cadeias de suprimentos globais.</p>
+
+      <h2>O Estrangulamento Tecnológico (Choke Points)</h2>
+      <p>A cadeia de produção de semicondutores é a mais complexa e globalizada do mundo, mas possui gargalos críticos (choke points) dominados por empresas ocidentais ou aliadas dos EUA. O design avançado é liderado por empresas americanas (NVIDIA, AMD, Apple), a fabricação de ponta é dominada por Taiwan (TSMC) e Coreia do Sul (Samsung), e as máquinas de litografia extremas (EUV), essenciais para imprimir os chips, são monopólio de uma única empresa holandesa (ASML).</p>
+      
+      <p>Utilizando esse domínio, o governo dos EUA implementou controles de exportação draconianos, proibindo a venda de chips avançados de IA e equipamentos de fabricação para a China. O objetivo declarado é impedir que o exército chinês modernize suas capacidades com tecnologia ocidental.</p>
+
+      <!-- PAUSA PARA ANÚNCIO 1 -->
+      <div class="my-10 border-y border-dashed border-zinc-800 py-6 flex flex-col items-center justify-center bg-zinc-900/20 rounded-xl">
+        <span class="text-[10px] text-zinc-600 uppercase tracking-[0.2em] font-bold mb-1">Advertisement</span>
+        <span class="text-sm text-zinc-500">Espaço reservado para parceiros</span>
+      </div>
+
+      <h2>A Resposta Chinesa e a Fragmentação</h2>
+      <p>A China, que importa mais semicondutores do que petróleo, percebeu sua vulnerabilidade estratégica. Em resposta aos bloqueios, Pequim está investindo centenas de bilhões de dólares para criar uma cadeia de suprimentos de chips totalmente autossuficiente e livre de tecnologia americana.</p>
+      
+      <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
+        "Estamos testemunhando a bifurcação do ecossistema tecnológico global. No futuro, teremos duas cadeias de suprimentos distintas e incompatíveis: uma liderada pelos EUA e outra pela China. Isso significa o fim da eficiência da globalização e o aumento estrutural dos custos de produção", alerta Marina Costa, Especialista em Geopolítica Financeira.
+      </blockquote>
+
+      <p>Embora a China ainda esteja anos atrás na produção de chips de ponta (abaixo de 5 nanômetros), ela está dominando rapidamente o mercado de chips "legados" (mature nodes), utilizados em automóveis, eletrodomésticos e equipamentos industriais.</p>
+
+      <h2>O Fator Taiwan</h2>
+      <p>No centro dessa disputa está a ilha de Taiwan, que produz mais de 60% dos semicondutores do mundo e mais de 90% dos chips mais avançados. A TSMC é considerada o "escudo de silício" de Taiwan. Uma eventual invasão ou bloqueio da ilha pela China paralisaria a economia global quase instantaneamente, causando uma depressão econômica sem precedentes.</p>
+      <p>Para mitigar esse risco, os EUA e a Europa estão subsidiando pesadamente a construção de fábricas de chips em seus próprios territórios (onshoring), buscando resiliência em detrimento da eficiência de custos.</p>
+
+      <!-- PAUSA PARA ANÚNCIO 2 -->
+      <div class="my-10 border-y border-dashed border-zinc-800 py-6 flex flex-col items-center justify-center bg-zinc-900/20 rounded-xl">
+        <span class="text-[10px] text-zinc-600 uppercase tracking-[0.2em] font-bold mb-1">Advertisement</span>
+        <span class="text-sm text-zinc-500">Espaço reservado para parceiros</span>
+      </div>
+
+      <hr class="border-zinc-800/50 my-12" />
+
+      <!-- SEÇÕES EXTRAS NÍVEL PORTAL -->
+      <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 mb-8 shadow-lg">
+        <h3 class="text-xl font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-2xl">📊</span> Resumo do Mercado</h3>
+        <ul class="list-none space-y-3 text-zinc-300">
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Guerra Comercial:</strong> EUA bloqueiam acesso da China a chips avançados de IA e equipamentos de fabricação.</li>
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Bifurcação:</strong> Cadeias de suprimentos globais estão se dividindo em blocos geopolíticos, aumentando custos.</li>
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Risco Taiwan:</strong> A concentração da produção de chips avançados em Taiwan representa o maior risco sistêmico para a economia global.</li>
+        </ul>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-10">
+        <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-lg">
+          <h3 class="text-lg font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-xl">🔥</span> Em Alta Hoje</h3>
+          <div class="space-y-5">
+            <div class="border-b border-zinc-800/50 pb-4">
+              <h4 class="font-semibold text-zinc-100 text-sm mb-1">CHIPS Act</h4>
+              <p class="text-xs text-zinc-400 leading-relaxed">Governo dos EUA anuncia bilhões em subsídios para a Intel e a TSMC construírem fábricas de ponta no Arizona e em Ohio.</p>
+            </div>
+            <div class="border-b border-zinc-800/50 pb-4">
+              <h4 class="font-semibold text-zinc-100 text-sm mb-1">Avanço Chinês</h4>
+              <p class="text-xs text-zinc-400 leading-relaxed">Huawei surpreende o mercado ao lançar smartphone com chip de 7 nanômetros fabricado na China, contornando parcialmente as sanções americanas.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-zinc-100 text-sm mb-1">Restrições de Metais</h4>
+              <p class="text-xs text-zinc-400 leading-relaxed">China restringe a exportação de gálio e germânio, metais raros essenciais para a fabricação de semicondutores e painéis solares.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-lg">
+          <h3 class="text-lg font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-xl">💡</span> Oportunidade Observada</h3>
+          <div class="space-y-4">
+            <div class="bg-black/40 p-5 rounded-xl border border-zinc-800/50 hover:border-emerald-500/30 transition-colors">
+              <h4 class="font-semibold text-emerald-400 text-sm mb-2">Investimento Temático</h4>
+              <p class="text-xs text-zinc-300 leading-relaxed">ETFs focados no setor de semicondutores (como o SOXX) tornaram-se veículos essenciais para investidores que buscam exposição à infraestrutura fundamental da economia digital e da revolução da Inteligência Artificial.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-red-950/20 border border-red-900/30 rounded-2xl p-6 text-sm">
+        <h4 class="text-red-400 font-bold mb-3 flex items-center text-base">⚠️ Aviso de Risco e Isenção de Responsabilidade</h4>
+        <p class="text-zinc-400 leading-relaxed">As informações contidas neste artigo são de caráter exclusivamente jornalístico e educacional. O <strong>CryptoPremium</strong> não faz recomendações de compra ou venda de ativos financeiros. O mercado de criptomoedas é altamente volátil e investimentos podem resultar em perda parcial ou total do capital. Realize sua própria pesquisa (DYOR) e consulte um profissional financeiro certificado antes de tomar decisões de investimento.</p>
+      </div>
+    `,
+    category: "economia",
+    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200",
+    author: "Marina Costa – Especialista em Geopolítica Financeira",
+    date: new Date(Date.now() - 691200000).toISOString(),
+    readTime: "6 min",
+  },
+  {
+    id: "eco-10",
+    slug: "economia-gig-e-o-futuro-do-trabalho-descentralizado",
+    title: "A Evolução da Economia Gig: Como a Web3 Está Redefinindo o Futuro do Trabalho",
+    excerpt: "De motoristas de aplicativo a freelancers globais, a descentralização promete devolver o poder e os lucros aos trabalhadores independentes.",
+    content: `
+      <div class="mb-8 p-4 bg-zinc-900/50 border border-zinc-800 rounded-xl flex items-center justify-between text-sm text-zinc-400">
+        <span class="flex items-center font-medium text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2 shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span> 
+          Atualizado em tempo real
+        </span>
+        <span class="font-mono text-xs">Leitura: 5 min</span>
+      </div>
+
+      <p class="text-lg text-zinc-300 mb-6 leading-relaxed font-medium">A "Economia Gig" (economia dos bicos ou trabalho freelancer) transformou a forma como milhões de pessoas ganham a vida na última década. Plataformas como Uber, Upwork e Fiverr criaram mercados globais eficientes, conectando demanda e oferta de serviços com um clique. No entanto, esse modelo atingiu um ponto de saturação crítico.</p>
+
+      <p>O problema central da Web2 é a extração de valor. As plataformas centralizadas atuam como intermediários monopolistas, cobrando taxas exorbitantes (frequentemente entre 20% e 30%) sobre o trabalho dos freelancers, além de deterem controle absoluto sobre os dados, a reputação e as regras do jogo.</p>
+
+      <h2>A Solução Web3: Descentralização e Propriedade</h2>
+      <p>A tecnologia blockchain e os contratos inteligentes (smart contracts) estão pavimentando o caminho para a próxima evolução do trabalho: a Economia Gig Descentralizada. A premissa é simples, mas revolucionária: remover o intermediário corporativo e permitir transações peer-to-peer (ponto a ponto) diretas entre o prestador de serviço e o cliente.</p>
+      
+      <p>Em uma plataforma de freelancers Web3, o código substitui a corporação. Os contratos inteligentes gerenciam o escrow (depósito de garantia), a liberação de pagamentos e a resolução de disputas, cobrando taxas próximas a zero. Todo o valor gerado flui diretamente para quem executa o trabalho.</p>
+
+      <!-- PAUSA PARA ANÚNCIO 1 -->
+      <div class="my-10 border-y border-dashed border-zinc-800 py-6 flex flex-col items-center justify-center bg-zinc-900/20 rounded-xl">
+        <span class="text-[10px] text-zinc-600 uppercase tracking-[0.2em] font-bold mb-1">Advertisement</span>
+        <span class="text-sm text-zinc-500">Espaço reservado para parceiros</span>
+      </div>
+
+      <h2>Reputação Portátil e Identidade Soberana</h2>
+      <p>Um dos maiores desafios para um freelancer hoje é que sua reputação está "presa" à plataforma. Se você tem 500 avaliações cinco estrelas no Upwork, você não pode transferir essa credibilidade para o Fiverr. Você é refém do ecossistema.</p>
+      
+      <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
+        "A Web3 introduz o conceito de Identidade Auto-Soberana (SSI) e credenciais verificáveis on-chain. Seu histórico de trabalho, habilidades comprovadas e avaliações de clientes tornam-se NFTs ou tokens intransferíveis atrelados à sua carteira digital. Sua reputação pertence a você, e viaja com você por toda a internet", explica Thiago Silva, Analista de Macroeconomia.
+      </blockquote>
+
+      <h2>DAOs: As Novas Cooperativas Digitais</h2>
+      <p>Além do trabalho individual, estamos vendo a ascensão das Organizações Autônomas Descentralizadas (DAOs) focadas em serviços. Em vez de trabalhar para uma agência de design ou desenvolvimento de software, freelancers se unem em DAOs, onde possuem tokens de governança.</p>
+      <p>Eles votam nas regras da organização, compartilham recursos, prospectam clientes em conjunto e distribuem os lucros de forma transparente e proporcional à contribuição de cada membro, criando verdadeiras cooperativas digitais de escala global.</p>
+
+      <!-- PAUSA PARA ANÚNCIO 2 -->
+      <div class="my-10 border-y border-dashed border-zinc-800 py-6 flex flex-col items-center justify-center bg-zinc-900/20 rounded-xl">
+        <span class="text-[10px] text-zinc-600 uppercase tracking-[0.2em] font-bold mb-1">Advertisement</span>
+        <span class="text-sm text-zinc-500">Espaço reservado para parceiros</span>
+      </div>
+
+      <hr class="border-zinc-800/50 my-12" />
+
+      <!-- SEÇÕES EXTRAS NÍVEL PORTAL -->
+      <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 mb-8 shadow-lg">
+        <h3 class="text-xl font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-2xl">📊</span> Resumo do Mercado</h3>
+        <ul class="list-none space-y-3 text-zinc-300">
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Fim dos Intermediários:</strong> Contratos inteligentes substituem plataformas centralizadas, reduzindo taxas a quase zero.</li>
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Reputação Portátil:</strong> Histórico de trabalho e avaliações são registrados na blockchain, pertencendo ao trabalhador.</li>
+          <li class="flex items-start"><span class="text-emerald-500 mr-2 mt-1">•</span> <strong>Cooperativismo Digital:</strong> DAOs permitem que freelancers se organizem, capturem valor e governem suas próprias redes de trabalho.</li>
+        </ul>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-10">
+        <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-lg">
+          <h3 class="text-lg font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-xl">🔥</span> Em Alta Hoje</h3>
+          <div class="space-y-5">
+            <div class="border-b border-zinc-800/50 pb-4">
+              <h4 class="font-semibold text-zinc-100 text-sm mb-1">Plataformas Web3</h4>
+              <p class="text-xs text-zinc-400 leading-relaxed">Redes de talentos descentralizadas, como Braintrust e LaborX, ganham tração conectando desenvolvedores Web3 a empresas tradicionais.</p>
+            </div>
+            <div class="border-b border-zinc-800/50 pb-4">
+              <h4 class="font-semibold text-zinc-100 text-sm mb-1">Pagamentos em Cripto</h4>
+              <p class="text-xs text-zinc-400 leading-relaxed">Aumento significativo no número de freelancers globais que preferem receber pagamentos em stablecoins (USDC/USDT) para evitar altas taxas de remessa internacional.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-zinc-100 text-sm mb-1">Regulação do Trabalho</h4>
+              <p class="text-xs text-zinc-400 leading-relaxed">Países europeus debatem novas leis para classificar trabalhadores de aplicativos (Web2) como funcionários, acelerando a busca por modelos alternativos descentralizados.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-lg">
+          <h3 class="text-lg font-bold text-white mb-5 flex items-center"><span class="text-emerald-400 mr-3 text-xl">💡</span> Oportunidade Observada</h3>
+          <div class="space-y-4">
+            <div class="bg-black/40 p-5 rounded-xl border border-zinc-800/50 hover:border-emerald-500/30 transition-colors">
+              <h4 class="font-semibold text-emerald-400 text-sm mb-2">Transição de Carreira</h4>
+              <p class="text-xs text-zinc-300 leading-relaxed">Profissionais que constroem sua reputação on-chain (contribuindo para projetos open-source, participando de bounties e DAOs) estão se posicionando na vanguarda do futuro do trabalho, com acesso a oportunidades globais sem barreiras geográficas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-red-950/20 border border-red-900/30 rounded-2xl p-6 text-sm">
+        <h4 class="text-red-400 font-bold mb-3 flex items-center text-base">⚠️ Aviso de Risco e Isenção de Responsabilidade</h4>
+        <p class="text-zinc-400 leading-relaxed">As informações contidas neste artigo são de caráter exclusivamente jornalístico e educacional. O <strong>CryptoPremium</strong> não faz recomendações de compra ou venda de ativos financeiros. O mercado de criptomoedas é altamente volátil e investimentos podem resultar em perda parcial ou total do capital. Realize sua própria pesquisa (DYOR) e consulte um profissional financeiro certificado antes de tomar decisões de investimento.</p>
+      </div>
+    `,
+    category: "economia",
+    imageUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200",
+    author: "Thiago Silva – Analista de Macroeconomia",
+    date: new Date(Date.now() - 777600000).toISOString(),
+    readTime: "5 min",
   }
 ];
