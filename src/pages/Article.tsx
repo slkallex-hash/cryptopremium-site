@@ -239,11 +239,19 @@ export function Article() {
               Quero receber
             </button>
           </div>
+
+          {/* Second Sidebar Ad */}
+          <AdSlot id="article-sidebar-square-2" type="square" className="rounded-xl" />
         </aside>
       </div>
 
       {/* Bottom Banner Ad */}
       <AdSlot id="article-bottom-banner" type="banner" className="mt-20 mb-12 rounded-xl" />
+
+      {/* Another Bottom Ad */}
+      <div className="my-12">
+        <AdSlot id="article-pre-related-banner" type="banner" />
+      </div>
 
       {/* Related Articles */}
       <section className="mt-20 pt-16 border-t border-zinc-800/50">

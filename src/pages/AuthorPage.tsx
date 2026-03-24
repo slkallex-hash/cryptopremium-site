@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { authors } from "@/data/authors";
 import { articles } from "@/data/articles";
+import { AdSlot } from "@/components/AdSlot";
 import { Clock, ChevronRight, Twitter, Linkedin, Instagram } from "lucide-react";
 import { useEffect } from "react";
 
@@ -31,6 +32,9 @@ export function AuthorPage() {
 
   return (
     <div className="max-w-5xl mx-auto space-y-16">
+      {/* Top Banner Ad */}
+      <AdSlot id="author-top-banner" type="banner" className="mb-8 rounded-xl" />
+
       {/* JSON-LD Structured Data */}
       <script type="application/ld+json">
         {JSON.stringify({
@@ -122,6 +126,9 @@ export function AuthorPage() {
           ))}
         </div>
       </section>
+
+      {/* Bottom Banner Ad */}
+      <AdSlot id="author-bottom-banner" type="banner" className="mt-16 mb-8 rounded-xl" />
     </div>
   );
 }

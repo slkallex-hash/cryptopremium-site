@@ -43,8 +43,15 @@ export function Home() {
         </div>
         <div className="lg:col-span-1">
           <MarketSentiment />
+          {/* Sidebar Ad on Home */}
+          <AdSlot id="home-sidebar-ad" type="square" className="mt-8 rounded-2xl" />
         </div>
       </section>
+
+      {/* Top Banner Ad */}
+      <div className="my-8">
+        <AdSlot id="home-top-banner" type="banner" />
+      </div>
 
       {/* Destaques (Grid de Cards) */}
       <section>
@@ -132,6 +139,11 @@ export function Home() {
           ))}
         </div>
       </section>
+
+      {/* Middle Banner Ad */}
+      <div className="my-16">
+        <AdSlot id="home-middle-banner-2" type="banner" />
+      </div>
 
 
 
@@ -232,6 +244,11 @@ export function Home() {
               <span>1.8k visualizações</span>
             </div>
           </div>
+        </div>
+
+        {/* Ad inside Play section */}
+        <div className="mt-12">
+          <AdSlot id="home-play-banner" type="banner" className="border-emerald-500/20" />
         </div>
       </section>
 
