@@ -24,7 +24,6 @@ export function Layout() {
 
       {/* Header */}
       <header className="sticky top-0 z-40 w-full backdrop-blur-xl bg-[#09090b]/80 border-b border-zinc-800/50">
-        <CryptoTicker />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
@@ -36,7 +35,7 @@ export function Layout() {
               </button>
               <Link to="/" className="flex items-center space-x-2.5 group">
                 <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-400 to-cyan-500 flex items-center justify-center shadow-lg shadow-emerald-500/20 group-hover:shadow-emerald-500/40 transition-all">
-                  <TrendingUp className="w-5 h-5 text-zinc-950" strokeWidth={2.5} />
+                  <TrendingUp className="w-5 h-5 text-zinc-950" strokeWidth={2.5} stroke="currentColor" />
                 </div>
                 <span className="text-2xl font-display font-bold tracking-tight">
                   Crypto<span className="text-emerald-400">Premium</span>
@@ -88,6 +87,9 @@ export function Layout() {
             </div>
           </div>
         )}
+        
+        {/* CryptoTicker below the menu */}
+        <CryptoTicker />
       </header>
 
       {/* Main Content */}
