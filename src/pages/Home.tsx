@@ -175,7 +175,7 @@ export function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
           {/* Video 1 */}
-          <div className="group block cursor-pointer">
+          <Link to="/category/investimentos" className="group block cursor-pointer">
             <div className="relative rounded-2xl overflow-hidden mb-6 aspect-video bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500/50 transition-all shadow-lg">
               <img src="https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=800" alt="Video thumbnail" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
               <div className="absolute inset-0 flex items-center justify-center">
@@ -195,10 +195,10 @@ export function Home() {
               <span className="mx-2">•</span>
               <span>2.4k visualizações</span>
             </div>
-          </div>
+          </Link>
 
           {/* Video 2 */}
-          <div className="group block cursor-pointer">
+          <Link to="/category/noticias-urgentes" className="group block cursor-pointer">
             <div className="relative rounded-2xl overflow-hidden mb-6 aspect-video bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500/50 transition-all shadow-lg">
               <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="Video thumbnail" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
               <div className="absolute inset-0 flex items-center justify-center">
@@ -218,10 +218,10 @@ export function Home() {
               <span className="mx-2">•</span>
               <span>5.1k visualizações</span>
             </div>
-          </div>
+          </Link>
 
           {/* Video 3 */}
-          <div className="group block cursor-pointer">
+          <Link to="/category/altcoins" className="group block cursor-pointer">
             <div className="relative rounded-2xl overflow-hidden mb-6 aspect-video bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500/50 transition-all shadow-lg">
               <img src="https://images.unsplash.com/photo-1639762681485-074b7f4ec651?auto=format&fit=crop&q=80&w=800" alt="Video thumbnail" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
               <div className="absolute inset-0 flex items-center justify-center">
@@ -241,7 +241,7 @@ export function Home() {
               <span className="mx-2">•</span>
               <span>1.8k visualizações</span>
             </div>
-          </div>
+          </Link>
         </div>
       </section>
 
