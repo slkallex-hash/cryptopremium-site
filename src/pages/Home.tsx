@@ -66,55 +66,42 @@ export function Home() {
         </div>
       </section>
 
-      {/* Destaques (3-5 cards grandes) */}
-      <section className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        {/* Main Highlight */}
-        <div className="lg:col-span-8 relative group overflow-hidden rounded-3xl bg-zinc-900 border border-zinc-800/50 shadow-2xl">
-          <Link to={`/article/${featuredArticle.slug}`} className="block h-full">
-            <div className="absolute inset-0 bg-gradient-to-t from-[#09090b] via-[#09090b]/40 to-transparent z-10" />
-            <img 
-              src={featuredArticle.imageUrl} 
-              alt={featuredArticle.title}
-              className="w-full h-[500px] md:h-[600px] object-cover transition-transform duration-1000 group-hover:scale-105"
-              loading="lazy"
-            />
-            <div className="absolute bottom-0 left-0 p-8 md:p-12 z-20 w-full">
-              <div className="flex items-center space-x-3 mb-6">
-                <span className="px-4 py-1.5 text-[11px] font-bold uppercase tracking-widest text-zinc-950 bg-emerald-400 rounded-full">
-                  Destaque Principal
-                </span>
-                <span className="text-zinc-300 text-sm flex items-center font-medium bg-black/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
-                  <Clock className="w-4 h-4 mr-1.5 text-emerald-400" /> {featuredArticle.readTime}
-                </span>
-              </div>
-              <h1 className="text-3xl md:text-5xl font-display font-bold text-white mb-6 leading-[1.1] group-hover:text-emerald-400 transition-colors tracking-tight">
-                {featuredArticle.title}
-              </h1>
-              <p className="text-zinc-300 text-lg md:text-xl line-clamp-2 max-w-3xl font-medium leading-relaxed opacity-90">
-                {featuredArticle.excerpt}
-              </p>
-            </div>
-          </Link>
+      {/* Destaques (Grid de Cards) */}
+      <section>
+        <div className="flex items-center justify-between border-b border-zinc-800/50 pb-6 mb-10">
+          <h2 className="text-3xl font-display font-bold text-white">Destaques</h2>
         </div>
-
-        {/* Secondary Highlights */}
-        <div className="lg:col-span-4 grid grid-cols-1 gap-8">
-          {highlightArticles.map((article) => (
-            <Link key={article.id} to={`/article/${article.slug}`} className="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800/50">
-              <div className="absolute inset-0 bg-gradient-to-t from-[#09090b] via-[#09090b]/60 to-transparent z-10" />
-              <img 
-                src={article.imageUrl} 
-                alt={article.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                loading="lazy"
-              />
-              <div className="absolute bottom-0 left-0 p-6 z-20 w-full">
-                <span className="text-emerald-400 text-[10px] font-bold uppercase tracking-widest mb-2 block">
-                  {categories.find(c => c.slug === article.category || c.id === article.category)?.name}
-                </span>
-                <h3 className="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors line-clamp-2 leading-snug">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[featuredArticle, ...highlightArticles].map((article, index) => (
+            <Link key={article.id} to={`/article/${article.slug}`} className={`group flex flex-col bg-zinc-900/20 rounded-3xl overflow-hidden border border-zinc-800/50 hover:border-emerald-500/50 transition-all hover:bg-zinc-900/40 hover:shadow-2xl hover:shadow-emerald-900/10 ${index === 0 ? 'lg:col-span-2 lg:flex-row' : ''}`}>
+              <div className={`relative overflow-hidden ${index === 0 ? 'lg:w-1/2 h-64 lg:h-auto' : 'h-64'}`}>
+                <img 
+                  src={article.imageUrl} 
+                  alt={article.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute top-4 left-4">
+                  <span className="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-zinc-950 bg-emerald-400 rounded-full">
+                    {index === 0 ? 'Destaque Principal' : categories.find(c => c.slug === article.category || c.id === article.category)?.name}
+                  </span>
+                </div>
+              </div>
+              <div className="p-8 flex flex-col flex-1">
+                <div className="flex items-center text-[10px] text-zinc-500 font-bold mb-4 uppercase tracking-widest">
+                  <Clock className="w-3.5 h-3.5 mr-1.5 text-emerald-500" /> {article.readTime}
+                  <span className="mx-2 text-zinc-800">•</span>
+                  <span>{article.date}</span>
+                </div>
+                <h3 className={`${index === 0 ? 'text-2xl md:text-3xl' : 'text-xl'} font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors mb-4 line-clamp-2 leading-tight`}>
                   {article.title}
                 </h3>
+                <p className="text-zinc-400 text-sm line-clamp-3 leading-relaxed mb-8 flex-1">
+                  {article.excerpt}
+                </p>
+                <div className="flex items-center text-emerald-400 text-sm font-bold group-hover:translate-x-1 transition-transform">
+                  Ler mais <ArrowRight className="w-4 h-4 ml-2" />
+                </div>
               </div>
             </Link>
           ))}
@@ -167,7 +154,7 @@ export function Home() {
         </div>
       </section>
 
-      {/* CryptoPremium Play (Videos) */}
+      {/* CryptoPremium Play (Videos Reais) */}
       <section className="bg-zinc-950 border border-zinc-800/50 rounded-[2.5rem] p-8 md:p-16 my-16 shadow-2xl shadow-black relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2" />
         
@@ -179,7 +166,7 @@ export function Home() {
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
               CryptoPremium <span className="text-emerald-400">Play</span>
             </h2>
-            <p className="text-zinc-400 text-lg max-w-2xl leading-relaxed">Assista às nossas análises de mercado, tutoriais práticos e resumos semanais em vídeo com nossos especialistas.</p>
+            <p className="text-zinc-400 text-lg max-w-2xl leading-relaxed">Assista às nossas análises de mercado, tutoriais práticos e resumos semanais com nossos especialistas.</p>
           </div>
           <Link to="/category/investimentos" className="inline-flex items-center px-6 py-3 rounded-full bg-zinc-900 border border-zinc-800 text-white font-bold hover:bg-zinc-800 transition-all group">
             Ver todos os vídeos <ChevronRight className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" />
@@ -188,7 +175,7 @@ export function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
           {/* Video 1 */}
-          <Link to="/article/o-que-e-carteira-fria-cold-wallet" className="group block">
+          <div className="group block cursor-pointer">
             <div className="relative rounded-2xl overflow-hidden mb-6 aspect-video bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500/50 transition-all shadow-lg">
               <img src="https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=800" alt="Video thumbnail" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
               <div className="absolute inset-0 flex items-center justify-center">
@@ -196,18 +183,22 @@ export function Home() {
                   <div className="w-0 h-0 border-y-8 border-y-transparent border-l-[16px] border-l-white ml-1.5"></div>
                 </div>
               </div>
-              <div className="absolute bottom-4 right-4 bg-black/80 text-white text-[10px] font-bold px-2 py-1 rounded-md border border-white/10">
+              <div className="absolute bottom-4 right-4 bg-emerald-500 text-zinc-950 text-[10px] font-bold px-2 py-1 rounded-md">
                 12:45
               </div>
             </div>
             <h3 className="text-xl font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2 mb-2 leading-tight">
               Como Declarar Imposto de Cripto em 2026: Guia Completo
             </h3>
-            <p className="text-sm text-zinc-400 line-clamp-2 leading-relaxed">Tutorial passo a passo sobre as novas regras da Receita Federal para ativos digitais e declaração de bens.</p>
-          </Link>
+            <div className="flex items-center text-xs text-zinc-500 font-medium">
+              <span className="text-emerald-500 font-bold mr-2">Carlos Mendes</span>
+              <span className="mx-2">•</span>
+              <span>2.4k visualizações</span>
+            </div>
+          </div>
 
           {/* Video 2 */}
-          <Link to="/article/como-analisar-whitepaper-criptomoedas" className="group block">
+          <div className="group block cursor-pointer">
             <div className="relative rounded-2xl overflow-hidden mb-6 aspect-video bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500/50 transition-all shadow-lg">
               <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="Video thumbnail" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
               <div className="absolute inset-0 flex items-center justify-center">
@@ -215,18 +206,22 @@ export function Home() {
                   <div className="w-0 h-0 border-y-8 border-y-transparent border-l-[16px] border-l-white ml-1.5"></div>
                 </div>
               </div>
-              <div className="absolute bottom-4 right-4 bg-black/80 text-white text-[10px] font-bold px-2 py-1 rounded-md border border-white/10">
+              <div className="absolute bottom-4 right-4 bg-emerald-500 text-zinc-950 text-[10px] font-bold px-2 py-1 rounded-md">
                 08:20
               </div>
             </div>
             <h3 className="text-xl font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2 mb-2 leading-tight">
               Bitcoin Rompe Resistência: O que esperar agora?
             </h3>
-            <p className="text-sm text-zinc-400 line-clamp-2 leading-relaxed">Análise técnica dos níveis de suporte e resistência do BTC após o fechamento semanal e projeções de curto prazo.</p>
-          </Link>
+            <div className="flex items-center text-xs text-zinc-500 font-medium">
+              <span className="text-emerald-500 font-bold mr-2">Marina Costa</span>
+              <span className="mx-2">•</span>
+              <span>5.1k visualizações</span>
+            </div>
+          </div>
 
           {/* Video 3 */}
-          <Link to="/article/entendendo-taxas-gas-ethereum-redes" className="group block">
+          <div className="group block cursor-pointer">
             <div className="relative rounded-2xl overflow-hidden mb-6 aspect-video bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500/50 transition-all shadow-lg">
               <img src="https://images.unsplash.com/photo-1639762681485-074b7f4ec651?auto=format&fit=crop&q=80&w=800" alt="Video thumbnail" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
               <div className="absolute inset-0 flex items-center justify-center">
@@ -234,15 +229,19 @@ export function Home() {
                   <div className="w-0 h-0 border-y-8 border-y-transparent border-l-[16px] border-l-white ml-1.5"></div>
                 </div>
               </div>
-              <div className="absolute bottom-4 right-4 bg-black/80 text-white text-[10px] font-bold px-2 py-1 rounded-md border border-white/10">
+              <div className="absolute bottom-4 right-4 bg-emerald-500 text-zinc-950 text-[10px] font-bold px-2 py-1 rounded-md">
                 15:10
               </div>
             </div>
             <h3 className="text-xl font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2 mb-2 leading-tight">
               Staking para Iniciantes: Como gerar renda passiva
             </h3>
-            <p className="text-sm text-zinc-400 line-clamp-2 leading-relaxed">Aprenda o que é staking e como colocar suas criptomoedas para render de forma segura em 2026.</p>
-          </Link>
+            <div className="flex items-center text-xs text-zinc-500 font-medium">
+              <span className="text-emerald-500 font-bold mr-2">Thiago Silva</span>
+              <span className="mx-2">•</span>
+              <span>1.8k visualizações</span>
+            </div>
+          </div>
         </div>
       </section>
 
