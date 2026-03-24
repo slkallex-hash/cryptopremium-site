@@ -64,12 +64,9 @@ export function Category() {
                   <span className="mx-2 text-zinc-800">•</span>
                   {article.author.split(' – ')[0]}
                 </div>
-                <h3 className="text-2xl font-display font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors mb-4 line-clamp-2 leading-snug">
+                <h3 className="text-2xl font-display font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors mb-6 line-clamp-2 leading-snug">
                   {article.title}
                 </h3>
-                <p className="text-zinc-400 text-sm line-clamp-3 mb-6 flex-1 leading-relaxed">
-                  {article.excerpt}
-                </p>
                 <div className="mt-auto flex items-center text-emerald-400 text-sm font-bold uppercase tracking-wider">
                   Ler artigo <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                 </div>

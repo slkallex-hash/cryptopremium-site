@@ -111,12 +111,9 @@ export function AuthorPage() {
                   <span className="mx-2 text-zinc-700">•</span>
                   <Clock className="w-3.5 h-3.5 mr-1.5" /> {article.readTime}
                 </div>
-                <h3 className="text-xl font-display font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors mb-3 line-clamp-2">
+                <h3 className="text-xl font-display font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors mb-6 line-clamp-2">
                   {article.title}
                 </h3>
-                <p className="text-zinc-400 text-sm line-clamp-2 mb-4">
-                  {article.excerpt}
-                </p>
                 <span className="text-emerald-400 text-sm font-bold flex items-center group-hover:translate-x-1 transition-transform">
                   Ler artigo <ChevronRight className="w-4 h-4 ml-1" />
                 </span>
