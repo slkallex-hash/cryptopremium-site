@@ -43,14 +43,24 @@ export function Home() {
         </div>
         <div className="lg:col-span-1">
           <MarketSentiment />
-          {/* Sidebar Ad on Home */}
-          <AdSlot id="home-sidebar-ad" type="square" className="mt-8 rounded-2xl" />
+          {/* Sidebar Ads on Home */}
+          <div className="flex flex-col gap-6 mt-8">
+            <AdSlot id="home-sidebar-ad-1" type="square" className="rounded-2xl" />
+            <AdSlot id="home-sidebar-ad-2" type="square" className="rounded-2xl" />
+            <AdSlot id="home-sidebar-ad-3" type="square" className="rounded-2xl" />
+            <AdSlot id="home-sidebar-ad-4" type="square" className="rounded-2xl" />
+            <AdSlot id="home-sidebar-ad-5" type="square" className="rounded-2xl" />
+          </div>
         </div>
       </section>
 
-      {/* Top Banner Ad */}
-      <div className="my-8">
-        <AdSlot id="home-top-banner" type="banner" />
+      {/* Top Banner Ads */}
+      <div className="my-8 flex flex-col gap-6">
+        <AdSlot id="home-top-banner-1" type="banner" />
+        <AdSlot id="home-top-banner-2" type="banner" />
+        <AdSlot id="home-top-banner-3" type="banner" />
+        <AdSlot id="home-top-banner-4" type="banner" />
+        <AdSlot id="home-top-banner-5" type="banner" />
       </div>
 
       {/* Destaques (Grid de Cards) */}

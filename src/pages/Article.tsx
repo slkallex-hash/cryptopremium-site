@@ -251,15 +251,32 @@ export function Article() {
 
           {/* Third Sidebar Ad */}
           <AdSlot id="article-sidebar-square-3" type="square" className="rounded-xl" />
+          <AdSlot id="article-sidebar-square-4" type="square" className="rounded-xl" />
+          <AdSlot id="article-sidebar-square-5" type="square" className="rounded-xl" />
+          <AdSlot id="article-sidebar-square-6" type="square" className="rounded-xl" />
+          <AdSlot id="article-sidebar-square-7" type="square" className="rounded-xl" />
+          <AdSlot id="article-sidebar-square-8" type="square" className="rounded-xl" />
+          <AdSlot id="article-sidebar-square-9" type="square" className="rounded-xl" />
+          <AdSlot id="article-sidebar-square-10" type="square" className="rounded-xl" />
         </aside>
       </div>
 
-      {/* Bottom Banner Ad */}
-      <AdSlot id="article-bottom-banner" type="banner" className="mt-20 mb-12 rounded-xl" />
+      {/* Bottom Banner Ads */}
+      <div className="mt-20 mb-12 flex flex-col gap-6">
+        <AdSlot id="article-bottom-banner-1" type="banner" className="rounded-xl" />
+        <AdSlot id="article-bottom-banner-2" type="banner" className="rounded-xl" />
+        <AdSlot id="article-bottom-banner-3" type="banner" className="rounded-xl" />
+        <AdSlot id="article-bottom-banner-4" type="banner" className="rounded-xl" />
+        <AdSlot id="article-bottom-banner-5" type="banner" className="rounded-xl" />
+      </div>
 
-      {/* Another Bottom Ad */}
-      <div className="my-12">
-        <AdSlot id="article-pre-related-banner" type="banner" />
+      {/* Another Bottom Ads */}
+      <div className="my-12 flex flex-col gap-6">
+        <AdSlot id="article-pre-related-banner-1" type="banner" />
+        <AdSlot id="article-pre-related-banner-2" type="banner" />
+        <AdSlot id="article-pre-related-banner-3" type="banner" />
+        <AdSlot id="article-pre-related-banner-4" type="banner" />
+        <AdSlot id="article-pre-related-banner-5" type="banner" />
       </div>
 
       {/* Related Articles */}
