@@ -3,7 +3,6 @@ import { articles, categories } from "@/data/articles";
 import { Clock, ChevronRight, Zap, Mail, ArrowRight, X, Play } from "lucide-react";
 import { useEffect, useState } from "react";
 import { PriceChart } from "@/components/PriceChart";
-import { MarketSentiment } from "@/components/MarketSentiment";
 import { AdSlot } from "@/components/AdSlot";
 
 export function Home() {
@@ -42,7 +41,6 @@ export function Home() {
           <PriceChart />
         </div>
         <div className="lg:col-span-1">
-          <MarketSentiment />
           {/* Sidebar Ads on Home */}
           <div className="flex flex-col gap-6 mt-8">
             <AdSlot id="home-sidebar-ad-1" type="square" className="rounded-2xl" />
