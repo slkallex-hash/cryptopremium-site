@@ -1,17 +1,30 @@
 import { cn } from "@/lib/utils";
 import { Megaphone } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 interface AdSlotProps {
   id: string;
   className?: string;
   type?: "banner" | "square" | "sticky";
+  zoneId?: string;
 }
 
-export function AdSlot({ id, className, type = "banner" }: AdSlotProps) {
-  // AADS / AdSense placeholder
-  // In a real scenario, you would insert the script tag or component here
-  
+declare global {
+  interface Window {
+    AdProvider: any[];
+  }
+}
+
+export function AdSlot({ id, className, type = "banner", zoneId = "5869460" }: AdSlotProps) {
+  useEffect(() => {
+    try {
+      (window.AdProvider = window.AdProvider || []).push({ serve: {} });
+    } catch (e) {
+      console.error("AdProvider error:", e);
+    }
+  }, [id]);
+
   return (
     <div
       className={cn(
@@ -22,19 +35,14 @@ export function AdSlot({ id, className, type = "banner" }: AdSlotProps) {
         className
       )}
     >
-      {/* 
-        TODO: Insert Ad Code Here 
-      */}
-      <Link to="/contato" className="flex flex-col items-center justify-center w-full h-full absolute inset-0">
+      {/* ExoClick Ad Unit */}
+      <ins className="eas6a97888e10" data-zoneid={zoneId}></ins>
+
+      <Link to="/contato" className="flex flex-col items-center justify-center w-full h-full absolute inset-0 z-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">
         <div className="flex items-center gap-2 text-sm font-medium text-zinc-500 group-hover:text-emerald-400 transition-colors">
           <Megaphone className="w-4 h-4" />
           <span>Espaço Publicitário</span>
         </div>
-        {type !== "sticky" && (
-          <span className="text-xs text-zinc-600 mt-1 group-hover:text-zinc-500 transition-colors">
-            Anuncie no CryptoPremium
-          </span>
-        )}
       </Link>
     </div>
   );

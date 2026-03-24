@@ -4,6 +4,7 @@ import { Clock, ChevronRight, Zap, Mail, ArrowRight, X, Play } from "lucide-reac
 import { useEffect, useState } from "react";
 import { PriceChart } from "@/components/PriceChart";
 import { MarketSentiment } from "@/components/MarketSentiment";
+import { AdSlot } from "@/components/AdSlot";
 
 export function Home() {
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
@@ -83,6 +84,11 @@ export function Home() {
           ))}
         </div>
       </section>
+
+      {/* Ad Banner */}
+      <div className="my-12">
+        <AdSlot id="home-banner-1" type="banner" />
+      </div>
 
       {/* Últimas Notícias (Grid com Cards) */}
       <section>
