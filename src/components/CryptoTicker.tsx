@@ -12,27 +12,50 @@ const mockPrices = [
 
 export function CryptoTicker() {
   return (
-    <div className="w-full bg-zinc-950 border-b border-zinc-800 overflow-hidden py-2 text-xs font-mono whitespace-nowrap">
+    <div className="w-full bg-zinc-950 border-b border-zinc-800 overflow-hidden py-2 text-xs font-mono whitespace-nowrap select-none">
       <div className="flex animate-marquee">
-        {/* Double the items for seamless loop */}
-        {[...mockPrices, ...mockPrices].map((coin, i) => (
-          <div key={i} className="flex items-center space-x-2 mx-6 text-zinc-300">
-            <span className="font-bold text-white">{coin.symbol}</span>
-            <span>{coin.price}</span>
-            <span
-              className={`flex items-center ${
-                coin.up ? "text-emerald-400" : "text-red-400"
-              }`}
-            >
-              {coin.up ? (
-                <TrendingUp className="w-3 h-3 mr-1" />
-              ) : (
-                <TrendingDown className="w-3 h-3 mr-1" />
-              )}
-              {coin.change}
-            </span>
-          </div>
-        ))}
+        {/* Original list for SEO and Accessibility */}
+        <div className="flex shrink-0">
+          {mockPrices.map((coin, i) => (
+            <div key={`orig-${i}`} className="flex items-center space-x-2 mx-6 text-zinc-300">
+              <span className="font-bold text-white">{coin.symbol}</span>
+              <span>{coin.price}</span>
+              <span
+                className={`flex items-center ${
+                  coin.up ? "text-emerald-400" : "text-red-400"
+                }`}
+              >
+                {coin.up ? (
+                  <TrendingUp className="w-3 h-3 mr-1" />
+                ) : (
+                  <TrendingDown className="w-3 h-3 mr-1" />
+                )}
+                {coin.change}
+              </span>
+            </div>
+          ))}
+        </div>
+        {/* Duplicated list for seamless loop, hidden from SEO and Screen Readers */}
+        <div className="flex shrink-0" aria-hidden="true">
+          {mockPrices.map((coin, i) => (
+            <div key={`dup-${i}`} className="flex items-center space-x-2 mx-6 text-zinc-300">
+              <span className="font-bold text-white">{coin.symbol}</span>
+              <span>{coin.price}</span>
+              <span
+                className={`flex items-center ${
+                  coin.up ? "text-emerald-400" : "text-red-400"
+                }`}
+              >
+                {coin.up ? (
+                  <TrendingUp className="w-3 h-3 mr-1" />
+                ) : (
+                  <TrendingDown className="w-3 h-3 mr-1" />
+                )}
+                {coin.change}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
