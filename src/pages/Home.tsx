@@ -75,11 +75,6 @@ export function Home() {
                 <h3 className={`${index === 0 ? 'text-2xl md:text-3xl' : 'text-xl'} font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors mb-4 line-clamp-2 leading-tight`}>
                   {article.title}
                 </h3>
-                {index === 0 && (
-                  <p className="text-zinc-400 text-sm line-clamp-3 leading-relaxed mb-8 flex-1">
-                    {article.excerpt}
-                  </p>
-                )}
                 <div className="mt-auto flex items-center text-emerald-400 text-sm font-bold group-hover:translate-x-1 transition-transform">
                   Ler mais <ArrowRight className="w-4 h-4 ml-2" />
                 </div>
