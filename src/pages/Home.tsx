@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { articles, categories } from "@/data/articles";
-import { AdSlot } from "@/components/AdSlot";
-import { RealTimeNewsFeed } from "@/components/RealTimeNewsFeed";
-import { Clock, TrendingUp, ChevronRight, Zap, Mail, ArrowRight } from "lucide-react";
+import { Clock, ChevronRight, Zap, Mail, ArrowRight } from "lucide-react";
 import { useEffect } from "react";
 import { PriceChart } from "@/components/PriceChart";
 import { MarketSentiment } from "@/components/MarketSentiment";
@@ -15,12 +13,6 @@ export function Home() {
   const featuredArticle = articles[0];
   const highlightArticles = articles.slice(1, 4);
   const recentArticles = articles.slice(4, 10);
-  const educationalSlugs = [
-    'o-que-e-carteira-fria-cold-wallet',
-    'como-analisar-whitepaper-criptomoedas',
-    'entendendo-taxas-gas-ethereum-redes'
-  ];
-  const educationalArticles = articles.filter(a => educationalSlugs.includes(a.slug));
 
   return (
     <div className="space-y-16">
@@ -154,96 +146,7 @@ export function Home() {
         </div>
       </section>
 
-      {/* CryptoPremium Play (Videos Reais) */}
-      <section className="bg-zinc-950 border border-zinc-800/50 rounded-[2.5rem] p-8 md:p-16 my-16 shadow-2xl shadow-black relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2" />
-        
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 relative z-10">
-          <div>
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-bold uppercase tracking-widest mb-4">
-              Conteúdo em Vídeo
-            </div>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
-              CryptoPremium <span className="text-emerald-400">Play</span>
-            </h2>
-            <p className="text-zinc-400 text-lg max-w-2xl leading-relaxed">Assista às nossas análises de mercado, tutoriais práticos e resumos semanais com nossos especialistas.</p>
-          </div>
-          <Link to="/category/investimentos" className="inline-flex items-center px-6 py-3 rounded-full bg-zinc-900 border border-zinc-800 text-white font-bold hover:bg-zinc-800 transition-all group">
-            Ver todos os vídeos <ChevronRight className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" />
-          </Link>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
-          {/* Video 1 */}
-          <Link to="/category/investimentos" className="group block cursor-pointer">
-            <div className="relative rounded-2xl overflow-hidden mb-6 aspect-video bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500/50 transition-all shadow-lg">
-              <img src="https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=800" alt="Video thumbnail" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-16 h-16 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center border border-white/20 group-hover:scale-110 group-hover:bg-emerald-500 transition-all">
-                  <div className="w-0 h-0 border-y-8 border-y-transparent border-l-[16px] border-l-white ml-1.5"></div>
-                </div>
-              </div>
-              <div className="absolute bottom-4 right-4 bg-emerald-500 text-zinc-950 text-[10px] font-bold px-2 py-1 rounded-md">
-                12:45
-              </div>
-            </div>
-            <h3 className="text-xl font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2 mb-2 leading-tight">
-              Como Declarar Imposto de Cripto em 2026: Guia Completo
-            </h3>
-            <div className="flex items-center text-xs text-zinc-500 font-medium">
-              <span className="text-emerald-500 font-bold mr-2">Carlos Mendes</span>
-              <span className="mx-2">•</span>
-              <span>2.4k visualizações</span>
-            </div>
-          </Link>
-
-          {/* Video 2 */}
-          <Link to="/category/noticias-urgentes" className="group block cursor-pointer">
-            <div className="relative rounded-2xl overflow-hidden mb-6 aspect-video bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500/50 transition-all shadow-lg">
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="Video thumbnail" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-16 h-16 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center border border-white/20 group-hover:scale-110 group-hover:bg-emerald-500 transition-all">
-                  <div className="w-0 h-0 border-y-8 border-y-transparent border-l-[16px] border-l-white ml-1.5"></div>
-                </div>
-              </div>
-              <div className="absolute bottom-4 right-4 bg-emerald-500 text-zinc-950 text-[10px] font-bold px-2 py-1 rounded-md">
-                08:20
-              </div>
-            </div>
-            <h3 className="text-xl font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2 mb-2 leading-tight">
-              Bitcoin Rompe Resistência: O que esperar agora?
-            </h3>
-            <div className="flex items-center text-xs text-zinc-500 font-medium">
-              <span className="text-emerald-500 font-bold mr-2">Marina Costa</span>
-              <span className="mx-2">•</span>
-              <span>5.1k visualizações</span>
-            </div>
-          </Link>
-
-          {/* Video 3 */}
-          <Link to="/category/altcoins" className="group block cursor-pointer">
-            <div className="relative rounded-2xl overflow-hidden mb-6 aspect-video bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500/50 transition-all shadow-lg">
-              <img src="https://images.unsplash.com/photo-1639762681485-074b7f4ec651?auto=format&fit=crop&q=80&w=800" alt="Video thumbnail" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-16 h-16 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center border border-white/20 group-hover:scale-110 group-hover:bg-emerald-500 transition-all">
-                  <div className="w-0 h-0 border-y-8 border-y-transparent border-l-[16px] border-l-white ml-1.5"></div>
-                </div>
-              </div>
-              <div className="absolute bottom-4 right-4 bg-emerald-500 text-zinc-950 text-[10px] font-bold px-2 py-1 rounded-md">
-                15:10
-              </div>
-            </div>
-            <h3 className="text-xl font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors line-clamp-2 mb-2 leading-tight">
-              Staking para Iniciantes: Como gerar renda passiva
-            </h3>
-            <div className="flex items-center text-xs text-zinc-500 font-medium">
-              <span className="text-emerald-500 font-bold mr-2">Thiago Silva</span>
-              <span className="mx-2">•</span>
-              <span>1.8k visualizações</span>
-            </div>
-          </Link>
-        </div>
-      </section>
 
       {/* Newsletter Section */}
       <section className="bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 border border-emerald-500/30 rounded-3xl p-8 md:p-12 text-center relative overflow-hidden">
