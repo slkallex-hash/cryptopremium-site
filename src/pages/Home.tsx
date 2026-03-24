@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import { articles, categories } from "@/data/articles";
-import { Clock, ChevronRight, Zap, Mail, ArrowRight } from "lucide-react";
-import { useEffect } from "react";
+import { Clock, ChevronRight, Zap, Mail, ArrowRight, X, Play } from "lucide-react";
+import { useEffect, useState } from "react";
 import { PriceChart } from "@/components/PriceChart";
 import { MarketSentiment } from "@/components/MarketSentiment";
 
 export function Home() {
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
+
   useEffect(() => {
     document.title = "CryptoPremium | Notícias sobre Criptomoedas e Economia Global";
   }, []);
@@ -169,12 +171,15 @@ export function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
           {/* Video 1 */}
-          <Link to="/category/investimentos" className="group block cursor-pointer">
+          <div 
+            onClick={() => setActiveVideo("https://www.youtube.com/embed/S_8S7vO-KqM")}
+            className="group block cursor-pointer"
+          >
             <div className="relative rounded-2xl overflow-hidden mb-6 aspect-video bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500/50 transition-all shadow-lg">
               <img src="https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=800" alt="Video thumbnail" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-16 h-16 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center border border-white/20 group-hover:scale-110 group-hover:bg-emerald-500 transition-all">
-                  <div className="w-0 h-0 border-y-8 border-y-transparent border-l-[16px] border-l-white ml-1.5"></div>
+                  <Play className="w-6 h-6 text-white ml-1 fill-white" />
                 </div>
               </div>
               <div className="absolute bottom-4 right-4 bg-emerald-500 text-zinc-950 text-[10px] font-bold px-2 py-1 rounded-md">
@@ -189,15 +194,18 @@ export function Home() {
               <span className="mx-2">•</span>
               <span>2.4k visualizações</span>
             </div>
-          </Link>
+          </div>
 
           {/* Video 2 */}
-          <Link to="/category/noticias-urgentes" className="group block cursor-pointer">
+          <div 
+            onClick={() => setActiveVideo("https://www.youtube.com/embed/ZE2HxT5s2_8")}
+            className="group block cursor-pointer"
+          >
             <div className="relative rounded-2xl overflow-hidden mb-6 aspect-video bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500/50 transition-all shadow-lg">
               <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="Video thumbnail" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-16 h-16 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center border border-white/20 group-hover:scale-110 group-hover:bg-emerald-500 transition-all">
-                  <div className="w-0 h-0 border-y-8 border-y-transparent border-l-[16px] border-l-white ml-1.5"></div>
+                  <Play className="w-6 h-6 text-white ml-1 fill-white" />
                 </div>
               </div>
               <div className="absolute bottom-4 right-4 bg-emerald-500 text-zinc-950 text-[10px] font-bold px-2 py-1 rounded-md">
@@ -212,15 +220,18 @@ export function Home() {
               <span className="mx-2">•</span>
               <span>5.1k visualizações</span>
             </div>
-          </Link>
+          </div>
 
           {/* Video 3 */}
-          <Link to="/category/altcoins" className="group block cursor-pointer">
+          <div 
+            onClick={() => setActiveVideo("https://www.youtube.com/embed/rYQgy8QDEBI")}
+            className="group block cursor-pointer"
+          >
             <div className="relative rounded-2xl overflow-hidden mb-6 aspect-video bg-zinc-900 border border-zinc-800 group-hover:border-emerald-500/50 transition-all shadow-lg">
               <img src="https://images.unsplash.com/photo-1639762681485-074b7f4ec651?auto=format&fit=crop&q=80&w=800" alt="Video thumbnail" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-16 h-16 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center border border-white/20 group-hover:scale-110 group-hover:bg-emerald-500 transition-all">
-                  <div className="w-0 h-0 border-y-8 border-y-transparent border-l-[16px] border-l-white ml-1.5"></div>
+                  <Play className="w-6 h-6 text-white ml-1 fill-white" />
                 </div>
               </div>
               <div className="absolute bottom-4 right-4 bg-emerald-500 text-zinc-950 text-[10px] font-bold px-2 py-1 rounded-md">
@@ -235,9 +246,33 @@ export function Home() {
               <span className="mx-2">•</span>
               <span>1.8k visualizações</span>
             </div>
-          </Link>
+          </div>
         </div>
       </section>
+
+      {/* Video Modal */}
+      {activeVideo && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-8">
+          <div 
+            className="absolute inset-0 bg-black/90 backdrop-blur-sm"
+            onClick={() => setActiveVideo(null)}
+          />
+          <div className="relative w-full max-w-5xl aspect-video bg-black rounded-3xl overflow-hidden shadow-2xl border border-zinc-800 animate-in zoom-in-95 duration-300">
+            <button 
+              onClick={() => setActiveVideo(null)}
+              className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/50 backdrop-blur-md flex items-center justify-center text-white hover:bg-emerald-500 transition-colors"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <iframe
+              src={`${activeVideo}?autoplay=1`}
+              className="w-full h-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
 
       {/* Newsletter Section */}
       <section className="bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 border border-emerald-500/30 rounded-3xl p-8 md:p-12 text-center relative overflow-hidden">
