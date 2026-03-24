@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Shield, Target, TrendingUp, TrendingUp as TrendingIcon } from "lucide-react";
 import { Link } from "react-router-dom";
+import { AdSlot } from "@/components/AdSlot";
 
 export function About() {
   useEffect(() => {
@@ -10,6 +11,9 @@ export function About() {
 
   return (
     <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      {/* Top Ad */}
+      <AdSlot id="about-top-banner" type="banner" className="mb-12 rounded-2xl" />
+
       {/* JSON-LD Structured Data */}
       <script type="application/ld+json">
         {JSON.stringify({

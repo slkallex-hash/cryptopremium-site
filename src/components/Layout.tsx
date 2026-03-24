@@ -168,6 +168,11 @@ export function Layout() {
             </div>
           </div>
           
+          {/* Footer Ad Slot */}
+          <div className="my-12">
+            <AdSlot id="footer-banner" type="banner" className="rounded-2xl" />
+          </div>
+          
           <div className="border-t border-zinc-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex flex-col items-center md:items-start gap-4">
               <p className="text-zinc-500 text-sm">

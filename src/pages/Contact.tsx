@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Mail, MapPin, Phone, Send, MessageSquare } from "lucide-react";
+import { AdSlot } from "@/components/AdSlot";
 
 export function Contact() {
   useEffect(() => {
@@ -9,6 +10,9 @@ export function Contact() {
 
   return (
     <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      {/* Top Ad */}
+      <AdSlot id="contact-top-banner" type="banner" className="mb-12 rounded-2xl" />
+
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
           Fale <span className="text-emerald-400">Conosco</span>

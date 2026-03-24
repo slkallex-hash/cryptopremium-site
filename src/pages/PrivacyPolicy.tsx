@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { ShieldCheck } from "lucide-react";
+import { AdSlot } from "@/components/AdSlot";
 
 export function PrivacyPolicy() {
   useEffect(() => {
@@ -9,6 +10,9 @@ export function PrivacyPolicy() {
 
   return (
     <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      {/* Top Ad */}
+      <AdSlot id="privacy-top-banner" type="banner" className="mb-12 rounded-2xl" />
+
       <div className="text-center mb-16">
         <div className="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-emerald-400 to-cyan-500 flex items-center justify-center shadow-lg shadow-emerald-500/20 mb-6">
           <ShieldCheck className="w-8 h-8 text-zinc-950" strokeWidth={2.5} />

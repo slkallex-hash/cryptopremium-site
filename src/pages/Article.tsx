@@ -152,8 +152,14 @@ export function Article() {
             dangerouslySetInnerHTML={{ __html: article.content }}
           />
 
+          {/* Content Ad 1 */}
+          <AdSlot id="article-content-banner-1" type="banner" className="my-12 rounded-xl" />
+
           {/* Middle Content Ad */}
           <AdSlot id="article-middle-banner" type="banner" className="my-12 rounded-xl" />
+
+          {/* Content Ad 2 */}
+          <AdSlot id="article-content-banner-2" type="banner" className="my-12 rounded-xl" />
 
           {/* Author Bio */}
           {author && (
@@ -242,6 +248,9 @@ export function Article() {
 
           {/* Second Sidebar Ad */}
           <AdSlot id="article-sidebar-square-2" type="square" className="rounded-xl" />
+
+          {/* Third Sidebar Ad */}
+          <AdSlot id="article-sidebar-square-3" type="square" className="rounded-xl" />
         </aside>
       </div>
 

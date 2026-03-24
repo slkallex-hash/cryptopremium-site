@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { AlertTriangle, ShieldCheck, Info } from "lucide-react";
+import { AdSlot } from "@/components/AdSlot";
 
 export function RiskDisclaimer() {
   useEffect(() => {
@@ -9,6 +10,9 @@ export function RiskDisclaimer() {
 
   return (
     <div className="max-w-4xl mx-auto py-12 px-4">
+      {/* Top Ad */}
+      <AdSlot id="risk-top-banner" type="banner" className="mb-12 rounded-2xl" />
+
       {/* JSON-LD Structured Data */}
       <script type="application/ld+json">
         {JSON.stringify({
