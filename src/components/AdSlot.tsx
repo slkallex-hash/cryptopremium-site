@@ -16,7 +16,7 @@ declare global {
   }
 }
 
-export function AdSlot({ id, className, type = "banner", zoneId = "5869460" }: AdSlotProps) {
+export function AdSlot({ id, className, type = "banner", zoneId = "5880760" }: AdSlotProps) {
   useEffect(() => {
     try {
       (window.AdProvider = window.AdProvider || []).push({ serve: {} });
