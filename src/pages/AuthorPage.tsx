@@ -27,7 +27,7 @@ export function AuthorPage() {
     );
   }
 
-  const authorArticles = articles.filter(a => a.author === author.name);
+  const authorArticles = articles.filter(a => a.author.includes(author.name));
 
   return (
     <div className="max-w-5xl mx-auto space-y-16">

@@ -12,6 +12,7 @@ import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 import { TermsOfUse } from "./pages/TermsOfUse";
+import { RiskDisclaimer } from "./pages/RiskDisclaimer";
 import { AuthorPage } from "./pages/AuthorPage";
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="contato" element={<Contact />} />
           <Route path="privacidade" element={<PrivacyPolicy />} />
           <Route path="termos" element={<TermsOfUse />} />
+          <Route path="aviso-de-risco" element={<RiskDisclaimer />} />
         </Route>
       </Routes>
     </Router>

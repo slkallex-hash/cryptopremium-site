@@ -33,22 +33,7 @@ export function Home() {
         })}
       </script>
 
-      {/* Plantão Crypto (Breaking News) */}
-      <section className="bg-emerald-500/10 border-y border-emerald-500/20 py-3 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto flex items-center">
-          <span className="flex items-center text-emerald-400 font-bold text-xs uppercase tracking-widest mr-4 shrink-0">
-            <Zap className="w-4 h-4 mr-1.5 fill-emerald-400" /> Plantão Crypto:
-          </span>
-          <div className="overflow-hidden whitespace-nowrap">
-            <div className="inline-block animate-marquee-slow text-sm text-zinc-300 font-medium">
-              <span className="mx-4">• SEC aprova novo ETF de Ethereum com foco em staking institucional</span>
-              <span className="mx-4">• Volume de transações na rede Solana atinge recorde histórico em 24h</span>
-              <span className="mx-4">• MicroStrategy anuncia compra adicional de 12.000 Bitcoins</span>
-              <span className="mx-4">• Banco Central do Brasil inicia testes da segunda fase do Drex</span>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Market Overview Section */}
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -131,7 +116,7 @@ export function Home() {
                 <div className="flex items-center text-[10px] text-zinc-500 font-bold mb-3 uppercase tracking-widest">
                   <Clock className="w-3.5 h-3.5 mr-1.5 text-emerald-500" /> {article.readTime}
                   <span className="mx-2 text-zinc-800">•</span>
-                  <span>{article.date}</span>
+                  <span>{article.author.split(' – ')[0]}</span>
                 </div>
                 <h3 className="text-xl font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors mb-4 line-clamp-2 leading-tight">
                   {article.title}

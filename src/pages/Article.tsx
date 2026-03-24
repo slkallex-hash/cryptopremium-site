@@ -8,7 +8,7 @@ import { useEffect } from "react";
 export function Article() {
   const { slug } = useParams<{ slug: string }>();
   const article = articles.find(a => a.slug === slug);
-  const author = authors.find(a => a.name === article?.author);
+  const author = authors.find(a => article?.author?.includes(a.name));
 
   // Scroll to top on mount
   useEffect(() => {

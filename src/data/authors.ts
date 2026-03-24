@@ -43,5 +43,26 @@ export const authors: Author[] = [
     social: {
       linkedin: "https://linkedin.com"
     }
+  },
+  {
+    id: "lucas-silva",
+    name: "Lucas Silva",
+    role: "Analista On-Chain & Desenvolvedor",
+    bio: "Lucas é um desenvolvedor blockchain com foco em análise de dados on-chain. Ele traduz a complexidade técnica em insights acionáveis para investidores.",
+    imageUrl: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400",
+    social: {
+      twitter: "https://twitter.com",
+      linkedin: "https://linkedin.com"
+    }
+  },
+  {
+    id: "roberto-almeida",
+    name: "Roberto Almeida",
+    role: "Especialista em Infraestrutura & DeFi",
+    bio: "Roberto possui vasta experiência em infraestrutura de redes e protocolos DeFi. Ele analisa a segurança e a escalabilidade das novas redes blockchain.",
+    imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+    social: {
+      linkedin: "https://linkedin.com"
+    }
   }
 ];

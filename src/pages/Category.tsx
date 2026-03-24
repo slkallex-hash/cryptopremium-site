@@ -62,7 +62,7 @@ export function Category() {
                 <div className="flex items-center text-xs text-zinc-500 font-medium mb-4 uppercase tracking-wider">
                   <Clock className="w-3.5 h-3.5 mr-1.5" /> {article.readTime}
                   <span className="mx-2 text-zinc-800">•</span>
-                  {new Date(article.date).toLocaleDateString('pt-BR', { month: 'short', day: 'numeric' })}
+                  {article.author.split(' – ')[0]}
                 </div>
                 <h3 className="text-2xl font-display font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors mb-4 line-clamp-2 leading-snug">
                   {article.title}

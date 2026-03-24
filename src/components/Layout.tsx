@@ -157,7 +157,8 @@ export function Layout() {
             <div className="col-span-1 md:col-span-2">
               <h3 className="text-white font-display font-bold mb-6 tracking-wide">Legal</h3>
               <ul className="space-y-4">
-                <li><Link to="/termos" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Termos e Riscos</Link></li>
+                <li><Link to="/termos" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Termos de Uso</Link></li>
+                <li><Link to="/aviso-de-risco" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Aviso de Risco</Link></li>
                 <li><Link to="/privacidade" className="text-zinc-400 hover:text-emerald-400 text-sm transition-colors">Privacidade e Cookies</Link></li>
               </ul>
             </div>
