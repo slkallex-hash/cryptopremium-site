@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { articles, categories } from "@/data/articles";
 import { Clock, ChevronRight, Zap, Mail, ArrowRight, X, Play } from "lucide-react";
 import { useEffect, useState } from "react";
-import { PriceChart } from "@/components/PriceChart";
 import { AdSlot } from "@/components/AdSlot";
 
 export function Home() {
@@ -35,22 +34,14 @@ export function Home() {
 
 
 
-      {/* Market Overview Section */}
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div className="lg:col-span-2">
-          <PriceChart />
-        </div>
-        <div className="lg:col-span-1">
-          {/* Sidebar Ads on Home */}
-          <div className="flex flex-col gap-6 mt-8">
-            <AdSlot id="home-sidebar-ad-1" type="square" className="rounded-2xl" />
-            <AdSlot id="home-sidebar-ad-2" type="square" className="rounded-2xl" />
-            <AdSlot id="home-sidebar-ad-3" type="square" className="rounded-2xl" />
-            <AdSlot id="home-sidebar-ad-4" type="square" className="rounded-2xl" />
-            <AdSlot id="home-sidebar-ad-5" type="square" className="rounded-2xl" />
-          </div>
-        </div>
-      </section>
+      {/* Sidebar Ads on Home */}
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-8">
+        <AdSlot id="home-sidebar-ad-1" type="square" className="rounded-2xl" />
+        <AdSlot id="home-sidebar-ad-2" type="square" className="rounded-2xl" />
+        <AdSlot id="home-sidebar-ad-3" type="square" className="rounded-2xl" />
+        <AdSlot id="home-sidebar-ad-4" type="square" className="rounded-2xl" />
+        <AdSlot id="home-sidebar-ad-5" type="square" className="rounded-2xl" />
+      </div>
 
       {/* Top Banner Ads */}
       <div className="my-8 flex flex-col gap-6">
