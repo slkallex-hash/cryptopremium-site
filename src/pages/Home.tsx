@@ -34,22 +34,9 @@ export function Home() {
 
 
 
-      {/* Sidebar Ads on Home */}
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-8">
-        <AdSlot id="home-sidebar-ad-1" type="square" className="rounded-2xl" />
-        <AdSlot id="home-sidebar-ad-2" type="square" className="rounded-2xl" />
-        <AdSlot id="home-sidebar-ad-3" type="square" className="rounded-2xl" />
-        <AdSlot id="home-sidebar-ad-4" type="square" className="rounded-2xl" />
-        <AdSlot id="home-sidebar-ad-5" type="square" className="rounded-2xl" />
-      </div>
-
-      {/* Top Banner Ads */}
-      <div className="my-8 flex flex-col gap-6">
-        <AdSlot id="home-top-banner-1" type="banner" />
-        <AdSlot id="home-top-banner-2" type="banner" />
-        <AdSlot id="home-top-banner-3" type="banner" />
-        <AdSlot id="home-top-banner-4" type="banner" />
-        <AdSlot id="home-top-banner-5" type="banner" />
+      {/* Top Banner Ad */}
+      <div className="mt-8 mb-12">
+        <AdSlot id="home-top-banner" type="banner" />
       </div>
 
       {/* Destaques (Grid de Cards) */}
