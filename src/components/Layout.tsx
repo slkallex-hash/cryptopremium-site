@@ -19,14 +19,6 @@ export function Layout() {
 
   return (
     <div className="min-h-screen bg-[#09090b] text-zinc-100 font-sans selection:bg-emerald-500/30 selection:text-emerald-200">
-      {/* MASSIVE TOP ADS */}
-      <div className="w-full bg-black flex flex-col items-center gap-4 py-4 border-b border-zinc-800">
-        <AdSlot id="super-top-1" type="banner" />
-        <AdSlot id="super-top-2" type="banner" />
-        <AdSlot id="super-top-3" type="banner" />
-        <AdSlot id="super-top-4" type="banner" />
-        <AdSlot id="super-top-5" type="banner" />
-      </div>
       {/* Search Modal */}
       <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
 
@@ -176,16 +168,7 @@ export function Layout() {
             </div>
           </div>
           
-          {/* Footer Ad Slots (Massive) */}
-          <div className="my-12 flex flex-col gap-6">
-            <AdSlot id="footer-banner-1" type="banner" className="rounded-2xl" />
-            <AdSlot id="footer-banner-2" type="banner" className="rounded-2xl" />
-            <AdSlot id="footer-banner-3" type="banner" className="rounded-2xl" />
-            <AdSlot id="footer-banner-4" type="banner" className="rounded-2xl" />
-            <AdSlot id="footer-banner-5" type="banner" className="rounded-2xl" />
-          </div>
-          
-          <div className="border-t border-zinc-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="border-t border-zinc-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 mt-12">
             <div className="flex flex-col items-center md:items-start gap-4">
               <p className="text-zinc-500 text-sm">
                 &copy; {new Date().getFullYear()} CryptoPremium. Todos os direitos reservados.
@@ -212,13 +195,6 @@ export function Layout() {
           </div>
         </div>
       </footer>
-
-      {/* Sticky Mobile Ad Banner */}
-      <div className="md:hidden">
-        <AdSlot id="mobile-sticky" type="sticky" />
-        {/* Spacer to prevent content from being hidden behind the sticky ad */}
-        <div className="h-[60px] w-full"></div>
-      </div>
     </div>
   );
 }
