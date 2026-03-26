@@ -78,6 +78,19 @@ export function Home() {
         </div>
       </section>
 
+      {/* Adsterra Grid */}
+      <div className="my-12">
+        <div className="flex items-center justify-between border-b border-zinc-800/50 pb-4 mb-6">
+          <h3 className="text-xl font-display font-bold text-zinc-400">Patrocinado</h3>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <AdSlot id="home-grid-1" type="square" className="w-full max-w-none" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
+          <AdSlot id="home-grid-2" type="square" className="w-full max-w-none" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
+          <AdSlot id="home-grid-3" type="square" className="w-full max-w-none" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
+          <AdSlot id="home-grid-4" type="square" className="w-full max-w-none" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
+        </div>
+      </div>
+
       {/* Últimas Notícias (Grid com Cards) */}
       <section>
         <div className="flex items-center justify-between border-b border-zinc-800/50 pb-6 mb-10">
