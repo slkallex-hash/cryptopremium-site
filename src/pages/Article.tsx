@@ -60,7 +60,7 @@ export function Article() {
       </script>
 
       {/* Top Banner Ad */}
-      <AdSlot id="article-top-banner" type="banner" className="mb-8 rounded-xl" />
+      <AdSlot id="article-top-banner" type="banner" className="mb-8 rounded-xl" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
 
       {/* Breadcrumbs */}
       <nav className="flex items-center text-[11px] font-medium uppercase tracking-widest text-zinc-500 mb-8">
@@ -153,7 +153,7 @@ export function Article() {
           />
 
           {/* Content Ad */}
-          <AdSlot id="article-bottom-banner" type="banner" className="my-12 rounded-xl" />
+          <AdSlot id="article-bottom-banner" type="banner" className="my-12 rounded-xl" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
 
           {/* Author Bio */}
           {author && (
@@ -241,13 +241,21 @@ export function Article() {
           </div>
 
           {/* Second Sidebar Ad */}
-          <AdSlot id="article-sidebar-square-2" type="square" className="rounded-xl" />
+          <AdSlot id="article-sidebar-square-2" type="square" className="rounded-xl" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
         </aside>
       </div>
 
-      {/* Bottom Banner Ad */}
+      {/* Adsterra Grid */}
       <div className="mt-20 mb-12">
-        <AdSlot id="article-footer-banner" type="banner" className="rounded-xl" />
+        <div className="flex items-center justify-between border-b border-zinc-800/50 pb-4 mb-6">
+          <h3 className="text-xl font-display font-bold text-zinc-400">Patrocinado</h3>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <AdSlot id="article-grid-1" type="square" className="w-full max-w-none" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
+          <AdSlot id="article-grid-2" type="square" className="w-full max-w-none" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
+          <AdSlot id="article-grid-3" type="square" className="w-full max-w-none" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
+          <AdSlot id="article-grid-4" type="square" className="w-full max-w-none" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
+        </div>
       </div>
 
       {/* Related Articles */}

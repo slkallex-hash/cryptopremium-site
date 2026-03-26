@@ -94,8 +94,8 @@ export function Layout() {
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Global Top Banner */}
-        <AdSlot id="global-top-banner" type="banner" className="mb-12 rounded-2xl" />
+        {/* Global Top Banner (Adsterra) */}
+        <AdSlot id="global-top-banner" type="banner" className="mb-12 rounded-2xl" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
         <Outlet />
       </main>
 

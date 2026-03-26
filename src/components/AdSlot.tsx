@@ -8,9 +8,10 @@ interface AdSlotProps {
   className?: string;
   type?: "banner" | "square" | "sticky";
   zoneId?: string;
+  adsterraId?: string;
 }
 
-export function AdSlot({ id, className, type = "banner", zoneId }: AdSlotProps) {
+export function AdSlot({ id, className, type = "banner", zoneId, adsterraId }: AdSlotProps) {
   const adRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -20,8 +21,14 @@ export function AdSlot({ id, className, type = "banner", zoneId }: AdSlotProps) 
       script.async = true;
       script.dataset.cfasync = "false";
       adRef.current.appendChild(script);
+    } else if (adsterraId && adRef.current && !adRef.current.hasChildNodes()) {
+      const script = document.createElement("script");
+      script.src = `https://pl28983841.profitablecpmratenetwork.com/${adsterraId}/invoke.js`;
+      script.async = true;
+      script.dataset.cfasync = "false";
+      adRef.current.appendChild(script);
     }
-  }, [zoneId]);
+  }, [zoneId, adsterraId]);
 
   return (
     <div
@@ -36,6 +43,8 @@ export function AdSlot({ id, className, type = "banner", zoneId }: AdSlotProps) 
     >
       {zoneId ? (
         <div ref={adRef} id={`container-${zoneId}`} className="w-full h-full flex items-center justify-center"></div>
+      ) : adsterraId ? (
+        <div ref={adRef} id={`container-${adsterraId}`} className="w-full h-full flex items-center justify-center"></div>
       ) : (
         <Link to="/contato" className="flex flex-col items-center justify-center w-full h-full absolute inset-0 z-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">
           <div className="flex items-center gap-2 text-sm font-medium text-zinc-500 group-hover:text-emerald-400 transition-colors">
