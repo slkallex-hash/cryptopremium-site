@@ -220,7 +220,7 @@ export function Article() {
         {/* Sidebar */}
         <aside className="lg:col-span-4 space-y-8">
           {/* Sidebar Square Ad */}
-          <AdSlot id="article-sidebar-square-1" type="square" className="rounded-xl sticky top-28" zoneId="6888149" />
+          <AdSlot id="article-sidebar-square-1" type="square" className="rounded-xl sticky top-28" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
           
           <div className="bg-[#09090b] border border-zinc-800/50 rounded-2xl p-8 shadow-xl shadow-black/50">
             <h3 className="text-xl font-display font-bold text-white mb-4 flex items-center">
