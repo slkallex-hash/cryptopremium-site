@@ -239,23 +239,7 @@ export function Article() {
               Quero receber
             </button>
           </div>
-
-          {/* Second Sidebar Ad */}
-          <AdSlot id="article-sidebar-square-2" type="square" className="rounded-xl" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
         </aside>
-      </div>
-
-      {/* Adsterra Grid */}
-      <div className="mt-20 mb-12">
-        <div className="flex items-center justify-between border-b border-zinc-800/50 pb-4 mb-6">
-          <h3 className="text-xl font-display font-bold text-zinc-400">Patrocinado</h3>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <AdSlot id="article-grid-1" type="square" className="w-full max-w-none" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
-          <AdSlot id="article-grid-2" type="square" className="w-full max-w-none" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
-          <AdSlot id="article-grid-3" type="square" className="w-full max-w-none" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
-          <AdSlot id="article-grid-4" type="square" className="w-full max-w-none" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
-        </div>
       </div>
 
       {/* Related Articles */}
