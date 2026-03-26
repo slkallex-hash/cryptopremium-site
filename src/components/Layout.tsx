@@ -195,6 +195,9 @@ export function Layout() {
           </div>
         </div>
       </footer>
+
+      {/* Global Sticky Bottom Ad */}
+      <AdSlot id="global-sticky-bottom" type="sticky" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
     </div>
   );
 }

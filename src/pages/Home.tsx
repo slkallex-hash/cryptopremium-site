@@ -136,7 +136,7 @@ export function Home() {
 
       {/* Middle Banner Ad */}
       <div className="my-16">
-        <AdSlot id="home-middle-banner-2" type="banner" />
+        <AdSlot id="home-middle-banner-2" type="banner" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
       </div>
 
 
@@ -242,7 +242,7 @@ export function Home() {
 
         {/* Ad inside Play section */}
         <div className="mt-12">
-          <AdSlot id="home-play-banner" type="banner" className="border-emerald-500/20" />
+          <AdSlot id="home-play-banner" type="banner" className="border-emerald-500/20" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
         </div>
       </section>
 
@@ -294,6 +294,11 @@ export function Home() {
           <p className="text-zinc-500 text-xs mt-6">Respeitamos sua privacidade. Cancele a qualquer momento.</p>
         </div>
       </section>
+
+      {/* Bottom Banner Ad */}
+      <div className="mt-16">
+        <AdSlot id="home-bottom-banner" type="banner" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
+      </div>
     </div>
   );
 }
