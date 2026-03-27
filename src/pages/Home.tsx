@@ -34,9 +34,14 @@ export function Home() {
 
 
 
-      {/* Top Banner Ad */}
+      {/* Top Banners (4) */}
       <div className="mt-8 mb-12">
-        <AdSlot id="home-top-banner" type="banner" mybidId="2018598" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <AdSlot id="home-top-1" type="square" className="w-full max-w-none h-[250px]" mybidId="2018598" />
+          <AdSlot id="home-top-2" type="square" className="w-full max-w-none h-[250px]" mybidId="2018598" />
+          <AdSlot id="home-top-3" type="square" className="w-full max-w-none h-[250px]" mybidId="2018598" />
+          <AdSlot id="home-top-4" type="square" className="w-full max-w-none h-[250px]" mybidId="2018598" />
+        </div>
       </div>
 
       {/* Destaques (Grid de Cards) */}
@@ -120,6 +125,11 @@ export function Home() {
           ))}
         </div>
       </section>
+
+      {/* Middle Banner Ad */}
+      <div className="my-16">
+        <AdSlot id="home-middle-banner" type="banner" mybidId="2018598" />
+      </div>
 
       {/* CryptoPremium Play (Videos Reais) */}
       <section className="bg-zinc-950 border border-zinc-800/50 rounded-[2.5rem] p-8 md:p-16 my-16 shadow-2xl shadow-black relative overflow-hidden">
@@ -269,6 +279,11 @@ export function Home() {
           <p className="text-zinc-500 text-xs mt-6">Respeitamos sua privacidade. Cancele a qualquer momento.</p>
         </div>
       </section>
+
+      {/* Bottom Banner Ad */}
+      <div className="mt-16">
+        <AdSlot id="home-bottom-banner" type="banner" mybidId="2018598" />
+      </div>
     </div>
   );
 }
