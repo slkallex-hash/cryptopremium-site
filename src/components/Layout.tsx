@@ -95,7 +95,7 @@ export function Layout() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Global Top Banner (Adsterra) */}
-        <AdSlot id="global-top-banner" type="banner" className="mb-12 rounded-2xl" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
+        <AdSlot id="global-top-banner" type="banner" className="mb-12 rounded-2xl" mybidId="2018598" />
         <Outlet />
       </main>
 
@@ -195,9 +195,6 @@ export function Layout() {
           </div>
         </div>
       </footer>
-
-      {/* Global Sticky Bottom Ad */}
-      <AdSlot id="global-sticky-bottom" type="sticky" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
     </div>
   );
 }

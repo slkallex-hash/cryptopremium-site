@@ -60,7 +60,7 @@ export function Article() {
       </script>
 
       {/* Top Banner Ad */}
-      <AdSlot id="article-top-banner" type="banner" className="mb-8 rounded-xl" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
+      <AdSlot id="article-top-banner" type="banner" className="mb-8 rounded-xl" mybidId="2018598" />
 
       {/* Breadcrumbs */}
       <nav className="flex items-center text-[11px] font-medium uppercase tracking-widest text-zinc-500 mb-8">
@@ -153,7 +153,7 @@ export function Article() {
           />
 
           {/* Content Ad */}
-          <AdSlot id="article-bottom-banner" type="banner" className="my-12 rounded-xl" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
+          <AdSlot id="article-bottom-banner" type="banner" className="my-12 rounded-xl" mybidId="2018598" />
 
           {/* Author Bio */}
           {author && (
@@ -220,7 +220,7 @@ export function Article() {
         {/* Sidebar */}
         <aside className="lg:col-span-4 space-y-8">
           {/* Sidebar Square Ad */}
-          <AdSlot id="article-sidebar-square-1" type="square" className="rounded-xl sticky top-28" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
+          <AdSlot id="article-sidebar-square-1" type="square" className="rounded-xl sticky top-28" mybidId="2018598" />
           
           <div className="bg-[#09090b] border border-zinc-800/50 rounded-2xl p-8 shadow-xl shadow-black/50">
             <h3 className="text-xl font-display font-bold text-white mb-4 flex items-center">
@@ -240,19 +240,6 @@ export function Article() {
             </button>
           </div>
         </aside>
-      </div>
-
-      {/* Adsterra Grid */}
-      <div className="mt-20 mb-12">
-        <div className="flex items-center justify-between border-b border-zinc-800/50 pb-4 mb-6">
-          <h3 className="text-xl font-display font-bold text-zinc-400">Patrocinado</h3>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <AdSlot id="article-grid-1" type="square" className="w-full max-w-none" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
-          <AdSlot id="article-grid-2" type="square" className="w-full max-w-none" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
-          <AdSlot id="article-grid-3" type="square" className="w-full max-w-none" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
-          <AdSlot id="article-grid-4" type="square" className="w-full max-w-none" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
-        </div>
       </div>
 
       {/* Related Articles */}
@@ -284,7 +271,7 @@ export function Article() {
 
       {/* Bottom Banner Ad */}
       <div className="mt-16">
-        <AdSlot id="article-bottom-banner-2" type="banner" adsterraId="1492ba8128b5f5c1ffa139626e212d74" />
+        <AdSlot id="article-bottom-banner-2" type="banner" mybidId="2018598" />
       </div>
     </article>
   );

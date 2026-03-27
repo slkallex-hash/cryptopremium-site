@@ -1,28 +1,15 @@
 import { cn } from "@/lib/utils";
 import { Megaphone } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useEffect, useRef } from "react";
 
 interface AdSlotProps {
   id: string;
   className?: string;
   type?: "banner" | "square" | "sticky";
-  adsterraId?: string;
+  mybidId?: string;
 }
 
-export function AdSlot({ id, className, type = "banner", adsterraId }: AdSlotProps) {
-  const adRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (adsterraId && adRef.current && !adRef.current.hasChildNodes()) {
-      const script = document.createElement("script");
-      script.src = `https://pl28983841.profitablecpmratenetwork.com/${adsterraId}/invoke.js`;
-      script.async = true;
-      script.dataset.cfasync = "false";
-      adRef.current.appendChild(script);
-    }
-  }, [adsterraId]);
-
+export function AdSlot({ id, className, type = "banner", mybidId }: AdSlotProps) {
   return (
     <div
       id={id}
@@ -34,8 +21,10 @@ export function AdSlot({ id, className, type = "banner", adsterraId }: AdSlotPro
         className
       )}
     >
-      {adsterraId ? (
-        <div ref={adRef} id={`container-${adsterraId}`} className="w-full h-full flex items-center justify-center"></div>
+      {mybidId ? (
+        <div className="w-full h-full flex items-center justify-center">
+          <div data-banner-id={mybidId}></div>
+        </div>
       ) : (
         <Link to="/contato" className="flex flex-col items-center justify-center w-full h-full absolute inset-0 z-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">
           <div className="flex items-center gap-2 text-sm font-medium text-zinc-500 group-hover:text-emerald-400 transition-colors">
