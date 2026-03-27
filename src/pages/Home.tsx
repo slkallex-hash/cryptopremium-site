@@ -34,14 +34,9 @@ export function Home() {
 
 
 
-      {/* Top Banners (4) */}
+      {/* Top Banner Ad */}
       <div className="mt-8 mb-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <AdSlot id="home-top-1" type="square" className="w-full max-w-none h-[250px]" mybidId="2018598" />
-          <AdSlot id="home-top-2" type="square" className="w-full max-w-none h-[250px]" mybidId="2018598" />
-          <AdSlot id="home-top-3" type="square" className="w-full max-w-none h-[250px]" mybidId="2018598" />
-          <AdSlot id="home-top-4" type="square" className="w-full max-w-none h-[250px]" mybidId="2018598" />
-        </div>
+        <AdSlot id="home-top-banner" type="banner" mybidId="2018598" />
       </div>
 
       {/* Destaques (Grid de Cards) */}
