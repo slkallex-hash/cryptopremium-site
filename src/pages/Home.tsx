@@ -269,11 +269,6 @@ export function Home() {
           <p className="text-zinc-500 text-xs mt-6">Respeitamos sua privacidade. Cancele a qualquer momento.</p>
         </div>
       </section>
-
-      {/* Bottom Banner Ad */}
-      <div className="mt-16">
-        <AdSlot id="home-bottom-banner" type="banner" mybidId="2018598" />
-      </div>
     </div>
   );
 }

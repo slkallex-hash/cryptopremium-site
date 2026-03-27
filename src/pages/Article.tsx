@@ -265,11 +265,6 @@ export function Article() {
           ))}
         </div>
       </section>
-
-      {/* Bottom Banner Ad */}
-      <div className="mt-16">
-        <AdSlot id="article-bottom-banner-2" type="banner" mybidId="2018598" />
-      </div>
     </article>
   );
 }
