@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Megaphone } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect, useRef } from "react";
 
 interface AdSlotProps {
   id: string;
@@ -10,6 +11,23 @@ interface AdSlotProps {
 }
 
 export function AdSlot({ id, className, type = "banner", mybidId }: AdSlotProps) {
+  const adRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (mybidId && adRef.current && !adRef.current.hasChildNodes()) {
+      const script = document.createElement("script");
+      script.src = "https://js.mbidadm.com/static/scripts.js";
+      script.async = true;
+      script.dataset.admpid = "433414";
+      
+      const adDiv = document.createElement("div");
+      adDiv.dataset.bannerId = mybidId;
+      
+      adRef.current.appendChild(script);
+      adRef.current.appendChild(adDiv);
+    }
+  }, [mybidId]);
+
   return (
     <div
       id={id}
@@ -22,9 +40,7 @@ export function AdSlot({ id, className, type = "banner", mybidId }: AdSlotProps)
       )}
     >
       {mybidId ? (
-        <div className="w-full h-full flex items-center justify-center">
-          <div data-banner-id={mybidId}></div>
-        </div>
+        <div ref={adRef} className="w-full h-full flex items-center justify-center"></div>
       ) : (
         <Link to="/contato" className="flex flex-col items-center justify-center w-full h-full absolute inset-0 z-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">
           <div className="flex items-center gap-2 text-sm font-medium text-zinc-500 group-hover:text-emerald-400 transition-colors">
