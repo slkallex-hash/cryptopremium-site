@@ -121,26 +121,6 @@ export function Home() {
         </div>
       </section>
 
-      {/* Sponsored Grid */}
-      <div className="my-12">
-        <div className="flex items-center justify-between border-b border-zinc-800/50 pb-4 mb-6">
-          <h3 className="text-xl font-display font-bold text-zinc-400">Patrocinado</h3>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <AdSlot id="home-grid-1" type="square" className="w-full max-w-none" mybidId="2018598" />
-          <AdSlot id="home-grid-2" type="square" className="w-full max-w-none" mybidId="2018598" />
-          <AdSlot id="home-grid-3" type="square" className="w-full max-w-none" mybidId="2018598" />
-          <AdSlot id="home-grid-4" type="square" className="w-full max-w-none" mybidId="2018598" />
-        </div>
-      </div>
-
-      {/* Middle Banner Ad */}
-      <div className="my-16">
-        <AdSlot id="home-middle-banner-2" type="banner" mybidId="2018598" />
-      </div>
-
-
-
       {/* CryptoPremium Play (Videos Reais) */}
       <section className="bg-zinc-950 border border-zinc-800/50 rounded-[2.5rem] p-8 md:p-16 my-16 shadow-2xl shadow-black relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2" />

@@ -152,9 +152,6 @@ export function Article() {
             dangerouslySetInnerHTML={{ __html: article.content }}
           />
 
-          {/* Content Ad */}
-          <AdSlot id="article-bottom-banner" type="banner" className="my-12 rounded-xl" mybidId="2018598" />
-
           {/* Author Bio */}
           {author && (
             <div className="mt-12 p-8 bg-zinc-900/40 border border-zinc-800/50 rounded-3xl flex flex-col sm:flex-row items-center sm:items-start gap-8 relative overflow-hidden group">
