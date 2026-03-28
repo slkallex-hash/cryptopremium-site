@@ -3,6 +3,8 @@ import { Article } from "./articles";
 export const iaArticles: Article[] = Array.from({ length: 20 }).map((_, i) => ({
   id: `ia-${i + 1}`,
   slug: `inteligencia-artificial-artigo-${i + 1}`,
+  authorId: ["roberto-almeida", "sarah-chen", "ana-souza"][i % 3],
+  tags: ["IA", "Inteligência Artificial", "Futuro", "Inovação"],
   title: [
     "O Futuro da IA Generativa em 2026",
     "Como a IA está transformando a medicina moderna",

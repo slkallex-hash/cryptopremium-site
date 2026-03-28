@@ -1,15 +1,26 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { Shield, Target, TrendingUp, Zap, Users, Award } from "lucide-react";
 import { Link } from "react-router-dom";
+import { authors } from "@/data/authors";
 
 export function About() {
+  const leaders = authors.slice(0, 2);
+
   useEffect(() => {
-    document.title = "Sobre Nós | TechFront - O Futuro da Tecnologia";
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="w-full bg-black min-h-screen pt-32 pb-24">
+      <Helmet>
+        <title>Sobre Nós | TechFront - O Futuro da Tecnologia</title>
+        <meta name="description" content="Conheça o TechFront, seu portal independente de jornalismo tecnológico, focado em IA, Criptomoedas e inovação global." />
+        <meta property="og:title" content="Sobre Nós | TechFront - O Futuro da Tecnologia" />
+        <meta property="og:description" content="Conheça o TechFront, seu portal independente de jornalismo tecnológico, focado em IA, Criptomoedas e inovação global." />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href={`${window.location.origin}/sobre`} />
+      </Helmet>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-blue mb-6 border border-blue-500/20 bg-blue-500/10">
@@ -77,28 +88,18 @@ export function About() {
           <section className="mt-16">
             <h2 className="text-3xl font-display font-bold text-white mb-10 text-center">Nossa Liderança</h2>
             <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-              {/* Profile 1 */}
-              <div className="glass p-8 rounded-3xl border border-white/5 text-center hover:border-blue-500/30 transition-colors">
-                <div className="w-24 h-24 mx-auto rounded-full bg-zinc-900 mb-6 overflow-hidden border-2 border-blue-500/20">
-                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200" alt="Editor-Chefe" className="w-full h-full object-cover" />
+              {leaders.map((leader, index) => (
+                <div key={leader.id} className={`glass p-8 rounded-3xl border border-white/5 text-center hover:border-${index === 0 ? 'blue' : 'cyan'}-500/30 transition-colors`}>
+                  <div className={`w-24 h-24 mx-auto rounded-full bg-zinc-900 mb-6 overflow-hidden border-2 border-${index === 0 ? 'blue' : 'cyan'}-500/20`}>
+                    <img src={leader.imageUrl} alt={leader.name} className="w-full h-full object-cover" />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-1">{leader.name}</h3>
+                  <p className={`${index === 0 ? 'text-blue-500' : 'text-cyan-400'} text-sm font-bold uppercase tracking-widest mb-4`}>{leader.role}</p>
+                  <p className="text-zinc-400 text-sm leading-relaxed">
+                    {leader.bio}
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-1">Roberto Almeida</h3>
-                <p className="text-blue-500 text-sm font-bold uppercase tracking-widest mb-4">Editor-Chefe & Especialista em IA</p>
-                <p className="text-zinc-400 text-sm leading-relaxed">
-                  Jornalista com mais de 15 anos de cobertura no setor de tecnologia. Ex-editor de grandes portais e especialista em inteligência artificial e políticas digitais.
-                </p>
-              </div>
-              {/* Profile 2 */}
-              <div className="glass p-8 rounded-3xl border border-white/5 text-center hover:border-cyan-500/30 transition-colors">
-                <div className="w-24 h-24 mx-auto rounded-full bg-zinc-900 mb-6 overflow-hidden border-2 border-cyan-500/20">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200" alt="Diretora de Conteúdo" className="w-full h-full object-cover" />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-1">Sarah Chen</h3>
-                <p className="text-cyan-400 text-sm font-bold uppercase tracking-widest mb-4">Diretora de Conteúdo & Cultura Digital</p>
-                <p className="text-zinc-400 text-sm leading-relaxed">
-                  Especialista em cultura digital e Web3. Coordena a equipe de repórteres e garante a qualidade e profundidade de todas as nossas análises e tutoriais.
-                </p>
-              </div>
+              ))}
             </div>
           </section>
 

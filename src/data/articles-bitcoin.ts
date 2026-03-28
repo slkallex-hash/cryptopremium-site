@@ -4,6 +4,8 @@ export const bitcoinArticles: Article[] = [
   {
     id: "btc-4",
     slug: "bitcoin-como-reserva-de-valor-em-tempos-de-crise",
+    authorId: "marcos-silva",
+    tags: ["Bitcoin", "Criptomoedas", "Macroeconomia", "Ouro Digital"],
     title: "Bitcoin Como Reserva de Valor: O Porto Seguro em Tempos de Crise Geopolítica?",
     excerpt: "Com a escalada das tensões globais e a inflação fiduciária, o Bitcoin consolida sua narrativa como o 'ouro digital' do século XXI.",
     content: `
@@ -106,6 +108,8 @@ export const bitcoinArticles: Article[] = [
   {
     id: "btc-5",
     slug: "atualizacoes-na-rede-bitcoin-o-que-sao-ordinals-e-runes",
+    authorId: "lucas-costa",
+    tags: ["Bitcoin", "Ordinals", "Runes", "Inovação"],
     title: "Atualizações na Rede Bitcoin: O Que São Ordinals e Runes e Como Impactam o Preço?",
     excerpt: "A rede Bitcoin está evoluindo além de ser apenas 'dinheiro digital'. Conheça as inovações que estão trazendo NFTs e novos tokens para a blockchain mais segura do mundo.",
     content: `
@@ -208,6 +212,8 @@ export const bitcoinArticles: Article[] = [
   ...Array.from({ length: 15 }).map((_, i) => ({
     id: `crypto-extra-${i + 1}`,
     slug: `criptomoedas-extra-artigo-${i + 1}`,
+    authorId: ["marcos-silva", "lucas-costa", "ana-souza"][i % 3],
+    tags: ["Criptomoedas", "Blockchain", "Mercado", "Futuro"],
     title: [
       "Ethereum 3.0: O que esperar da próxima grande atualização",
       "Solana vs Ethereum: A batalha pela dominância dos dApps",
@@ -236,6 +242,8 @@ export const bitcoinArticles: Article[] = [
   {
     id: "bitcoin-21",
     slug: "como-declarar-bitcoin-no-imposto-de-renda-2026",
+    authorId: "marcos-silva",
+    tags: ["Bitcoin", "Imposto de Renda", "Finanças", "Regulação"],
     title: "Como declarar Bitcoin no Imposto de Renda 2026",
     excerpt: "Guia passo a passo para investidores de criptomoedas evitarem problemas com o fisco.",
     content: "A Receita Federal atualizou as regras para declaração de ativos digitais. É fundamental manter um registro preciso de todas as transações, incluindo datas, valores em reais e as exchanges utilizadas. O código específico para Bitcoin no GCAP deve ser preenchido com atenção aos detalhes de aquisição.",
@@ -249,6 +257,8 @@ export const bitcoinArticles: Article[] = [
   {
     id: "bitcoin-22",
     slug: "o-impacto-do-halving-no-preco-do-bitcoin-em-2026",
+    authorId: "marcos-silva",
+    tags: ["Bitcoin", "Halving", "Preço", "Análise"],
     title: "O impacto do Halving no preço do Bitcoin em 2026",
     excerpt: "Análise histórica e projeções para o comportamento do mercado após a redução da recompensa.",
     content: "O halving é um evento programado que reduz pela metade a emissão de novos Bitcoins. Historicamente, esse choque de oferta precede ciclos de alta significativos. Especialistas analisam se o padrão se repetirá em 2026 diante da maior maturidade do mercado e presença institucional.",
@@ -262,6 +272,8 @@ export const bitcoinArticles: Article[] = [
   {
     id: "bitcoin-23",
     slug: "ethereum-3-0-o-que-esperar-da-proxima-grande-atualizacao",
+    authorId: "marcos-silva",
+    tags: ["Ethereum", "Atualização", "Escalabilidade", "Futuro"],
     title: "Ethereum 3.0: O que esperar da próxima grande atualização",
     excerpt: "Novas propostas de escalabilidade prometem tornar a rede ainda mais rápida e barata.",
     content: "A comunidade Ethereum discute as bases para a versão 3.0, focando em 'sharding' avançado e melhorias na máquina virtual (EVM). O objetivo é suportar bilhões de usuários sem comprometer a descentralização, consolidando o Ethereum como a camada de liquidação da internet.",

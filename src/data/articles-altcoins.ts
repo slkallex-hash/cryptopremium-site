@@ -86,6 +86,8 @@ export const altcoinsArticles: Article[] = [
     category: "criptomoedas",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
+    authorId: "roberto-almeida",
+    tags: ["Ethereum", "ETH", "Institucional", "Staking", "Criptomoedas"],
     date: new Date().toISOString(),
     readTime: "4 min",
     trending: true,
@@ -145,6 +147,8 @@ export const altcoinsArticles: Article[] = [
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?auto=format&fit=crop&q=80&w=1200",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
+    authorId: "roberto-almeida",
+    tags: ["Avalanche", "AVAX", "Games", "Web3", "Subnets"],
     date: new Date().toISOString(),
     readTime: "3 min",
   },
@@ -203,6 +207,8 @@ export const altcoinsArticles: Article[] = [
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1644361566696-3d442b5b482a?auto=format&fit=crop&q=80&w=1200",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
+    authorId: "roberto-almeida",
+    tags: ["Cardano", "ADA", "Escalabilidade", "Governança", "Hard Fork"],
     date: new Date().toISOString(),
     readTime: "4 min",
   },
@@ -265,6 +271,8 @@ export const altcoinsArticles: Article[] = [
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1639762681057-408e52192e55?auto=format&fit=crop&q=80&w=1200",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
+    authorId: "roberto-almeida",
+    tags: ["Chainlink", "LINK", "IA", "Oráculos", "Smart Contracts"],
     date: new Date().toISOString(),
     readTime: "5 min",
   },
@@ -323,6 +331,8 @@ export const altcoinsArticles: Article[] = [
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1642104704074-907c0698cbd9?auto=format&fit=crop&q=80&w=1200",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
+    authorId: "roberto-almeida",
+    tags: ["Polkadot", "DOT", "Parachains", "Interoperabilidade", "Web3"],
     date: new Date().toISOString(),
     readTime: "4 min",
   },
@@ -411,6 +421,8 @@ export const altcoinsArticles: Article[] = [
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
+    authorId: "roberto-almeida",
+    tags: ["Ethereum", "ETH", "Staking", "Institucional", "DeFi"],
     date: new Date().toISOString(),
     readTime: "4 min",
     trending: true,
@@ -455,7 +467,7 @@ export const altcoinsArticles: Article[] = [
 
       <h2>O Ethereum Está Morto?</h2>
       <p>A resposta curta é: não. O Ethereum continua sendo a rede mais segura, descentralizada e com o maior Valor Total Travado (TVL) do mercado. A estratégia do Ethereum é escalar através de redes de segunda camada (Layer 2), como Arbitrum e Optimism, que também estão vendo crescimento expressivo.</p>
-      <p>No entanto, a fragmentação da liquidez entre múltiplas Layer 2s do Ethereum criou uma experiência de usuário complexa (pontes, taxas de rede diferentes), algo que a Solana resolveu oferecendo um estado global unificado.</p>
+      <p>No entanto, a fragmentação da liquidez entre múltiplas Layer 2s do Ethereum criou uma experiência de usuário complexa (pontes, taxas de rede differentes), algo que a Solana resolveu oferecendo um estado global unificado.</p>
 
       <!-- PAUSA PARA ANÚNCIO 2 -->
       <div class="my-10 border-y border-dashed border-zinc-800 py-6 flex flex-col items-center justify-center bg-zinc-900/20 rounded-xl">
@@ -513,6 +525,8 @@ export const altcoinsArticles: Article[] = [
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
+    authorId: "roberto-almeida",
+    tags: ["Solana", "SOL", "Ethereum", "DEX", "DeFi"],
     date: new Date().toISOString(),
     readTime: "4 min",
     trending: true,
@@ -615,6 +629,8 @@ export const altcoinsArticles: Article[] = [
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
     author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
+    authorId: "sarah-chen",
+    tags: ["Chainlink", "LINK", "CCIP", "Interoperabilidade", "Bancos", "RWA"],
     date: new Date(Date.now() - 86400000).toISOString(),
     readTime: "5 min",
   },
@@ -719,6 +735,8 @@ export const altcoinsArticles: Article[] = [
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1621504450181-5d356f61d307?auto=format&fit=crop&q=80&w=1200",
     author: "Lucas Costa – Analista de Cibersegurança",
+    authorId: "lucas-costa",
+    tags: ["Ethereum", "Layer 2", "Arbitrum", "Optimism", "Base", "Escalabilidade"],
     date: new Date(Date.now() - 172800000).toISOString(),
     readTime: "6 min",
   },
@@ -819,6 +837,8 @@ export const altcoinsArticles: Article[] = [
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
+    authorId: "roberto-almeida",
+    tags: ["Polkadot", "DOT", "Interoperabilidade", "Web3", "Blockchain"],
     date: new Date(Date.now() - 259200000).toISOString(),
     readTime: "5 min",
   },
@@ -921,6 +941,8 @@ export const altcoinsArticles: Article[] = [
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1642104704074-907c0698cbd9?auto=format&fit=crop&q=80&w=1200",
     author: "Marcos Silva – Repórter de Hardware & Gadgets",
+    authorId: "marcos-silva",
+    tags: ["Memecoins", "Cultura Digital", "Especulação", "Web3", "Solana"],
     date: new Date(Date.now() - 345600000).toISOString(),
     readTime: "4 min",
   }

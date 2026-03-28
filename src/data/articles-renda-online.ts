@@ -98,6 +98,8 @@ export const rendaOnlineArticles: Article[] = [
     category: "tutoriais",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
     author: "Lucas Costa – Analista de Cibersegurança",
+    authorId: "lucas-costa",
+    tags: ["Renda Online", "Airdrops", "Web3", "Criptomoedas"],
     date: new Date().toISOString(),
     readTime: "5 min",
     trending: true,
@@ -200,6 +202,8 @@ export const rendaOnlineArticles: Article[] = [
     category: "renda-online",
     imageUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200",
     author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
+    authorId: "sarah-chen",
+    tags: ["Renda Online", "Freelancer", "Trabalho Remoto", "Stablecoins"],
     date: new Date(Date.now() - 86400000).toISOString(),
     readTime: "4 min",
   },
@@ -300,6 +304,8 @@ export const rendaOnlineArticles: Article[] = [
     category: "renda-online",
     imageUrl: "https://images.unsplash.com/photo-1605792657660-596af9009e82?auto=format&fit=crop&q=80&w=1200",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
+    authorId: "roberto-almeida",
+    tags: ["Renda Online", "Yield Farming", "DeFi", "Liquidez"],
     date: new Date(Date.now() - 172800000).toISOString(),
     readTime: "6 min",
   },
@@ -399,6 +405,8 @@ export const rendaOnlineArticles: Article[] = [
     category: "renda-online",
     imageUrl: "https://images.unsplash.com/photo-1644361566696-3d442b5b482a?auto=format&fit=crop&q=80&w=1200",
     author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
+    authorId: "sarah-chen",
+    tags: ["Renda Online", "NFTs", "Arte Digital", "Royalties"],
     date: new Date(Date.now() - 259200000).toISOString(),
     readTime: "5 min",
   },
@@ -497,6 +505,8 @@ export const rendaOnlineArticles: Article[] = [
     category: "renda-online",
     imageUrl: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=1200",
     author: "Ana Souza – Especialista em Startups & Negócios",
+    authorId: "ana-souza",
+    tags: ["Renda Online", "GameFi", "Play-to-Earn", "Jogos"],
     date: new Date(Date.now() - 345600000).toISOString(),
     readTime: "5 min",
   },
@@ -594,6 +604,8 @@ export const rendaOnlineArticles: Article[] = [
     category: "renda-online",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
+    authorId: "roberto-almeida",
+    tags: ["Renda Online", "Staking", "Renda Passiva", "Blockchain"],
     date: new Date().toISOString(),
     readTime: "4 min",
   },
@@ -691,6 +703,8 @@ export const rendaOnlineArticles: Article[] = [
     category: "renda-online",
     imageUrl: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=1200",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
+    authorId: "roberto-almeida",
+    tags: ["Renda Online", "Lending", "Empréstimos", "DeFi"],
     date: new Date().toISOString(),
     readTime: "5 min",
   },
@@ -788,6 +802,8 @@ export const rendaOnlineArticles: Article[] = [
     category: "renda-online",
     imageUrl: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1200",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
+    authorId: "roberto-almeida",
+    tags: ["Renda Online", "Afiliados", "Exchanges", "Marketing"],
     date: new Date().toISOString(),
     readTime: "4 min",
   },
@@ -885,6 +901,8 @@ export const rendaOnlineArticles: Article[] = [
     category: "renda-online",
     imageUrl: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=1200",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
+    authorId: "roberto-almeida",
+    tags: ["Renda Online", "Conteúdo", "Web3", "Monetização"],
     date: new Date().toISOString(),
     readTime: "5 min",
   },
@@ -982,6 +1000,8 @@ export const rendaOnlineArticles: Article[] = [
     category: "renda-online",
     imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
+    authorId: "roberto-almeida",
+    tags: ["Renda Online", "Nodes", "Infraestrutura", "Blockchain"],
     date: new Date().toISOString(),
     readTime: "6 min",
   },
@@ -1087,7 +1107,9 @@ export const rendaOnlineArticles: Article[] = [
     readTime: "8 min",
     trending: false,
     slug: "escrita-criativa-e-copywriting-o-poder-das-palavras-que-vendem",
-    author: "Equipe TechFront"
+    author: "Equipe TechFront",
+    authorId: "techfront",
+    tags: ["Renda Online", "Copywriting", "Escrita", "Marketing"]
   },
   {
     id: "renda-online-18",
@@ -1100,7 +1122,9 @@ export const rendaOnlineArticles: Article[] = [
     readTime: "7 min",
     trending: false,
     slug: "podcasting-como-criar-e-monetizar-seu-proprio-show",
-    author: "Equipe TechFront"
+    author: "Equipe TechFront",
+    authorId: "techfront",
+    tags: ["Renda Online", "Podcasting", "Conteúdo", "Monetização"]
   },
   {
     id: "renda-online-19",
@@ -1113,7 +1137,9 @@ export const rendaOnlineArticles: Article[] = [
     readTime: "6 min",
     trending: false,
     slug: "venda-de-fotos-e-videos-monetizando-sua-criatividade-visual",
-    author: "Equipe TechFront"
+    author: "Equipe TechFront",
+    authorId: "techfront",
+    tags: ["Renda Online", "Fotografia", "Vídeo", "Bancos de Imagens"]
   },
   {
     id: "renda-online-20",
@@ -1126,6 +1152,8 @@ export const rendaOnlineArticles: Article[] = [
     readTime: "7 min",
     trending: false,
     slug: "assistente-virtual-organizando-a-vida-de-empreendedores",
-    author: "Equipe TechFront"
+    author: "Equipe TechFront",
+    authorId: "techfront",
+    tags: ["Renda Online", "Assistente Virtual", "Trabalho Remoto", "Organização"]
   }
 ];

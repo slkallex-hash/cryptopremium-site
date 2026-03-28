@@ -45,6 +45,8 @@ export const tutoriaisArticles: Article[] = Array.from({ length: 20 }).map((_, i
   category: "tutoriais",
   imageUrl: `https://picsum.photos/seed/tutoriais-${i + 1}/1200/800`,
   author: ["Ana Souza", "Marcos Silva", "Lucas Costa"][i % 3] + " – Especialista em Negócios & Startups",
+  authorId: ["ana-souza", "marcos-silva", "lucas-costa"][i % 3],
+  tags: ["Tutorial", "Guia", "Tecnologia", "Produtividade"],
   date: new Date(Date.now() - i * 86400000).toISOString(),
   readTime: `${Math.floor(Math.random() * 5) + 3} min`,
   trending: i < 3

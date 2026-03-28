@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { authors } from "@/data/authors";
 import { articles } from "@/data/articles";
 import { AdSlot } from "@/components/AdSlot";
@@ -10,15 +11,15 @@ export function AuthorPage() {
   const author = authors.find(a => a.id === authorId);
 
   useEffect(() => {
-    if (author) {
-      document.title = `${author.name} | TechFront`;
-      window.scrollTo(0, 0);
-    }
-  }, [author]);
+    window.scrollTo(0, 0);
+  }, [authorId]);
 
   if (!author) {
     return (
       <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4">
+        <Helmet>
+          <title>Autor não encontrado | TechFront</title>
+        </Helmet>
         <h1 className="text-4xl font-display font-bold text-white mb-4">Autor não encontrado</h1>
         <p className="text-zinc-400 mb-8">O perfil que você está procurando não existe ou foi removido.</p>
         <Link to="/" className="px-6 py-3 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-500 transition-colors">
@@ -28,10 +29,19 @@ export function AuthorPage() {
     );
   }
 
-  const authorArticles = articles.filter(a => a.author.includes(author.name));
+  const authorArticles = articles.filter(a => a.authorId === author.id);
 
   return (
     <div className="max-w-5xl mx-auto space-y-16 pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+      <Helmet>
+        <title>{author.name} | TechFront</title>
+        <meta name="description" content={author.bio} />
+        <meta property="og:title" content={`${author.name} | TechFront`} />
+        <meta property="og:description" content={author.bio} />
+        <meta property="og:image" content={author.imageUrl} />
+        <meta property="og:type" content="profile" />
+        <link rel="canonical" href={`${window.location.origin}/author/${author.id}`} />
+      </Helmet>
       {/* Top Banner Ad */}
       <AdSlot id="author-top-banner" type="banner" className="mb-8 rounded-xl" />
 

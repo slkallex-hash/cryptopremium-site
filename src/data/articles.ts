@@ -9,6 +9,9 @@ import { appsArticles } from "./articles-apps";
 import { internetArticles } from "./articles-internet";
 import { tutoriaisArticles } from "./articles-tutoriais";
 
+import { Author, authors } from "./authors";
+export { Author, authors };
+
 export interface Category {
   id: string;
   name: string;
@@ -24,10 +27,12 @@ export interface Article {
   content: string;
   category: string;
   imageUrl: string;
+  authorId: string;
   author: string;
   date: string;
   readTime: string;
   trending?: boolean;
+  tags?: string[];
 }
 
 export const categories: Category[] = [

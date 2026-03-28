@@ -45,6 +45,8 @@ export const internetArticles: Article[] = Array.from({ length: 20 }).map((_, i)
   category: "internet",
   imageUrl: `https://picsum.photos/seed/internet-${i + 1}/1200/800`,
   author: ["Sarah Chen", "Lucas Costa", "Roberto Almeida"][i % 3] + " – Diretora de Conteúdo & Cultura Digital",
+  authorId: ["sarah-chen", "lucas-costa", "roberto-almeida"][i % 3],
+  tags: ["Internet", "Cibersegurança", "Redes Sociais", "Tecnologia"],
   date: new Date(Date.now() - i * 86400000).toISOString(),
   readTime: `${Math.floor(Math.random() * 5) + 3} min`,
   trending: i < 3

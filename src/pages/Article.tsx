@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
-import { articles, categories } from "@/data/articles";
-import { authors } from "@/data/authors";
+import { Helmet } from "react-helmet-async";
+import { articles, categories, authors } from "@/data/articles";
 import { AdSlot } from "@/components/AdSlot";
 import { Clock, Share2, Twitter, Facebook, Link as LinkIcon, ChevronRight, User, Linkedin, Send } from "lucide-react";
 import { useEffect } from "react";
@@ -8,19 +8,19 @@ import { useEffect } from "react";
 export function Article() {
   const { slug } = useParams<{ slug: string }>();
   const article = articles.find(a => a.slug === slug);
-  const author = authors.find(a => article?.author?.includes(a.name));
+  const author = authors.find(a => a.id === article?.authorId);
 
   // Scroll to top on mount
   useEffect(() => {
     window.scrollTo(0, 0);
-    if (article) {
-      document.title = `${article.title} | TechFront`;
-    }
-  }, [slug, article]);
+  }, [slug]);
 
   if (!article) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[50vh] space-y-4">
+        <Helmet>
+          <title>Artigo não encontrado | TechFront</title>
+        </Helmet>
         <h1 className="text-4xl font-bold text-zinc-100">Artigo não encontrado</h1>
         <Link to="/" className="text-blue-400 hover:underline flex items-center">
           <ChevronRight className="w-4 h-4 mr-1 rotate-180" /> Voltar para a página inicial
@@ -30,9 +30,28 @@ export function Article() {
   }
 
   const categoryName = categories.find(c => c.slug === article.category || c.id === article.category)?.name;
+  const relatedArticles = articles
+    .filter(a => a.id !== article.id)
+    .sort((a, b) => {
+      if (a.category === article.category && b.category !== article.category) return -1;
+      if (a.category !== article.category && b.category === article.category) return 1;
+      return 0;
+    })
+    .slice(0, 3);
 
   return (
     <article className="max-w-4xl mx-auto pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+      <Helmet>
+        <title>{article.title} | TechFront</title>
+        <meta name="description" content={article.excerpt} />
+        <meta property="og:title" content={article.title} />
+        <meta property="og:description" content={article.excerpt} />
+        <meta property="og:image" content={article.imageUrl} />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href={`${window.location.origin}/article/${article.slug}`} />
+      </Helmet>
+
       {/* JSON-LD Structured Data */}
       <script type="application/ld+json">
         {JSON.stringify({
@@ -45,7 +64,7 @@ export function Article() {
           "dateModified": new Date().toISOString(),
           "author": [{
             "@type": "Person",
-            "name": article.author,
+            "name": author?.name || "Redação TechFront",
             "url": author ? `${window.location.origin}/author/${author.id}` : window.location.origin
           }],
           "publisher": {
@@ -92,7 +111,7 @@ export function Article() {
 
         <div className="flex flex-col md:flex-row md:items-center justify-between py-6 border-y border-white/10 gap-4">
           <div className="flex items-center space-x-4">
-            <Link to={author ? `/author/${author.id}` : "#"} className="w-12 h-12 rounded-full bg-zinc-900 overflow-hidden border border-white/10 hover:border-blue-500 transition-colors">
+              <Link to={author ? `/author/${author.id}` : "#"} className="w-12 h-12 rounded-full bg-zinc-900 overflow-hidden border border-white/10 hover:border-blue-500 transition-colors">
               {author ? (
                 <img src={author.imageUrl} alt={author.name} className="w-full h-full object-cover" />
               ) : (
@@ -103,7 +122,7 @@ export function Article() {
             </Link>
             <div>
               <div className="flex items-center gap-1.5">
-                <Link to={author ? `/author/${author.id}` : "#"} className="text-white font-bold hover:text-blue-400 transition-colors">{article.author}</Link>
+                <Link to={author ? `/author/${author.id}` : "#"} className="text-white font-bold hover:text-blue-400 transition-colors">{author?.name || "Redação TechFront"}</Link>
                 <div className="flex items-center bg-blue-500/10 text-blue-400 px-1.5 py-0.5 rounded text-[9px] font-black uppercase tracking-tighter border border-blue-500/20">
                   Verificado
                 </div>
@@ -184,12 +203,12 @@ export function Article() {
                   "{author.bio}"
                 </p>
                 <div className="flex items-center justify-center sm:justify-start gap-6">
-                  {author.social.twitter && (
+                  {author.social?.twitter && (
                     <a href={author.social.twitter} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors flex items-center gap-2 text-xs font-bold uppercase tracking-widest">
                       <Twitter className="w-4 h-4" /> Twitter
                     </a>
                   )}
-                  {author.social.linkedin && (
+                  {author.social?.linkedin && (
                     <a href={author.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors flex items-center gap-2 text-xs font-bold uppercase tracking-widest">
                       <Linkedin className="w-4 h-4" /> LinkedIn
                     </a>
@@ -204,9 +223,11 @@ export function Article() {
 
           {/* Tags */}
           <div className="mt-12 pt-8 border-t border-white/10 flex flex-wrap gap-3">
-            <span className="px-4 py-1.5 bg-zinc-900 border border-white/10 rounded-full text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-white hover:border-blue-500 cursor-pointer transition-colors">#Tech</span>
-            <span className="px-4 py-1.5 bg-zinc-900 border border-white/10 rounded-full text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-white hover:border-blue-500 cursor-pointer transition-colors">#Inovação</span>
-            <span className="px-4 py-1.5 bg-zinc-900 border border-white/10 rounded-full text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-white hover:border-blue-500 cursor-pointer transition-colors">#Futuro</span>
+            {article.tags?.map(tag => (
+              <span key={tag} className="px-4 py-1.5 bg-zinc-900 border border-white/10 rounded-full text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-white hover:border-blue-500 cursor-pointer transition-colors">
+                #{tag}
+              </span>
+            ))}
           </div>
         </div>
 
@@ -244,7 +265,7 @@ export function Article() {
       <section className="mt-20 pt-16 border-t border-white/10">
         <h2 className="text-3xl font-display font-bold mb-10 text-white">Leia também</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {articles.filter(a => a.id !== article.id).slice(0, 3).map((related) => (
+          {relatedArticles.map((related) => (
             <Link key={related.id} to={`/article/${related.slug}`} className="group flex flex-col glass rounded-2xl overflow-hidden border border-white/5 hover:bg-white/5 transition-all">
               <div className="relative h-48 overflow-hidden">
                 <img 

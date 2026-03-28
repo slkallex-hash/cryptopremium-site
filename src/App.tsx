@@ -4,6 +4,7 @@
  */
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import { Layout } from "./components/Layout";
 import { Home } from "./pages/Home";
 import { Article } from "./pages/Article";
@@ -20,23 +21,25 @@ import { Premium } from "./pages/Premium";
 
 export default function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="article/:slug" element={<Article />} />
-          <Route path="category/:slug" element={<Category />} />
-          <Route path="author/:authorId" element={<AuthorPage />} />
-          <Route path="sobre" element={<About />} />
-          <Route path="contato" element={<Contact />} />
-          <Route path="privacidade" element={<PrivacyPolicy />} />
-          <Route path="termos" element={<TermsOfUse />} />
-          <Route path="aviso-de-risco" element={<RiskDisclaimer />} />
-          <Route path="login" element={<Login />} />
-          <Route path="cadastro" element={<Register />} />
-          <Route path="premium" element={<Premium />} />
-        </Route>
-      </Routes>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="article/:slug" element={<Article />} />
+            <Route path="category/:slug" element={<Category />} />
+            <Route path="author/:authorId" element={<AuthorPage />} />
+            <Route path="sobre" element={<About />} />
+            <Route path="contato" element={<Contact />} />
+            <Route path="privacidade" element={<PrivacyPolicy />} />
+            <Route path="termos" element={<TermsOfUse />} />
+            <Route path="aviso-de-risco" element={<RiskDisclaimer />} />
+            <Route path="login" element={<Login />} />
+            <Route path="cadastro" element={<Register />} />
+            <Route path="premium" element={<Premium />} />
+          </Route>
+        </Routes>
+      </Router>
+    </HelmetProvider>
   );
 }

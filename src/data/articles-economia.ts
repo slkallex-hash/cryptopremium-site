@@ -91,10 +91,12 @@ export const economiaArticles: Article[] = [
     `,
     category: "internet",
     imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=1200",
+    authorId: "roberto-almeida",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date().toISOString(),
     readTime: "4 min",
     trending: true,
+    tags: ["Fed", "Economia", "Bitcoin", "Macroeconomia"],
   },
   {
     id: "eco-1",
@@ -193,10 +195,12 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=1200",
+    authorId: "ana-souza",
     author: "Ana Souza – Especialista em Startups & Negócios",
     date: new Date().toISOString(),
     readTime: "6 min",
     trending: true,
+    tags: ["Inflação", "Dólar", "Bitcoin", "Patrimônio"],
   },
   {
     id: "eco-2",
@@ -295,9 +299,11 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=1200",
+    authorId: "sarah-chen",
     author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 86400000).toISOString(),
     readTime: "5 min",
+    tags: ["BRICS", "Desdolarização", "Geopolítica", "CBDC"],
   },
   {
     id: "eco-3",
@@ -396,9 +402,11 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=1200",
+    authorId: "ana-souza",
     author: "Ana Souza – Especialista em Startups & Negócios",
     date: new Date(Date.now() - 172800000).toISOString(),
     readTime: "4 min",
+    tags: ["Taxa de Juros", "Fed", "Bitcoin", "Nasdaq"],
   },
   {
     id: "eco-4",
@@ -498,9 +506,11 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=1200",
+    authorId: "roberto-almeida",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date(Date.now() - 259200000).toISOString(),
     readTime: "5 min",
+    tags: ["CBDC", "Drex", "Privacidade", "Bancos Centrais"],
   },
   {
     id: "eco-5",
@@ -600,9 +610,11 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
+    authorId: "sarah-chen",
     author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 345600000).toISOString(),
     readTime: "5 min",
+    tags: ["RWA", "Tokenização", "BlackRock", "DeFi"],
   },
   {
     id: "eco-6",
@@ -700,9 +712,11 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200",
+    authorId: "ana-souza",
     author: "Ana Souza – Especialista em Startups & Negócios",
     date: new Date(Date.now() - 432000000).toISOString(),
     readTime: "6 min",
+    tags: ["IA", "Economia", "Produtividade", "Trabalho"],
   },
   {
     id: "eco-7",
@@ -800,9 +814,11 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1548611716-4022880abdd2?auto=format&fit=crop&q=80&w=1200",
+    authorId: "sarah-chen",
     author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 518400000).toISOString(),
     readTime: "5 min",
+    tags: ["China", "Crise Imobiliária", "Commodities", "Economia Global"],
   },
   {
     id: "eco-8",
@@ -900,9 +916,11 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1610315990650-14535e25c111?auto=format&fit=crop&q=80&w=1200",
+    authorId: "ana-souza",
     author: "Ana Souza – Especialista em Startups & Negócios",
     date: new Date(Date.now() - 604800000).toISOString(),
     readTime: "4 min",
+    tags: ["Ouro", "Bancos Centrais", "Dólar", "Reserva de Valor"],
   },
   {
     id: "eco-9",
@@ -1001,9 +1019,11 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200",
+    authorId: "sarah-chen",
     author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 691200000).toISOString(),
     readTime: "6 min",
+    tags: ["Semicondutores", "EUA", "China", "Guerra Tecnológica"],
   },
   {
     id: "eco-10",
@@ -1100,9 +1120,11 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200",
+    authorId: "ana-souza",
     author: "Ana Souza – Especialista em Startups & Negócios",
     date: new Date(Date.now() - 777600000).toISOString(),
     readTime: "5 min",
+    tags: ["Gig Economy", "Web3", "Trabalho", "DAO"],
   },
   {
     id: "economia-11",
@@ -1115,7 +1137,9 @@ export const economiaArticles: Article[] = [
     readTime: "6 min",
     trending: false,
     slug: "inflacao-em-2026-projecoes-e-impactos-no-consumo",
-    author: "Equipe TechFront"
+    authorId: "techfront",
+    author: "Equipe TechFront",
+    tags: ["Inflação", "Consumo", "Brasil"]
   },
   {
     id: "economia-12",
@@ -1127,8 +1151,10 @@ export const economiaArticles: Article[] = [
     date: "2026-03-19",
     readTime: "8 min",
     trending: true,
-    slug: "o-futuro-do-trabalho-automacao-e-novos-empregos",
-    author: "Equipe TechFront"
+    slug: "o-futuro-do-work-automacao-e-novos-empregos",
+    authorId: "techfront",
+    author: "Equipe TechFront",
+    tags: ["Trabalho", "Automação", "IA"]
   },
   {
     id: "economia-13",
@@ -1141,7 +1167,9 @@ export const economiaArticles: Article[] = [
     readTime: "5 min",
     trending: false,
     slug: "comercio-exterior-brasil-amplia-exportacoes-para-a-asia",
-    author: "Equipe TechFront"
+    authorId: "techfront",
+    author: "Equipe TechFront",
+    tags: ["Comércio Exterior", "Exportação", "Agronegócio"]
   },
   {
     id: "economia-14",
@@ -1154,7 +1182,9 @@ export const economiaArticles: Article[] = [
     readTime: "7 min",
     trending: false,
     slug: "reforma-tributaria-o-que-muda-para-as-pequenas-empresas",
-    author: "Equipe TechFront"
+    authorId: "techfront",
+    author: "Equipe TechFront",
+    tags: ["Reforma Tributária", "Pequenas Empresas", "Impostos"]
   },
   {
     id: "economia-15",
@@ -1167,7 +1197,9 @@ export const economiaArticles: Article[] = [
     readTime: "6 min",
     trending: true,
     slug: "mercado-imobiliario-tendencias-para-o-segundo-semestre",
-    author: "Equipe TechFront"
+    authorId: "techfront",
+    author: "Equipe TechFront",
+    tags: ["Mercado Imobiliário", "Investimento", "Juros"]
   },
   {
     id: "economia-16",
@@ -1180,7 +1212,9 @@ export const economiaArticles: Article[] = [
     readTime: "5 min",
     trending: false,
     slug: "sustentabilidade-o-crescimento-dos-titulos-verdes",
-    author: "Equipe TechFront"
+    authorId: "techfront",
+    author: "Equipe TechFront",
+    tags: ["Sustentabilidade", "ESG", "Títulos Verdes"]
   },
   {
     id: "economia-17",
@@ -1193,7 +1227,9 @@ export const economiaArticles: Article[] = [
     readTime: "7 min",
     trending: false,
     slug: "logistica-desafios-e-inovacoes-na-ultima-milha",
-    author: "Equipe TechFront"
+    authorId: "techfront",
+    author: "Equipe TechFront",
+    tags: ["Logística", "E-commerce", "Inovação"]
   },
   {
     id: "economia-18",
@@ -1206,7 +1242,9 @@ export const economiaArticles: Article[] = [
     readTime: "6 min",
     trending: false,
     slug: "turismo-a-retomada-do-setor-de-eventos-corporativos",
-    author: "Equipe TechFront"
+    authorId: "techfront",
+    author: "Equipe TechFront",
+    tags: ["Turismo", "Eventos", "Negócios"]
   },
   {
     id: "economia-19",
@@ -1219,7 +1257,9 @@ export const economiaArticles: Article[] = [
     readTime: "5 min",
     trending: false,
     slug: "educacao-financeira-o-papel-das-escolas-na-formacao-de-poupadores",
-    author: "Equipe TechFront"
+    authorId: "techfront",
+    author: "Equipe TechFront",
+    tags: ["Educação Financeira", "Poupança", "Investimento"]
   },
   {
     id: "economia-20",
@@ -1232,6 +1272,8 @@ export const economiaArticles: Article[] = [
     readTime: "8 min",
     trending: true,
     slug: "energia-a-transicao-para-fontes-renovaveis-no-brasil",
-    author: "Equipe TechFront"
+    authorId: "techfront",
+    author: "Equipe TechFront",
+    tags: ["Energia", "Renováveis", "Sustentabilidade"]
   }
 ];

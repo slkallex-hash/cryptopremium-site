@@ -45,6 +45,8 @@ export const appsArticles: Article[] = Array.from({ length: 20 }).map((_, i) => 
   category: "apps",
   imageUrl: `https://picsum.photos/seed/apps-${i + 1}/1200/800`,
   author: ["Marcos Silva", "Lucas Costa", "Ana Souza"][i % 3] + " – Repórter de Hardware & Gadgets",
+  authorId: ["marcos-silva", "lucas-costa", "ana-souza"][i % 3],
+  tags: ["Apps", "Aplicativos", "Mobile", "Tecnologia"],
   date: new Date(Date.now() - i * 86400000).toISOString(),
   readTime: `${Math.floor(Math.random() * 5) + 3} min`,
   trending: i < 3
