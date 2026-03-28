@@ -30,13 +30,18 @@ export function Layout() {
               >
                 {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </button>
-              <Link to="/" className="flex items-center space-x-2.5 group">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-500/20 group-hover:shadow-blue-500/40 transition-all">
+              <Link to="/" className="flex items-center space-x-3 group">
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-500/20 group-hover:shadow-blue-500/40 transition-all shrink-0">
                   <Zap className="w-6 h-6 text-white" strokeWidth={2.5} />
                 </div>
-                <span className="text-2xl font-display font-bold tracking-tight text-white">
-                  Tech<span className="text-blue-500">Front</span>
-                </span>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-display font-bold tracking-tight text-white leading-none">
+                    Tech<span className="text-blue-500">Front</span>
+                  </span>
+                  <span className="text-[10px] uppercase tracking-widest text-zinc-500 font-bold mt-1 hidden sm:block">
+                    Tecnologia, IA e Criptomoedas
+                  </span>
+                </div>
               </Link>
             </div>
 

@@ -17,7 +17,12 @@ export function Home() {
   const mainFeatured = featuredArticles[0] || articles[0];
   const secondaryFeatured = featuredArticles.slice(1, 3);
 
-  // Get latest articles
+  // Get latest articles for the hero grid
+  const heroGridArticles = [...articles].sort((a, b) => 
+    new Date(b.date).getTime() - new Date(a.date).getTime()
+  ).slice(1, 7);
+
+  // Get latest articles for the general grid
   const latestArticles = [...articles].sort((a, b) => 
     new Date(b.date).getTime() - new Date(a.date).getTime()
   ).slice(0, 6);
@@ -25,82 +30,112 @@ export function Home() {
   // Get "Most Read" (using trending articles)
   const mostRead = articles.filter(a => a.trending).slice(0, 6);
 
+  const timeMarkers = ["Agora", "5 min", "12 min", "25 min", "40 min", "1h"];
+
   return (
     <div className="w-full bg-black">
-      {/* HERO SECTION */}
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+      {/* HERO PORTAL SECTION */}
+      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-24 overflow-hidden border-b border-white/5">
         {/* Background Effects */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-500/10 blur-[120px] rounded-full pointer-events-none"></div>
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-cyan-500/5 blur-[100px] rounded-full pointer-events-none"></div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-gradient-to-b from-blue-500/5 to-transparent pointer-events-none"></div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-blue mb-8 border border-blue-500/20 bg-blue-500/10">
-              <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
-              <span className="text-sm font-medium text-blue-400">Notícias em Tempo Real</span>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button 
-                onClick={scrollToRealTime}
-                className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold text-lg rounded-full hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] transition-all flex items-center justify-center gap-2 group"
-              >
-                Tempo Real
-                <Activity className="w-5 h-5 group-hover:scale-110 transition-transform" />
-              </button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* DESTAQUE DA NOTÍCIA PRINCIPAL */}
-      <section className="py-16 lg:py-24 relative border-y border-white/5 bg-white/[0.02]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-left">
+          {/* Main Featured Article */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
             <motion.div 
-              initial={{ opacity: 0, x: -40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              className="lg:col-span-8 group"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
             >
-              <div className="flex items-center gap-4 mb-6">
-                <span className="px-3 py-1 bg-blue-600 text-white text-xs font-bold rounded-full uppercase tracking-wider">
-                  {mainFeatured.category}
-                </span>
-                <span className="text-zinc-500 text-sm flex items-center">
-                  <Clock className="w-4 h-4 mr-1.5" /> {mainFeatured.readTime}
-                </span>
-              </div>
-              <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6 leading-tight">
-                {mainFeatured.title}
-              </h2>
-              <p className="text-zinc-400 text-lg leading-relaxed mb-8">
-                {mainFeatured.excerpt}
-              </p>
-              <Link to={`/article/${mainFeatured.slug}`} className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold text-lg rounded-full hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all group">
-                Leia a Notícia Completa
-                <ChevronRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              <Link to={`/article/${mainFeatured.slug}`} className="block relative aspect-[16/9] overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
+                <img 
+                  src={mainFeatured.imageUrl} 
+                  alt={mainFeatured.title} 
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 p-6 md:p-10 w-full">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="px-3 py-1 bg-blue-600 text-white text-xs font-bold rounded-full uppercase tracking-wider">
+                      {mainFeatured.category}
+                    </span>
+                    <span className="flex items-center gap-1.5 text-blue-400 text-xs font-bold uppercase tracking-widest">
+                      <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+                      Agora
+                    </span>
+                  </div>
+                  <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight max-w-4xl group-hover:text-blue-400 transition-colors">
+                    {mainFeatured.title}
+                  </h1>
+                  <p className="text-zinc-300 text-lg md:text-xl mb-8 max-w-2xl line-clamp-2 hidden md:block">
+                    {mainFeatured.excerpt}
+                  </p>
+                  <button className="px-8 py-4 bg-white text-black font-bold text-lg rounded-full hover:bg-blue-500 hover:text-white transition-all flex items-center gap-2">
+                    Ler agora <ChevronRight className="w-5 h-5" />
+                  </button>
+                </div>
               </Link>
             </motion.div>
-            <motion.div 
-              className="relative lg:order-last"
-              initial={{ opacity: 0, x: 40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 blur-3xl rounded-full"></div>
-              <img 
-                src={mainFeatured.imageUrl} 
-                alt={mainFeatured.title} 
-                className="relative z-10 rounded-3xl shadow-2xl w-full h-[400px] object-cover border border-white/10"
-                referrerPolicy="no-referrer"
-              />
-            </motion.div>
+
+            {/* Sidebar Featured (Optional or just grid) */}
+            <div className="lg:col-span-4 space-y-6 hidden lg:block">
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-sm font-bold text-zinc-500 uppercase tracking-widest flex items-center gap-2">
+                  <TrendingUp className="w-4 h-4 text-blue-500" /> Tendências
+                </h3>
+              </div>
+              {secondaryFeatured.map((article, i) => (
+                <motion.div
+                  key={article.id}
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 + (i * 0.1) }}
+                >
+                  <Link to={`/article/${article.slug}`} className="group flex gap-4 p-4 rounded-2xl hover:bg-white/5 transition-all border border-transparent hover:border-white/5">
+                    <div className="w-24 h-24 shrink-0 rounded-xl overflow-hidden border border-white/10">
+                      <img src={article.imageUrl} alt={article.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform" referrerPolicy="no-referrer" />
+                    </div>
+                    <div>
+                      <span className="text-[10px] font-bold text-blue-500 uppercase tracking-wider mb-1 block">{article.category}</span>
+                      <h4 className="text-sm font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-2 leading-snug">
+                        {article.title}
+                      </h4>
+                      <span className="text-[10px] text-zinc-500 mt-2 block">{timeMarkers[i+1]}</span>
+                    </div>
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          {/* Hero Grid - Smaller News Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {heroGridArticles.slice(0, 4).map((article, i) => (
+              <motion.div
+                key={article.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 + (i * 0.1) }}
+              >
+                <Link to={`/article/${article.slug}`} className="group block h-full p-5 rounded-2xl bg-zinc-900/50 border border-white/5 hover:border-blue-500/30 hover:bg-zinc-900 transition-all">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest">{article.category}</span>
+                    <span className="text-[10px] font-bold text-blue-500 uppercase tracking-widest flex items-center gap-1">
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                      {timeMarkers[i+2]}
+                    </span>
+                  </div>
+                  <h3 className="text-base font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-3 leading-tight mb-4">
+                    {article.title}
+                  </h3>
+                  <div className="flex items-center text-xs text-zinc-500 font-medium">
+                    Ler notícia <ChevronRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
