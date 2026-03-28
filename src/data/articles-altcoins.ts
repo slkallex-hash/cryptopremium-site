@@ -84,7 +84,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "altcoins",
-    imageUrl: "https://images.unsplash.com/photo-1622736696590-0f2d488d0111?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
     author: "Carlos Mendes – Analista de Criptoativos",
     date: new Date().toISOString(),
     readTime: "4 min",
@@ -409,7 +409,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "altcoins",
-    imageUrl: "https://images.unsplash.com/photo-1622736696590-0f2d488d0111?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
     author: "Carlos Mendes – Analista de Criptoativos",
     date: new Date().toISOString(),
     readTime: "4 min",
@@ -613,7 +613,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "altcoins",
-    imageUrl: "https://images.unsplash.com/photo-1622630998477-20b41cd743d5?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
     author: "Marina Costa – Especialista em Integração Institucional",
     date: new Date(Date.now() - 86400000).toISOString(),
     readTime: "5 min",
@@ -817,7 +817,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "altcoins",
-    imageUrl: "https://images.unsplash.com/photo-1639762681485-074b7f4ec651?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
     author: "Roberto Almeida – Especialista em Infraestrutura",
     date: new Date(Date.now() - 259200000).toISOString(),
     readTime: "5 min",
