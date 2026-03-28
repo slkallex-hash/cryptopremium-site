@@ -11,7 +11,7 @@ export function AuthorPage() {
 
   useEffect(() => {
     if (author) {
-      document.title = `${author.name} | CryptoPremium`;
+      document.title = `${author.name} | TechFront`;
       window.scrollTo(0, 0);
     }
   }, [author]);
@@ -21,7 +21,7 @@ export function AuthorPage() {
       <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4">
         <h1 className="text-4xl font-display font-bold text-white mb-4">Autor não encontrado</h1>
         <p className="text-zinc-400 mb-8">O perfil que você está procurando não existe ou foi removido.</p>
-        <Link to="/" className="px-6 py-3 bg-emerald-500 text-zinc-950 font-bold rounded-xl hover:bg-emerald-400 transition-colors">
+        <Link to="/" className="px-6 py-3 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-500 transition-colors">
           Voltar para a Home
         </Link>
       </div>
@@ -31,7 +31,7 @@ export function AuthorPage() {
   const authorArticles = articles.filter(a => a.author.includes(author.name));
 
   return (
-    <div className="max-w-5xl mx-auto space-y-16">
+    <div className="max-w-5xl mx-auto space-y-16 pt-24 pb-16 px-4 sm:px-6 lg:px-8">
       {/* Top Banner Ad */}
       <AdSlot id="author-top-banner" type="banner" className="mb-8 rounded-xl" />
 
@@ -54,7 +54,7 @@ export function AuthorPage() {
       </script>
 
       {/* Author Header */}
-      <section className="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-8 md:p-12">
+      <section className="glass border border-white/10 rounded-3xl p-8 md:p-12">
         <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
           <img 
             src={author.imageUrl} 
@@ -65,21 +65,21 @@ export function AuthorPage() {
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
               <div>
                 <h1 className="text-3xl md:text-5xl font-display font-bold text-white mb-2">{author.name}</h1>
-                <p className="text-emerald-400 font-bold uppercase tracking-widest text-sm">{author.role}</p>
+                <p className="text-blue-400 font-bold uppercase tracking-widest text-sm">{author.role}</p>
               </div>
               <div className="flex items-center justify-center md:justify-start gap-4">
                 {author.social.twitter && (
-                  <a href={author.social.twitter} target="_blank" rel="noopener noreferrer" className="p-2 bg-zinc-800 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-700 transition-all">
+                  <a href={author.social.twitter} target="_blank" rel="noopener noreferrer" className="p-2 bg-zinc-800/50 rounded-lg text-zinc-400 hover:text-white hover:bg-blue-500 transition-all">
                     <Twitter className="w-5 h-5" />
                   </a>
                 )}
                 {author.social.linkedin && (
-                  <a href={author.social.linkedin} target="_blank" rel="noopener noreferrer" className="p-2 bg-zinc-800 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-700 transition-all">
+                  <a href={author.social.linkedin} target="_blank" rel="noopener noreferrer" className="p-2 bg-zinc-800/50 rounded-lg text-zinc-400 hover:text-white hover:bg-blue-500 transition-all">
                     <Linkedin className="w-5 h-5" />
                   </a>
                 )}
                 {author.social.instagram && (
-                  <a href={author.social.instagram} target="_blank" rel="noopener noreferrer" className="p-2 bg-zinc-800 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-700 transition-all">
+                  <a href={author.social.instagram} target="_blank" rel="noopener noreferrer" className="p-2 bg-zinc-800/50 rounded-lg text-zinc-400 hover:text-white hover:bg-pink-600 transition-all">
                     <Instagram className="w-5 h-5" />
                   </a>
                 )}
@@ -94,14 +94,14 @@ export function AuthorPage() {
 
       {/* Author Articles */}
       <section>
-        <div className="flex items-center justify-between border-b border-zinc-800/50 pb-4 mb-8">
-          <h2 className="text-2xl font-display font-bold">Artigos de {author.name}</h2>
+        <div className="flex items-center justify-between border-b border-white/10 pb-4 mb-8">
+          <h2 className="text-2xl font-display font-bold text-white">Artigos de {author.name}</h2>
           <span className="text-zinc-500 text-sm font-medium">{authorArticles.length} artigos publicados</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {authorArticles.map((article) => (
-            <Link key={article.id} to={`/article/${article.slug}`} className="group flex flex-col bg-zinc-900/30 rounded-2xl overflow-hidden border border-zinc-800/50 hover:border-emerald-500/50 transition-all">
+            <Link key={article.id} to={`/article/${article.slug}`} className="group flex flex-col glass rounded-2xl overflow-hidden border border-white/5 hover:border-blue-500/50 transition-all">
               <div className="relative h-48 overflow-hidden">
                 <img 
                   src={article.imageUrl} 
@@ -111,14 +111,14 @@ export function AuthorPage() {
               </div>
               <div className="p-6">
                 <div className="flex items-center text-xs text-zinc-500 font-medium mb-3 uppercase tracking-wider">
-                  <span className="text-emerald-500/80">{article.category}</span>
+                  <span className="text-blue-400">{article.category}</span>
                   <span className="mx-2 text-zinc-700">•</span>
                   <Clock className="w-3.5 h-3.5 mr-1.5" /> {article.readTime}
                 </div>
-                <h3 className="text-xl font-display font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors mb-6 line-clamp-2">
+                <h3 className="text-xl font-display font-bold text-zinc-100 group-hover:text-blue-400 transition-colors mb-6 line-clamp-2">
                   {article.title}
                 </h3>
-                <span className="text-emerald-400 text-sm font-bold flex items-center group-hover:translate-x-1 transition-transform">
+                <span className="text-blue-400 text-sm font-bold flex items-center group-hover:translate-x-1 transition-transform">
                   Ler artigo <ChevronRight className="w-4 h-4 ml-1" />
                 </span>
               </div>

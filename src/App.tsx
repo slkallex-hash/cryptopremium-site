@@ -16,6 +16,7 @@ import { RiskDisclaimer } from "./pages/RiskDisclaimer";
 import { AuthorPage } from "./pages/AuthorPage";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
+import { Premium } from "./pages/Premium";
 
 export default function App() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="aviso-de-risco" element={<RiskDisclaimer />} />
           <Route path="login" element={<Login />} />
           <Route path="cadastro" element={<Register />} />
+          <Route path="premium" element={<Premium />} />
         </Route>
       </Routes>
     </Router>

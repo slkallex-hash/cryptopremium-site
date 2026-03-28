@@ -25,7 +25,7 @@ export const economiaArticles: Article[] = [
       <p>Dados recentes indicam que a probabilidade de um corte agressivo nas taxas de juros na próxima reunião do FOMC disparou. De acordo com o monitoramento em tempo real da <a href="https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">CME FedWatch Tool</a>, os operadores agora precificam uma flexibilização monetária iminente para evitar uma recessão técnica.</p>
 
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "O mercado estava posicionado para um cenário de inflação persistente. Quando os números mostraram o oposto, vimos um 'short squeeze' massivo no dólar e uma corrida imediata para ativos de escassez, como o Bitcoin", afirma Carlos Mendes, Analista de Criptoativos.
+        "O mercado estava posicionado para um cenário de inflação persistente. Quando os números mostraram o oposto, vimos um 'short squeeze' massivo no dólar e uma corrida imediata para ativos de escassez, como o Bitcoin", afirma Roberto Almeida, Analista de Criptoativos.
       </blockquote>
 
       <div class="my-10 bg-zinc-800/30 border border-zinc-700/50 rounded-xl p-6">
@@ -91,7 +91,7 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Analista de Criptoativos",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date().toISOString(),
     readTime: "4 min",
     trending: true,
@@ -129,7 +129,7 @@ export const economiaArticles: Article[] = [
       <p>Diante desse cenário, o "smart money" (dinheiro inteligente) institucional e os investidores de varejo mais atentos estão promovendo uma fuga massiva do dinheiro fiduciário para ativos reais, também conhecidos como "hard assets".</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Manter dinheiro na poupança hoje é a garantia matemática de perda de patrimônio. A inflação real, aquela sentida no supermercado e na bomba de gasolina, é muito superior aos índices oficiais reportados pelos governos", alerta Thiago Silva, Analista de Macroeconomia.
+        "Manter dinheiro na poupança hoje é a garantia matemática de perda de patrimônio. A inflação real, aquela sentida no supermercado e na bomba de gasolina, é muito superior aos índices oficiais reportados pelos governos", alerta Ana Souza, Analista de Macroeconomia.
       </blockquote>
 
       <p>A <a href="https://www.investopedia.com/terms/i/inflation.asp" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">Investopedia</a> define ativos reais como investimentos tangíveis ou com escassez comprovada, como imóveis de alta qualidade, terras produtivas, ouro físico e, mais recentemente, o Bitcoin.</p>
@@ -193,7 +193,7 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=1200",
-    author: "Thiago Silva – Analista de Macroeconomia",
+    author: "Ana Souza – Especialista em Startups & Negócios",
     date: new Date().toISOString(),
     readTime: "6 min",
     trending: true,
@@ -231,7 +231,7 @@ export const economiaArticles: Article[] = [
       <p>A desdolarização não acontece da noite para o dia. Ela exige a construção de uma nova infraestrutura tecnológica. O projeto mBridge, liderado pelo Banco de Compensações Internacionais (BIS) em parceria com os bancos centrais da China, Hong Kong, Tailândia e Emirados Árabes Unidos, é a ponta de lança desse esforço.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "O mBridge utiliza tecnologia de registro distribuído (DLT), semelhante à blockchain, para permitir transações transfronteiriças instantâneas em Moedas Digitais de Bancos Centrais (CBDCs), contornando completamente a rede SWIFT e os bancos correspondentes americanos", explica Marina Costa, Especialista em Geopolítica Financeira.
+        "O mBridge utiliza tecnologia de registro distribuído (DLT), semelhante à blockchain, para permitir transações transfronteiriças instantâneas em Moedas Digitais de Bancos Centrais (CBDCs), contornando completamente a rede SWIFT e os bancos correspondentes americanos", explica Sarah Chen, Especialista em Geopolítica Financeira.
       </blockquote>
 
       <p>A <a href="https://www.bloomberg.com/markets" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">Bloomberg</a> relata que o sucesso inicial do mBridge atraiu o interesse de dezenas de outros países que buscam alternativas mais baratas e politicamente neutras para o comércio internacional.</p>
@@ -295,7 +295,7 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=1200",
-    author: "Marina Costa – Especialista em Geopolítica Financeira",
+    author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 86400000).toISOString(),
     readTime: "5 min",
   },
@@ -332,7 +332,7 @@ export const economiaArticles: Article[] = [
       <p>Devido à crescente participação institucional no mercado cripto, o Bitcoin passou a ser negociado por muitos fundos de hedge como uma "ação de tecnologia de alto beta" (alta volatilidade). Isso explica por que, na maior parte do tempo, o gráfico do Bitcoin acompanha de perto o índice Nasdaq 100.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "O mercado cripto é o ativo mais sensível à liquidez global. Ele é o primeiro a precificar uma recessão (caindo antes das bolsas) e o primeiro a precificar a retomada da impressão de dinheiro (subindo antes das bolsas)", afirma Thiago Silva, Analista de Macroeconomia.
+        "O mercado cripto é o ativo mais sensível à liquidez global. Ele é o primeiro a precificar uma recessão (caindo antes das bolsas) e o primeiro a precificar a retomada da impressão de dinheiro (subindo antes das bolsas)", afirma Ana Souza, Analista de Macroeconomia.
       </blockquote>
 
       <p>A <a href="https://www.investopedia.com/articles/investing/123015/why-bitcoin-price-so-volatile.asp" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">Investopedia</a> ressalta que, embora a narrativa de "ouro digital" e proteção contra a inflação seja forte a longo prazo, no curto e médio prazo, o Bitcoin ainda se comporta predominantemente como um ativo de risco (risk-on asset).</p>
@@ -396,7 +396,7 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=1200",
-    author: "Thiago Silva – Analista de Macroeconomia",
+    author: "Ana Souza – Especialista em Startups & Negócios",
     date: new Date(Date.now() - 172800000).toISOString(),
     readTime: "4 min",
   },
@@ -434,7 +434,7 @@ export const economiaArticles: Article[] = [
       <p>Apesar das promessas de eficiência, defensores da privacidade e entusiastas das criptomoedas soam o alarme sobre os riscos inerentes às CBDCs. Uma moeda digital centralizada concede ao Estado um poder de vigilância sem precedentes sobre a vida financeira dos cidadãos.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Com uma CBDC de varejo, o governo tem o registro perfeito de cada centavo que você ganha e gasta. Pior ainda, o dinheiro programável pode ser usado como ferramenta de controle social, bloqueando transações de dissidentes políticos ou impondo taxas de juros negativas diretamente na sua carteira", alerta Carlos Mendes, Especialista em Criptografia e Privacidade.
+        "Com uma CBDC de varejo, o governo tem o registro perfeito de cada centavo que você ganha e gasta. Pior ainda, o dinheiro programável pode ser usado como ferramenta de controle social, bloqueando transações de dissidentes políticos ou impondo taxas de juros negativas diretamente na sua carteira", alerta Roberto Almeida, Especialista em Criptografia e Privacidade.
       </blockquote>
 
       <p>A <a href="https://www.bloomberg.com/technology" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">Bloomberg Technology</a> destaca que a implementação do Yuan Digital na China já integra sistemas de crédito social, onde o comportamento do cidadão dita seu acesso a serviços financeiros básicos.</p>
@@ -498,7 +498,7 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Especialista em Criptografia e Privacidade",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date(Date.now() - 259200000).toISOString(),
     readTime: "5 min",
   },
@@ -536,7 +536,7 @@ export const economiaArticles: Article[] = [
       <p>O caso de uso mais bem-sucedido de RWA até o momento é a tokenização de títulos do tesouro americano (US Treasuries). Com as taxas de juros em alta, investidores do ecossistema cripto (que antes mantinham seu capital ocioso em stablecoins sem rendimento) passaram a buscar os retornos seguros da renda fixa tradicional.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "A tokenização de Treasuries criou uma ponte bidirecional. O capital cripto nativo agora tem acesso a rendimentos do mundo real (Real Yield), enquanto as instituições tradicionais ganham confiança para utilizar a infraestrutura blockchain para liquidação de seus ativos", explica Marina Costa, Gestora de Portfólio.
+        "A tokenização de Treasuries criou uma ponte bidirecional. O capital cripto nativo agora tem acesso a rendimentos do mundo real (Real Yield), enquanto as instituições tradicionais ganham confiança para utilizar a infraestrutura blockchain para liquidação de seus ativos", explica Sarah Chen, Gestora de Portfólio.
       </blockquote>
 
       <p>Projetos como Ondo Finance e o fundo BUIDL da BlackRock (lançado na rede Ethereum) lideram esse segmento, atraindo bilhões de dólares em Valor Total Travado (TVL) em tempo recorde.</p>
@@ -600,7 +600,7 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
-    author: "Marina Costa – Gestora de Portfólio",
+    author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 345600000).toISOString(),
     readTime: "5 min",
   },
@@ -637,7 +637,7 @@ export const economiaArticles: Article[] = [
       <p>O otimismo com a produtividade contrasta com a ansiedade no mercado de trabalho. Diferente das revoluções industriais anteriores, que automatizaram o trabalho braçal, a IA ameaça diretamente o trabalho intelectual (white-collar jobs) — desde programadores juniores e redatores até analistas financeiros e advogados.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Não estamos diante do fim do trabalho, mas sim de uma reestruturação violenta. A IA não substituirá o profissional, mas o profissional que usa IA substituirá aquele que não usa. A requalificação (reskilling) em massa é o maior desafio econômico desta década", afirma Thiago Silva, Analista de Macroeconomia.
+        "Não estamos diante do fim do trabalho, mas sim de uma reestruturação violenta. A IA não substituirá o profissional, mas o profissional que usa IA substituirá aquele que não usa. A requalificação (reskilling) em massa é o maior desafio econômico desta década", afirma Ana Souza, Analista de Macroeconomia.
       </blockquote>
 
       <p>Governos e corporações enfrentam a pressão de criar redes de segurança social e programas de treinamento para evitar que uma parcela significativa da população seja economicamente marginalizada durante essa transição.</p>
@@ -700,7 +700,7 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200",
-    author: "Thiago Silva – Analista de Macroeconomia",
+    author: "Ana Souza – Especialista em Startups & Negócios",
     date: new Date(Date.now() - 432000000).toISOString(),
     readTime: "6 min",
   },
@@ -737,7 +737,7 @@ export const economiaArticles: Article[] = [
       <p>O temor imediato dos mercados globais foi um "Momento Lehman Brothers" chinês — um colapso financeiro sistêmico. Embora o governo chinês tenha recursos para evitar uma quebra desordenada do sistema bancário local, o contágio econômico é inevitável.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "A China está exportando deflação. Com a demanda interna fraca e o setor de construção paralisado, o país reduziu drasticamente a importação de minério de ferro, cobre e outras commodities, impactando diretamente países exportadores como o Brasil e a Austrália", explica Marina Costa, Especialista em Geopolítica Financeira.
+        "A China está exportando deflação. Com a demanda interna fraca e o setor de construção paralisado, o país reduziu drasticamente a importação de minério de ferro, cobre e outras commodities, impactando diretamente países exportadores como o Brasil e a Austrália", explica Sarah Chen, Especialista em Geopolítica Financeira.
       </blockquote>
 
       <p>Além disso, a desaceleração chinesa afeta empresas multinacionais (de tecnologia a artigos de luxo) que dependem do consumo da classe média do país para sustentar seus lucros.</p>
@@ -800,7 +800,7 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1548611716-4022880abdd2?auto=format&fit=crop&q=80&w=1200",
-    author: "Marina Costa – Especialista em Geopolítica Financeira",
+    author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 518400000).toISOString(),
     readTime: "5 min",
   },
@@ -837,7 +837,7 @@ export const economiaArticles: Article[] = [
       <p>Especula-se nos bastidores financeiros que o bloco dos BRICS estaria preparando o lançamento de uma moeda comercial comum, possivelmente lastreada em uma cesta de commodities ou diretamente no ouro. Embora a viabilidade prática de tal moeda seja debatida, a simples intenção já pressiona o valor do metal precioso para cima.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Não estamos voltando ao padrão-ouro clássico, onde o dinheiro de papel era conversível em ouro nas agências bancárias. O que estamos vendo é a emergência de um sistema multipolar onde o ouro atua como o ativo de liquidação final entre nações que não confiam umas nas outras", analisa Thiago Silva, Analista de Macroeconomia.
+        "Não estamos voltando ao padrão-ouro clássico, onde o dinheiro de papel era conversível em ouro nas agências bancárias. O que estamos vendo é a emergência de um sistema multipolar onde o ouro atua como o ativo de liquidação final entre nações que não confiam umas nas outras", analisa Ana Souza, Analista de Macroeconomia.
       </blockquote>
 
       <p>Essa forte demanda institucional criou um piso sólido para o preço do ouro, desvinculando-o parcialmente de sua correlação histórica inversa com as taxas de juros reais dos Estados Unidos.</p>
@@ -900,7 +900,7 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1610315990650-14535e25c111?auto=format&fit=crop&q=80&w=1200",
-    author: "Thiago Silva – Analista de Macroeconomia",
+    author: "Ana Souza – Especialista em Startups & Negócios",
     date: new Date(Date.now() - 604800000).toISOString(),
     readTime: "4 min",
   },
@@ -937,7 +937,7 @@ export const economiaArticles: Article[] = [
       <p>A China, que importa mais semicondutores do que petróleo, percebeu sua vulnerabilidade estratégica. Em resposta aos bloqueios, Pequim está investindo centenas de bilhões de dólares para criar uma cadeia de suprimentos de chips totalmente autossuficiente e livre de tecnologia americana.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Estamos testemunhando a bifurcação do ecossistema tecnológico global. No futuro, teremos duas cadeias de suprimentos distintas e incompatíveis: uma liderada pelos EUA e outra pela China. Isso significa o fim da eficiência da globalização e o aumento estrutural dos custos de produção", alerta Marina Costa, Especialista em Geopolítica Financeira.
+        "Estamos testemunhando a bifurcação do ecossistema tecnológico global. No futuro, teremos duas cadeias de suprimentos distintas e incompatíveis: uma liderada pelos EUA e outra pela China. Isso significa o fim da eficiência da globalização e o aumento estrutural dos custos de produção", alerta Sarah Chen, Especialista em Geopolítica Financeira.
       </blockquote>
 
       <p>Embora a China ainda esteja anos atrás na produção de chips de ponta (abaixo de 5 nanômetros), ela está dominando rapidamente o mercado de chips "legados" (mature nodes), utilizados em automóveis, eletrodomésticos e equipamentos industriais.</p>
@@ -1001,7 +1001,7 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200",
-    author: "Marina Costa – Especialista em Geopolítica Financeira",
+    author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 691200000).toISOString(),
     readTime: "6 min",
   },
@@ -1038,7 +1038,7 @@ export const economiaArticles: Article[] = [
       <p>Um dos maiores desafios para um freelancer hoje é que sua reputação está "presa" à plataforma. Se você tem 500 avaliações cinco estrelas no Upwork, você não pode transferir essa credibilidade para o Fiverr. Você é refém do ecossistema.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "A Web3 introduz o conceito de Identidade Auto-Soberana (SSI) e credenciais verificáveis on-chain. Seu histórico de trabalho, habilidades comprovadas e avaliações de clientes tornam-se NFTs ou tokens intransferíveis atrelados à sua carteira digital. Sua reputação pertence a você, e viaja com você por toda a internet", explica Thiago Silva, Analista de Macroeconomia.
+        "A Web3 introduz o conceito de Identidade Auto-Soberana (SSI) e credenciais verificáveis on-chain. Seu histórico de trabalho, habilidades comprovadas e avaliações de clientes tornam-se NFTs ou tokens intransferíveis atrelados à sua carteira digital. Sua reputação pertence a você, e viaja com você por toda a internet", explica Ana Souza, Analista de Macroeconomia.
       </blockquote>
 
       <h2>DAOs: As Novas Cooperativas Digitais</h2>
@@ -1100,7 +1100,7 @@ export const economiaArticles: Article[] = [
     `,
     category: "economia",
     imageUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200",
-    author: "Thiago Silva – Analista de Macroeconomia",
+    author: "Ana Souza – Especialista em Startups & Negócios",
     date: new Date(Date.now() - 777600000).toISOString(),
     readTime: "5 min",
   }

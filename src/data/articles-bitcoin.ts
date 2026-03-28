@@ -35,7 +35,7 @@ export const bitcoinArticles: Article[] = [
       <p>Outro pilar da tese de reserva de valor é a descentralização. O Bitcoin não é controlado por nenhum governo, corporação ou entidade central. Isso significa que, desde que o usuário mantenha a custódia de suas chaves privadas (self-custody), seus fundos não podem ser congelados, confiscados ou censurados.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Ouro é pesado, difícil de transportar e fácil de ser confiscado nas fronteiras. O Bitcoin permite que você carregue sua riqueza na memória, através de uma seed phrase (frase semente), para qualquer lugar do mundo. É a propriedade privada em sua forma mais pura", afirma Thiago Silva, Analista de Macroeconomia.
+        "Ouro é pesado, difícil de transportar e fácil de ser confiscado nas fronteiras. O Bitcoin permite que você carregue sua riqueza na memória, através de uma seed phrase (frase semente), para qualquer lugar do mundo. É a propriedade privada em sua forma mais pura", afirma Marcos Silva, Analista de Macroeconomia.
       </blockquote>
 
       <p>Eventos geopolíticos recentes demonstraram que o sistema financeiro tradicional pode ser usado como arma (weaponization of finance). Sanções que congelam reservas de países inteiros acenderam um alerta global, acelerando a busca por redes de liquidação neutras.</p>
@@ -99,7 +99,7 @@ export const bitcoinArticles: Article[] = [
     `,
     category: "bitcoin",
     imageUrl: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&q=80&w=1200",
-    author: "Thiago Silva – Analista de Macroeconomia",
+    author: "Marcos Silva – Repórter de Hardware & Gadgets",
     date: new Date(Date.now() - 259200000).toISOString(),
     readTime: "4 min",
   },
@@ -137,7 +137,7 @@ export const bitcoinArticles: Article[] = [
       <p>Enquanto os Ordinals trouxeram os NFTs, o protocolo Runes foi criado para otimizar a emissão de tokens fungíveis (como as memecoins ou tokens de utilidade) na rede Bitcoin. Ele substitui o padrão experimental BRC-20, oferecendo uma solução mais eficiente e que consome menos espaço nos blocos.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "O protocolo Runes é uma resposta elegante à demanda por tokens no Bitcoin. Ele permite a criação de ativos digitais sem congestionar a rede com dados desnecessários (UTXOs não gastos), mantendo a eficiência do sistema", explica Lucas Silva, Desenvolvedor Blockchain.
+        "O protocolo Runes é uma resposta elegante à demanda por tokens no Bitcoin. Ele permite a criação de ativos digitais sem congestionar a rede com dados desnecessários (UTXOs não gastos), mantendo a eficiência do sistema", explica Lucas Costa, Desenvolvedor Blockchain.
       </blockquote>
 
       <p>O lançamento do protocolo Runes coincidiu com o último halving do Bitcoin, gerando uma corrida frenética para cunhar (mintar) os primeiros tokens, o que resultou em um pico histórico nas taxas de transação.</p>
@@ -201,7 +201,7 @@ export const bitcoinArticles: Article[] = [
     `,
     category: "bitcoin",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
-    author: "Lucas Silva – Desenvolvedor Blockchain",
+    author: "Lucas Costa – Analista de Cibersegurança",
     date: new Date(Date.now() - 345600000).toISOString(),
     readTime: "5 min",
   }

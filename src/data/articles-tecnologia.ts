@@ -34,7 +34,7 @@ export const tecnologiaArticles: Article[] = [
       <p>O treinamento de modelos de linguagem (LLMs) como o ChatGPT exige uma quantidade colossal de poder computacional (GPUs), um recurso atualmente controlado por um punhado de corporações trilionárias. Essa centralização é um risco para a inovação aberta.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "As Redes de Infraestrutura Física Descentralizada (DePIN) permitem que qualquer pessoa no mundo alugue o poder ocioso de sua placa de vídeo para treinar modelos de IA, recebendo tokens em troca. É o Airbnb da computação em nuvem", explica Lucas Silva, Desenvolvedor Blockchain.
+        "As Redes de Infraestrutura Física Descentralizada (DePIN) permitem que qualquer pessoa no mundo alugue o poder ocioso de sua placa de vídeo para treinar modelos de IA, recebendo tokens em troca. É o Airbnb da computação em nuvem", explica Lucas Costa, Desenvolvedor Blockchain.
       </blockquote>
 
       <p>Projetos como Render Network e Akash estão liderando essa frente, criando mercados abertos que reduzem os custos de processamento em até 80% em comparação com a AWS ou Google Cloud.</p>
@@ -98,7 +98,7 @@ export const tecnologiaArticles: Article[] = [
     `,
     category: "tecnologia",
     imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200",
-    author: "Lucas Silva – Desenvolvedor Blockchain",
+    author: "Lucas Costa – Analista de Cibersegurança",
     date: new Date().toISOString(),
     readTime: "5 min",
     trending: true,
@@ -136,7 +136,7 @@ export const tecnologiaArticles: Article[] = [
       <p>Apesar do cenário apocalíptico, a realidade tecnológica é mais reconfortante. Os computadores quânticos atuais ainda são extremamente instáveis (noisy) e possuem poucos qubits. Especialistas estimam que uma máquina capaz de quebrar o Bitcoin exigiria milhões de qubits físicos, algo que está, pelo menos, a uma ou duas décadas de distância.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "O 'Q-Day' (o dia em que a criptografia atual será quebrada) não acontecerá da noite para o dia. Será um processo gradual. E muito antes de o Bitcoin estar em risco, os sistemas bancários tradicionais e os segredos militares estarão vulneráveis, forçando uma atualização global da infraestrutura", afirma Carlos Mendes, Especialista em Criptografia.
+        "O 'Q-Day' (o dia em que a criptografia atual será quebrada) não acontecerá da noite para o dia. Será um processo gradual. E muito antes de o Bitcoin estar em risco, os sistemas bancários tradicionais e os segredos militares estarão vulneráveis, forçando uma atualização global da infraestrutura", afirma Roberto Almeida, Especialista em Criptografia.
       </blockquote>
 
       <h2>A Solução: Criptografia Pós-Quântica</h2>
@@ -198,7 +198,7 @@ export const tecnologiaArticles: Article[] = [
     `,
     category: "tecnologia",
     imageUrl: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Especialista em Criptografia",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date(Date.now() - 86400000).toISOString(),
     readTime: "6 min",
   },
@@ -236,7 +236,7 @@ export const tecnologiaArticles: Article[] = [
       <p>Além da privacidade, os ZKPs são a base dos ZK-Rollups, a principal aposta do Ethereum para escalabilidade em massa. Em vez de processar cada transação na rede principal (Layer 1), um ZK-Rollup agrupa milhares de transações fora da cadeia (off-chain), processa-as e gera uma única prova criptográfica (ZKP) atestando que todas as transações são válidas.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Os ZK-Rollups são matematicamente infalíveis. Diferente dos Optimistic Rollups (como Arbitrum), que exigem um período de contestação de 7 dias para saques, os ZK-Rollups permitem saques instantâneos para a rede principal, pois a prova criptográfica garante a validade imediata", explica Lucas Silva, Desenvolvedor Blockchain.
+        "Os ZK-Rollups são matematicamente infalíveis. Diferente dos Optimistic Rollups (como Arbitrum), que exigem um período de contestação de 7 dias para saques, os ZK-Rollups permitem saques instantâneos para a rede principal, pois a prova criptográfica garante a validade imediata", explica Lucas Costa, Desenvolvedor Blockchain.
       </blockquote>
 
       <p>Redes como zkSync, Starknet e Polygon zkEVM estão na vanguarda dessa tecnologia, atraindo bilhões em Valor Total Travado (TVL) e reduzindo as taxas de transação para frações de centavo.</p>
@@ -299,7 +299,7 @@ export const tecnologiaArticles: Article[] = [
     `,
     category: "tecnologia",
     imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200",
-    author: "Lucas Silva – Desenvolvedor Blockchain",
+    author: "Lucas Costa – Analista de Cibersegurança",
     date: new Date(Date.now() - 172800000).toISOString(),
     readTime: "5 min",
   },
@@ -337,7 +337,7 @@ export const tecnologiaArticles: Article[] = [
       <p>O maior obstáculo para a adoção em massa dos jogos Web3 sempre foi a complexidade técnica. Exigir que um jogador comum crie uma carteira MetaMask, guarde uma frase semente de 12 palavras e compre criptomoedas para pagar taxas de rede (gas) antes de jogar é uma receita para o fracasso.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "A tecnologia de Account Abstraction (ERC-4337) resolveu o problema da fricção. Agora, os jogadores podem fazer login com uma conta do Google ou Apple, e o próprio estúdio do jogo subsidia as taxas de transação no backend. O usuário joga um jogo blockchain sem sequer saber que está usando uma blockchain", destaca Thiago Silva, Analista de Tendências Digitais.
+        "A tecnologia de Account Abstraction (ERC-4337) resolveu o problema da fricção. Agora, os jogadores podem fazer login com uma conta do Google ou Apple, e o próprio estúdio do jogo subsidia as taxas de transação no backend. O usuário joga um jogo blockchain sem sequer saber que está usando uma blockchain", destaca Marcos Silva, Analista de Tendências Digitais.
       </blockquote>
 
       <h2>Economias Sustentáveis e Interoperabilidade</h2>
@@ -399,7 +399,7 @@ export const tecnologiaArticles: Article[] = [
     `,
     category: "tecnologia",
     imageUrl: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&q=80&w=1200",
-    author: "Thiago Silva – Analista de Tendências Digitais",
+    author: "Marcos Silva – Repórter de Hardware & Gadgets",
     date: new Date(Date.now() - 259200000).toISOString(),
     readTime: "5 min",
   },
@@ -437,7 +437,7 @@ export const tecnologiaArticles: Article[] = [
       <p>A Web3 elimina os intermediários que extraem a maior parte do valor gerado na internet. Em vez de o YouTube ou o Spotify ficarem com uma fatia gigante da receita, contratos inteligentes permitem que criadores de conteúdo sejam pagos diretamente por seus fãs, de forma instantânea e sem taxas abusivas.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "A tokenização permite que os fãs invistam no sucesso de um artista em estágio inicial. Se o artista cresce, o valor do token ou NFT associado a ele também cresce. É uma mudança de um modelo de 'consumidor passivo' para 'investidor e parceiro'", explica Marina Costa, Especialista em Inovação Digital.
+        "A tokenização permite que os fãs invistam no sucesso de um artista em estágio inicial. Se o artista cresce, o valor do token ou NFT associado a ele também cresce. É uma mudança de um modelo de 'consumidor passivo' para 'investidor e parceiro'", explica Sarah Chen, Especialista em Inovação Digital.
       </blockquote>
 
       <h2>Conclusão: Uma Transição Gradual</h2>
@@ -498,7 +498,7 @@ export const tecnologiaArticles: Article[] = [
     `,
     category: "tecnologia",
     imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200",
-    author: "Marina Costa – Especialista em Inovação Digital",
+    author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 345600000).toISOString(),
     readTime: "4 min",
   },
@@ -535,7 +535,7 @@ export const tecnologiaArticles: Article[] = [
       <p>Para superar a vulnerabilidade das pontes tradicionais, a indústria está evoluindo para protocolos de mensageria cross-chain arbitrária. Em vez de apenas "embrulhar" tokens, esses protocolos permitem que contratos inteligentes em diferentes blockchains conversem entre si.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Com protocolos como LayerZero ou Chainlink CCIP, um usuário pode usar seu ETH na rede Ethereum como garantia para pegar um empréstimo em USDC na rede Polygon, tudo em uma única transação, sem a necessidade de pontes inseguras", explica Lucas Silva, Desenvolvedor Blockchain.
+        "Com protocolos como LayerZero ou Chainlink CCIP, um usuário pode usar seu ETH na rede Ethereum como garantia para pegar um empréstimo em USDC na rede Polygon, tudo em uma única transação, sem a necessidade de pontes inseguras", explica Lucas Costa, Desenvolvedor Blockchain.
       </blockquote>
 
       <p>Essa abstração de rede (chain abstraction) é o Santo Graal da UX (Experiência do Usuário) na Web3. No futuro, os usuários não precisarão saber em qual blockchain um aplicativo está rodando; a infraestrutura de interoperabilidade cuidará de todo o roteamento no backend.</p>
@@ -598,7 +598,7 @@ export const tecnologiaArticles: Article[] = [
     `,
     category: "tecnologia",
     imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200",
-    author: "Lucas Silva – Desenvolvedor Blockchain",
+    author: "Lucas Costa – Analista de Cibersegurança",
     date: new Date(Date.now() - 432000000).toISOString(),
     readTime: "5 min",
   },
@@ -635,7 +635,7 @@ export const tecnologiaArticles: Article[] = [
       <p>A verdadeira mágica da DID acontece quando combinada com Provas de Conhecimento Zero (ZKPs). Imagine que você precisa provar que é maior de 18 anos para acessar um site. Hoje, você enviaria uma foto da sua CNH, expondo seu nome, endereço e data de nascimento exata.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Com DID e ZKPs, sua carteira gera uma prova matemática que atesta 'este usuário tem mais de 18 anos', sem revelar sua data de nascimento ou qualquer outro dado pessoal. O site recebe a confirmação de que você é elegível, mas não aprende nada além disso", explica Marina Costa, Especialista em Inovação Digital.
+        "Com DID e ZKPs, sua carteira gera uma prova matemática que atesta 'este usuário tem mais de 18 anos', sem revelar sua data de nascimento ou qualquer outro dado pessoal. O site recebe a confirmação de que você é elegível, mas não aprende nada além disso", explica Sarah Chen, Especialista em Inovação Digital.
       </blockquote>
 
       <h2>O Impacto nos Negócios e na Sociedade</h2>
@@ -697,7 +697,7 @@ export const tecnologiaArticles: Article[] = [
     `,
     category: "tecnologia",
     imageUrl: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=1200",
-    author: "Marina Costa – Especialista em Inovação Digital",
+    author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 518400000).toISOString(),
     readTime: "4 min",
   },
@@ -734,7 +734,7 @@ export const tecnologiaArticles: Article[] = [
       <p>Na camada blockchain, a tokenização utiliza padrões de contratos inteligentes específicos. Enquanto o ERC-20 é usado para criptomoedas comuns, os RWAs frequentemente utilizam padrões mais complexos, como o ERC-3643 (T-REX), que embute regras de conformidade diretamente no token.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Diferente de um token comum, um token RWA não pode ser transferido livremente para qualquer carteira. O contrato inteligente verifica automaticamente se o endereço de destino passou pelo processo de KYC (Conheça seu Cliente) e se a transferência está de acordo com as leis de valores mobiliários da jurisdição do comprador", detalha Carlos Mendes, Especialista em Criptografia.
+        "Diferente de um token comum, um token RWA não pode ser transferido livremente para qualquer carteira. O contrato inteligente verifica automaticamente se o endereço de destino passou pelo processo de KYC (Conheça seu Cliente) e se a transferência está de acordo com as leis de valores mobiliários da jurisdição do comprador", detalha Roberto Almeida, Especialista em Criptografia.
       </blockquote>
 
       <h2>O Papel Crucial dos Oráculos</h2>
@@ -795,7 +795,7 @@ export const tecnologiaArticles: Article[] = [
     `,
     category: "tecnologia",
     imageUrl: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Especialista em Criptografia",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date(Date.now() - 604800000).toISOString(),
     readTime: "6 min",
   },
@@ -832,7 +832,7 @@ export const tecnologiaArticles: Article[] = [
       <p>Se um contrato inteligente bilionário depender de um único oráculo centralizado (uma única API fornecendo o preço), esse oráculo se torna um ponto único de falha. Se a API for hackeada ou fornecer dados incorretos, o contrato inteligente executará ações baseadas em mentiras, resultando em perdas catastróficas.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "A solução é a Rede de Oráculos Descentralizados (DON). Projetos como a Chainlink utilizam múltiplos nós independentes que buscam dados de várias fontes diferentes. A rede agrega esses dados, elimina valores discrepantes (outliers) e chega a um consenso antes de enviar a resposta final para a blockchain", explica Thiago Silva, Analista de Tendências Digitais.
+        "A solução é a Rede de Oráculos Descentralizados (DON). Projetos como a Chainlink utilizam múltiplos nós independentes que buscam dados de várias fontes diferentes. A rede agrega esses dados, elimina valores discrepantes (outliers) e chega a um consenso antes de enviar a resposta final para a blockchain", explica Marcos Silva, Analista de Tendências Digitais.
       </blockquote>
 
       <h2>Além dos Preços: O Futuro dos Oráculos</h2>
@@ -893,7 +893,7 @@ export const tecnologiaArticles: Article[] = [
     `,
     category: "tecnologia",
     imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200",
-    author: "Thiago Silva – Analista de Tendências Digitais",
+    author: "Marcos Silva – Repórter de Hardware & Gadgets",
     date: new Date(Date.now() - 691200000).toISOString(),
     readTime: "5 min",
   },
@@ -930,7 +930,7 @@ export const tecnologiaArticles: Article[] = [
       <p>O armazenamento descentralizado é vital para o ecossistema cripto. Quando você compra um NFT de uma arte digital, a imagem em si raramente é armazenada na blockchain do Ethereum (pois seria muito caro). O contrato inteligente geralmente contém apenas um link.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Se o link do seu NFT apontar para um servidor centralizado (AWS) e a empresa falir ou deletar a imagem, seu NFT se torna um link quebrado sem valor. Por isso, o padrão da indústria é armazenar os metadados e as mídias dos NFTs no IPFS ou Arweave, garantindo que eles existam para sempre", explica Lucas Silva, Desenvolvedor Blockchain.
+        "Se o link do seu NFT apontar para um servidor centralizado (AWS) e a empresa falir ou deletar a imagem, seu NFT se torna um link quebrado sem valor. Por isso, o padrão da indústria é armazenar os metadados e as mídias dos NFTs no IPFS ou Arweave, garantindo que eles existam para sempre", explica Lucas Costa, Desenvolvedor Blockchain.
       </blockquote>
 
       <h2>O Futuro: Mais Barato e Mais Seguro</h2>
@@ -991,7 +991,7 @@ export const tecnologiaArticles: Article[] = [
     `,
     category: "tecnologia",
     imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200",
-    author: "Lucas Silva – Desenvolvedor Blockchain",
+    author: "Lucas Costa – Analista de Cibersegurança",
     date: new Date(Date.now() - 777600000).toISOString(),
     readTime: "5 min",
   }

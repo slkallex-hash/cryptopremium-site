@@ -3,7 +3,7 @@ import { AlertTriangle, ShieldCheck, Info } from "lucide-react";
 
 export function RiskDisclaimer() {
   useEffect(() => {
-    document.title = "Aviso de Risco | CryptoPremium";
+    document.title = "Aviso de Risco | TechFront";
     window.scrollTo(0, 0);
   }, []);
 
@@ -16,7 +16,7 @@ export function RiskDisclaimer() {
           </div>
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-6 tracking-tight">Aviso de Risco</h1>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-            Transparência e gestão de risco são nossos pilares. Leia atentamente antes de operar no mercado cripto.
+            Transparência e responsabilidade são nossos pilares. Leia atentamente antes de tomar decisões baseadas em nosso conteúdo.
           </p>
         </div>
 
@@ -31,10 +31,10 @@ export function RiskDisclaimer() {
             </div>
             <div className="text-zinc-300 space-y-4 relative z-10 leading-relaxed">
               <p>
-                A <strong>CryptoPremium</strong> fornece ferramentas de automação (bots) e sinais baseados em análise quantitativa e técnica. <strong>Nós não prestamos aconselhamento financeiro personalizado.</strong>
+                O <strong>TechFront</strong> é um portal de jornalismo focado em tecnologia e inovação. <strong>Nós não prestamos aconselhamento financeiro, de investimentos ou jurídico.</strong>
               </p>
               <p>
-                O desempenho passado de qualquer sistema de negociação, estratégia ou algoritmo não é necessariamente indicativo de resultados futuros. O uso das nossas ferramentas é de sua inteira responsabilidade. Você deve avaliar cuidadosamente se a negociação de criptomoedas é adequada para você, considerando sua condição financeira, tolerância ao risco e nível de experiência.
+                As informações, análises e opiniões publicadas em nossos artigos, especialmente aqueles relacionados a criptomoedas, mercado financeiro ou startups, têm caráter estritamente informativo e educacional. O uso das informações disponibilizadas é de sua inteira responsabilidade. Você deve avaliar cuidadosamente os riscos antes de realizar qualquer investimento.
               </p>
             </div>
           </section>
@@ -42,46 +42,46 @@ export function RiskDisclaimer() {
           <section className="grid md:grid-cols-2 gap-6">
             <div className="glass p-8 rounded-3xl border border-white/5">
               <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                <span className="text-yellow-500">01.</span> Volatilidade Extrema
+                <span className="text-blue-500">01.</span> Volatilidade do Mercado
               </h3>
               <p className="text-zinc-400 leading-relaxed">
-                O mercado de criptomoedas é altamente especulativo e volátil. Preços podem sofrer flutuações drásticas em minutos. Operações alavancadas (Mercado Futuro) amplificam tanto os lucros quanto as perdas, podendo resultar na liquidação total do seu capital.
+                Mercados de tecnologia e criptomoedas são altamente especulativos e voláteis. Preços de ativos digitais ou ações de empresas de tecnologia podem sofrer flutuações drásticas em curtos períodos.
               </p>
             </div>
             <div className="glass p-8 rounded-3xl border border-white/5">
               <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                <span className="text-yellow-500">02.</span> Riscos de Execução e API
+                <span className="text-blue-500">02.</span> Conteúdo Informativo
               </h3>
               <p className="text-zinc-400 leading-relaxed">
-                Nossos bots dependem da infraestrutura das corretoras (ex: Binance) via API. Atrasos na rede, manutenções da corretora, ou falhas de conectividade podem resultar em ordens não executadas ou executadas a preços diferentes dos esperados (slippage).
+                Notícias sobre lançamentos de produtos, fusões, aquisições ou tendências de mercado não devem ser interpretadas como recomendações de compra ou venda de ativos.
               </p>
             </div>
             <div className="glass p-8 rounded-3xl border border-white/5">
               <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                <span className="text-yellow-500">03.</span> Gestão de Capital
+                <span className="text-blue-500">03.</span> Pesquisa Independente
               </h3>
               <p className="text-zinc-400 leading-relaxed">
-                A regra de ouro do mercado financeiro aplica-se aqui: <strong>Nunca invista dinheiro que você não pode perder.</strong> Recomendamos fortemente o uso de stop loss e uma gestão de risco rigorosa em todas as operações, mesmo as automatizadas.
+                Recomendamos fortemente que você realize sua própria pesquisa (DYOR - Do Your Own Research) ou consulte um profissional financeiro certificado antes de tomar qualquer decisão de investimento.
               </p>
             </div>
             <div className="glass p-8 rounded-3xl border border-white/5">
               <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                <span className="text-yellow-500">04.</span> Responsabilidade do Usuário
+                <span className="text-blue-500">04.</span> Opiniões de Terceiros
               </h3>
               <p className="text-zinc-400 leading-relaxed">
-                Você mantém controle total sobre sua conta na corretora e seus fundos. A configuração dos parâmetros de risco no bot (tamanho da posição, alavancagem, stop loss) é definida por você. A CryptoPremium não pode impedir perdas decorrentes de configurações agressivas.
+                Artigos de opinião, entrevistas ou citações de especialistas refletem as visões de seus respectivos autores e não necessariamente a posição editorial do TechFront.
               </p>
             </div>
           </section>
 
-          <div className="glass-gold border-2 border-yellow-500/30 rounded-3xl p-8 flex items-start gap-6 shadow-[0_0_30px_rgba(234,179,8,0.05)]">
-            <div className="w-12 h-12 rounded-2xl bg-yellow-500/10 flex items-center justify-center shrink-0">
-              <Info className="w-6 h-6 text-yellow-500" />
+          <div className="glass border-2 border-blue-500/30 rounded-3xl p-8 flex items-start gap-6 shadow-[0_0_30px_rgba(59,130,246,0.05)]">
+            <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center shrink-0">
+              <Info className="w-6 h-6 text-blue-500" />
             </div>
             <div>
-              <h4 className="text-lg font-bold text-white mb-2">Compromisso com a Verdade</h4>
+              <h4 className="text-lg font-bold text-white mb-2">Nosso Compromisso</h4>
               <p className="text-zinc-300 leading-relaxed">
-                Diferente de muitos no mercado, nós não prometemos riqueza rápida ou lucros garantidos. Prometemos tecnologia de ponta, transparência nos resultados e as melhores ferramentas para auxiliar na sua tomada de decisão. O sucesso a longo prazo exige disciplina e gestão de risco.
+                Nosso compromisso é com o jornalismo de qualidade, trazendo os fatos e análises sobre o mundo da tecnologia. Não fazemos promessas de lucros ou garantias de sucesso baseadas nas informações que publicamos.
               </p>
             </div>
           </div>

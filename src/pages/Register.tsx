@@ -4,24 +4,24 @@ import { Lock, Mail, User, ArrowRight, ShieldCheck } from "lucide-react";
 
 export function Register() {
   useEffect(() => {
-    document.title = "Cadastro | CryptoPremium";
+    document.title = "Cadastro | TechFront";
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="w-full min-h-screen bg-black flex items-center justify-center pt-24 pb-12 px-4 relative overflow-hidden">
       {/* Background Effects */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-cyan-500/5 blur-[120px] rounded-full pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-500/5 blur-[120px] rounded-full pointer-events-none"></div>
       
       <div className="w-full max-w-md relative z-10">
         <div className="text-center mb-8">
           <Link to="/" className="inline-block mb-6">
             <span className="text-2xl font-display font-bold text-white tracking-tight">
-              Crypto<span className="text-yellow-500">Premium</span>
+              Tech<span className="text-blue-500">Front</span>
             </span>
           </Link>
           <h1 className="text-3xl font-display font-bold text-white mb-2">Crie sua Conta</h1>
-          <p className="text-zinc-400">Junte-se a mais de 10.000 investidores de elite.</p>
+          <p className="text-zinc-400">Junte-se à comunidade TechFront.</p>
         </div>
 
         <div className="glass p-8 rounded-3xl border border-white/5 shadow-2xl">
@@ -36,7 +36,7 @@ export function Register() {
                   type="text" 
                   id="name" 
                   required
-                  className="w-full bg-black/50 border border-white/10 text-white pl-11 pr-4 py-3 rounded-xl focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition-all placeholder:text-zinc-600"
+                  className="w-full bg-black/50 border border-white/10 text-white pl-11 pr-4 py-3 rounded-xl focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/50 transition-all placeholder:text-zinc-600"
                   placeholder="Seu nome"
                 />
               </div>
@@ -52,7 +52,7 @@ export function Register() {
                   type="email" 
                   id="email" 
                   required
-                  className="w-full bg-black/50 border border-white/10 text-white pl-11 pr-4 py-3 rounded-xl focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition-all placeholder:text-zinc-600"
+                  className="w-full bg-black/50 border border-white/10 text-white pl-11 pr-4 py-3 rounded-xl focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/50 transition-all placeholder:text-zinc-600"
                   placeholder="seu@email.com"
                 />
               </div>
@@ -68,7 +68,7 @@ export function Register() {
                   type="password" 
                   id="password" 
                   required
-                  className="w-full bg-black/50 border border-white/10 text-white pl-11 pr-4 py-3 rounded-xl focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition-all placeholder:text-zinc-600"
+                  className="w-full bg-black/50 border border-white/10 text-white pl-11 pr-4 py-3 rounded-xl focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/50 transition-all placeholder:text-zinc-600"
                   placeholder="Mínimo 8 caracteres"
                 />
               </div>
@@ -80,19 +80,19 @@ export function Register() {
                   id="terms" 
                   type="checkbox" 
                   required
-                  className="w-4 h-4 rounded border-zinc-700 bg-black/50 text-cyan-500 focus:ring-cyan-500/50 focus:ring-offset-0"
+                  className="w-4 h-4 rounded border-zinc-700 bg-black/50 text-blue-500 focus:ring-blue-500/50 focus:ring-offset-0"
                 />
               </div>
               <div className="text-sm">
                 <label htmlFor="terms" className="text-zinc-400">
-                  Concordo com os <Link to="/termos" className="text-cyan-400 hover:underline">Termos de Uso</Link> e a <Link to="/privacidade" className="text-cyan-400 hover:underline">Política de Privacidade</Link>.
+                  Concordo com os <Link to="/termos" className="text-blue-400 hover:underline">Termos de Uso</Link> e a <Link to="/privacidade" className="text-blue-400 hover:underline">Política de Privacidade</Link>.
                 </label>
               </div>
             </div>
 
             <button 
               type="submit"
-              className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-[0_0_20px_rgba(6,182,212,0.3)] text-white font-bold text-lg px-6 py-4 rounded-xl transition-all flex items-center justify-center group mt-6"
+              className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] text-white font-bold text-lg px-6 py-4 rounded-xl transition-all flex items-center justify-center group mt-6"
             >
               Criar Conta Gratuita <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -106,7 +106,7 @@ export function Register() {
           <div className="mt-8 text-center border-t border-white/5 pt-6">
             <p className="text-zinc-400">
               Já tem uma conta?{' '}
-              <Link to="/login" className="text-cyan-400 font-bold hover:text-cyan-300 transition-colors">
+              <Link to="/login" className="text-blue-400 font-bold hover:text-blue-300 transition-colors">
                 Fazer login
               </Link>
             </p>

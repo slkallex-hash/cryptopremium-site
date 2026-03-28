@@ -34,7 +34,7 @@ export const rendaOnlineArticles: Article[] = [
       <p>Nos primórdios, bastava fazer uma única transação de US$ 1 para se qualificar. Hoje, as equipes utilizam análises on-chain sofisticadas para filtrar "Sybils" (usuários que criam centenas de carteiras falsas para multiplicar os ganhos).</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Para se qualificar para os airdrops modernos, você precisa agir como um usuário orgânico. Volume de transação, frequência (usar o dApp em meses diferentes) e manter um saldo mínimo na carteira são os novos critérios padrão", alerta Lucas Silva, Analista On-Chain.
+        "Para se qualificar para os airdrops modernos, você precisa agir como um usuário orgânico. Volume de transação, frequência (usar o dApp em meses diferentes) e manter um saldo mínimo na carteira são os novos critérios padrão", alerta Lucas Costa, Analista On-Chain.
       </blockquote>
 
       <p>A <a href="https://www.coindesk.com" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">CoinDesk</a> relata que protocolos como a LayerZero e zkSync implementaram sistemas de pontuação (points systems) transparentes, onde os usuários sabem exatamente o que precisam fazer para acumular pontos que serão convertidos em tokens no futuro.</p>
@@ -97,7 +97,7 @@ export const rendaOnlineArticles: Article[] = [
     `,
     category: "renda-online",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
-    author: "Lucas Silva – Analista On-Chain",
+    author: "Lucas Costa – Analista de Cibersegurança",
     date: new Date().toISOString(),
     readTime: "5 min",
     trending: true,
@@ -135,7 +135,7 @@ export const rendaOnlineArticles: Article[] = [
       <p>A forma mais acessível de começar a ganhar em cripto não é através de um emprego formal, mas resolvendo "Bounties" (recompensas). Projetos de código aberto publicam tarefas específicas (corrigir um bug, traduzir um artigo, criar um meme) e oferecem um pagamento fixo em tokens para quem concluir a tarefa primeiro ou com a melhor qualidade.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Contribuir para uma DAO através de bounties é a melhor forma de construir um portfólio on-chain. Seu histórico de contribuições fica registrado na blockchain, servindo como um currículo imutável e verificável para futuras oportunidades", afirma Marina Costa, Especialista em RH Web3.
+        "Contribuir para uma DAO através de bounties é a melhor forma de construir um portfólio on-chain. Seu histórico de contribuições fica registrado na blockchain, servindo como um currículo imutável e verificável para futuras oportunidades", afirma Sarah Chen, Especialista em RH Web3.
       </blockquote>
 
       <p>A <a href="https://www.infomoney.com.br/carreira/" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">InfoMoney</a> destaca que profissionais brasileiros estão aproveitando o câmbio favorável (recebendo em dólar digital) para multiplicar sua renda, prestando serviços para protocolos baseados nos EUA e Europa.</p>
@@ -199,7 +199,7 @@ export const rendaOnlineArticles: Article[] = [
     `,
     category: "renda-online",
     imageUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200",
-    author: "Marina Costa – Especialista em RH Web3",
+    author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 86400000).toISOString(),
     readTime: "4 min",
   },
@@ -299,7 +299,7 @@ export const rendaOnlineArticles: Article[] = [
     `,
     category: "renda-online",
     imageUrl: "https://images.unsplash.com/photo-1605792657660-596af9009e82?auto=format&fit=crop&q=80&w=1200",
-    author: "Roberto Almeida – Especialista em DeFi",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date(Date.now() - 172800000).toISOString(),
     readTime: "6 min",
   },
@@ -336,7 +336,7 @@ export const rendaOnlineArticles: Article[] = [
       <p>A maior inovação dos NFTs para os criadores são os royalties programáveis. No mercado de arte tradicional, se um artista vende um quadro por US$ 100 e, anos depois, o comprador o revende por US$ 10.000, o artista não recebe nada dessa valorização.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Com os NFTs, o artista pode programar um royalty de 5% a 10% diretamente no contrato inteligente. Toda vez que a obra for revendida no mercado secundário, para sempre, uma porcentagem do valor da venda cai automaticamente na carteira do criador original", explica Marina Costa, Especialista em Economia Criativa.
+        "Com os NFTs, o artista pode programar um royalty de 5% a 10% diretamente no contrato inteligente. Toda vez que a obra for revendida no mercado secundário, para sempre, uma porcentagem do valor da venda cai automaticamente na carteira do criador original", explica Sarah Chen, Especialista em Economia Criativa.
       </blockquote>
 
       <h2>O Segredo do Sucesso: Comunidade e Utilidade</h2>
@@ -398,7 +398,7 @@ export const rendaOnlineArticles: Article[] = [
     `,
     category: "renda-online",
     imageUrl: "https://images.unsplash.com/photo-1644361566696-3d442b5b482a?auto=format&fit=crop&q=80&w=1200",
-    author: "Marina Costa – Especialista em Economia Criativa",
+    author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 259200000).toISOString(),
     readTime: "5 min",
   },
@@ -435,7 +435,7 @@ export const rendaOnlineArticles: Article[] = [
       <p>A forma mais consistente de gerar renda no GameFi atual não é "farmar" o token do jogo, mas atuar como um comerciante no mercado secundário. Como os itens do jogo (espadas, terrenos, naves) são NFTs, eles possuem escassez e demanda real.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Jogadores experientes dedicam horas para 'craftar' (criar) itens raros ou evoluir personagens para então vendê-los nos marketplaces para jogadores com menos tempo, mas com maior poder aquisitivo. É a economia de livre mercado aplicada aos videogames", explica Thiago Silva, Analista de GameFi.
+        "Jogadores experientes dedicam horas para 'craftar' (criar) itens raros ou evoluir personagens para então vendê-los nos marketplaces para jogadores com menos tempo, mas com maior poder aquisitivo. É a economia de livre mercado aplicada aos videogames", explica Ana Souza, Analista de GameFi.
       </blockquote>
 
       <h2>Guildas e Bolsas (Scholarships) 2.0</h2>
@@ -496,7 +496,7 @@ export const rendaOnlineArticles: Article[] = [
     `,
     category: "renda-online",
     imageUrl: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=1200",
-    author: "Thiago Silva – Analista de GameFi",
+    author: "Ana Souza – Especialista em Startups & Negócios",
     date: new Date(Date.now() - 345600000).toISOString(),
     readTime: "5 min",
   },
@@ -533,7 +533,7 @@ export const rendaOnlineArticles: Article[] = [
       <p>O maior problema do staking tradicional era a falta de liquidez: suas moedas ficavam travadas por dias ou semanas. O Staking Líquido resolveu isso. Ao depositar Ethereum na Lido, por exemplo, você recebe um token representativo (stETH) que continua rendendo juros, mas pode ser vendido ou usado em protocolos DeFi a qualquer momento.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "O staking líquido transformou a economia do Ethereum. Hoje, é possível ganhar o rendimento base da rede e, simultaneamente, utilizar o token derivativo para buscar retornos adicionais no ecossistema DeFi", explica Carlos Mendes, Analista de Criptoativos.
+        "O staking líquido transformou a economia do Ethereum. Hoje, é possível ganhar o rendimento base da rede e, simultaneamente, utilizar o token derivativo para buscar retornos adicionais no ecossistema DeFi", explica Roberto Almeida, Analista de Criptoativos.
       </blockquote>
 
       <p>É importante notar que os rendimentos (APY) variam de acordo com a rede e a quantidade total de moedas em stake. Redes mais estabelecidas tendem a oferecer retornos menores (3% a 5% ao ano), enquanto redes emergentes podem oferecer taxas de dois dígitos para atrair segurança.</p>
@@ -593,7 +593,7 @@ export const rendaOnlineArticles: Article[] = [
     `,
     category: "renda-online",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Analista de Criptoativos",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date().toISOString(),
     readTime: "4 min",
   },
@@ -630,7 +630,7 @@ export const rendaOnlineArticles: Article[] = [
       <p>Para investidores que buscam renda passiva sem a volatilidade típica do mercado cripto, os empréstimos de stablecoins (moedas atreladas ao dólar) são a estratégia preferida. As taxas de juros para USDC ou USDT em plataformas DeFi frequentemente superam os rendimentos da renda fixa tradicional, variando entre 4% e 12% ao ano, dependendo das condições do mercado.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "O DeFi Lending democratizou o acesso a taxas de juros globais. Um investidor no Brasil pode emprestar dólares digitais e receber o mesmo rendimento que um fundo de investimento em Nova York, com total transparência on-chain", afirma Carlos Mendes, Analista de Criptoativos.
+        "O DeFi Lending democratizou o acesso a taxas de juros globais. Um investidor no Brasil pode emprestar dólares digitais e receber o mesmo rendimento que um fundo de investimento em Nova York, com total transparência on-chain", afirma Roberto Almeida, Analista de Criptoativos.
       </blockquote>
 
       <p>Além dos juros pagos pelos mutuários, muitos protocolos distribuem seus próprios tokens de governança como incentivo adicional para os depositantes, aumentando o rendimento total (APY) da operação.</p>
@@ -690,7 +690,7 @@ export const rendaOnlineArticles: Article[] = [
     `,
     category: "renda-online",
     imageUrl: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Analista de Criptoativos",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date().toISOString(),
     readTime: "5 min",
   },
@@ -727,7 +727,7 @@ export const rendaOnlineArticles: Article[] = [
       <p>A matemática dos programas de afiliados cripto é poderosa. Se você indicar 100 traders ativos e a exchange lhe pagar 30% das taxas geradas por eles, você estará construindo uma fonte de renda passiva que cresce exponencialmente durante os mercados de alta (bull markets), quando o volume de negociação dispara.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "A chave para o sucesso a longo prazo como afiliado é a transparência. Ofereça valor real à sua audiência, explique os riscos do mercado e recomende apenas plataformas que você pessoalmente utiliza e confia", aconselha Carlos Mendes, Analista de Criptoativos.
+        "A chave para o sucesso a longo prazo como afiliado é a transparência. Ofereça valor real à sua audiência, explique os riscos do mercado e recomende apenas plataformas que você pessoalmente utiliza e confia", aconselha Roberto Almeida, Analista de Criptoativos.
       </blockquote>
 
       <p>Muitas corretoras também permitem que você divida sua comissão com o indicado (kickback). Por exemplo, você pode configurar seu link para devolver 10% das taxas para o usuário, criando um forte incentivo para que ele se cadastre através da sua indicação em vez de ir diretamente ao site.</p>
@@ -787,7 +787,7 @@ export const rendaOnlineArticles: Article[] = [
     `,
     category: "renda-online",
     imageUrl: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Analista de Criptoativos",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date().toISOString(),
     readTime: "4 min",
   },
@@ -824,7 +824,7 @@ export const rendaOnlineArticles: Article[] = [
       <p>Para escritores mais estabelecidos, plataformas como <strong>Mirror.xyz</strong> funcionam como um cruzamento entre o Medium e o Kickstarter. Os autores podem publicar artigos que são armazenados permanentemente na blockchain (Arweave) e transformá-los em NFTs colecionáveis.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "O Mirror permite que criadores lancem campanhas de financiamento coletivo (crowdfunding) diretamente em seus textos. Os fãs financiam o projeto e recebem tokens que representam uma participação no sucesso futuro daquela publicação", destaca Carlos Mendes, Analista de Criptoativos.
+        "O Mirror permite que criadores lancem campanhas de financiamento coletivo (crowdfunding) diretamente em seus textos. Os fãs financiam o projeto e recebem tokens que representam uma participação no sucesso futuro daquela publicação", destaca Roberto Almeida, Analista de Criptoativos.
       </blockquote>
 
       <p>O <strong>Paragraph</strong> é outra alternativa focada em newsletters, integrando pagamentos em cripto e distribuição de NFTs para assinantes premium, oferecendo uma alternativa descentralizada ao Substack.</p>
@@ -884,7 +884,7 @@ export const rendaOnlineArticles: Article[] = [
     `,
     category: "renda-online",
     imageUrl: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Analista de Criptoativos",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date().toISOString(),
     readTime: "5 min",
   },
@@ -921,7 +921,7 @@ export const rendaOnlineArticles: Article[] = [
       <p>A principal barreira para se tornar um validador no Ethereum, por exemplo, é a exigência de 32 ETH (um valor considerável) e o conhecimento técnico para manter o servidor online 24/7 sem falhas, evitando penalidades (slashing).</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Para investidores que não possuem o capital ou o conhecimento técnico, surgiram os provedores de 'Node-as-a-Service' (NaaS) e os pools de staking. Eles permitem que você financie a operação de um node de forma fracionada, recebendo os lucros proporcionalmente sem lidar com a infraestrutura", explica Carlos Mendes, Analista de Criptoativos.
+        "Para investidores que não possuem o capital ou o conhecimento técnico, surgiram os provedores de 'Node-as-a-Service' (NaaS) e os pools de staking. Eles permitem que você financie a operação de um node de forma fracionada, recebendo os lucros proporcionalmente sem lidar com a infraestrutura", explica Roberto Almeida, Analista de Criptoativos.
       </blockquote>
 
       <p>Além das blockchains de camada 1, existem redes de infraestrutura descentralizada (DePIN) que recompensam usuários por fornecerem armazenamento (Filecoin, Arweave), poder de processamento (Render) ou largura de banda (Helium), abrindo novas frentes para a monetização de hardware ocioso.</p>
@@ -981,7 +981,7 @@ export const rendaOnlineArticles: Article[] = [
     `,
     category: "renda-online",
     imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Analista de Criptoativos",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date().toISOString(),
     readTime: "6 min",
   }

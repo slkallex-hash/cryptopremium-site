@@ -34,7 +34,7 @@ export const investimentosArticles: Article[] = [
       <p>O maior benefício do DCA não é apenas financeiro, mas psicológico. O mercado de criptomoedas opera 24 horas por dia, 7 dias por semana, gerando um fluxo constante de notícias alarmistas ou eufóricas. O DCA remove a emoção da equação.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Automatizar suas compras transforma a volatilidade de inimiga em aliada. Você para de se preocupar com quedas de 20% no curto prazo, porque sabe que seu próximo aporte comprará o ativo com 'desconto'", afirma Marina Costa, Gestora de Portfólio.
+        "Automatizar suas compras transforma a volatilidade de inimiga em aliada. Você para de se preocupar com quedas de 20% no curto prazo, porque sabe que seu próximo aporte comprará o ativo com 'desconto'", afirma Sarah Chen, Gestora de Portfólio.
       </blockquote>
 
       <p>A <a href="https://www.infomoney.com.br/onde-investir/" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">InfoMoney</a> relata que plataformas de investimento (exchanges) registraram um aumento de 300% no uso de ferramentas de compra recorrente (DCA automatizado) por investidores de varejo no último ano.</p>
@@ -98,7 +98,7 @@ export const investimentosArticles: Article[] = [
     `,
     category: "investimentos",
     imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=1200",
-    author: "Marina Costa – Gestora de Portfólio",
+    author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date().toISOString(),
     readTime: "4 min",
     trending: true,
@@ -136,7 +136,7 @@ export const investimentosArticles: Article[] = [
       <p>O maior problema do staking tradicional era o período de bloqueio (lock-up). Se você fizesse staking de Ethereum, suas moedas ficavam travadas e inacessíveis por dias ou semanas. A solução para isso foi o Liquid Staking (Staking Líquido).</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Protocolos de Liquid Staking, como Lido e Rocket Pool, permitem que você deposite seu ETH e receba um token derivativo (como o stETH) em troca. Esse token representa seu depósito mais os juros acumulados, e pode ser negociado ou usado em outras aplicações DeFi a qualquer momento", explica Lucas Silva, Desenvolvedor Blockchain.
+        "Protocolos de Liquid Staking, como Lido e Rocket Pool, permitem que você deposite seu ETH e receba um token derivativo (como o stETH) em troca. Esse token representa seu depósito mais os juros acumulados, e pode ser negociado ou usado em outras aplicações DeFi a qualquer momento", explica Lucas Costa, Desenvolvedor Blockchain.
       </blockquote>
 
       <p>A <a href="https://www.coindesk.com" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">CoinDesk</a> relata que o setor de Liquid Staking tornou-se a maior categoria do DeFi em Valor Total Travado (TVL), superando as exchanges descentralizadas (DEXs) e os protocolos de empréstimo.</p>
@@ -200,7 +200,7 @@ export const investimentosArticles: Article[] = [
     `,
     category: "investimentos",
     imageUrl: "https://images.unsplash.com/photo-1621504450181-5d356f61d307?auto=format&fit=crop&q=80&w=1200",
-    author: "Lucas Silva – Desenvolvedor Blockchain",
+    author: "Lucas Costa – Analista de Cibersegurança",
     date: new Date(Date.now() - 86400000).toISOString(),
     readTime: "5 min",
   },
@@ -237,7 +237,7 @@ export const investimentosArticles: Article[] = [
       <p>Com a base segura, os próximos 15% a 30% do portfólio podem ser alocados em altcoins de média capitalização (mid-caps) que lideram setores específicos (narrativas). Aqui, o objetivo é capturar o crescimento de infraestruturas essenciais para a Web3.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Não invista em moedas, invista em setores. Tenha exposição às principais redes Layer 1 (Solana, Avalanche), oráculos (Chainlink) e protocolos de Inteligência Artificial. A diversificação setorial protege você caso uma tecnologia específica se torne obsoleta", aconselha Marina Costa, Gestora de Portfólio.
+        "Não invista em moedas, invista em setores. Tenha exposição às principais redes Layer 1 (Solana, Avalanche), oráculos (Chainlink) e protocolos de Inteligência Artificial. A diversificação setorial protege você caso uma tecnologia específica se torne obsoleta", aconselha Sarah Chen, Gestora de Portfólio.
       </blockquote>
 
       <p>A <a href="https://www.bloomberg.com/crypto" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">Bloomberg Crypto</a> destaca que a rotação de capital entre essas narrativas é constante, e manter uma carteira diversificada permite capturar os ciclos de alta de cada setor sem precisar fazer "market timing".</p>
@@ -301,7 +301,7 @@ export const investimentosArticles: Article[] = [
     `,
     category: "investimentos",
     imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=1200",
-    author: "Marina Costa – Gestora de Portfólio",
+    author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 172800000).toISOString(),
     readTime: "6 min",
   },
@@ -407,7 +407,7 @@ export const investimentosArticles: Article[] = [
     `,
     category: "investimentos",
     imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=1200",
-    author: "Roberto Almeida – Especialista em Infraestrutura",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date(Date.now() - 259200000).toISOString(),
     readTime: "7 min",
   },
@@ -445,7 +445,7 @@ export const investimentosArticles: Article[] = [
       <p>A boa notícia para o pequeno investidor é a existência de uma faixa de isenção. Vendas de criptomoedas cujo valor total alienado no mês seja igual ou inferior a R$ 35.000 são isentas de imposto de renda, independentemente do lucro obtido.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "A isenção de R$ 35 mil é mensal e considera a soma de todas as vendas de criptoativos. É fundamental manter um controle rigoroso das operações, pois ultrapassar esse limite em apenas um real sujeita todo o lucro do mês à tributação", alerta Carlos Mendes, Especialista em Tributação Digital.
+        "A isenção de R$ 35 mil é mensal e considera a soma de todas as vendas de criptoativos. É fundamental manter um controle rigoroso das operações, pois ultrapassar esse limite em apenas um real sujeita todo o lucro do mês à tributação", alerta Roberto Almeida, Especialista em Tributação Digital.
       </blockquote>
 
       <p>Para vendas que ultrapassam o limite de isenção, as alíquotas de imposto sobre o ganho de capital são progressivas, começando em 15% para lucros de até R$ 5 milhões e podendo chegar a 22,5% para lucros exorbitantes.</p>
@@ -509,7 +509,7 @@ export const investimentosArticles: Article[] = [
     `,
     category: "investimentos",
     imageUrl: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Especialista em Tributação Digital",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date(Date.now() - 345600000).toISOString(),
     readTime: "5 min",
   },
@@ -546,7 +546,7 @@ export const investimentosArticles: Article[] = [
       <p>O Stop Loss (limite de perda) é uma ordem automática enviada à exchange para vender um ativo caso ele atinja um preço pré-determinado. Ele atua como um "seguro" contra quedas catastróficas. Muitos investidores evitam usar o stop loss por medo de serem "violinados" (quando o preço cai, aciona o stop e depois sobe), mas operar sem ele em criptomoedas é o equivalente financeiro a dirigir sem cinto de segurança.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "O mercado pode permanecer irracional por mais tempo do que você pode permanecer solvente. O stop loss remove a emoção da decisão de cortar perdas. Ele aceita que a sua tese de investimento estava errada antes que o erro se torne fatal", afirma Carlos Mendes, Analista de Risco.
+        "O mercado pode permanecer irracional por mais tempo do que você pode permanecer solvente. O stop loss remove a emoção da decisão de cortar perdas. Ele aceita que a sua tese de investimento estava errada antes que o erro se torne fatal", afirma Roberto Almeida, Analista de Risco.
       </blockquote>
 
       <p>A <a href="https://www.bloomberg.com/markets" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">Bloomberg</a> relata que a falta de ordens de stop loss foi a principal causa de liquidações em massa (margin calls) que eliminaram bilhões de dólares de investidores de varejo durante os últimos "flash crashes" do Bitcoin.</p>
@@ -610,7 +610,7 @@ export const investimentosArticles: Article[] = [
     `,
     category: "investimentos",
     imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Analista de Risco",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date(Date.now() - 432000000).toISOString(),
     readTime: "6 min",
   },
@@ -647,7 +647,7 @@ export const investimentosArticles: Article[] = [
       <p>A verdadeira revolução dos ETFs não está no varejo, mas no capital institucional. Antes dos ETFs, fundos de pensão, endowments universitários e consultores financeiros (RIAs) eram legalmente impedidos ou extremamente relutantes em investir diretamente em criptomoedas devido a restrições de mandato e preocupações com a custódia.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "O ETF transformou o Bitcoin de um ativo 'exótico' em um componente padrão de portfólio. Agora, um gestor de fundo de pensão pode alocar 1% ou 2% em Bitcoin com o clique de um botão, utilizando a mesma infraestrutura que usa para comprar ações da Apple ou títulos do Tesouro", explica Marina Costa, Gestora de Portfólio.
+        "O ETF transformou o Bitcoin de um ativo 'exótico' em um componente padrão de portfólio. Agora, um gestor de fundo de pensão pode alocar 1% ou 2% em Bitcoin com o clique de um botão, utilizando a mesma infraestrutura que usa para comprar ações da Apple ou títulos do Tesouro", explica Sarah Chen, Gestora de Portfólio.
       </blockquote>
 
       <p>A <a href="https://www.cnbc.com/crypto/" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">CNBC</a> reportou que os ETFs de Bitcoin quebraram todos os recordes históricos de captação de recursos em seus primeiros meses de negociação, atraindo dezenas de bilhões de dólares e consolidando-se como o lançamento de ETF mais bem-sucedido da história financeira.</p>
@@ -710,7 +710,7 @@ export const investimentosArticles: Article[] = [
     `,
     category: "investimentos",
     imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=1200",
-    author: "Marina Costa – Gestora de Portfólio",
+    author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 518400000).toISOString(),
     readTime: "5 min",
   },
@@ -747,7 +747,7 @@ export const investimentosArticles: Article[] = [
       <p>O Yield Farming, por outro lado, envolve fornecer liquidez para protocolos DeFi, como Exchanges Descentralizadas (DEXs - ex: Uniswap) ou plataformas de empréstimo (ex: Aave). Para que uma DEX funcione, ela precisa de "piscinas de liquidez" (liquidity pools) contendo pares de tokens (ex: ETH/USDC) para que os usuários possam negociar.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "No Yield Farming, você atua como o formador de mercado (market maker). Você deposita seus pares de tokens e, em troca, recebe uma parte das taxas de negociação geradas pela plataforma, além de tokens de governança como incentivo extra. Os retornos podem ser astronômicos, mas os riscos também são", explica Lucas Silva, Desenvolvedor Blockchain.
+        "No Yield Farming, você atua como o formador de mercado (market maker). Você deposita seus pares de tokens e, em troca, recebe uma parte das taxas de negociação geradas pela plataforma, além de tokens de governança como incentivo extra. Os retornos podem ser astronômicos, mas os riscos também são", explica Lucas Costa, Desenvolvedor Blockchain.
       </blockquote>
 
       <p>A <a href="https://defillama.com/" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">DeFiLlama</a> mostra que os APYs no Yield Farming podem variar de 10% a mais de 100% ao ano. No entanto, essa estratégia introduz um risco complexo conhecido como <strong>Impermanent Loss (Perda Impermanente)</strong>. Se o preço de um dos tokens do par variar significativamente em relação ao outro, você pode acabar com menos valor do que se tivesse simplesmente guardado os tokens na carteira (HODL).</p>
@@ -811,7 +811,7 @@ export const investimentosArticles: Article[] = [
     `,
     category: "investimentos",
     imageUrl: "https://images.unsplash.com/photo-1621504450181-5d356f61d307?auto=format&fit=crop&q=80&w=1200",
-    author: "Lucas Silva – Desenvolvedor Blockchain",
+    author: "Lucas Costa – Analista de Cibersegurança",
     date: new Date(Date.now() - 604800000).toISOString(),
     readTime: "6 min",
   },
@@ -848,7 +848,7 @@ export const investimentosArticles: Article[] = [
       <p>O FUD é a arma dos mercados de baixa (bear markets). Notícias sobre proibições na China, processos da SEC ou falências de exchanges inundam os portais. O medo irracional de que o "Bitcoin vai a zero" toma conta. Dominado pelo pânico, você vende seus ativos no fundo do poço, consolidando perdas irreparáveis, apenas para ver o mercado se recuperar meses depois.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Compre ao som dos canhões, venda ao som dos violinos. O FUD é o momento em que a riqueza é transferida dos impacientes para os pacientes. Quando o pânico é generalizado e a mídia tradicional declara o fim das criptomoedas, historicamente, esse é o ponto de máximo risco financeiro para quem vende e máxima oportunidade para quem compra", afirma Carlos Mendes, Analista de Risco.
+        "Compre ao som dos canhões, venda ao som dos violinos. O FUD é o momento em que a riqueza é transferida dos impacientes para os pacientes. Quando o pânico é generalizado e a mídia tradicional declara o fim das criptomoedas, historicamente, esse é o ponto de máximo risco financeiro para quem vende e máxima oportunidade para quem compra", afirma Roberto Almeida, Analista de Risco.
       </blockquote>
 
       <p>A <a href="https://www.bloomberg.com/crypto" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">Bloomberg</a> observa que investidores institucionais frequentemente utilizam o Índice de Medo e Ganância (Fear & Greed Index) como um indicador contrário: comprando quando o mercado está em "Medo Extremo" e realizando lucros quando atinge "Ganância Extrema".</p>
@@ -912,7 +912,7 @@ export const investimentosArticles: Article[] = [
     `,
     category: "investimentos",
     imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Analista de Risco",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date(Date.now() - 691200000).toISOString(),
     readTime: "5 min",
   },
@@ -949,7 +949,7 @@ export const investimentosArticles: Article[] = [
       <p>As stablecoins revolucionaram a forma como os investidores realizam lucros. Antes de sua existência, para garantir os ganhos de uma alta do Bitcoin, o investidor precisava vender o ativo por moeda fiduciária (Reais ou Dólares) e transferir o dinheiro de volta para a conta bancária — um processo lento, burocrático e frequentemente sujeito a altas taxas e escrutínio fiscal imediato.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "As stablecoins permitem que você realize lucros (take profit) instantaneamente, mantendo o capital dentro do ecossistema cripto, pronto para ser reimplantado a qualquer momento. É a ponte perfeita entre a volatilidade da Web3 e a estabilidade do sistema fiduciário", explica Marina Costa, Gestora de Portfólio.
+        "As stablecoins permitem que você realize lucros (take profit) instantaneamente, mantendo o capital dentro do ecossistema cripto, pronto para ser reimplantado a qualquer momento. É a ponte perfeita entre a volatilidade da Web3 e a estabilidade do sistema fiduciário", explica Sarah Chen, Gestora de Portfólio.
       </blockquote>
 
       <p>A <a href="https://www.coindesk.com" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">CoinDesk</a> destaca que o volume de negociação de stablecoins frequentemente supera o do próprio Bitcoin, evidenciando seu papel como a espinha dorsal da liquidez no mercado de criptomoedas.</p>
@@ -1013,7 +1013,7 @@ export const investimentosArticles: Article[] = [
     `,
     category: "investimentos",
     imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=1200",
-    author: "Marina Costa – Gestora de Portfólio",
+    author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 777600000).toISOString(),
     readTime: "5 min",
   },
@@ -1107,7 +1107,7 @@ export const investimentosArticles: Article[] = [
     `,
     category: "investimentos",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
-    author: "Thiago Silva – Especialista em Blockchain e Web3",
+    author: "Ana Souza – Especialista em Startups & Negócios",
     date: new Date(Date.now() - 86400000).toISOString(),
     readTime: "6 min",
   },
@@ -1191,7 +1191,7 @@ export const investimentosArticles: Article[] = [
     `,
     category: "investimentos",
     imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Analista Chefe de Mercado",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date(Date.now() - 172800000).toISOString(),
     readTime: "7 min",
   },
@@ -1270,7 +1270,7 @@ export const investimentosArticles: Article[] = [
     `,
     category: "investimentos",
     imageUrl: "https://images.unsplash.com/photo-1639762681485-074b7f4ec08d?auto=format&fit=crop&q=80&w=1200",
-    author: "Thiago Silva – Especialista em Blockchain e Web3",
+    author: "Ana Souza – Especialista em Startups & Negócios",
     date: new Date(Date.now() - 259200000).toISOString(),
     readTime: "5 min",
   }

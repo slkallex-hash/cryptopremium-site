@@ -27,13 +27,13 @@ export interface Article {
 }
 
 export const categories: Category[] = [
-  { id: "c1", name: "Bitcoin", slug: "bitcoin", description: "Tudo sobre a maior criptomoeda do mundo." },
-  { id: "c2", name: "Altcoins", slug: "altcoins", description: "Análises e notícias sobre Ethereum, Solana, Cardano e outras altcoins." },
-  { id: "c3", name: "Economia", slug: "economia", description: "Impacto macroeconômico, inflação e o mercado financeiro tradicional." },
-  { id: "c4", name: "Investimentos", slug: "investimentos", description: "Estratégias de portfólio, análise fundamentalista e gestão de risco." },
-  { id: "c5", name: "Tecnologia", slug: "tecnologia", description: "Inovações em blockchain, IA, Web3 e segurança digital." },
-  { id: "c6", name: "Renda Online", slug: "renda-online", description: "Airdrops, DeFi, staking, NFTs e oportunidades de monetização na Web3." },
-  { id: "c7", name: "Notícias Urgentes", slug: "noticias-urgentes", description: "As últimas atualizações do mercado cripto em tempo real." },
+  { id: "c1", name: "Tecnologia", slug: "tecnologia", description: "Inovações, gadgets, startups e o futuro do mercado tech." },
+  { id: "c2", name: "Inteligência Artificial", slug: "ia", description: "O impacto da IA generativa, machine learning e automação." },
+  { id: "c3", name: "Criptomoedas", slug: "criptomoedas", description: "Bitcoin, Ethereum, Web3 e o mercado de ativos digitais." },
+  { id: "c4", name: "Apps", slug: "apps", description: "Novos aplicativos, atualizações e análises de software." },
+  { id: "c5", name: "Internet", slug: "internet", description: "Redes sociais, cibersegurança, cultura digital e tendências da web." },
+  { id: "c6", name: "Tutoriais", slug: "tutoriais", description: "Guias passo a passo, dicas de produtividade e como fazer." },
+  { id: "c7", name: "Todas as Notícias", slug: "todas", description: "As últimas atualizações do mundo da tecnologia em tempo real." },
 ];
 
 export const articles: Article[] = [

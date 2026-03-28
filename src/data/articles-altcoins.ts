@@ -85,7 +85,7 @@ export const altcoinsArticles: Article[] = [
     `,
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Analista de Criptoativos",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date().toISOString(),
     readTime: "4 min",
     trending: true,
@@ -144,7 +144,7 @@ export const altcoinsArticles: Article[] = [
     `,
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Analista de Criptoativos",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date().toISOString(),
     readTime: "3 min",
   },
@@ -202,7 +202,7 @@ export const altcoinsArticles: Article[] = [
     `,
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1644361566696-3d442b5b482a?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Analista de Criptoativos",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date().toISOString(),
     readTime: "4 min",
   },
@@ -264,7 +264,7 @@ export const altcoinsArticles: Article[] = [
     `,
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1639762681057-408e52192e55?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Analista de Criptoativos",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date().toISOString(),
     readTime: "5 min",
   },
@@ -322,7 +322,7 @@ export const altcoinsArticles: Article[] = [
     `,
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1642104704074-907c0698cbd9?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Analista de Criptoativos",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date().toISOString(),
     readTime: "4 min",
   },
@@ -410,7 +410,7 @@ export const altcoinsArticles: Article[] = [
     `,
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Analista de Criptoativos",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date().toISOString(),
     readTime: "4 min",
     trending: true,
@@ -448,7 +448,7 @@ export const altcoinsArticles: Article[] = [
       <p>Não se pode ignorar o papel das memecoins nessa ascensão. A facilidade e o baixo custo de criação de tokens na Solana criaram um ecossistema hiperativo de especulação. Plataformas como Raydium e Jupiter (agregador de DEX) registraram picos de uso que testaram — e comprovaram — a resiliência da rede após as atualizações de infraestrutura (Firedancer).</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "A Solana se tornou o cassino global da Web3, mas também provou ser a única rede capaz de lidar com a demanda de um milhão de usuários simultâneos sem engasgar ou cobrar taxas extorsivas", afirma Carlos Mendes, Analista de Criptoativos.
+        "A Solana se tornou o cassino global da Web3, mas também provou ser a única rede capaz de lidar com a demanda de um milhão de usuários simultâneos sem engasgar ou cobrar taxas extorsivas", afirma Roberto Almeida, Analista de Criptoativos.
       </blockquote>
 
       <p>A <a href="https://www.bloomberg.com/crypto" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">Bloomberg Crypto</a> aponta que fundos de venture capital estão realocando capital de redes Layer 2 do Ethereum diretamente para o ecossistema Solana, apostando que a liquidez atrai mais liquidez.</p>
@@ -512,7 +512,7 @@ export const altcoinsArticles: Article[] = [
     `,
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
-    author: "Carlos Mendes – Analista de Criptoativos",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date().toISOString(),
     readTime: "4 min",
     trending: true,
@@ -550,7 +550,7 @@ export const altcoinsArticles: Article[] = [
       <p>O maior catalisador para a adoção do CCIP foi a parceria bem-sucedida com o SWIFT, a rede global de mensagens financeiras utilizada por mais de 11.000 bancos em todo o mundo. Em testes recentes, bancos puderam instruir a transferência de ativos tokenizados entre diferentes blockchains usando a mesma infraestrutura SWIFT que já utilizam diariamente.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "O CCIP abstrai a complexidade da blockchain para os bancos. Eles não precisam entender de Ethereum, Polygon ou Avalanche; eles apenas enviam uma mensagem SWIFT, e a Chainlink cuida do roteamento e liquidação no backend", explica Marina Costa, Especialista em Integração Institucional.
+        "O CCIP abstrai a complexidade da blockchain para os bancos. Eles não precisam entender de Ethereum, Polygon ou Avalanche; eles apenas enviam uma mensagem SWIFT, e a Chainlink cuida do roteamento e liquidação no backend", explica Sarah Chen, Especialista em Integração Institucional.
       </blockquote>
 
       <p>A <a href="https://www.investopedia.com/terms/c/chainlink.asp" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">Investopedia</a> destaca que a utilidade do token LINK aumenta exponencialmente com o CCIP, já que as taxas de transação cross-chain são pagas na moeda nativa da rede.</p>
@@ -614,7 +614,7 @@ export const altcoinsArticles: Article[] = [
     `,
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
-    author: "Marina Costa – Especialista em Integração Institucional",
+    author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 86400000).toISOString(),
     readTime: "5 min",
   },
@@ -652,7 +652,7 @@ export const altcoinsArticles: Article[] = [
       <p>A Optimism (OP) adotou uma abordagem diferente. Em vez de focar apenas em sua própria rede, a equipe desenvolveu o "OP Stack", um kit de ferramentas de código aberto que permite a qualquer empresa lançar sua própria Layer 2 interoperável.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "A visão da Optimism é criar uma 'Superchain', uma teia de redes Layer 2 que compartilham segurança e comunicação nativa. É uma aposta na padronização da infraestrutura, semelhante ao que o Android fez pelos smartphones", analisa Lucas Silva, Desenvolvedor Blockchain.
+        "A visão da Optimism é criar uma 'Superchain', uma teia de redes Layer 2 que compartilham segurança e comunicação nativa. É uma aposta na padronização da infraestrutura, semelhante ao que o Android fez pelos smartphones", analisa Lucas Costa, Desenvolvedor Blockchain.
       </blockquote>
 
       <h2>Base: O Poder da Distribuição</h2>
@@ -718,7 +718,7 @@ export const altcoinsArticles: Article[] = [
     `,
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1621504450181-5d356f61d307?auto=format&fit=crop&q=80&w=1200",
-    author: "Lucas Silva – Desenvolvedor Blockchain",
+    author: "Lucas Costa – Analista de Cibersegurança",
     date: new Date(Date.now() - 172800000).toISOString(),
     readTime: "6 min",
   },
@@ -818,7 +818,7 @@ export const altcoinsArticles: Article[] = [
     `,
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
-    author: "Roberto Almeida – Especialista em Infraestrutura",
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date(Date.now() - 259200000).toISOString(),
     readTime: "5 min",
   },
@@ -856,7 +856,7 @@ export const altcoinsArticles: Article[] = [
       <p>Na economia da Web3, a atenção é o recurso mais escasso. Projetos de infraestrutura gastam milhões em marketing para atrair usuários, muitas vezes sem sucesso. As memecoins, por outro lado, utilizam o humor, a cultura da internet e o sentimento de pertencimento tribal para viralizar organicamente.</p>
       
       <blockquote class="border-l-4 border-emerald-500 pl-5 my-8 italic text-zinc-300 bg-zinc-900/30 py-4 pr-4 rounded-r-xl">
-        "Não subestime o poder de uma comunidade engajada. Uma memecoin de sucesso é, na verdade, uma marca de código aberto. Se a comunidade decidir construir utilidade ao redor dessa marca (como jogos, NFTs ou plataformas DeFi), o meme se transforma em um ecossistema real", argumenta Thiago Silva, Analista de Tendências Digitais.
+        "Não subestime o poder de uma comunidade engajada. Uma memecoin de sucesso é, na verdade, uma marca de código aberto. Se a comunidade decidir construir utilidade ao redor dessa marca (como jogos, NFTs ou plataformas DeFi), o meme se transforma em um ecossistema real", argumenta Marcos Silva, Analista de Tendências Digitais.
       </blockquote>
 
       <p>Redes como Solana e Base se beneficiaram enormemente do frenesi das memecoins, utilizando-as como uma ferramenta de aquisição de usuários (onboarding) para testar o estresse de suas infraestruturas e atrair liquidez para suas exchanges descentralizadas (DEXs).</p>
@@ -920,7 +920,7 @@ export const altcoinsArticles: Article[] = [
     `,
     category: "altcoins",
     imageUrl: "https://images.unsplash.com/photo-1642104704074-907c0698cbd9?auto=format&fit=crop&q=80&w=1200",
-    author: "Thiago Silva – Analista de Tendências Digitais",
+    author: "Marcos Silva – Repórter de Hardware & Gadgets",
     date: new Date(Date.now() - 345600000).toISOString(),
     readTime: "4 min",
   }

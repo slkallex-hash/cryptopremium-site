@@ -3,7 +3,7 @@ import { Mail, MapPin, Phone, Send, MessageSquare } from "lucide-react";
 
 export function Contact() {
   useEffect(() => {
-    document.title = "Contato | CryptoPremium";
+    document.title = "Contato | TechFront";
     window.scrollTo(0, 0);
   }, []);
 
@@ -12,10 +12,10 @@ export function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 tracking-tight">
-            Fale com nossos <span className="text-gradient-gold">Especialistas</span>
+            Fale com a <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Redação</span>
           </h1>
           <p className="text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-            Dúvidas sobre os planos, configuração de bots ou parcerias institucionais? Nossa equipe de suporte premium está pronta para atender você.
+            Tem uma pauta, sugestão de reportagem ou quer anunciar no TechFront? Nossa equipe está pronta para ouvir você.
           </p>
         </div>
 
@@ -27,13 +27,13 @@ export function Contact() {
               
               <div className="space-y-8">
                 <div className="flex items-start group">
-                  <div className="w-14 h-14 rounded-2xl bg-yellow-500/10 flex items-center justify-center shrink-0 mr-6 group-hover:bg-yellow-500/20 transition-colors">
-                    <Mail className="w-6 h-6 text-yellow-500" />
+                  <div className="w-14 h-14 rounded-2xl bg-blue-500/10 flex items-center justify-center shrink-0 mr-6 group-hover:bg-blue-500/20 transition-colors">
+                    <Mail className="w-6 h-6 text-blue-500" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-white mb-2">E-mail VIP</h3>
-                    <p className="text-zinc-400 mb-2">Suporte técnico e dúvidas comerciais:</p>
-                    <a href="mailto:vip@cryptopremium.space" className="text-yellow-500 hover:text-yellow-400 font-medium transition-colors">vip@cryptopremium.space</a>
+                    <h3 className="text-lg font-bold text-white mb-2">Redação & Pautas</h3>
+                    <p className="text-zinc-400 mb-2">Envie sugestões de matérias e press releases:</p>
+                    <a href="mailto:redacao@techfront.com.br" className="text-blue-400 hover:text-blue-300 font-medium transition-colors">redacao@techfront.com.br</a>
                   </div>
                 </div>
 
@@ -42,9 +42,9 @@ export function Contact() {
                     <Phone className="w-6 h-6 text-cyan-400" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-white mb-2">WhatsApp Business</h3>
-                    <p className="text-zinc-400 mb-2">Atendimento rápido em horário comercial:</p>
-                    <a href="#" className="text-cyan-400 hover:text-cyan-300 font-medium transition-colors">+55 (11) 99999-9999</a>
+                    <h3 className="text-lg font-bold text-white mb-2">Comercial & Parcerias</h3>
+                    <p className="text-zinc-400 mb-2">Anuncie no TechFront ou seja um parceiro:</p>
+                    <a href="mailto:comercial@techfront.com.br" className="text-cyan-400 hover:text-cyan-300 font-medium transition-colors">comercial@techfront.com.br</a>
                   </div>
                 </div>
 
@@ -53,10 +53,10 @@ export function Contact() {
                     <MapPin className="w-6 h-6 text-zinc-300" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-white mb-2">Sede Corporativa</h3>
+                    <h3 className="text-lg font-bold text-white mb-2">Sede Editorial</h3>
                     <p className="text-zinc-400 leading-relaxed">
-                      Av. Faria Lima, 3000 - Itaim Bibi<br />
-                      São Paulo - SP, 01451-000<br />
+                      Av. Paulista, 1000 - Bela Vista<br />
+                      São Paulo - SP, 01310-100<br />
                       Brasil
                     </p>
                   </div>
@@ -65,25 +65,25 @@ export function Contact() {
             </div>
 
             <div className="glass p-8 rounded-3xl border border-white/5">
-              <h2 className="text-xl font-bold text-white mb-4">Parcerias B2B</h2>
+              <h2 className="text-xl font-bold text-white mb-4">Trabalhe Conosco</h2>
               <p className="text-zinc-400 mb-6 leading-relaxed">
-                Representa um fundo, family office ou corretora? Oferecemos soluções White Label e acesso API institucional.
+                É jornalista, desenvolvedor ou especialista em tecnologia? Venha fazer parte da equipe que está decodificando o futuro.
               </p>
-              <a href="mailto:institucional@cryptopremium.space" className="inline-flex items-center text-yellow-500 font-bold hover:text-yellow-400 transition-colors">
-                Falar com B2B <Send className="w-4 h-4 ml-2" />
+              <a href="mailto:vagas@techfront.com.br" className="inline-flex items-center text-blue-400 font-bold hover:text-blue-300 transition-colors">
+                Ver Vagas Abertas <Send className="w-4 h-4 ml-2" />
               </a>
             </div>
           </div>
 
           {/* Formulário de Contato */}
           <div className="glass p-8 md:p-10 rounded-3xl border border-white/5 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/5 blur-[80px] rounded-full pointer-events-none"></div>
+            <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 blur-[80px] rounded-full pointer-events-none"></div>
             
             <h2 className="text-2xl font-bold text-white mb-8 flex items-center relative z-10">
-              <MessageSquare className="w-6 h-6 mr-3 text-cyan-400" /> Envie uma Mensagem
+              <MessageSquare className="w-6 h-6 mr-3 text-blue-400" /> Envie uma Mensagem
             </h2>
             
-            <form className="space-y-6 relative z-10" onSubmit={(e) => { e.preventDefault(); alert('Mensagem enviada com sucesso! Nossa equipe VIP entrará em contato.'); }}>
+            <form className="space-y-6 relative z-10" onSubmit={(e) => { e.preventDefault(); alert('Mensagem enviada com sucesso! Nossa equipe entrará em contato.'); }}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-zinc-400 mb-2">Nome Completo</label>
@@ -91,28 +91,28 @@ export function Contact() {
                     type="text" 
                     id="name" 
                     required
-                    className="w-full bg-black/50 border border-white/10 text-white px-4 py-3 rounded-xl focus:outline-none focus:border-yellow-500/50 focus:ring-1 focus:ring-yellow-500/50 transition-all placeholder:text-zinc-600"
+                    className="w-full bg-black/50 border border-white/10 text-white px-4 py-3 rounded-xl focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/50 transition-all placeholder:text-zinc-600"
                     placeholder="Seu nome"
                   />
                 </div>
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-zinc-400 mb-2">WhatsApp</label>
+                  <label htmlFor="company" className="block text-sm font-medium text-zinc-400 mb-2">Empresa / Veículo</label>
                   <input 
-                    type="tel" 
-                    id="phone" 
-                    className="w-full bg-black/50 border border-white/10 text-white px-4 py-3 rounded-xl focus:outline-none focus:border-yellow-500/50 focus:ring-1 focus:ring-yellow-500/50 transition-all placeholder:text-zinc-600"
-                    placeholder="(11) 99999-9999"
+                    type="text" 
+                    id="company" 
+                    className="w-full bg-black/50 border border-white/10 text-white px-4 py-3 rounded-xl focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/50 transition-all placeholder:text-zinc-600"
+                    placeholder="Sua empresa (opcional)"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-zinc-400 mb-2">E-mail</label>
+                <label htmlFor="email" className="block text-sm font-medium text-zinc-400 mb-2">E-mail Profissional</label>
                 <input 
                   type="email" 
                   id="email" 
                   required
-                  className="w-full bg-black/50 border border-white/10 text-white px-4 py-3 rounded-xl focus:outline-none focus:border-yellow-500/50 focus:ring-1 focus:ring-yellow-500/50 transition-all placeholder:text-zinc-600"
+                  className="w-full bg-black/50 border border-white/10 text-white px-4 py-3 rounded-xl focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/50 transition-all placeholder:text-zinc-600"
                   placeholder="seu.email@exemplo.com"
                 />
               </div>
@@ -121,12 +121,12 @@ export function Contact() {
                 <label htmlFor="subject" className="block text-sm font-medium text-zinc-400 mb-2">Assunto</label>
                 <select 
                   id="subject" 
-                  className="w-full bg-black/50 border border-white/10 text-white px-4 py-3 rounded-xl focus:outline-none focus:border-yellow-500/50 focus:ring-1 focus:ring-yellow-500/50 transition-all appearance-none"
+                  className="w-full bg-black/50 border border-white/10 text-white px-4 py-3 rounded-xl focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/50 transition-all appearance-none"
                 >
-                  <option value="duvida" className="bg-zinc-900">Dúvida sobre Planos</option>
-                  <option value="suporte" className="bg-zinc-900">Suporte Técnico / Bots</option>
-                  <option value="financeiro" className="bg-zinc-900">Financeiro / Pagamentos</option>
-                  <option value="parceria" className="bg-zinc-900">Parceria Institucional</option>
+                  <option value="pauta" className="bg-zinc-900">Sugestão de Pauta / Press Release</option>
+                  <option value="comercial" className="bg-zinc-900">Anúncios / Parcerias Comerciais</option>
+                  <option value="correcao" className="bg-zinc-900">Correção de Matéria</option>
+                  <option value="outro" className="bg-zinc-900">Outro Assunto</option>
                 </select>
               </div>
 
@@ -136,14 +136,14 @@ export function Contact() {
                   id="message" 
                   rows={5}
                   required
-                  className="w-full bg-black/50 border border-white/10 text-white px-4 py-3 rounded-xl focus:outline-none focus:border-yellow-500/50 focus:ring-1 focus:ring-yellow-500/50 transition-all resize-none placeholder:text-zinc-600"
-                  placeholder="Como podemos ajudar a escalar seus resultados?"
+                  className="w-full bg-black/50 border border-white/10 text-white px-4 py-3 rounded-xl focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/50 transition-all resize-none placeholder:text-zinc-600"
+                  placeholder="Escreva sua mensagem aqui..."
                 ></textarea>
               </div>
 
               <button 
                 type="submit"
-                className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:shadow-[0_0_20px_rgba(234,179,8,0.3)] text-black font-bold text-lg px-6 py-4 rounded-xl transition-all flex items-center justify-center"
+                className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] text-white font-bold text-lg px-6 py-4 rounded-xl transition-all flex items-center justify-center"
               >
                 Enviar Mensagem <Send className="w-5 h-5 ml-2" />
               </button>

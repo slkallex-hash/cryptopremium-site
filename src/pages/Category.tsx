@@ -13,7 +13,7 @@ export function Category() {
   useEffect(() => {
     window.scrollTo(0, 0);
     if (category) {
-      document.title = `${category.name} | CryptoPremium`;
+      document.title = `${category.name} | TechFront`;
     }
   }, [slug, category]);
 
@@ -21,7 +21,7 @@ export function Category() {
     return (
       <div className="flex flex-col items-center justify-center min-h-[50vh] space-y-4">
         <h1 className="text-4xl font-bold text-zinc-100">Categoria não encontrada</h1>
-        <Link to="/" className="text-emerald-400 hover:underline flex items-center">
+        <Link to="/" className="text-blue-400 hover:underline flex items-center">
           <ChevronRight className="w-4 h-4 mr-1 rotate-180" /> Voltar para a página inicial
         </Link>
       </div>
@@ -29,11 +29,11 @@ export function Category() {
   }
 
   return (
-    <div className="space-y-12 max-w-5xl mx-auto">
+    <div className="space-y-12 max-w-5xl mx-auto pt-24 pb-16 px-4 sm:px-6 lg:px-8">
       {/* Top Banner Ad */}
       <AdSlot id="category-top-banner" type="banner" className="mb-8 rounded-xl" />
 
-      <header className="mb-12 border-b border-zinc-800/50 pb-10">
+      <header className="mb-12 border-b border-white/10 pb-10">
         <h1 className="text-4xl md:text-6xl font-display font-bold text-white mb-6 tracking-tight">
           {category.name}
         </h1>
@@ -50,7 +50,7 @@ export function Category() {
         <div className="space-y-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {categoryArticles.slice(0, 4).map((article) => (
-              <Link key={article.id} to={`/article/${article.slug}`} className="group flex flex-col bg-[#09090b] rounded-2xl overflow-hidden border border-zinc-800/50 hover:border-zinc-700 transition-all hover:shadow-xl hover:shadow-black/50">
+              <Link key={article.id} to={`/article/${article.slug}`} className="group flex flex-col glass rounded-2xl overflow-hidden border border-white/5 hover:bg-white/5 transition-all">
                 <div className="relative h-64 overflow-hidden">
                   <img 
                     src={article.imageUrl} 
@@ -65,10 +65,10 @@ export function Category() {
                     <span className="mx-2 text-zinc-800">•</span>
                     {article.author.split(' – ')[0]}
                   </div>
-                  <h3 className="text-2xl font-display font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors mb-6 line-clamp-2 leading-snug">
+                  <h3 className="text-2xl font-display font-bold text-zinc-100 group-hover:text-blue-400 transition-colors mb-6 line-clamp-2 leading-snug">
                     {article.title}
                   </h3>
-                  <div className="mt-auto flex items-center text-emerald-400 text-sm font-bold uppercase tracking-wider">
+                  <div className="mt-auto flex items-center text-blue-400 text-sm font-bold uppercase tracking-wider">
                     Ler artigo <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
@@ -81,7 +81,7 @@ export function Category() {
               <AdSlot id="category-middle-banner" type="banner" className="my-12 rounded-xl" />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {categoryArticles.slice(4).map((article) => (
-                  <Link key={article.id} to={`/article/${article.slug}`} className="group flex flex-col bg-[#09090b] rounded-2xl overflow-hidden border border-zinc-800/50 hover:border-zinc-700 transition-all hover:shadow-xl hover:shadow-black/50">
+                  <Link key={article.id} to={`/article/${article.slug}`} className="group flex flex-col glass rounded-2xl overflow-hidden border border-white/5 hover:bg-white/5 transition-all">
                     <div className="relative h-64 overflow-hidden">
                       <img 
                         src={article.imageUrl} 
@@ -96,10 +96,10 @@ export function Category() {
                         <span className="mx-2 text-zinc-800">•</span>
                         {article.author.split(' – ')[0]}
                       </div>
-                      <h3 className="text-2xl font-display font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors mb-6 line-clamp-2 leading-snug">
+                      <h3 className="text-2xl font-display font-bold text-zinc-100 group-hover:text-blue-400 transition-colors mb-6 line-clamp-2 leading-snug">
                         {article.title}
                       </h3>
-                      <div className="mt-auto flex items-center text-emerald-400 text-sm font-bold uppercase tracking-wider">
+                      <div className="mt-auto flex items-center text-blue-400 text-sm font-bold uppercase tracking-wider">
                         Ler artigo <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                       </div>
                     </div>
