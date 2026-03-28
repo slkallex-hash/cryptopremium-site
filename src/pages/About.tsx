@@ -1,170 +1,124 @@
 import { useEffect } from "react";
-import { Shield, Target, TrendingUp, TrendingUp as TrendingIcon } from "lucide-react";
+import { Shield, Target, TrendingUp, Zap, Users, Award } from "lucide-react";
 import { Link } from "react-router-dom";
-import { AdSlot } from "@/components/AdSlot";
 
 export function About() {
   useEffect(() => {
-    document.title = "Sobre Nós | CryptoPremium - Transparência e Precisão na Nova Economia Digital";
+    document.title = "Sobre Nós | CryptoPremium - Tecnologia Institucional para o seu Portfólio";
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      {/* Top Ad */}
-      <AdSlot id="about-top-banner" type="banner" className="mb-12 rounded-2xl" />
-
-      {/* JSON-LD Structured Data */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "CryptoPremium",
-          "url": window.location.origin,
-          "logo": `${window.location.origin}/logo.png`,
-          "description": "Portal líder em notícias sobre criptomoedas, economia digital e tecnologia blockchain.",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Av. Paulista, 1000",
-            "addressLocality": "São Paulo",
-            "addressRegion": "SP",
-            "postalCode": "01310-100",
-            "addressCountry": "BR"
-          },
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "email": "contato@cryptopremium.space",
-            "contactType": "customer service"
-          }
-        })}
-      </script>
-
-      {/* SEO Meta Tags Description (Conceptual) */}
-      {/* Meta Title: Sobre o CryptoPremium | Nossa Missão e Equipe de Especialistas */}
-      {/* Meta Description: Conheça o CryptoPremium, portal líder em notícias de criptomoedas. Nossa equipe de especialistas traz transparência e análises técnicas para o investidor Web3. */}
-
-      <div className="text-center mb-16">
-        <div className="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-emerald-400 to-cyan-500 flex items-center justify-center shadow-lg shadow-emerald-500/20 mb-6">
-          <TrendingIcon className="w-8 h-8 text-zinc-950" strokeWidth={2.5} />
-        </div>
-        <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-6 tracking-tight">
-          Transparência e Precisão na Nova Economia Digital
-        </h1>
-        <p className="text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-          Sua bússola confiável no mercado de criptomoedas, economia global e investimentos digitais.
-        </p>
-      </div>
-
-      <div className="prose prose-invert prose-emerald max-w-none space-y-12">
-        <section className="bg-zinc-900/50 border border-zinc-800/50 rounded-2xl p-8">
-          <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
-            <Target className="w-6 h-6 mr-3 text-emerald-400" /> Nossa História
-          </h2>
-          <p className="text-zinc-300 leading-relaxed">
-            Fundado em 2023, o <strong>CryptoPremium</strong> surgiu para preencher uma lacuna crítica no mercado brasileiro: a falta de análises técnicas isentas de ruído especulativo. Em um cenário onde a desinformação pode custar caro ao investidor, nos posicionamos como um filtro rigoroso, unindo o jornalismo econômico tradicional à profundidade técnica da tecnologia blockchain.
+    <div className="w-full bg-black min-h-screen pt-32 pb-24">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-gold mb-6">
+            <span className="w-2 h-2 rounded-full bg-yellow-500 animate-pulse"></span>
+            <span className="text-sm font-medium text-yellow-500">Nossa História</span>
+          </div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 tracking-tight">
+            Democratizando o acesso à <br className="hidden md:block" />
+            <span className="text-gradient-gold">tecnologia institucional</span>
+          </h1>
+          <p className="text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+            Nascemos da frustração com o mercado de "gurus" que vendem ilusões. Somos a ponte entre o investidor comum e as ferramentas de Wall Street.
           </p>
-        </section>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-2xl p-8">
-            <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-              <Target className="w-5 h-5 mr-3 text-emerald-400" /> Nossa Missão
-            </h3>
-            <p className="text-zinc-300 text-sm leading-relaxed">
-              Democratizar o acesso à informação financeira de alta qualidade, capacitando nossos leitores a navegarem no ecossistema Web3 com segurança, autonomia e fundamentação técnica.
-            </p>
-          </div>
-
-          <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-2xl p-8">
-            <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-              <TrendingUp className="w-5 h-5 mr-3 text-emerald-400" /> Nossa Visão
-            </h3>
-            <p className="text-zinc-300 text-sm leading-relaxed">
-              Ser o portal de referência absoluta em educação e notícias cripto na América Latina até 2030, reconhecido pela integridade editorial e pela capacidade de antecipar tendências macroeconômicas.
-            </p>
-          </div>
-
-          <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-2xl p-8">
-            <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-              <Shield className="w-5 h-5 mr-3 text-emerald-400" /> Nossos Valores
-            </h3>
-            <ul className="text-zinc-300 text-sm leading-relaxed space-y-2 list-none pl-0">
-              <li><strong className="text-white">Precisão Técnica:</strong> Verificação rigorosa de dados on-chain antes de qualquer publicação.</li>
-              <li><strong className="text-white">Independência:</strong> Isenção total de conflitos de interesse com projetos ou corretoras.</li>
-              <li><strong className="text-white">Educação:</strong> Acreditamos que o conhecimento é a melhor ferramenta de proteção ao investidor.</li>
-            </ul>
-          </div>
         </div>
 
-        <section>
-          <h2 className="text-3xl font-display font-bold text-white mb-8 text-center">Nossa Equipe Editorial</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Carlos Mendes */}
-            <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-2xl p-6 text-center hover:border-emerald-500/50 transition-colors">
-              <div className="w-24 h-24 mx-auto rounded-full bg-zinc-800 mb-4 overflow-hidden border-2 border-emerald-500/20">
-                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200" alt="Carlos Mendes" className="w-full h-full object-cover" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-1">Carlos Mendes</h3>
-              <p className="text-emerald-400 text-sm font-bold uppercase tracking-widest mb-4">Editor-chefe e Analista Macro</p>
-              <p className="text-zinc-400 text-sm leading-relaxed">
-                Com 12 anos de atuação no mercado financeiro tradicional, Carlos migrou para o setor de ativos digitais em 2017. É especialista em ciclos de mercado e política monetária global.
-              </p>
-            </div>
-            {/* Marina Costa */}
-            <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-2xl p-6 text-center hover:border-emerald-500/50 transition-colors">
-              <div className="w-24 h-24 mx-auto rounded-full bg-zinc-800 mb-4 overflow-hidden border-2 border-emerald-500/20">
-                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200" alt="Marina Costa" className="w-full h-full object-cover" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-1">Marina Costa</h3>
-              <p className="text-emerald-400 text-sm font-bold uppercase tracking-widest mb-4">Analista On-chain e DeFi</p>
-              <p className="text-zinc-400 text-sm leading-relaxed">
-                Pesquisadora de protocolos de finanças descentralizadas, Marina foca na análise de fluxos de liquidez e governança de DAOs, trazendo a verdade on-chain.
-              </p>
-            </div>
-            {/* Thiago Silva */}
-            <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-2xl p-6 text-center hover:border-emerald-500/50 transition-colors">
-              <div className="w-24 h-24 mx-auto rounded-full bg-zinc-800 mb-4 overflow-hidden border-2 border-emerald-500/20">
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200" alt="Thiago Silva" className="w-full h-full object-cover" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-1">Thiago Silva</h3>
-              <p className="text-emerald-400 text-sm font-bold uppercase tracking-widest mb-4">Especialista em Tecnologia e Web3</p>
-              <p className="text-zinc-400 text-sm leading-relaxed">
-                Desenvolvedor de contratos inteligentes, Thiago traduz a complexidade do código para o investidor final, focando em segurança e escalabilidade.
-              </p>
-            </div>
-          </div>
-        </section>
+        <div className="space-y-12">
+          <section className="glass p-8 md:p-12 rounded-3xl border border-white/5 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-yellow-500/5 blur-[80px] rounded-full pointer-events-none"></div>
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
+              <Target className="w-6 h-6 mr-3 text-yellow-500" /> Quem Somos
+            </h2>
+            <p className="text-zinc-300 leading-relaxed text-lg mb-6">
+              A <strong>CryptoPremium</strong> é formada por uma equipe de ex-analistas de fundos quantitativos, desenvolvedores blockchain e especialistas em gestão de risco. Após anos desenvolvendo algoritmos de alta frequência para instituições financeiras, decidimos criar uma infraestrutura acessível para o investidor de varejo.
+            </p>
+            <p className="text-zinc-300 leading-relaxed text-lg">
+              Não vendemos cursos milagrosos. Entregamos tecnologia, dados on-chain em tempo real e automação de ponta para que você possa operar com a mesma vantagem competitiva dos grandes players do mercado.
+            </p>
+          </section>
 
-        <section className="text-center bg-gradient-to-br from-zinc-900 to-black border border-zinc-800 rounded-2xl p-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Junte-se à nossa comunidade</h2>
-          <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
-            Acompanhe nossas análises diárias e esteja sempre um passo à frente no mercado que nunca dorme.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link to="/contato" className="px-8 py-3 bg-emerald-500 text-zinc-950 font-bold rounded-xl hover:bg-emerald-400 transition-colors">
-              Fale Conosco
-            </Link>
-            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="px-8 py-3 bg-zinc-800 text-white font-bold rounded-xl hover:bg-zinc-700 transition-colors">
-              Ver Notícias
-            </button>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="glass p-8 rounded-3xl border border-white/5 hover:bg-white/5 transition-colors">
+              <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 flex items-center justify-center mb-6">
+                <Target className="w-6 h-6 text-cyan-400" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Nossa Missão</h3>
+              <p className="text-zinc-400 leading-relaxed">
+                Nivelar o campo de jogo no mercado cripto, fornecendo sinais de alta precisão e automação segura para investidores de todos os tamanhos.
+              </p>
+            </div>
+
+            <div className="glass p-8 rounded-3xl border border-white/5 hover:bg-white/5 transition-colors">
+              <div className="w-12 h-12 rounded-2xl bg-yellow-500/10 flex items-center justify-center mb-6">
+                <TrendingUp className="w-6 h-6 text-yellow-500" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Nossa Visão</h3>
+              <p className="text-zinc-400 leading-relaxed">
+                Ser a maior e mais confiável plataforma de inteligência e automação cripto da América Latina, reconhecida pela transparência e resultados.
+              </p>
+            </div>
+
+            <div className="glass p-8 rounded-3xl border border-white/5 hover:bg-white/5 transition-colors">
+              <div className="w-12 h-12 rounded-2xl bg-green-500/10 flex items-center justify-center mb-6">
+                <Shield className="w-6 h-6 text-green-400" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Nossos Valores</h3>
+              <ul className="text-zinc-400 leading-relaxed space-y-2">
+                <li>• Transparência radical</li>
+                <li>• Gestão de risco em 1º lugar</li>
+                <li>• Segurança de nível bancário</li>
+                <li>• Foco no longo prazo</li>
+              </ul>
+            </div>
           </div>
-        </section>
+
+          <section className="mt-16">
+            <h2 className="text-3xl font-display font-bold text-white mb-10 text-center">Nossa Liderança</h2>
+            <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+              {/* Profile 1 */}
+              <div className="glass p-8 rounded-3xl border border-white/5 text-center hover:border-yellow-500/30 transition-colors">
+                <div className="w-24 h-24 mx-auto rounded-full bg-zinc-900 mb-6 overflow-hidden border-2 border-yellow-500/20">
+                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200" alt="CEO" className="w-full h-full object-cover" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-1">Roberto Almeida</h3>
+                <p className="text-yellow-500 text-sm font-bold uppercase tracking-widest mb-4">CEO & Head Quant</p>
+                <p className="text-zinc-400 text-sm leading-relaxed">
+                  Ex-gestor de portfólio em fundo quantitativo europeu. Especialista em desenvolvimento de algoritmos de negociação de alta frequência e modelos preditivos para criptoativos.
+                </p>
+              </div>
+              {/* Profile 2 */}
+              <div className="glass p-8 rounded-3xl border border-white/5 text-center hover:border-cyan-500/30 transition-colors">
+                <div className="w-24 h-24 mx-auto rounded-full bg-zinc-900 mb-6 overflow-hidden border-2 border-cyan-500/20">
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200" alt="CTO" className="w-full h-full object-cover" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-1">Sarah Chen</h3>
+                <p className="text-cyan-400 text-sm font-bold uppercase tracking-widest mb-4">CTO & Lead Blockchain</p>
+                <p className="text-zinc-400 text-sm leading-relaxed">
+                  Arquiteta de software com mais de 10 anos de experiência em segurança cibernética e infraestrutura de dados em tempo real. Responsável pela segurança dos nossos bots.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section className="text-center glass-gold p-12 rounded-3xl border-2 border-yellow-500/30 relative overflow-hidden mt-16 shadow-[0_0_40px_rgba(234,179,8,0.1)]">
+            <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/10 to-transparent pointer-events-none"></div>
+            <h2 className="text-3xl font-bold text-white mb-4 relative z-10">Pronto para mudar de nível?</h2>
+            <p className="text-zinc-300 mb-8 max-w-xl mx-auto relative z-10 text-lg">
+              Junte-se à elite do mercado cripto e comece a operar com a vantagem tecnológica que você merece.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
+              <Link to="/#planos" className="px-8 py-4 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-bold rounded-full hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] transition-all">
+                Ver Planos Disponíveis
+              </Link>
+              <Link to="/contato" className="px-8 py-4 glass text-white font-bold rounded-full hover:bg-white/10 transition-colors">
+                Falar com Consultor
+              </Link>
+            </div>
+          </section>
+        </div>
       </div>
-
-      {/* Structured Data Description (Conceptual JSON-LD) */}
-      {/* 
-        Type: Organization
-        Name: CryptoPremium
-        URL: https://cryptopremium.space
-        Logo: https://cryptopremium.space/logo.png
-        SameAs: [Social Links]
-        
-        Type: Person (for each team member)
-        Name: [Name]
-        JobTitle: [Role]
-        Description: [Bio]
-        Affiliation: CryptoPremium
-      */}
     </div>
   );
 }

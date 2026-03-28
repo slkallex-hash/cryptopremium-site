@@ -14,6 +14,8 @@ import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 import { TermsOfUse } from "./pages/TermsOfUse";
 import { RiskDisclaimer } from "./pages/RiskDisclaimer";
 import { AuthorPage } from "./pages/AuthorPage";
+import { Login } from "./pages/Login";
+import { Register } from "./pages/Register";
 
 export default function App() {
   return (
@@ -29,6 +31,8 @@ export default function App() {
           <Route path="privacidade" element={<PrivacyPolicy />} />
           <Route path="termos" element={<TermsOfUse />} />
           <Route path="aviso-de-risco" element={<RiskDisclaimer />} />
+          <Route path="login" element={<Login />} />
+          <Route path="cadastro" element={<Register />} />
         </Route>
       </Routes>
     </Router>

@@ -6,6 +6,7 @@
   --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
 
   --animate-marquee: marquee 60s linear infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   
   @keyframes marquee {
     0% { transform: translateX(0); }
@@ -14,6 +15,35 @@
 }
 
 body {
-  background-color: #09090b; /* zinc-950 */
+  background-color: #000000; /* Pure black for premium feel */
   color: #f4f4f5; /* zinc-100 */
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: rgba(10, 10, 10, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-gold {
+  background: rgba(212, 175, 55, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(to right, #FDE047, #D4AF37, #B45309);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(to right, #22D3EE, #0284C7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
