@@ -64,5 +64,15 @@ export const authors: Author[] = [
     social: {
       linkedin: "https://linkedin.com"
     }
+  },
+  {
+    id: "techfront",
+    name: "Redação TechFront",
+    role: "Equipe Editorial",
+    bio: "Nossa equipe de jornalistas e especialistas em tecnologia que trazem as últimas notícias e análises do mundo digital.",
+    imageUrl: "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&q=80&w=400",
+    social: {
+      twitter: "https://twitter.com"
+    }
   }
 ];

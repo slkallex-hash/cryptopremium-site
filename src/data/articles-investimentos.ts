@@ -1311,7 +1311,8 @@ export const investimentosArticles: Article[] = [
     readTime: "7 min",
     trending: false,
     slug: "fundos-imobiliarios-como-viver-de-renda-em-2026",
-    author: "Equipe TechFront"
+    author: "Equipe TechFront",
+    authorId: "roberto-almeida"
   },
   {
     id: "investimentos-14",
@@ -1324,7 +1325,8 @@ export const investimentosArticles: Article[] = [
     readTime: "6 min",
     trending: true,
     slug: "acoes-de-dividendos-as-melhores-pagadoras-para-este-ano",
-    author: "Equipe TechFront"
+    author: "Equipe TechFront",
+    authorId: "roberto-almeida"
   },
   {
     id: "investimentos-15",
@@ -1337,7 +1339,8 @@ export const investimentosArticles: Article[] = [
     readTime: "5 min",
     trending: false,
     slug: "tesouro-direto-qual-titulo-escolher-com-a-selic-atual",
-    author: "Equipe TechFront"
+    author: "Equipe TechFront",
+    authorId: "roberto-almeida"
   },
   {
     id: "investimentos-16",
@@ -1350,7 +1353,8 @@ export const investimentosArticles: Article[] = [
     readTime: "7 min",
     trending: false,
     slug: "etfs-internacionais-diversificando-seu-patrimonio-no-exterior",
-    author: "Equipe TechFront"
+    author: "Equipe TechFront",
+    authorId: "roberto-almeida"
   },
   {
     id: "investimentos-17",
@@ -1363,7 +1367,8 @@ export const investimentosArticles: Article[] = [
     readTime: "6 min",
     trending: false,
     slug: "previdencia-privada-vale-a-pena-para-o-seu-perfil",
-    author: "Equipe TechFront"
+    author: "Equipe TechFront",
+    authorId: "roberto-almeida"
   },
   {
     id: "investimentos-18",
@@ -1376,7 +1381,8 @@ export const investimentosArticles: Article[] = [
     readTime: "8 min",
     trending: true,
     slug: "investimento-em-startups-riscos-e-oportunidades-do-equity-crowdfunding",
-    author: "Equipe TechFront"
+    author: "Equipe TechFront",
+    authorId: "roberto-almeida"
   },
   {
     id: "investimentos-19",
@@ -1389,7 +1395,8 @@ export const investimentosArticles: Article[] = [
     readTime: "5 min",
     trending: false,
     slug: "ouro-e-commodities-protecao-em-tempos-de-incerteza",
-    author: "Equipe TechFront"
+    author: "Equipe TechFront",
+    authorId: "roberto-almeida"
   },
   {
     id: "investimentos-20",
@@ -1402,6 +1409,7 @@ export const investimentosArticles: Article[] = [
     readTime: "7 min",
     trending: false,
     slug: "psicologia-do-investidor-como-controlar-as-emocoes-no-mercado",
-    author: "Equipe TechFront"
+    author: "Equipe TechFront",
+    authorId: "roberto-almeida"
   }
 ];

@@ -9,8 +9,10 @@ import { appsArticles } from "./articles-apps";
 import { internetArticles } from "./articles-internet";
 import { tutoriaisArticles } from "./articles-tutoriais";
 
-import { Author, authors } from "./authors";
-export { Author, authors };
+import type { Author } from "./authors";
+import { authors } from "./authors";
+export type { Author };
+export { authors };
 
 export interface Category {
   id: string;
@@ -33,6 +35,8 @@ export interface Article {
   readTime: string;
   trending?: boolean;
   tags?: string[];
+  metaDescription?: string;
+  keywords?: string[];
 }
 
 export const categories: Category[] = [

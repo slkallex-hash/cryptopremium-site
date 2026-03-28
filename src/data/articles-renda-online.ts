@@ -1016,7 +1016,8 @@ export const rendaOnlineArticles: Article[] = [
     readTime: "8 min",
     trending: true,
     slug: "como-comecar-no-marketing-de-afiliados-do-zero",
-    author: "Equipe TechFront"
+    author: "Equipe TechFront",
+    authorId: "roberto-almeida"
   },
   {
     id: "renda-online-11",
@@ -1029,7 +1030,8 @@ export const rendaOnlineArticles: Article[] = [
     readTime: "7 min",
     trending: false,
     slug: "freelancing-as-melhores-plataformas-para-trabalhar-de-casa",
-    author: "Equipe TechFront"
+    author: "Equipe TechFront",
+    authorId: "roberto-almeida"
   },
   {
     id: "renda-online-12",
@@ -1042,7 +1044,8 @@ export const rendaOnlineArticles: Article[] = [
     readTime: "9 min",
     trending: false,
     slug: "dropshipping-em-2026-ainda-vale-a-pena",
-    author: "Equipe TechFront"
+    author: "Equipe TechFront",
+    authorId: "roberto-almeida"
   },
   {
     id: "renda-online-13",
@@ -1055,7 +1058,8 @@ export const rendaOnlineArticles: Article[] = [
     readTime: "8 min",
     trending: true,
     slug: "criacao-de-conteudo-monetizando-seu-canal-no-youtube",
-    author: "Equipe TechFront"
+    author: "Equipe TechFront",
+    authorId: "roberto-almeida"
   },
   {
     id: "renda-online-14",
@@ -1068,7 +1072,8 @@ export const rendaOnlineArticles: Article[] = [
     readTime: "10 min",
     trending: false,
     slug: "venda-de-infoprodutos-transformando-seu-conhecimento-em-lucro",
-    author: "Equipe TechFront"
+    author: "Equipe TechFront",
+    authorId: "roberto-almeida"
   },
   {
     id: "renda-online-15",
@@ -1081,7 +1086,8 @@ export const rendaOnlineArticles: Article[] = [
     readTime: "7 min",
     trending: false,
     slug: "gestao-de-redes-sociais-uma-profissao-em-alta",
-    author: "Equipe TechFront"
+    author: "Equipe TechFront",
+    authorId: "roberto-almeida"
   },
   {
     id: "renda-online-16",
@@ -1094,7 +1100,8 @@ export const rendaOnlineArticles: Article[] = [
     readTime: "6 min",
     trending: false,
     slug: "aulas-particulares-online-ensinando-idiomas-e-outras-habilidades",
-    author: "Equipe TechFront"
+    author: "Equipe TechFront",
+    authorId: "roberto-almeida"
   },
   {
     id: "renda-online-17",

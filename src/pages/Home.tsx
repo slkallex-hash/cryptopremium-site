@@ -1,7 +1,7 @@
 import { Zap, TrendingUp, Clock, ChevronRight, ArrowRight, Activity, Newspaper } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { articles } from "../data/articles";
+import { articles, authors } from "../data/articles";
 import { RealTimeNewsFeed } from "../components/RealTimeNewsFeed";
 import { motion } from "motion/react";
 import { useRef } from "react";
@@ -33,6 +33,9 @@ export function Home() {
 
   // Get IA articles for "IA em alta"
   const iaArticles = articles.filter(a => a.category === "ia").slice(0, 4);
+
+  // Get Crypto articles for "Criptomoedas agora"
+  const cryptoArticles = articles.filter(a => a.category === "criptomoedas").slice(0, 4);
 
   const timeMarkers = ["Agora", "5 min", "12 min", "25 min", "40 min", "1h"];
 
@@ -162,7 +165,7 @@ export function Home() {
         </div>
       </section>
 
-      {/* IA EM ALTA - NOVO SECTION */}
+      {/* IA EM ALTA - SECTION */}
       <section className="py-24 bg-black border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-16">
@@ -198,6 +201,64 @@ export function Home() {
                     </h3>
                     <div className="flex items-center text-[10px] md:text-xs text-zinc-400 font-bold uppercase tracking-widest">
                       Ler agora <ChevronRight className="w-3 h-3 md:w-4 md:h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CRIPTOMOEDAS AGORA - NOVO SECTION */}
+      <section className="py-24 bg-zinc-950 border-b border-white/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between mb-16">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20">
+                <Activity className="w-6 h-6 text-emerald-500" />
+              </div>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-white tracking-tight">
+                Criptomoedas Agora
+              </h2>
+            </div>
+            <Link to="/category/criptomoedas" className="text-sm font-bold text-emerald-500 uppercase tracking-[0.2em] hover:text-emerald-400 transition-colors flex items-center gap-2">
+              Ver tudo <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {cryptoArticles.map((article, i) => (
+              <motion.div
+                key={article.id}
+                initial={{ opacity: 0, x: i % 2 === 0 ? -30 : 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: i * 0.1 }}
+              >
+                <Link to={`/article/${article.slug}`} className="group flex gap-6 p-6 rounded-3xl bg-black/40 border border-white/5 hover:border-emerald-500/30 transition-all">
+                  <div className="w-32 h-32 md:w-48 md:h-48 shrink-0 rounded-2xl overflow-hidden border border-white/10 relative">
+                    <img src={article.imageUrl} alt={article.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" referrerPolicy="no-referrer" />
+                    <div className="absolute top-3 left-3">
+                      <span className="px-2 py-1 bg-emerald-500 text-white text-[8px] font-bold rounded-full uppercase tracking-widest">
+                        Live
+                      </span>
+                    </div>
+                  </div>
+                  <div className="flex flex-col justify-center">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="text-[10px] font-bold text-emerald-500 uppercase tracking-widest">Bitcoin & Altcoins</span>
+                      <span className="text-[10px] text-zinc-600">•</span>
+                      <span className="text-[10px] text-zinc-400 font-bold uppercase tracking-widest">{article.readTime}</span>
+                    </div>
+                    <h3 className="text-lg md:text-2xl font-bold text-white mb-4 line-clamp-2 leading-tight group-hover:text-emerald-400 transition-colors">
+                      {article.title}
+                    </h3>
+                    <p className="hidden md:block text-zinc-400 text-sm line-clamp-2 mb-4 font-light">
+                      {article.excerpt}
+                    </p>
+                    <div className="flex items-center text-xs text-emerald-500 font-bold uppercase tracking-widest">
+                      Análise Completa <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-2 transition-transform" />
                     </div>
                   </div>
                 </Link>
@@ -308,6 +369,56 @@ export function Home() {
         </div>
       </section>
 
+      {/* PREMIUM CTA - NOVO SECTION */}
+      <section className="py-20 bg-black overflow-hidden relative">
+        <div className="absolute inset-0 bg-blue-600/5 blur-[120px] rounded-full -translate-x-1/2"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="glass p-12 md:p-20 rounded-[3rem] border border-blue-500/30 flex flex-col lg:flex-row items-center justify-between gap-12 shadow-[0_0_50px_rgba(59,130,246,0.1)]">
+            <div className="max-w-2xl text-center lg:text-left">
+              <span className="px-4 py-1.5 bg-blue-500/10 text-blue-400 text-xs font-bold rounded-full uppercase tracking-[0.2em] mb-6 inline-block border border-blue-500/20">
+                TechFront Premium
+              </span>
+              <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-8 leading-tight">
+                Domine o futuro com <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">análises exclusivas</span>
+              </h2>
+              <p className="text-zinc-400 text-xl mb-10 leading-relaxed">
+                Relatórios semanais sobre IA, sinais de mercado cripto e insights que você não encontra em nenhum outro lugar.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Link to="/premium" className="px-10 py-5 bg-blue-600 text-white font-bold text-lg rounded-full hover:bg-blue-500 transition-all shadow-xl shadow-blue-500/20">
+                  Assinar Agora
+                </Link>
+                <Link to="/sobre" className="px-10 py-5 glass text-white font-bold text-lg rounded-full hover:bg-white/10 transition-all border border-white/10">
+                  Saiba Mais
+                </Link>
+              </div>
+            </div>
+            <div className="relative w-full max-w-md aspect-square lg:aspect-auto lg:h-80">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-3xl rotate-6 opacity-20 blur-2xl"></div>
+              <div className="relative h-full bg-zinc-900 border border-white/10 rounded-3xl p-8 flex flex-col justify-center">
+                <div className="space-y-6">
+                  {[1, 2, 3].map((i) => (
+                    <div key={i} className="flex items-center gap-4">
+                      <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center">
+                        <Zap className="w-5 h-5 text-blue-400" />
+                      </div>
+                      <div className="flex-1 h-2 bg-zinc-800 rounded-full overflow-hidden">
+                        <div className="h-full bg-blue-500 w-3/4 animate-pulse"></div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-10 pt-10 border-t border-white/5 text-center">
+                  <span className="text-3xl font-bold text-white">R$ 29,90</span>
+                  <span className="text-zinc-500 text-sm ml-2">/mês</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* REAL TIME FEED SECTION */}
       <section ref={realTimeRef} className="py-16 lg:py-24 border-t border-white/5 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -399,6 +510,77 @@ export function Home() {
         </div>
       </section>
 
+      {/* TOP AUTHORS SECTION */}
+      <section className="py-24 bg-zinc-950 border-t border-white/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
+              Nossos Especialistas
+            </h2>
+            <p className="text-zinc-400 text-xl font-light max-w-2xl mx-auto">
+              Conheça as mentes por trás das análises mais profundas do TechFront.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {authors.slice(0, 4).map((author, i) => (
+              <motion.div 
+                key={author.id}
+                className="glass p-8 rounded-3xl border border-white/5 text-center group hover:border-blue-500/30 transition-all"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <div className="relative w-24 h-24 mx-auto mb-6">
+                  <div className="absolute inset-0 bg-blue-500 rounded-full blur-xl opacity-0 group-hover:opacity-40 transition-opacity"></div>
+                  <img 
+                    src={author.imageUrl} 
+                    alt={author.name} 
+                    className="relative w-full h-full object-cover rounded-full border-2 border-white/10 group-hover:border-blue-500 transition-colors"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                  {author.name}
+                </h3>
+                <p className="text-blue-500 text-[10px] font-bold uppercase tracking-widest mb-4">
+                  {author.role}
+                </p>
+                <p className="text-zinc-400 text-sm line-clamp-2 font-light mb-6">
+                  {author.bio}
+                </p>
+                <Link to={`/author/${author.id}`} className="inline-flex items-center text-white text-[10px] font-bold uppercase tracking-widest hover:text-blue-400 transition-colors">
+                  Ver Perfil <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER CTA */}
+      <section className="py-24 bg-blue-600 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-8">
+            Não perca nenhuma atualização.
+          </h2>
+          <p className="text-blue-100 text-xl mb-12 max-w-2xl mx-auto font-light">
+            Junte-se a mais de 50.000 profissionais que recebem nosso briefing diário.
+          </p>
+          <form className="max-w-md mx-auto flex flex-col sm:flex-row gap-4" onSubmit={(e) => e.preventDefault()}>
+            <input 
+              type="email" 
+              placeholder="Seu melhor e-mail" 
+              className="flex-grow px-8 py-5 bg-white text-black rounded-full font-medium focus:outline-none focus:ring-4 focus:ring-blue-400/50 transition-all"
+            />
+            <button className="px-10 py-5 bg-black text-white font-bold rounded-full hover:bg-zinc-900 transition-all shadow-xl">
+              Inscrever-se
+            </button>
+          </form>
+        </div>
+      </section>
     </div>
   );
 }
