@@ -40,14 +40,8 @@ export function Layout() {
               </Link>
             </div>
 
-            {/* Desktop Nav */}
+            {/* Desktop Nav - Removed as requested */}
             <nav className="hidden md:flex items-center space-x-6">
-              <Link to="/category/tecnologia" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">Tecnologia</Link>
-              <Link to="/category/ia" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">Inteligência Artificial</Link>
-              <Link to="/category/criptomoedas" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">Criptomoedas</Link>
-              <Link to="/category/apps" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">Apps</Link>
-              <Link to="/category/internet" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">Internet</Link>
-              <Link to="/category/tutoriais" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">Tutoriais</Link>
             </nav>
 
             <div className="flex items-center space-x-4">
@@ -68,16 +62,17 @@ export function Layout() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu - Simplified */}
         {isMenuOpen && (
           <div className="md:hidden border-t border-white/5 bg-black/95 backdrop-blur-xl">
-            <div className="px-4 pt-4 pb-6 space-y-2">
-              <Link to="/category/tecnologia" className="block px-3 py-3 text-base font-medium text-zinc-300 hover:text-blue-500 hover:bg-white/5 rounded-lg">Tecnologia</Link>
-              <Link to="/category/ia" className="block px-3 py-3 text-base font-medium text-zinc-300 hover:text-blue-500 hover:bg-white/5 rounded-lg">Inteligência Artificial</Link>
-              <Link to="/category/criptomoedas" className="block px-3 py-3 text-base font-medium text-zinc-300 hover:text-blue-500 hover:bg-white/5 rounded-lg">Criptomoedas</Link>
-              <Link to="/category/apps" className="block px-3 py-3 text-base font-medium text-zinc-300 hover:text-blue-500 hover:bg-white/5 rounded-lg">Apps</Link>
-              <Link to="/category/internet" className="block px-3 py-3 text-base font-medium text-zinc-300 hover:text-blue-500 hover:bg-white/5 rounded-lg">Internet</Link>
-              <Link to="/category/tutoriais" className="block px-3 py-3 text-base font-medium text-zinc-300 hover:text-blue-500 hover:bg-white/5 rounded-lg">Tutoriais</Link>
+            <div className="px-4 pt-4 pb-6 space-y-2 text-left">
+              <button 
+                onClick={() => { setIsMenuOpen(false); setIsSidebarOpen(true); }}
+                className="w-full text-left px-3 py-3 text-base font-medium text-zinc-300 hover:text-blue-500 hover:bg-white/5 rounded-lg flex items-center justify-between"
+              >
+                Ver Categorias
+                <ChevronRight className="w-4 h-4" />
+              </button>
               <div className="pt-4 mt-4 border-t border-white/5">
                 <Link to="/cadastro" className="block w-full text-center px-5 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold rounded-xl">
                   Assinar Newsletter
@@ -101,7 +96,7 @@ export function Layout() {
         <div className="flex flex-col h-full">
           <div className="flex items-center justify-between p-6 border-b border-white/5">
             <h2 className="text-xl font-display font-bold text-white flex items-center">
-              <Newspaper className="w-5 h-5 mr-3 text-blue-500" /> Mais Notícias
+              <Menu className="w-5 h-5 mr-3 text-blue-500" /> Categorias
             </h2>
             <button 
               onClick={() => setIsSidebarOpen(false)}
@@ -112,8 +107,38 @@ export function Layout() {
           </div>
 
           <div className="flex-1 overflow-y-auto p-6 space-y-8 custom-scrollbar text-left">
-            <div className="space-y-6">
-              <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-[0.2em] flex items-center">
+            <div>
+              <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-[0.2em] mb-6">Explore por Assunto</h3>
+              <div className="grid grid-cols-1 gap-3">
+                <Link to="/category/tecnologia" className="px-4 py-4 bg-white/5 rounded-2xl text-base font-bold text-zinc-200 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5 flex items-center justify-between group">
+                  Tecnologia
+                  <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link to="/category/ia" className="px-4 py-4 bg-white/5 rounded-2xl text-base font-bold text-zinc-200 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5 flex items-center justify-between group">
+                  Inteligência Artificial
+                  <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link to="/category/criptomoedas" className="px-4 py-4 bg-white/5 rounded-2xl text-base font-bold text-zinc-200 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5 flex items-center justify-between group">
+                  Criptomoedas
+                  <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link to="/category/apps" className="px-4 py-4 bg-white/5 rounded-2xl text-base font-bold text-zinc-200 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5 flex items-center justify-between group">
+                  Apps
+                  <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link to="/category/internet" className="px-4 py-4 bg-white/5 rounded-2xl text-base font-bold text-zinc-200 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5 flex items-center justify-between group">
+                  Internet
+                  <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link to="/category/tutoriais" className="px-4 py-4 bg-white/5 rounded-2xl text-base font-bold text-zinc-200 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5 flex items-center justify-between group">
+                  Tutoriais
+                  <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+            </div>
+
+            <div className="pt-8 border-t border-white/5">
+              <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-[0.2em] mb-6 flex items-center">
                 <TrendingUp className="w-4 h-4 mr-2" /> Destaques do Momento
               </h3>
               <div className="space-y-6">
@@ -136,16 +161,6 @@ export function Layout() {
                     </h4>
                   </Link>
                 ))}
-              </div>
-            </div>
-
-            <div className="pt-8 border-t border-white/5">
-              <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-[0.2em] mb-6">Categorias</h3>
-              <div className="grid grid-cols-2 gap-3">
-                <Link to="/category/tecnologia" className="px-4 py-3 bg-white/5 rounded-xl text-sm font-medium text-zinc-300 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5">Tecnologia</Link>
-                <Link to="/category/ia" className="px-4 py-3 bg-white/5 rounded-xl text-sm font-medium text-zinc-300 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5">IA</Link>
-                <Link to="/category/criptomoedas" className="px-4 py-3 bg-white/5 rounded-xl text-sm font-medium text-zinc-300 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5">Cripto</Link>
-                <Link to="/category/apps" className="px-4 py-3 bg-white/5 rounded-xl text-sm font-medium text-zinc-300 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5">Apps</Link>
               </div>
             </div>
           </div>

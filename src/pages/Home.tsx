@@ -44,15 +44,6 @@ export function Home() {
               <span className="text-sm font-medium text-blue-400">Notícias em Tempo Real</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-white mb-6 tracking-tight leading-tight">
-              As últimas notícias de <br className="hidden md:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Tecnologia, IA e Apps</span>
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-zinc-400 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Fique por dentro das inovações, tendências e novidades que estão moldando o futuro digital. Análises aprofundadas e cobertura completa.
-            </p>
-            
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button 
                 onClick={scrollToRealTime}
@@ -61,9 +52,6 @@ export function Home() {
                 Tempo Real
                 <Activity className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </button>
-              <Link to="/category/tecnologia" className="w-full sm:w-auto px-8 py-4 glass text-white font-bold text-lg rounded-full hover:bg-white/10 transition-all flex items-center justify-center border border-white/10">
-                Explore a Tecnologia <ChevronRight className="w-5 h-5 ml-2" />
-              </Link>
             </div>
           </motion.div>
         </div>
