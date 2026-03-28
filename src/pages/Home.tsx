@@ -30,6 +30,9 @@ export function Home() {
   // Get "Most Read" (using trending articles)
   const mostRead = articles.filter(a => a.trending).slice(0, 6);
 
+  // Get IA articles for "IA em alta"
+  const iaArticles = articles.filter(a => a.category === "ia").slice(0, 4);
+
   const timeMarkers = ["Agora", "5 min", "12 min", "25 min", "40 min", "1h"];
 
   return (
@@ -41,68 +44,76 @@ export function Home() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Main Featured Article */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-20">
             <motion.div 
               className="lg:col-span-8 group"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <Link to={`/article/${mainFeatured.slug}`} className="block relative aspect-[16/9] overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
+              <Link to={`/article/${mainFeatured.slug}`} className="block relative aspect-[21/9] lg:aspect-[16/9] overflow-hidden rounded-[2.5rem] border border-white/10 shadow-2xl">
                 <img 
                   src={mainFeatured.imageUrl} 
                   alt={mainFeatured.title} 
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 p-6 md:p-10 w-full">
-                  <div className="flex items-center gap-3 mb-4">
-                    <span className="px-3 py-1 bg-blue-600 text-white text-xs font-bold rounded-full uppercase tracking-wider">
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 p-8 md:p-12 w-full">
+                  <div className="flex items-center gap-4 mb-6">
+                    <span className="px-4 py-1.5 bg-blue-600 text-white text-[10px] font-bold rounded-full uppercase tracking-[0.2em]">
                       {mainFeatured.category}
                     </span>
-                    <span className="flex items-center gap-1.5 text-blue-400 text-xs font-bold uppercase tracking-widest">
+                    <span className="flex items-center gap-2 text-blue-400 text-[10px] font-bold uppercase tracking-[0.2em]">
+                      <Clock className="w-3 h-3" /> {mainFeatured.readTime}
+                    </span>
+                    <span className="flex items-center gap-2 text-zinc-400 text-[10px] font-bold uppercase tracking-[0.2em]">
                       <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
-                      Agora
+                      Publicado Agora
                     </span>
                   </div>
-                  <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight max-w-4xl group-hover:text-blue-400 transition-colors">
+                  <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-[1.1] max-w-5xl group-hover:text-blue-400 transition-colors">
                     {mainFeatured.title}
                   </h1>
-                  <p className="text-zinc-300 text-lg md:text-xl mb-8 max-w-2xl line-clamp-2 hidden md:block">
+                  <p className="text-zinc-300 text-lg md:text-2xl mb-10 max-w-3xl line-clamp-2 font-light leading-relaxed">
                     {mainFeatured.excerpt}
                   </p>
-                  <button className="px-8 py-4 bg-white text-black font-bold text-lg rounded-full hover:bg-blue-500 hover:text-white transition-all flex items-center gap-2">
-                    Ler agora <ChevronRight className="w-5 h-5" />
+                  <button className="px-10 py-5 bg-white text-black font-bold text-lg rounded-full hover:bg-blue-500 hover:text-white transition-all flex items-center gap-3 shadow-xl hover:shadow-blue-500/40">
+                    Ler agora <ChevronRight className="w-6 h-6" />
                   </button>
                 </div>
               </Link>
             </motion.div>
 
-            {/* Sidebar Featured (Optional or just grid) */}
-            <div className="lg:col-span-4 space-y-6 hidden lg:block">
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-sm font-bold text-zinc-500 uppercase tracking-widest flex items-center gap-2">
-                  <TrendingUp className="w-4 h-4 text-blue-500" /> Tendências
+            {/* Sidebar Featured - Tendências */}
+            <div className="lg:col-span-4 space-y-8 hidden lg:block">
+              <div className="flex items-center justify-between mb-6">
+                <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-[0.3em] flex items-center gap-3">
+                  <TrendingUp className="w-5 h-5 text-blue-500" /> Tendências
                 </h3>
               </div>
               {secondaryFeatured.map((article, i) => (
                 <motion.div
                   key={article.id}
-                  initial={{ opacity: 0, x: 20 }}
+                  initial={{ opacity: 0, x: 30 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: 0.2 + (i * 0.1) }}
+                  transition={{ duration: 0.6, delay: 0.3 + (i * 0.1) }}
                 >
-                  <Link to={`/article/${article.slug}`} className="group flex gap-4 p-4 rounded-2xl hover:bg-white/5 transition-all border border-transparent hover:border-white/5">
-                    <div className="w-24 h-24 shrink-0 rounded-xl overflow-hidden border border-white/10">
-                      <img src={article.imageUrl} alt={article.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform" referrerPolicy="no-referrer" />
+                  <Link to={`/article/${article.slug}`} className="group flex gap-6 p-5 rounded-3xl hover:bg-white/5 transition-all border border-transparent hover:border-white/10">
+                    <div className="w-28 h-28 shrink-0 rounded-2xl overflow-hidden border border-white/10 relative">
+                      <img src={article.imageUrl} alt={article.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerPolicy="no-referrer" />
+                      <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
                     </div>
-                    <div>
-                      <span className="text-[10px] font-bold text-blue-500 uppercase tracking-wider mb-1 block">{article.category}</span>
-                      <h4 className="text-sm font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-2 leading-snug">
+                    <div className="flex flex-col justify-center">
+                      <span className="text-[10px] font-bold text-blue-500 uppercase tracking-widest mb-2 block">{article.category}</span>
+                      <h4 className="text-base font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-2 leading-tight">
                         {article.title}
                       </h4>
-                      <span className="text-[10px] text-zinc-500 mt-2 block">{timeMarkers[i+1]}</span>
+                      <div className="flex items-center gap-3 mt-3">
+                        <span className="text-[10px] text-zinc-500 font-bold uppercase tracking-widest">{timeMarkers[i+1]}</span>
+                        <span className="text-[10px] text-zinc-700">•</span>
+                        <span className="text-[10px] text-zinc-500 font-bold uppercase tracking-widest">{article.readTime}</span>
+                      </div>
                     </div>
                   </Link>
                 </motion.div>
@@ -110,28 +121,110 @@ export function Home() {
             </div>
           </div>
 
-          {/* Hero Grid - Smaller News Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Hero Grid - Destaques Rápidos */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {heroGridArticles.slice(0, 4).map((article, i) => (
               <motion.div
                 key={article.id}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 + (i * 0.1) }}
+                transition={{ duration: 0.5, delay: 0.5 + (i * 0.1) }}
               >
-                <Link to={`/article/${article.slug}`} className="group block h-full p-5 rounded-2xl bg-zinc-900/50 border border-white/5 hover:border-blue-500/30 hover:bg-zinc-900 transition-all">
-                  <div className="flex items-center justify-between mb-4">
+                <Link to={`/article/${article.slug}`} className="group block h-full p-6 rounded-[2rem] bg-zinc-900/40 backdrop-blur-sm border border-white/5 hover:border-blue-500/40 hover:bg-zinc-900 transition-all shadow-lg">
+                  <div className="flex items-center justify-between mb-5">
                     <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest">{article.category}</span>
-                    <span className="text-[10px] font-bold text-blue-500 uppercase tracking-widest flex items-center gap-1">
-                      <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                    <span className="text-[10px] font-bold text-blue-500 uppercase tracking-widest flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-blue-500"></span>
                       {timeMarkers[i+2]}
                     </span>
                   </div>
-                  <h3 className="text-base font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-3 leading-tight mb-4">
+                  <h3 className="text-lg font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-3 leading-tight mb-6">
                     {article.title}
                   </h3>
-                  <div className="flex items-center text-xs text-zinc-500 font-medium">
-                    Ler notícia <ChevronRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform" />
+                  <div className="flex items-center text-xs text-zinc-500 font-bold uppercase tracking-widest group-hover:text-white transition-colors">
+                    Ler agora <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" />
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* IA EM ALTA - NOVO SECTION */}
+      <section className="py-24 bg-black border-b border-white/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between mb-16">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
+                <Zap className="w-6 h-6 text-blue-500" />
+              </div>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-white tracking-tight">
+                IA em Alta
+              </h2>
+            </div>
+            <Link to="/category/ia" className="text-sm font-bold text-blue-500 uppercase tracking-[0.2em] hover:text-blue-400 transition-colors flex items-center gap-2">
+              Ver tudo <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {iaArticles.map((article, i) => (
+              <motion.div
+                key={article.id}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link to={`/article/${article.slug}`} className="group block relative aspect-[4/5] rounded-[2.5rem] overflow-hidden border border-white/10">
+                  <img src={article.imageUrl} alt={article.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" referrerPolicy="no-referrer" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 p-8 w-full">
+                    <span className="text-[10px] font-bold text-blue-400 uppercase tracking-widest mb-3 block">Inteligência Artificial</span>
+                    <h3 className="text-xl font-bold text-white mb-4 line-clamp-3 leading-tight group-hover:text-blue-400 transition-colors">
+                      {article.title}
+                    </h3>
+                    <div className="flex items-center text-xs text-zinc-400 font-bold uppercase tracking-widest">
+                      Ler agora <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TENDÊNCIAS - NOVO SECTION */}
+      <section className="py-24 bg-zinc-950 border-b border-white/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center gap-4 mb-12">
+            <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
+              <TrendingUp className="w-6 h-6 text-blue-500" />
+            </div>
+            <h2 className="text-3xl font-display font-bold text-white tracking-tight">
+              Tendências da Semana
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {featuredArticles.map((article, i) => (
+              <motion.div
+                key={article.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: i * 0.1 }}
+              >
+                <Link to={`/article/${article.slug}`} className="group block relative h-64 rounded-[2rem] overflow-hidden border border-white/10">
+                  <img src={article.imageUrl} alt={article.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" referrerPolicy="no-referrer" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 p-8 w-full">
+                    <span className="text-[10px] font-bold text-blue-400 uppercase tracking-widest mb-2 block">{article.category}</span>
+                    <h3 className="text-lg font-bold text-white mb-2 line-clamp-2 leading-tight group-hover:text-blue-400 transition-colors">
+                      {article.title}
+                    </h3>
                   </div>
                 </Link>
               </motion.div>
@@ -141,60 +234,63 @@ export function Home() {
       </section>
 
       {/* GRID DE NOTÍCIAS RECENTES */}
-      <section className="py-16 lg:py-24 bg-zinc-950">
+      <section className="py-24 bg-zinc-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-end mb-12 text-left">
+          <div className="flex justify-between items-end mb-16 text-left">
             <div>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+              <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6 tracking-tight">
                 Últimas Notícias
               </h2>
-              <p className="text-zinc-400 text-lg">
-                Fique atualizado com os últimos acontecimentos.
+              <p className="text-zinc-400 text-xl font-light">
+                O que há de mais novo no universo da tecnologia.
               </p>
             </div>
-            <Link to="/category/todas" className="hidden sm:flex items-center text-blue-400 hover:text-blue-300 transition-colors font-medium">
-              Ver todas <ArrowRight className="w-4 h-4 ml-1" />
+            <Link to="/category/todas" className="hidden sm:flex items-center text-blue-500 hover:text-blue-400 transition-colors font-bold uppercase tracking-widest text-sm">
+              Ver todas <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-left">
             {latestArticles.map((article, i) => (
               <motion.article 
                 key={article.id}
-                className="glass rounded-3xl border border-white/5 overflow-hidden hover:bg-white/5 transition-colors group flex flex-col"
-                initial={{ opacity: 0, y: 20 }}
+                className="group flex flex-col"
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
+                transition={{ duration: 0.6, delay: i * 0.1 }}
               >
-                <Link to={`/article/${article.slug}`} className="relative w-full h-48 overflow-hidden block">
+                <Link to={`/article/${article.slug}`} className="relative w-full aspect-[16/10] overflow-hidden rounded-[2rem] border border-white/5 mb-6">
                   <img 
                     src={article.imageUrl} 
                     alt={article.title} 
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 bg-black/70 backdrop-blur-md text-blue-400 text-xs font-bold uppercase tracking-wider rounded-full border border-white/10">
+                  <div className="absolute top-6 left-6">
+                    <span className="px-4 py-1.5 bg-black/80 backdrop-blur-xl text-blue-400 text-[10px] font-bold uppercase tracking-widest rounded-full border border-white/10">
                       {article.category}
                     </span>
                   </div>
                 </Link>
-                <div className="p-6 flex-grow flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-3 line-clamp-2 group-hover:text-blue-400 transition-colors">
-                      <Link to={`/article/${article.slug}`}>{article.title}</Link>
-                    </h3>
-                    <p className="text-zinc-400 text-sm mb-4 line-clamp-2">
-                      {article.excerpt}
-                    </p>
-                  </div>
-                  <div className="flex items-center justify-between mt-auto pt-4 border-t border-white/5">
-                    <p className="text-xs text-zinc-500 flex items-center gap-1">
-                      <Clock className="w-3 h-3" /> {new Date(article.date).toLocaleDateString('pt-BR')}
-                    </p>
-                    <Link to={`/article/${article.slug}`} className="text-sm font-medium text-blue-400 hover:text-blue-300 flex items-center">
-                      Ler mais <ChevronRight className="w-4 h-4 ml-1" />
+                <div className="flex-grow flex flex-col">
+                  <h3 className="text-2xl font-bold text-white mb-4 line-clamp-2 group-hover:text-blue-400 transition-colors leading-tight">
+                    <Link to={`/article/${article.slug}`}>{article.title}</Link>
+                  </h3>
+                  <p className="text-zinc-400 text-base mb-6 line-clamp-2 font-light leading-relaxed">
+                    {article.excerpt}
+                  </p>
+                  <div className="flex items-center justify-between mt-auto pt-6 border-t border-white/5">
+                    <div className="flex items-center gap-4">
+                      <p className="text-[10px] text-zinc-500 font-bold uppercase tracking-widest flex items-center gap-2">
+                        <Clock className="w-3 h-3" /> {article.readTime}
+                      </p>
+                      <p className="text-[10px] text-zinc-500 font-bold uppercase tracking-widest">
+                        {new Date(article.date).toLocaleDateString('pt-BR')}
+                      </p>
+                    </div>
+                    <Link to={`/article/${article.slug}`} className="text-xs font-bold text-blue-500 uppercase tracking-widest hover:text-blue-400 flex items-center group/btn">
+                      Ler agora <ChevronRight className="w-4 h-4 ml-1 group-hover/btn:translate-x-2 transition-transform" />
                     </Link>
                   </div>
                 </div>
@@ -218,25 +314,41 @@ export function Home() {
             
             {/* Mais Lidas */}
             <div className="lg:col-span-2">
-              <h2 className="text-2xl font-display font-bold text-white mb-8 flex items-center gap-2">
-                <TrendingUp className="w-6 h-6 text-blue-500" /> Mais Lidas da Semana
+              <h2 className="text-3xl font-display font-bold text-white mb-12 flex items-center gap-4">
+                <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
+                  <TrendingUp className="w-5 h-5 text-blue-500" />
+                </div>
+                Mais Lidas
               </h2>
-              <div className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {mostRead.map((item, i) => (
-                  <Link key={item.id} to={`/article/${item.slug}`} className="flex gap-6 items-center group cursor-pointer p-4 rounded-2xl hover:bg-white/5 transition-colors border border-transparent hover:border-white/5">
-                    <div className="text-4xl font-display font-bold text-zinc-800 group-hover:text-blue-500/30 transition-colors">
-                      0{i + 1}
-                    </div>
-                    <div>
-                      <div className="flex items-center gap-2 mb-1">
-                        <span className="text-xs font-bold text-blue-400 uppercase tracking-wider">{item.category}</span>
-                        <span className="text-xs text-zinc-600">• {item.readTime}</span>
+                  <motion.div
+                    key={item.id}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: i * 0.05 }}
+                  >
+                    <Link to={`/article/${item.slug}`} className="flex gap-6 items-start group p-4 rounded-3xl hover:bg-white/5 transition-all border border-transparent hover:border-white/5">
+                      <div className="text-5xl font-display font-bold text-zinc-800 group-hover:text-blue-500/20 transition-colors shrink-0 leading-none">
+                        {i + 1}
                       </div>
-                      <h3 className="text-lg font-bold text-white group-hover:text-blue-400 transition-colors">
-                        {item.title}
-                      </h3>
-                    </div>
-                  </Link>
+                      <div className="flex gap-4">
+                        <div className="w-20 h-20 shrink-0 rounded-xl overflow-hidden border border-white/10">
+                          <img src={item.imageUrl} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerPolicy="no-referrer" />
+                        </div>
+                        <div>
+                          <div className="flex items-center gap-2 mb-2">
+                            <span className="text-[10px] font-bold text-blue-400 uppercase tracking-widest">{item.category}</span>
+                            <span className="text-[10px] text-zinc-600 font-bold uppercase tracking-widest">• {item.readTime}</span>
+                          </div>
+                          <h3 className="text-base font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-2 leading-tight">
+                            {item.title}
+                          </h3>
+                        </div>
+                      </div>
+                    </Link>
+                  </motion.div>
                 ))}
               </div>
             </div>
