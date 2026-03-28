@@ -12,44 +12,44 @@ interface NewsItem {
 
 const MOCK_NEWS_POOL: Omit<NewsItem, "id" | "timestamp">[] = [
   {
-    title: "Bitcoin ultrapassa nova resistência histórica",
-    excerpt: "Volume de negociação atinge pico nas últimas 24 horas com forte entrada institucional.",
-    imageUrl: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&q=80&w=400"
-  },
-  {
-    title: "Ethereum lança atualização focada em escalabilidade",
-    excerpt: "Taxas de gás na rede principal caem 40% após a implementação do novo protocolo.",
-    imageUrl: "https://images.unsplash.com/photo-1622736696590-0f2d488d0111?auto=format&fit=crop&q=80&w=400"
-  },
-  {
-    title: "SEC aprova novo ETF de criptomoedas",
-    excerpt: "Mercado reage positivamente à aprovação do primeiro ETF focado em altcoins de infraestrutura.",
-    imageUrl: "https://images.unsplash.com/photo-1605792657660-596af9009e82?auto=format&fit=crop&q=80&w=400"
-  },
-  {
-    title: "Baleia movimenta US$ 500 milhões em Bitcoin",
-    excerpt: "Transferência massiva para carteira fria sinaliza acumulação de longo prazo.",
-    imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=400"
-  },
-  {
-    title: "Solana registra recorde de transações por segundo",
-    excerpt: "Rede atinge nova marca histórica impulsionada pelo lançamento de novos projetos DeFi.",
-    imageUrl: "https://images.unsplash.com/photo-1642104704074-907c0698cbd9?auto=format&fit=crop&q=80&w=400"
-  },
-  {
-    title: "Banco Central Europeu discute regulação do Euro Digital",
-    excerpt: "Novas diretrizes podem acelerar a adoção de moedas digitais emitidas por bancos centrais (CBDCs).",
-    imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=400"
-  },
-  {
-    title: "Novo protocolo DeFi atinge US$ 1 Bilhão em TVL",
-    excerpt: "Plataforma de empréstimos descentralizados atrai capital massivo em sua primeira semana.",
-    imageUrl: "https://images.unsplash.com/photo-1621504450181-5d356f61d307?auto=format&fit=crop&q=80&w=400"
-  },
-  {
-    title: "Mineradores de Bitcoin adaptam operações para IA",
-    excerpt: "Empresas de mineração redirecionam poder computacional para treinamento de modelos de linguagem.",
+    title: "OpenAI anuncia novo modelo de linguagem multimodal",
+    excerpt: "O novo modelo promete capacidades sem precedentes em processamento de vídeo e áudio em tempo real.",
     imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=400"
+  },
+  {
+    title: "Apple Vision Pro recebe atualização com novos recursos",
+    excerpt: "A nova versão do visionOS traz melhorias significativas em produtividade e novos ambientes imersivos.",
+    imageUrl: "https://images.unsplash.com/photo-1696446701796-da61225697cc?auto=format&fit=crop&q=80&w=400"
+  },
+  {
+    title: "SpaceX lança mais 60 satélites Starlink com sucesso",
+    excerpt: "A constelação de satélites continua crescendo para oferecer internet de alta velocidade globalmente.",
+    imageUrl: "https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&q=80&w=400"
+  },
+  {
+    title: "Google DeepMind resolve problema complexo de biologia",
+    excerpt: "IA AlphaFold atinge novo marco na predição de estruturas proteicas, acelerando a medicina.",
+    imageUrl: "https://images.unsplash.com/photo-1532187875605-1ef6c237ddc4?auto=format&fit=crop&q=80&w=400"
+  },
+  {
+    title: "NVIDIA atinge valor de mercado recorde impulsionada por IA",
+    excerpt: "A demanda por chips de processamento de IA continua superando todas as expectativas do mercado.",
+    imageUrl: "https://images.unsplash.com/photo-1591405351990-4726e33df58d?auto=format&fit=crop&q=80&w=400"
+  },
+  {
+    title: "Microsoft integra Copilot em todos os seus serviços",
+    excerpt: "A assistente de IA agora está presente desde o Windows até o pacote Office completo.",
+    imageUrl: "https://images.unsplash.com/photo-1633419461186-7d40a38105ec?auto=format&fit=crop&q=80&w=400"
+  },
+  {
+    title: "Tesla anuncia avanços no software Full Self-Driving",
+    excerpt: "A nova versão v12 utiliza redes neurais de ponta a ponta para uma condução mais humana.",
+    imageUrl: "https://images.unsplash.com/photo-1536700503339-1e4b06520771?auto=format&fit=crop&q=80&w=400"
+  },
+  {
+    title: "Criptomoedas: Bitcoin atinge nova máxima histórica",
+    excerpt: "A maior criptomoeda do mundo rompe barreiras psicológicas com forte volume comprador.",
+    imageUrl: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&q=80&w=400"
   }
 ];
 
@@ -90,15 +90,15 @@ export function RealTimeNewsFeed() {
     <div className="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-lg">
       <div className="flex items-center justify-between border-b border-zinc-800/50 pb-5 mb-8">
         <h2 className="text-2xl font-display font-bold flex items-center">
-          <Activity className="w-6 h-6 mr-3 text-emerald-400 animate-pulse" />
-          Plantão Crypto em Tempo Real
+          <Activity className="w-6 h-6 mr-3 text-blue-400 animate-pulse" />
+          Plantão TechFront em Tempo Real
         </h2>
-        <div className="flex items-center space-x-2 bg-emerald-500/10 px-3 py-1.5 rounded-full border border-emerald-500/20">
+        <div className="flex items-center space-x-2 bg-blue-500/10 px-3 py-1.5 rounded-full border border-blue-500/20">
           <span className="relative flex h-2.5 w-2.5">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-blue-500"></span>
           </span>
-          <span className="text-[10px] font-bold uppercase tracking-widest text-emerald-400">Ao Vivo</span>
+          <span className="text-[10px] font-bold uppercase tracking-widest text-blue-400">Ao Vivo</span>
         </div>
       </div>
 

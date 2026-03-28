@@ -1,15 +1,21 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
-import { Menu, X, Shield, Twitter, Linkedin, Youtube, ChevronRight, Zap, MessageCircle, Send, Search } from "lucide-react";
+import { Menu, X, Shield, Twitter, Linkedin, Youtube, ChevronRight, Zap, MessageCircle, Send, Search, Newspaper, TrendingUp, Clock } from "lucide-react";
 import { useState, useEffect } from "react";
+import { articles } from "../data/articles";
 
 export function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
     setIsMenuOpen(false);
+    setIsSidebarOpen(false);
     window.scrollTo(0, 0);
   }, [location]);
+
+  // Get some articles for the sidebar
+  const sidebarArticles = articles.slice(0, 15);
 
   return (
     <div className="min-h-screen bg-black text-zinc-100 font-sans selection:bg-blue-500/30 selection:text-blue-200">
@@ -44,14 +50,18 @@ export function Layout() {
               <Link to="/category/tutoriais" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">Tutoriais</Link>
             </nav>
 
-            <div className="hidden md:flex items-center space-x-4">
-              <button className="p-2 text-zinc-400 hover:text-white transition-colors">
+            <div className="flex items-center space-x-4">
+              <button className="hidden md:block p-2 text-zinc-400 hover:text-white transition-colors">
                 <Search className="w-5 h-5" />
               </button>
-              <Link to="/login" className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">
-                Login
-              </Link>
-              <Link to="/cadastro" className="px-5 py-2.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white text-sm font-bold rounded-full hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all">
+              <button 
+                onClick={() => setIsSidebarOpen(true)}
+                className="p-2 text-zinc-400 hover:text-blue-500 transition-colors"
+                title="Mais Notícias"
+              >
+                <Menu className="w-6 h-6" />
+              </button>
+              <Link to="/cadastro" className="hidden sm:block px-5 py-2.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white text-sm font-bold rounded-full hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all">
                 Assinar
               </Link>
             </div>
@@ -68,7 +78,6 @@ export function Layout() {
               <Link to="/category/apps" className="block px-3 py-3 text-base font-medium text-zinc-300 hover:text-blue-500 hover:bg-white/5 rounded-lg">Apps</Link>
               <Link to="/category/internet" className="block px-3 py-3 text-base font-medium text-zinc-300 hover:text-blue-500 hover:bg-white/5 rounded-lg">Internet</Link>
               <Link to="/category/tutoriais" className="block px-3 py-3 text-base font-medium text-zinc-300 hover:text-blue-500 hover:bg-white/5 rounded-lg">Tutoriais</Link>
-              <Link to="/login" className="block px-3 py-3 text-base font-medium text-zinc-300 hover:text-blue-500 hover:bg-white/5 rounded-lg">Login</Link>
               <div className="pt-4 mt-4 border-t border-white/5">
                 <Link to="/cadastro" className="block w-full text-center px-5 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold rounded-xl">
                   Assinar Newsletter
@@ -78,6 +87,79 @@ export function Layout() {
           </div>
         )}
       </header>
+
+      {/* Sidebar Overlay */}
+      {isSidebarOpen && (
+        <div 
+          className="fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm transition-opacity"
+          onClick={() => setIsSidebarOpen(false)}
+        />
+      )}
+
+      {/* Sidebar Content */}
+      <aside className={`fixed top-0 right-0 z-[70] h-full w-full max-w-sm bg-zinc-950 border-l border-white/10 shadow-2xl transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div className="flex flex-col h-full">
+          <div className="flex items-center justify-between p-6 border-b border-white/5">
+            <h2 className="text-xl font-display font-bold text-white flex items-center">
+              <Newspaper className="w-5 h-5 mr-3 text-blue-500" /> Mais Notícias
+            </h2>
+            <button 
+              onClick={() => setIsSidebarOpen(false)}
+              className="p-2 text-zinc-400 hover:text-white rounded-full hover:bg-white/5 transition-all"
+            >
+              <X className="w-6 h-6" />
+            </button>
+          </div>
+
+          <div className="flex-1 overflow-y-auto p-6 space-y-8 custom-scrollbar text-left">
+            <div className="space-y-6">
+              <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-[0.2em] flex items-center">
+                <TrendingUp className="w-4 h-4 mr-2" /> Destaques do Momento
+              </h3>
+              <div className="space-y-6">
+                {sidebarArticles.map((article) => (
+                  <Link 
+                    key={article.id} 
+                    to={`/article/${article.slug}`}
+                    className="group block space-y-2"
+                  >
+                    <div className="flex items-center space-x-2">
+                      <span className="px-2 py-0.5 bg-blue-500/10 text-blue-400 text-[10px] font-bold rounded uppercase tracking-wider">
+                        {article.category}
+                      </span>
+                      <span className="text-[10px] text-zinc-600 flex items-center">
+                        <Clock className="w-3 h-3 mr-1" /> {article.readTime}
+                      </span>
+                    </div>
+                    <h4 className="text-sm font-bold text-zinc-200 group-hover:text-blue-400 transition-colors leading-snug line-clamp-2">
+                      {article.title}
+                    </h4>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div className="pt-8 border-t border-white/5">
+              <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-[0.2em] mb-6">Categorias</h3>
+              <div className="grid grid-cols-2 gap-3">
+                <Link to="/category/tecnologia" className="px-4 py-3 bg-white/5 rounded-xl text-sm font-medium text-zinc-300 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5">Tecnologia</Link>
+                <Link to="/category/ia" className="px-4 py-3 bg-white/5 rounded-xl text-sm font-medium text-zinc-300 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5">IA</Link>
+                <Link to="/category/criptomoedas" className="px-4 py-3 bg-white/5 rounded-xl text-sm font-medium text-zinc-300 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5">Cripto</Link>
+                <Link to="/category/apps" className="px-4 py-3 bg-white/5 rounded-xl text-sm font-medium text-zinc-300 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5">Apps</Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-6 border-t border-white/5 bg-black/50">
+            <Link 
+              to="/cadastro" 
+              className="flex items-center justify-center w-full py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold rounded-xl hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] transition-all"
+            >
+              Assinar Newsletter
+            </Link>
+          </div>
+        </div>
+      </aside>
 
       {/* Main Content */}
       <main className="pt-20">

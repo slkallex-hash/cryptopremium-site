@@ -4,6 +4,10 @@ import { economiaArticles } from "./articles-economia";
 import { investimentosArticles } from "./articles-investimentos";
 import { tecnologiaArticles } from "./articles-tecnologia";
 import { rendaOnlineArticles } from "./articles-renda-online";
+import { iaArticles } from "./articles-ia";
+import { appsArticles } from "./articles-apps";
+import { internetArticles } from "./articles-internet";
+import { tutoriaisArticles } from "./articles-tutoriais";
 
 export interface Category {
   id: string;
@@ -37,10 +41,14 @@ export const categories: Category[] = [
 ];
 
 export const articles: Article[] = [
+  ...tecnologiaArticles,
+  ...iaArticles,
   ...bitcoinArticles,
   ...altcoinsArticles,
+  ...appsArticles,
+  ...internetArticles,
+  ...tutoriaisArticles,
   ...economiaArticles,
   ...investimentosArticles,
-  ...tecnologiaArticles,
   ...rendaOnlineArticles,
 ];

@@ -994,5 +994,30 @@ export const tecnologiaArticles: Article[] = [
     author: "Lucas Costa – Analista de Cibersegurança",
     date: new Date(Date.now() - 777600000).toISOString(),
     readTime: "5 min",
-  }
+  },
+  ...Array.from({ length: 12 }).map((_, i) => ({
+    id: `tec-extra-${i + 1}`,
+    slug: `tecnologia-extra-artigo-${i + 1}`,
+    title: [
+      "O Impacto do 6G na Indústria 4.0",
+      "Sustentabilidade Digital: O Futuro dos Data Centers",
+      "Realidade Aumentada no Treinamento Corporativo",
+      "A Revolução dos Semicondutores em 2026",
+      "Cibersegurança em Tempos de Computação Quântica",
+      "O Papel das Startups na Economia Circular",
+      "Edge Computing: Processamento na Ponta",
+      "O Futuro do Trabalho Híbrido e a Tecnologia",
+      "Inovação Aberta: Colaboração entre Gigantes",
+      "A Ética no Desenvolvimento de Software",
+      "Novos Materiais para a Eletrônica do Futuro",
+      "O Impacto da Tecnologia na Saúde Global"
+    ][i],
+    excerpt: "Explorando as fronteiras da inovação tecnológica e como elas estão moldando o nosso futuro imediato.",
+    content: "<p>A tecnologia continua a avançar em um ritmo sem precedentes, trazendo novos desafios e oportunidades para empresas e indivíduos.</p>",
+    category: "tecnologia",
+    imageUrl: `https://picsum.photos/seed/tec-extra-${i + 1}/1200/800`,
+    author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
+    date: new Date(Date.now() - (i + 10) * 86400000).toISOString(),
+    readTime: "5 min",
+  }))
 ];

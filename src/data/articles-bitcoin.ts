@@ -97,7 +97,7 @@ export const bitcoinArticles: Article[] = [
         <p class="text-zinc-400 leading-relaxed">As informações contidas neste artigo são de caráter exclusivamente jornalístico e educacional. O <strong>CryptoPremium</strong> não faz recomendações de compra ou venda de ativos financeiros. O mercado de criptomoedas é altamente volátil e investimentos podem resultar em perda parcial ou total do capital. Realize sua própria pesquisa (DYOR) e consulte um profissional financeiro certificado antes de tomar decisões de investimento.</p>
       </div>
     `,
-    category: "bitcoin",
+    category: "criptomoedas",
     imageUrl: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&q=80&w=1200",
     author: "Marcos Silva – Repórter de Hardware & Gadgets",
     date: new Date(Date.now() - 259200000).toISOString(),
@@ -199,10 +199,77 @@ export const bitcoinArticles: Article[] = [
         <p class="text-zinc-400 leading-relaxed">As informações contidas neste artigo são de caráter exclusivamente jornalístico e educacional. O <strong>CryptoPremium</strong> não faz recomendações de compra ou venda de ativos financeiros. O mercado de criptomoedas é altamente volátil e investimentos podem resultar em perda parcial ou total do capital. Realize sua própria pesquisa (DYOR) e consulte um profissional financeiro certificado antes de tomar decisões de investimento.</p>
       </div>
     `,
-    category: "bitcoin",
+    category: "criptomoedas",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
     author: "Lucas Costa – Analista de Cibersegurança",
     date: new Date(Date.now() - 345600000).toISOString(),
     readTime: "5 min",
+  },
+  ...Array.from({ length: 15 }).map((_, i) => ({
+    id: `crypto-extra-${i + 1}`,
+    slug: `criptomoedas-extra-artigo-${i + 1}`,
+    title: [
+      "Ethereum 3.0: O que esperar da próxima grande atualização",
+      "Solana vs Ethereum: A batalha pela dominância dos dApps",
+      "O Papel das Stablecoins na Economia Global",
+      "DeFi 2.0: A nova geração de finanças descentralizadas",
+      "NFTs de Utilidade: Além das imagens colecionáveis",
+      "Regulação Cripto: O que muda com as novas leis",
+      "O Futuro das Exchanges Descentralizadas (DEX)",
+      "Privacidade em Cripto: O debate sobre moedas anônimas",
+      "Adoção Institucional: Bancos entrando no mercado cripto",
+      "Mineração Sustentável: O futuro verde do Bitcoin",
+      "Layer 2: Como as camadas extras estão salvando o Ethereum",
+      "Web3 e a Nova Economia Digital",
+      "O Impacto das CBDCs no Mercado de Criptomoedas",
+      "Segurança em Carteiras: Como proteger seus ativos",
+      "O Futuro do Staking e Rendimentos Passivos"
+    ][i],
+    excerpt: "Análises e tendências sobre o mercado de ativos digitais que está redefinindo o sistema financeiro global.",
+    content: "<p>O mercado de criptomoedas continua a amadurecer, trazendo inovações que desafiam as estruturas financeiras tradicionais.</p>",
+    category: "criptomoedas",
+    imageUrl: `https://picsum.photos/seed/crypto-extra-${i + 1}/1200/800`,
+    author: "Marcos Silva – Repórter de Hardware & Gadgets",
+    date: new Date(Date.now() - (i + 5) * 86400000).toISOString(),
+    readTime: "4 min",
+  })),
+  {
+    id: "bitcoin-21",
+    slug: "como-declarar-bitcoin-no-imposto-de-renda-2026",
+    title: "Como declarar Bitcoin no Imposto de Renda 2026",
+    excerpt: "Guia passo a passo para investidores de criptomoedas evitarem problemas com o fisco.",
+    content: "A Receita Federal atualizou as regras para declaração de ativos digitais. É fundamental manter um registro preciso de todas as transações, incluindo datas, valores em reais e as exchanges utilizadas. O código específico para Bitcoin no GCAP deve ser preenchido com atenção aos detalhes de aquisição.",
+    imageUrl: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&q=80&w=800",
+    category: "criptomoedas",
+    date: "2026-03-25",
+    readTime: "8 min",
+    trending: false,
+    author: "Marcos Silva"
+  },
+  {
+    id: "bitcoin-22",
+    slug: "o-impacto-do-halving-no-preco-do-bitcoin-em-2026",
+    title: "O impacto do Halving no preço do Bitcoin em 2026",
+    excerpt: "Análise histórica e projeções para o comportamento do mercado após a redução da recompensa.",
+    content: "O halving é um evento programado que reduz pela metade a emissão de novos Bitcoins. Historicamente, esse choque de oferta precede ciclos de alta significativos. Especialistas analisam se o padrão se repetirá em 2026 diante da maior maturidade do mercado e presença institucional.",
+    imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=800",
+    category: "criptomoedas",
+    date: "2026-03-24",
+    readTime: "10 min",
+    trending: true,
+    author: "Marcos Silva"
+  },
+  {
+    id: "bitcoin-23",
+    slug: "ethereum-3-0-o-que-esperar-da-proxima-grande-atualizacao",
+    title: "Ethereum 3.0: O que esperar da próxima grande atualização",
+    excerpt: "Novas propostas de escalabilidade prometem tornar a rede ainda mais rápida e barata.",
+    content: "A comunidade Ethereum discute as bases para a versão 3.0, focando em 'sharding' avançado e melhorias na máquina virtual (EVM). O objetivo é suportar bilhões de usuários sem comprometer a descentralização, consolidando o Ethereum como a camada de liquidação da internet.",
+    imageUrl: "https://images.unsplash.com/photo-1622736696590-0f2d488d0111?auto=format&fit=crop&q=80&w=800",
+    category: "criptomoedas",
+    date: "2026-03-23",
+    readTime: "7 min",
+    trending: false,
+    author: "Marcos Silva"
   }
 ];

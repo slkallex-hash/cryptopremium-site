@@ -83,7 +83,7 @@ export const altcoinsArticles: Article[] = [
         <p class="text-zinc-400 leading-relaxed">As informações contidas neste artigo são de caráter exclusivamente jornalístico e educacional. O <strong>CryptoPremium</strong> não faz recomendações de compra ou venda de ativos financeiros. O mercado de criptomoedas é altamente volátil e investimentos podem resultar em perda parcial ou total do capital. Realize sua própria pesquisa (DYOR) e consulte um profissional financeiro certificado antes de tomar decisões de investimento.</p>
       </div>
     `,
-    category: "altcoins",
+    category: "criptomoedas",
     imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date().toISOString(),
