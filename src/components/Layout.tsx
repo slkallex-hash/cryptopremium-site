@@ -2,11 +2,24 @@ import { Link, Outlet, useLocation } from "react-router-dom";
 import { Menu, X, Shield, Twitter, Linkedin, Youtube, ChevronRight, Zap, MessageCircle, Send, Search, Newspaper, TrendingUp, Clock } from "lucide-react";
 import { useState, useEffect } from "react";
 import { articles } from "../data/articles";
+import { SearchModal } from "./SearchModal";
 
 export function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+        e.preventDefault();
+        setIsSearchOpen(true);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   useEffect(() => {
     setIsMenuOpen(false);
@@ -50,8 +63,21 @@ export function Layout() {
             </nav>
 
             <div className="flex items-center space-x-4">
-              <button className="hidden md:block p-2 text-zinc-400 hover:text-white transition-colors">
-                <Search className="w-5 h-5" />
+              <button 
+                onClick={() => setIsSearchOpen(true)}
+                className="hidden md:flex items-center space-x-3 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-zinc-400 hover:text-white hover:bg-white/10 transition-all group"
+              >
+                <Search className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                <span className="text-sm font-medium">Buscar notícias...</span>
+                <kbd className="hidden lg:inline-flex items-center gap-1 px-1.5 py-0.5 bg-zinc-800 rounded border border-zinc-700 text-[10px] font-bold text-zinc-500">
+                  ⌘K
+                </kbd>
+              </button>
+              <button 
+                onClick={() => setIsSearchOpen(true)}
+                className="md:hidden p-2 text-zinc-400 hover:text-white transition-colors"
+              >
+                <Search className="w-6 h-6" />
               </button>
               <button 
                 onClick={() => setIsSidebarOpen(true)}
@@ -87,6 +113,9 @@ export function Layout() {
           </div>
         )}
       </header>
+
+      {/* Search Modal */}
+      <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
 
       {/* Sidebar Overlay */}
       {isSidebarOpen && (
@@ -230,9 +259,10 @@ export function Layout() {
                 O seu portal definitivo para as últimas notícias de tecnologia, inteligência artificial, cultura digital e inovação.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="text-zinc-400 hover:text-blue-500 transition-colors"><Twitter className="w-5 h-5" /></a>
-                <a href="#" className="text-zinc-400 hover:text-blue-500 transition-colors"><Linkedin className="w-5 h-5" /></a>
-                <a href="#" className="text-zinc-400 hover:text-blue-500 transition-colors"><Youtube className="w-5 h-5" /></a>
+                <a href="https://twitter.com/techfront_news" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-blue-500 transition-colors" title="Twitter"><Twitter className="w-5 h-5" /></a>
+                <a href="https://linkedin.com/company/techfront" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-blue-500 transition-colors" title="LinkedIn"><Linkedin className="w-5 h-5" /></a>
+                <a href="https://youtube.com/@techfront" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-blue-500 transition-colors" title="YouTube"><Youtube className="w-5 h-5" /></a>
+                <a href="https://instagram.com/techfront" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-blue-500 transition-colors" title="Instagram"><MessageCircle className="w-5 h-5" /></a>
               </div>
             </div>
             
@@ -242,7 +272,7 @@ export function Layout() {
                 <li><Link to="/category/tecnologia" className="text-zinc-400 hover:text-blue-500 text-sm transition-colors">Tecnologia</Link></li>
                 <li><Link to="/category/ia" className="text-zinc-400 hover:text-blue-500 text-sm transition-colors">Inteligência Artificial</Link></li>
                 <li><Link to="/category/criptomoedas" className="text-zinc-400 hover:text-blue-500 text-sm transition-colors">Criptomoedas</Link></li>
-                <li><Link to="/category/apps" className="text-zinc-400 hover:text-blue-500 text-sm transition-colors">Apps</Link></li>
+                <li><Link to="/category/investimentos" className="text-zinc-400 hover:text-blue-500 text-sm transition-colors">Investimentos</Link></li>
               </ul>
             </div>
             
@@ -259,7 +289,8 @@ export function Layout() {
               <h3 className="text-white font-display font-bold mb-6 tracking-wide">Legal</h3>
               <ul className="space-y-4">
                 <li><Link to="/termos" className="text-zinc-400 hover:text-blue-500 text-sm transition-colors">Termos de Uso</Link></li>
-                <li><Link to="/privacidade" className="text-zinc-400 hover:text-blue-500 text-sm transition-colors">Privacidade</Link></li>
+                <li><Link to="/privacidade" className="text-zinc-400 hover:text-blue-500 text-sm transition-colors">Política de Privacidade</Link></li>
+                <li><Link to="/aviso-de-risco" className="text-zinc-400 hover:text-blue-500 text-sm transition-colors">Aviso de Risco</Link></li>
               </ul>
             </div>
           </div>

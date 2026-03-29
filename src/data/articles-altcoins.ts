@@ -84,7 +84,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "criptomoedas",
-    imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://images.unsplash.com/photo-1622790698141-94e30457ef12?auto=format&fit=crop&q=80&w=1200",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     authorId: "roberto-almeida",
     tags: ["Ethereum", "ETH", "Institucional", "Staking", "Criptomoedas"],
@@ -523,7 +523,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "altcoins",
-    imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://images.unsplash.com/photo-1639444580486-7a4748153747?auto=format&fit=crop&q=80&w=1200",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     authorId: "roberto-almeida",
     tags: ["Solana", "SOL", "Ethereum", "DEX", "DeFi"],
@@ -627,7 +627,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "altcoins",
-    imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://images.unsplash.com/photo-1639843885527-43b098a9661a?auto=format&fit=crop&q=80&w=1200",
     author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     authorId: "sarah-chen",
     tags: ["Chainlink", "LINK", "CCIP", "Interoperabilidade", "Bancos", "RWA"],
@@ -835,7 +835,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "altcoins",
-    imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://images.unsplash.com/photo-1644024060255-66774697662c?auto=format&fit=crop&q=80&w=1200",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     authorId: "roberto-almeida",
     tags: ["Polkadot", "DOT", "Interoperabilidade", "Web3", "Blockchain"],
@@ -939,7 +939,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "altcoins",
-    imageUrl: "https://images.unsplash.com/photo-1642104704074-907c0698cbd9?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&q=80&w=1200",
     author: "Marcos Silva – Repórter de Hardware & Gadgets",
     authorId: "marcos-silva",
     tags: ["Memecoins", "Cultura Digital", "Especulação", "Web3", "Solana"],

@@ -25,7 +25,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
   }, [isOpen]);
 
   const filteredArticles = query.trim() === "" 
-    ? [] 
+    ? articles.slice(0, 5) 
     : articles.filter(article => 
         article.title.toLowerCase().includes(query.toLowerCase()) ||
         article.excerpt.toLowerCase().includes(query.toLowerCase())
@@ -65,27 +65,13 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
             </button>
           </div>
 
-          <div className="max-h-[60vh] overflow-y-auto p-4">
-            {query.trim() === "" ? (
-              <div className="py-8 text-center">
-                <p className="text-zinc-500">Digite algo para começar a busca...</p>
-                <div className="mt-6 flex flex-wrap justify-center gap-2">
-                  {categories.slice(0, 4).map(cat => (
-                    <Link 
-                      key={cat.id} 
-                      to={`/category/${cat.slug}`}
-                      onClick={onClose}
-                      className="px-3 py-1.5 bg-zinc-800 hover:bg-emerald-500/20 hover:text-emerald-400 rounded-full text-xs font-medium transition-all"
-                    >
-                      {cat.name}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            ) : filteredArticles.length > 0 ? (
-              <div className="space-y-4">
-                <h3 className="text-xs font-bold uppercase tracking-widest text-zinc-500 px-2">Resultados</h3>
-                {filteredArticles.map(article => (
+          <div className="max-h-[60vh] overflow-y-auto p-4 custom-scrollbar">
+            <div className="space-y-4">
+              <h3 className="text-xs font-bold uppercase tracking-widest text-zinc-500 px-2">
+                {query.trim() === "" ? "Sugestões Recentes" : "Resultados"}
+              </h3>
+              {filteredArticles.length > 0 ? (
+                filteredArticles.map(article => (
                   <Link
                     key={article.id}
                     to={`/article/${article.slug}`}
@@ -93,10 +79,10 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                     className="group flex gap-4 p-2 rounded-xl hover:bg-zinc-800 transition-all"
                   >
                     <div className="w-20 h-20 rounded-lg overflow-hidden shrink-0">
-                      <img src={article.imageUrl} alt="" className="w-full h-full object-cover" />
+                      <img src={article.imageUrl} alt="" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h4 className="text-white font-bold group-hover:text-emerald-400 transition-colors line-clamp-1">
+                      <h4 className="text-white font-bold group-hover:text-blue-400 transition-colors line-clamp-1">
                         {article.title}
                       </h4>
                       <p className="text-zinc-400 text-sm line-clamp-2 mt-1">
@@ -107,17 +93,17 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                       </div>
                     </div>
                   </Link>
-                ))}
-              </div>
-            ) : (
-              <div className="py-12 text-center">
-                <p className="text-zinc-500">Nenhum resultado encontrado para "{query}"</p>
-              </div>
-            )}
+                ))
+              ) : (
+                <div className="py-12 text-center">
+                  <p className="text-zinc-500">Nenhum resultado encontrado para "{query}"</p>
+                </div>
+              )}
+            </div>
           </div>
 
           <div className="p-4 bg-zinc-950 border-t border-zinc-800 flex justify-between items-center text-[10px] text-zinc-500 font-bold uppercase tracking-widest">
-            <span>CryptoPremium Search v1.0</span>
+            <span>TechFront Search v1.0</span>
             <div className="flex items-center gap-4">
               <span className="flex items-center gap-1"><kbd className="px-1.5 py-0.5 bg-zinc-800 rounded border border-zinc-700 text-zinc-400">ESC</kbd> para fechar</span>
             </div>

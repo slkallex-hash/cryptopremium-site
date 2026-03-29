@@ -76,7 +76,7 @@ export const bitcoinArticles: Article[] = [
       </div>
     `,
     category: "criptomoedas",
-    imageUrl: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/btc1/1200/800",
     author: "Marcos Silva – Analista de Macroeconomia",
     date: new Date().toISOString(),
     readTime: "15 min",
@@ -125,7 +125,7 @@ export const bitcoinArticles: Article[] = [
       <p>A transição para um padrão Bitcoin parcial nos bancos centrais pode ser o evento mais importante para a economia global desde o fim do padrão-ouro em 1971. O TechFront continuará investigando quais nações serão as próximas a anunciar oficialmente suas reservas em BTC.</p>
     `,
     category: "criptomoedas",
-    imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/btc2/1200/800",
     author: "Lucas Costa – Analista de Cibersegurança",
     date: new Date(Date.now() - 86400000).toISOString(),
     readTime: "10 min",

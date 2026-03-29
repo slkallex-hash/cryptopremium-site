@@ -50,33 +50,37 @@ export function Article() {
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href={`${window.location.origin}/article/${article.slug}`} />
-      </Helmet>
-
-      {/* JSON-LD Structured Data */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "NewsArticle",
-          "headline": article.title,
-          "description": article.excerpt,
-          "image": [article.imageUrl],
-          "datePublished": article.date,
-          "dateModified": new Date().toISOString(),
-          "author": [{
-            "@type": "Person",
-            "name": author?.name || "Redação TechFront",
-            "url": author ? `${window.location.origin}/author/${author.id}` : window.location.origin
-          }],
-          "publisher": {
-            "@type": "Organization",
-            "name": "TechFront",
-            "logo": {
-              "@type": "ImageObject",
-              "url": `${window.location.origin}/logo.png`
+        
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "headline": article.title,
+            "description": article.excerpt,
+            "image": [article.imageUrl],
+            "datePublished": article.date,
+            "dateModified": article.date,
+            "author": [{
+              "@type": "Person",
+              "name": author?.name || "Redação TechFront",
+              "url": author ? `${window.location.origin}/author/${author.id}` : window.location.origin
+            }],
+            "publisher": {
+              "@type": "Organization",
+              "name": "TechFront",
+              "logo": {
+                "@type": "ImageObject",
+                "url": `${window.location.origin}/logo.png`
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": `${window.location.origin}/article/${article.slug}`
             }
-          }
-        })}
-      </script>
+          })}
+        </script>
+      </Helmet>
 
       {/* Top Banner Ad */}
       <AdSlot id="article-top-banner" type="banner" className="mb-8 rounded-xl" mybidId="2018598" />

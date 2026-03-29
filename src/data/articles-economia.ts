@@ -194,7 +194,7 @@ export const economiaArticles: Article[] = [
       </div>
     `,
     category: "economia",
-    imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/eco1/1200/800",
     authorId: "ana-souza",
     author: "Ana Souza – Especialista em Startups & Negócios",
     date: new Date().toISOString(),
@@ -298,7 +298,7 @@ export const economiaArticles: Article[] = [
       </div>
     `,
     category: "economia",
-    imageUrl: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/eco2/1200/800",
     authorId: "sarah-chen",
     author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 86400000).toISOString(),
@@ -401,7 +401,7 @@ export const economiaArticles: Article[] = [
       </div>
     `,
     category: "economia",
-    imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/eco3/1200/800",
     authorId: "ana-souza",
     author: "Ana Souza – Especialista em Startups & Negócios",
     date: new Date(Date.now() - 172800000).toISOString(),
@@ -505,7 +505,7 @@ export const economiaArticles: Article[] = [
       </div>
     `,
     category: "economia",
-    imageUrl: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/eco4/1200/800",
     authorId: "roberto-almeida",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date(Date.now() - 259200000).toISOString(),
@@ -609,7 +609,7 @@ export const economiaArticles: Article[] = [
       </div>
     `,
     category: "economia",
-    imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/eco5/1200/800",
     authorId: "sarah-chen",
     author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 345600000).toISOString(),
