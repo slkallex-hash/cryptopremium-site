@@ -92,7 +92,7 @@ export function Home() {
                       Mercado Dispara
                     </span>
                   </div>
-                  <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-[1.1] max-w-5xl group-hover:text-blue-400 transition-colors">
+                  <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-[1.1] max-w-4xl group-hover:text-blue-400 transition-colors break-words">
                     {mainFeatured.title}
                   </h1>
                   <p className="text-zinc-300 text-lg md:text-2xl mb-10 max-w-3xl line-clamp-2 font-light leading-relaxed">

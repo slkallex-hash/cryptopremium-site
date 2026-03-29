@@ -105,7 +105,7 @@ export function Article() {
           </span>
         </div>
         
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-[1.1] tracking-tight">
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-[1.1] tracking-tight break-words">
           {article.title}
         </h1>
         

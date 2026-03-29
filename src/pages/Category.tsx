@@ -43,7 +43,7 @@ export function Category() {
       <AdSlot id="category-top-banner" type="banner" className="mb-8 rounded-xl" />
 
       <header className="mb-12 border-b border-white/10 pb-10">
-        <h1 className="text-4xl md:text-6xl font-display font-bold text-white mb-6 tracking-tight">
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 tracking-tight break-words">
           {category.name}
         </h1>
         <p className="text-xl text-zinc-400 font-medium">
