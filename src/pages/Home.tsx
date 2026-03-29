@@ -14,7 +14,10 @@ export function Home() {
   };
 
   // Get featured articles (trending)
-  const featuredArticles = articles.filter(a => a.trending).slice(0, 3);
+  const featuredArticles = [...articles].sort((a, b) => 
+    new Date(b.date).getTime() - new Date(a.date).getTime()
+  ).filter(a => a.trending);
+  
   const mainFeatured = featuredArticles[0] || articles[0];
   const secondaryFeatured = featuredArticles.slice(1, 3);
 
@@ -75,6 +78,9 @@ export function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-8 md:p-12 w-full">
                   <div className="flex items-center gap-4 mb-6">
+                    <span className="px-4 py-1.5 bg-red-600 text-white text-[10px] font-bold rounded-full uppercase tracking-[0.2em] animate-pulse">
+                      Breaking News
+                    </span>
                     <span className="px-4 py-1.5 bg-blue-600 text-white text-[10px] font-bold rounded-full uppercase tracking-[0.2em]">
                       {mainFeatured.category}
                     </span>
@@ -83,7 +89,7 @@ export function Home() {
                     </span>
                     <span className="flex items-center gap-2 text-zinc-400 text-[10px] font-bold uppercase tracking-[0.2em]">
                       <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
-                      Publicado Agora
+                      Mercado Dispara
                     </span>
                   </div>
                   <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-[1.1] max-w-5xl group-hover:text-blue-400 transition-colors">
@@ -472,7 +478,7 @@ export function Home() {
               </div>
             </div>
 
-            {/* Sidebar / Ads / Newsletter */}
+            {/* Sidebar / Ads */}
             <div className="space-y-8">
               {/* Ad Slot */}
               <div className="w-full h-[250px] bg-zinc-900 border border-white/10 rounded-2xl flex items-center justify-center flex-col text-zinc-600">
@@ -482,27 +488,22 @@ export function Home() {
                 </div>
               </div>
 
-              {/* Mini Newsletter */}
-              <div className="glass p-8 rounded-3xl border border-white/5 text-center">
-                <div className="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center mx-auto mb-4">
-                  <Zap className="w-6 h-6 text-blue-400" />
+              {/* Top Authors Mini */}
+              <div className="glass p-8 rounded-3xl border border-white/5">
+                <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                  <Activity className="w-5 h-5 text-blue-500" /> Especialistas
+                </h3>
+                <div className="space-y-6">
+                  {authors.slice(0, 3).map(author => (
+                    <Link key={author.id} to={`/author/${author.id}`} className="flex items-center gap-4 group">
+                      <img src={author.imageUrl} alt={author.name} className="w-10 h-10 rounded-full object-cover border border-white/10 group-hover:border-blue-500 transition-colors" referrerPolicy="no-referrer" />
+                      <div>
+                        <h4 className="text-sm font-bold text-white group-hover:text-blue-400 transition-colors">{author.name}</h4>
+                        <p className="text-[10px] text-zinc-500 uppercase tracking-widest">{author.role}</p>
+                      </div>
+                    </Link>
+                  ))}
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">TechFront Diário</h3>
-                <p className="text-sm text-zinc-400 mb-6">Receba as principais notícias do dia no seu e-mail, todas as manhãs.</p>
-                <form className="space-y-3" onSubmit={(e) => { e.preventDefault(); alert('Inscrito!'); }}>
-                  <input 
-                    type="email" 
-                    placeholder="Seu e-mail" 
-                    required
-                    className="w-full bg-black border border-white/10 text-white px-4 py-3 rounded-xl focus:outline-none focus:border-blue-500/50 text-sm"
-                  />
-                  <button 
-                    type="submit"
-                    className="w-full py-3 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-500 transition-colors text-sm"
-                  >
-                    Assinar Grátis
-                  </button>
-                </form>
               </div>
             </div>
 
@@ -559,28 +560,7 @@ export function Home() {
         </div>
       </section>
 
-      {/* FOOTER CTA */}
-      <section className="py-24 bg-blue-600 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-8">
-            Não perca nenhuma atualização.
-          </h2>
-          <p className="text-blue-100 text-xl mb-12 max-w-2xl mx-auto font-light">
-            Junte-se a mais de 50.000 profissionais que recebem nosso briefing diário.
-          </p>
-          <form className="max-w-md mx-auto flex flex-col sm:flex-row gap-4" onSubmit={(e) => e.preventDefault()}>
-            <input 
-              type="email" 
-              placeholder="Seu melhor e-mail" 
-              className="flex-grow px-8 py-5 bg-white text-black rounded-full font-medium focus:outline-none focus:ring-4 focus:ring-blue-400/50 transition-all"
-            />
-            <button className="px-10 py-5 bg-black text-white font-bold rounded-full hover:bg-zinc-900 transition-all shadow-xl">
-              Inscrever-se
-            </button>
-          </form>
-        </div>
-      </section>
+      {/* FOOTER CTA REMOVED AS DUPLICATED IN LAYOUT */}
     </div>
   );
 }

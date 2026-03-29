@@ -1,13 +1,13 @@
 import { TrendingUp, TrendingDown } from "lucide-react";
 
 const mockPrices = [
-  { symbol: "BTC", price: "$64,230.50", change: "+2.4%", up: true },
-  { symbol: "ETH", price: "$3,450.20", change: "+1.8%", up: true },
-  { symbol: "SOL", price: "$145.80", change: "-0.5%", up: false },
-  { symbol: "BNB", price: "$580.10", change: "+0.2%", up: true },
-  { symbol: "XRP", price: "$0.62", change: "-1.2%", up: false },
-  { symbol: "ADA", price: "$0.45", change: "+3.1%", up: true },
-  { symbol: "DOGE", price: "$0.12", change: "+5.4%", up: true },
+  { symbol: "BTC", price: "$152,430.50", change: "+8.4%", up: true },
+  { symbol: "ETH", price: "$8,450.20", change: "+5.8%", up: true },
+  { symbol: "SOL", price: "$445.80", change: "+12.5%", up: true },
+  { symbol: "BNB", price: "$1,580.10", change: "+2.2%", up: true },
+  { symbol: "XRP", price: "$2.62", change: "-1.2%", up: false },
+  { symbol: "ADA", price: "$1.45", change: "+3.1%", up: true },
+  { symbol: "DOGE", price: "$0.82", change: "+15.4%", up: true },
 ];
 
 export function CryptoTicker() {
