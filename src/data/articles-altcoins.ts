@@ -84,7 +84,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "criptomoedas",
-    imageUrl: "https://images.unsplash.com/photo-1622790698141-94e30457ef12?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://images.unsplash.com/photo-1622790698141-94e30457ef12?q=80&w=1200&auto=format&fit=crop",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     authorId: "roberto-almeida",
     tags: ["Ethereum", "ETH", "Institucional", "Staking", "Criptomoedas"],
@@ -145,7 +145,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "altcoins",
-    imageUrl: "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/alt-avalanche/1200/800",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     authorId: "roberto-almeida",
     tags: ["Avalanche", "AVAX", "Games", "Web3", "Subnets"],
@@ -205,7 +205,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "altcoins",
-    imageUrl: "https://images.unsplash.com/photo-1644361566696-3d442b5b482a?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/alt-cardano/1200/800",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     authorId: "roberto-almeida",
     tags: ["Cardano", "ADA", "Escalabilidade", "Governança", "Hard Fork"],
@@ -269,7 +269,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "altcoins",
-    imageUrl: "https://images.unsplash.com/photo-1639762681057-408e52192e55?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/alt-chainlink/1200/800",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     authorId: "roberto-almeida",
     tags: ["Chainlink", "LINK", "IA", "Oráculos", "Smart Contracts"],
@@ -329,7 +329,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "altcoins",
-    imageUrl: "https://images.unsplash.com/photo-1642104704074-907c0698cbd9?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://images.unsplash.com/photo-1639322537504-6427a16b0a28?q=80&w=1200&auto=format&fit=crop",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     authorId: "roberto-almeida",
     tags: ["Polkadot", "DOT", "Parachains", "Interoperabilidade", "Web3"],
@@ -419,7 +419,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "altcoins",
-    imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://images.unsplash.com/photo-1642104704074-907c0698cbd9?q=80&w=1200&auto=format&fit=crop",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     authorId: "roberto-almeida",
     tags: ["Ethereum", "ETH", "Staking", "Institucional", "DeFi"],
@@ -523,7 +523,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "altcoins",
-    imageUrl: "https://images.unsplash.com/photo-1639444580486-7a4748153747?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://images.unsplash.com/photo-1639152201720-70f569ce42e1?q=80&w=1200&auto=format&fit=crop",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     authorId: "roberto-almeida",
     tags: ["Solana", "SOL", "Ethereum", "DEX", "DeFi"],
@@ -627,7 +627,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "altcoins",
-    imageUrl: "https://images.unsplash.com/photo-1639843885527-43b098a9661a?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1200&auto=format&fit=crop",
     author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     authorId: "sarah-chen",
     tags: ["Chainlink", "LINK", "CCIP", "Interoperabilidade", "Bancos", "RWA"],
@@ -733,7 +733,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "altcoins",
-    imageUrl: "https://images.unsplash.com/photo-1621504450181-5d356f61d307?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://images.unsplash.com/photo-1644143379190-08a5f055de1d?q=80&w=1200&auto=format&fit=crop",
     author: "Lucas Costa – Analista de Cibersegurança",
     authorId: "lucas-costa",
     tags: ["Ethereum", "Layer 2", "Arbitrum", "Optimism", "Base", "Escalabilidade"],
@@ -835,7 +835,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "altcoins",
-    imageUrl: "https://images.unsplash.com/photo-1644024060255-66774697662c?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://images.unsplash.com/photo-1639322537231-2f206e06af84?q=80&w=1200&auto=format&fit=crop",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     authorId: "roberto-almeida",
     tags: ["Polkadot", "DOT", "Interoperabilidade", "Web3", "Blockchain"],
@@ -939,7 +939,7 @@ export const altcoinsArticles: Article[] = [
       </div>
     `,
     category: "altcoins",
-    imageUrl: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/alt-memecoins/1200/800",
     author: "Marcos Silva – Repórter de Hardware & Gadgets",
     authorId: "marcos-silva",
     tags: ["Memecoins", "Cultura Digital", "Especulação", "Web3", "Solana"],

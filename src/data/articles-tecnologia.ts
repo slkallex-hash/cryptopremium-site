@@ -97,7 +97,7 @@ export const tecnologiaArticles: Article[] = [
       </div>
     `,
     category: "tecnologia",
-    imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/ai-blockchain/1200/800",
     authorId: "lucas-costa",
     author: "Lucas Costa – Analista de Cibersegurança",
     date: new Date().toISOString(),
@@ -199,7 +199,7 @@ export const tecnologiaArticles: Article[] = [
       </div>
     `,
     category: "tecnologia",
-    imageUrl: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/quantum/1200/800",
     authorId: "roberto-almeida",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date(Date.now() - 86400000).toISOString(),
@@ -302,7 +302,7 @@ export const tecnologiaArticles: Article[] = [
       </div>
     `,
     category: "tecnologia",
-    imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/zkp-privacy/1200/800",
     authorId: "lucas-costa",
     author: "Lucas Costa – Analista de Cibersegurança",
     date: new Date(Date.now() - 172800000).toISOString(),
@@ -404,7 +404,7 @@ export const tecnologiaArticles: Article[] = [
       </div>
     `,
     category: "tecnologia",
-    imageUrl: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/gaming/1200/800",
     authorId: "marcos-silva",
     author: "Marcos Silva – Repórter de Hardware & Gadgets",
     date: new Date(Date.now() - 259200000).toISOString(),
@@ -505,7 +505,7 @@ export const tecnologiaArticles: Article[] = [
       </div>
     `,
     category: "tecnologia",
-    imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/web3/1200/800",
     authorId: "sarah-chen",
     author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 345600000).toISOString(),
@@ -708,7 +708,7 @@ export const tecnologiaArticles: Article[] = [
       </div>
     `,
     category: "tecnologia",
-    imageUrl: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/digital-identity/1200/800",
     authorId: "sarah-chen",
     author: "Sarah Chen – Diretora de Conteúdo & Cultura Digital",
     date: new Date(Date.now() - 518400000).toISOString(),
@@ -808,7 +808,7 @@ export const tecnologiaArticles: Article[] = [
       </div>
     `,
     category: "tecnologia",
-    imageUrl: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/rwa/1200/800",
     authorId: "roberto-almeida",
     author: "Roberto Almeida – Editor-Chefe & Especialista em IA",
     date: new Date(Date.now() - 604800000).toISOString(),
@@ -908,7 +908,7 @@ export const tecnologiaArticles: Article[] = [
       </div>
     `,
     category: "tecnologia",
-    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/oracles/1200/800",
     authorId: "marcos-silva",
     author: "Marcos Silva – Repórter de Hardware & Gadgets",
     date: new Date(Date.now() - 691200000).toISOString(),
@@ -1008,7 +1008,7 @@ export const tecnologiaArticles: Article[] = [
       </div>
     `,
     category: "tecnologia",
-    imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/ipfs-filecoin/1200/800",
     authorId: "lucas-costa",
     author: "Lucas Costa – Analista de Cibersegurança",
     date: new Date(Date.now() - 777600000).toISOString(),

@@ -711,7 +711,7 @@ export const economiaArticles: Article[] = [
       </div>
     `,
     category: "economia",
-    imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/ai-productivity-2026/1200/800",
     authorId: "ana-souza",
     author: "Ana Souza – Especialista em Startups & Negócios",
     date: new Date(Date.now() - 432000000).toISOString(),

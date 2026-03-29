@@ -82,7 +82,7 @@ export const iaArticles: Article[] = [
       </div>
     `,
     category: "ia",
-    imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200",
+    imageUrl: "https://picsum.photos/seed/ai-future-2026/1200/800",
     author: "Ana Souza – Editora-Chefe",
     date: new Date().toISOString(),
     readTime: "22 min",
