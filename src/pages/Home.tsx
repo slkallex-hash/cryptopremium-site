@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { articles, authors } from "../data/articles";
 import { RealTimeNewsFeed } from "../components/RealTimeNewsFeed";
+import { AdBanner } from "../components/AdBanner";
 import { motion } from "motion/react";
 import { useRef } from "react";
 
@@ -53,6 +54,11 @@ export function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href={window.location.origin} />
       </Helmet>
+
+      {/* AD BANNER 1 */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24">
+        <AdBanner />
+      </div>
 
       {/* HERO PORTAL SECTION */}
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-24 overflow-hidden border-b border-white/5">
@@ -171,6 +177,11 @@ export function Home() {
         </div>
       </section>
 
+      {/* AD BANNER 2 */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AdBanner />
+      </div>
+
       {/* IA EM ALTA - SECTION */}
       <section className="py-24 bg-black border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -215,6 +226,11 @@ export function Home() {
           </div>
         </div>
       </section>
+
+      {/* AD BANNER 3 */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AdBanner />
+      </div>
 
       {/* CRIPTOMOEDAS AGORA - NOVO SECTION */}
       <section className="py-24 bg-zinc-950 border-b border-white/5">
@@ -274,6 +290,11 @@ export function Home() {
         </div>
       </section>
 
+      {/* AD BANNER 4 */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AdBanner />
+      </div>
+
       {/* TENDÊNCIAS - NOVO SECTION */}
       <section className="py-24 bg-zinc-950 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -310,6 +331,11 @@ export function Home() {
           </div>
         </div>
       </section>
+
+      {/* AD BANNER 5 */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AdBanner />
+      </div>
 
       {/* GRID DE NOTÍCIAS RECENTES */}
       <section className="py-24 bg-zinc-950">
@@ -375,6 +401,11 @@ export function Home() {
         </div>
       </section>
 
+      {/* AD BANNER 6 */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AdBanner />
+      </div>
+
       {/* PREMIUM CTA - NOVO SECTION */}
       <section className="py-20 bg-black overflow-hidden relative">
         <div className="absolute inset-0 bg-blue-600/5 blur-[120px] rounded-full -translate-x-1/2"></div>
@@ -425,12 +456,22 @@ export function Home() {
         </div>
       </section>
 
+      {/* AD BANNER 7 */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AdBanner />
+      </div>
+
       {/* REAL TIME FEED SECTION */}
       <section ref={realTimeRef} className="py-16 lg:py-24 border-t border-white/5 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <RealTimeNewsFeed />
         </div>
       </section>
+
+      {/* AD BANNER 8 */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AdBanner />
+      </div>
 
       {/* MAIS LIDAS & NEWSLETTER */}
       <section className="py-16 lg:py-24 border-t border-white/5">
@@ -480,13 +521,8 @@ export function Home() {
 
             {/* Sidebar / Ads */}
             <div className="space-y-8">
-              {/* Ad Slot */}
-              <div className="w-full h-[250px] bg-zinc-900 border border-white/10 rounded-2xl flex items-center justify-center flex-col text-zinc-600">
-                <span className="text-xs uppercase tracking-widest mb-2">Publicidade</span>
-                <div className="w-3/4 h-3/4 border-2 border-dashed border-zinc-700 rounded-xl flex items-center justify-center">
-                  Ad Space (300x250)
-                </div>
-              </div>
+              {/* AD BANNER 9 */}
+              <AdBanner />
 
               {/* Top Authors Mini */}
               <div className="glass p-8 rounded-3xl border border-white/5">
@@ -559,6 +595,11 @@ export function Home() {
           </div>
         </div>
       </section>
+
+      {/* AD BANNER 10 */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <AdBanner />
+      </div>
 
       {/* FOOTER CTA REMOVED AS DUPLICATED IN LAYOUT */}
     </div>
