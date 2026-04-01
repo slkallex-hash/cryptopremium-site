@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { articles, authors } from "../data/articles";
 import { RealTimeNewsFeed } from "../components/RealTimeNewsFeed";
+import { JuicyAdsGrid } from "../components/JuicyAdsGrid";
 import { motion } from "motion/react";
 import { useRef } from "react";
 
@@ -54,8 +55,10 @@ export function Home() {
         <link rel="canonical" href={window.location.origin} />
       </Helmet>
 
+      <JuicyAdsGrid />
+
       {/* HERO PORTAL SECTION */}
-      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-24 overflow-hidden border-b border-white/5">
+      <section className="relative pt-8 pb-20 lg:pt-12 lg:pb-24 overflow-hidden border-b border-white/5">
         {/* Background Effects */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-gradient-to-b from-blue-500/5 to-transparent pointer-events-none"></div>
         
