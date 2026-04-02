@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { articles, authors } from "../data/articles";
 import { RealTimeNewsFeed } from "../components/RealTimeNewsFeed";
-import { ExoClickBanner } from "../components/ExoClickBanner";
 import { motion } from "motion/react";
 import { useRef } from "react";
 
@@ -54,8 +53,6 @@ export function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href={window.location.origin} />
       </Helmet>
-
-      <ExoClickBanner zoneId="5888982" />
 
       {/* HERO PORTAL SECTION */}
       <section className="relative pt-8 pb-20 lg:pt-12 lg:pb-24 overflow-hidden border-b border-white/5">
@@ -216,7 +213,6 @@ export function Home() {
               </motion.div>
             ))}
           </div>
-          <ExoClickBanner zoneId="5888982" />
         </div>
       </section>
 
@@ -275,7 +271,6 @@ export function Home() {
               </motion.div>
             ))}
           </div>
-          <ExoClickBanner zoneId="5888982" />
         </div>
       </section>
 
@@ -485,9 +480,6 @@ export function Home() {
 
             {/* Sidebar / Ads */}
             <div className="space-y-8">
-              {/* ExoClick Sidebar Ad */}
-              <ExoClickBanner zoneId="5888982" />
-              
               {/* Ad Slot */}
               <div className="w-full h-[250px] bg-zinc-900 border border-white/10 rounded-2xl flex items-center justify-center flex-col text-zinc-600">
                 <span className="text-xs uppercase tracking-widest mb-2">Publicidade</span>
@@ -518,8 +510,6 @@ export function Home() {
           </div>
         </div>
       </section>
-
-      <ExoClickBanner zoneId="5888982" />
 
       {/* TOP AUTHORS SECTION */}
       <section className="py-24 bg-zinc-950 border-t border-white/5">
