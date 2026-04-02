@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { articles, authors } from "../data/articles";
 import { RealTimeNewsFeed } from "../components/RealTimeNewsFeed";
-import { JuicyAdsGrid } from "../components/JuicyAdsGrid";
 import { ExoClickBanner } from "../components/ExoClickBanner";
 import { motion } from "motion/react";
 import { useRef } from "react";
@@ -56,7 +55,6 @@ export function Home() {
         <link rel="canonical" href={window.location.origin} />
       </Helmet>
 
-      <JuicyAdsGrid />
       <ExoClickBanner zoneId="5888982" />
 
       {/* HERO PORTAL SECTION */}
