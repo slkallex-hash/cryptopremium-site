@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { articles, authors } from "../data/articles";
 import { RealTimeNewsFeed } from "../components/RealTimeNewsFeed";
+import { JuicyAdsVideo } from "../components/JuicyAdsVideo";
 import { motion } from "motion/react";
 import { useRef } from "react";
 
@@ -53,6 +54,8 @@ export function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href={window.location.origin} />
       </Helmet>
+
+      <JuicyAdsVideo />
 
       {/* HERO PORTAL SECTION */}
       <section className="relative pt-8 pb-20 lg:pt-12 lg:pb-24 overflow-hidden border-b border-white/5">
@@ -481,12 +484,7 @@ export function Home() {
             {/* Sidebar / Ads */}
             <div className="space-y-8">
               {/* Ad Slot */}
-              <div className="w-full h-[250px] bg-zinc-900 border border-white/10 rounded-2xl flex items-center justify-center flex-col text-zinc-600">
-                <span className="text-xs uppercase tracking-widest mb-2">Publicidade</span>
-                <div className="w-3/4 h-3/4 border-2 border-dashed border-zinc-700 rounded-xl flex items-center justify-center">
-                  Ad Space (300x250)
-                </div>
-              </div>
+              <JuicyAdsVideo />
 
               {/* Top Authors Mini */}
               <div className="glass p-8 rounded-3xl border border-white/5">
