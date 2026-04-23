@@ -148,10 +148,6 @@ export function Layout() {
                   Criptomoedas
                   <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <Link to="/category/tutoriais" className="px-4 py-4 bg-white/5 rounded-2xl text-base font-bold text-zinc-200 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5 flex items-center justify-between group">
-                  Tutoriais
-                  <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
               </div>
             </div>
 
@@ -255,7 +251,6 @@ export function Layout() {
               <ul className="space-y-4">
                 <li><Link to="/category/criptomoedas" className="text-zinc-400 hover:text-blue-500 text-sm transition-colors">Criptomoedas</Link></li>
                 <li><Link to="/category/investimentos" className="text-zinc-400 hover:text-blue-500 text-sm transition-colors">Investimentos</Link></li>
-                <li><Link to="/category/tutoriais" className="text-zinc-400 hover:text-blue-500 text-sm transition-colors">Tutoriais</Link></li>
               </ul>
             </div>
             

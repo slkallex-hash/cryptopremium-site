@@ -1,8 +1,6 @@
 import { bitcoinArticles } from "./articles-bitcoin";
 import { economiaArticles } from "./articles-economia";
 import { investimentosArticles } from "./articles-investimentos";
-import { rendaOnlineArticles } from "./articles-renda-online";
-import { tutoriaisArticles } from "./articles-tutoriais";
 
 import type { Author } from "./authors";
 import { authors } from "./authors";
@@ -36,14 +34,11 @@ export interface Article {
 
 export const categories: Category[] = [
   { id: "c3", name: "Criptomoedas", slug: "criptomoedas", description: "Bitcoin, Ethereum, Web3 e o mercado de ativos digitais." },
-  { id: "c6", name: "Tutoriais", slug: "tutoriais", description: "Guias passo a passo, dicas de produtividade e como fazer." },
-  { id: "c7", name: "Todas as Notícias", slug: "todas", description: "As últimas atualizações do mundo da Cripto e tutoriais em tempo real." },
+  { id: "c7", name: "Todas as Notícias", slug: "todas", description: "As últimas atualizações do mundo da Cripto e mercado." },
 ];
 
 export const articles: Article[] = [
   ...bitcoinArticles,
-  ...tutoriaisArticles,
   ...economiaArticles,
   ...investimentosArticles,
-  ...rendaOnlineArticles,
 ];
