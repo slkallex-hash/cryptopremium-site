@@ -144,24 +144,8 @@ export function Layout() {
             <div>
               <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-[0.2em] mb-6">Explore por Assunto</h3>
               <div className="grid grid-cols-1 gap-3">
-                <Link to="/category/tecnologia" className="px-4 py-4 bg-white/5 rounded-2xl text-base font-bold text-zinc-200 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5 flex items-center justify-between group">
-                  Tecnologia
-                  <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
-                <Link to="/category/ia" className="px-4 py-4 bg-white/5 rounded-2xl text-base font-bold text-zinc-200 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5 flex items-center justify-between group">
-                  Inteligência Artificial
-                  <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
                 <Link to="/category/criptomoedas" className="px-4 py-4 bg-white/5 rounded-2xl text-base font-bold text-zinc-200 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5 flex items-center justify-between group">
                   Criptomoedas
-                  <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
-                <Link to="/category/apps" className="px-4 py-4 bg-white/5 rounded-2xl text-base font-bold text-zinc-200 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5 flex items-center justify-between group">
-                  Apps
-                  <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
-                <Link to="/category/internet" className="px-4 py-4 bg-white/5 rounded-2xl text-base font-bold text-zinc-200 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5 flex items-center justify-between group">
-                  Internet
                   <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link to="/category/tutoriais" className="px-4 py-4 bg-white/5 rounded-2xl text-base font-bold text-zinc-200 hover:bg-blue-500/10 hover:text-blue-400 transition-all border border-white/5 flex items-center justify-between group">
@@ -269,10 +253,9 @@ export function Layout() {
             <div className="col-span-1 md:col-span-2 md:col-start-7">
               <h3 className="text-white font-display font-bold mb-6 tracking-wide">Categorias</h3>
               <ul className="space-y-4">
-                <li><Link to="/category/tecnologia" className="text-zinc-400 hover:text-blue-500 text-sm transition-colors">Tecnologia</Link></li>
-                <li><Link to="/category/ia" className="text-zinc-400 hover:text-blue-500 text-sm transition-colors">Inteligência Artificial</Link></li>
                 <li><Link to="/category/criptomoedas" className="text-zinc-400 hover:text-blue-500 text-sm transition-colors">Criptomoedas</Link></li>
                 <li><Link to="/category/investimentos" className="text-zinc-400 hover:text-blue-500 text-sm transition-colors">Investimentos</Link></li>
+                <li><Link to="/category/tutoriais" className="text-zinc-400 hover:text-blue-500 text-sm transition-colors">Tutoriais</Link></li>
               </ul>
             </div>
             

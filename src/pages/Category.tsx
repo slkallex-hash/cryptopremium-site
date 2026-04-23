@@ -74,12 +74,9 @@ export function Category() {
                     <span className="mx-1.5 md:mx-2 text-zinc-800">•</span>
                     {authors.find(a => a.id === article.authorId)?.name || "Redação TechFront"}
                   </div>
-                  <h3 className="text-sm md:text-2xl font-display font-bold text-zinc-100 group-hover:text-blue-400 transition-colors mb-3 md:mb-6 line-clamp-2 leading-snug">
+                  <h3 className="text-sm md:text-2xl font-display font-bold text-zinc-100 group-hover:text-blue-400 transition-colors line-clamp-2 leading-snug">
                     {article.title}
                   </h3>
-                  <div className="mt-auto flex items-center text-blue-400 text-[10px] md:text-sm font-bold uppercase tracking-wider">
-                    Ler agora <ChevronRight className="w-3 md:w-4 h-3 md:h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                  </div>
                 </div>
               </Link>
             ))}
@@ -105,12 +102,9 @@ export function Category() {
                         <span className="mx-1.5 md:mx-2 text-zinc-800">•</span>
                         {authors.find(a => a.id === article.authorId)?.name || "Redação TechFront"}
                       </div>
-                      <h3 className="text-sm md:text-2xl font-display font-bold text-zinc-100 group-hover:text-blue-400 transition-colors mb-3 md:mb-6 line-clamp-2 leading-snug">
+                      <h3 className="text-sm md:text-2xl font-display font-bold text-zinc-100 group-hover:text-blue-400 transition-colors line-clamp-2 leading-snug">
                         {article.title}
                       </h3>
-                      <div className="mt-auto flex items-center text-blue-400 text-[10px] md:text-sm font-bold uppercase tracking-wider">
-                        Ler agora <ChevronRight className="w-3 md:w-4 h-3 md:h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                      </div>
                     </div>
                   </Link>
                 ))}

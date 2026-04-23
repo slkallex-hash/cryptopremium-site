@@ -35,9 +35,6 @@ export function Home() {
   // Get "Most Read" (using trending articles)
   const mostRead = articles.filter(a => a.trending).slice(0, 6);
 
-  // Get IA articles for "IA em alta"
-  const iaArticles = articles.filter(a => a.category === "ia").slice(0, 4);
-
   // Get Crypto articles for "Criptomoedas agora"
   const cryptoArticles = articles.filter(a => a.category === "criptomoedas").slice(0, 4);
 
@@ -161,48 +158,6 @@ export function Home() {
                   <h3 className="text-sm md:text-lg font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-3 leading-tight mb-2 md:mb-4">
                     {article.title}
                   </h3>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* IA EM ALTA - SECTION */}
-      <section className="py-24 bg-black border-b border-white/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between mb-16">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
-                <Zap className="w-6 h-6 text-blue-500" />
-              </div>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-white tracking-tight">
-                IA em Alta
-              </h2>
-            </div>
-            <Link to="/category/ia" className="text-sm font-bold text-blue-500 uppercase tracking-[0.2em] hover:text-blue-400 transition-colors flex items-center gap-2">
-              Ver tudo <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
-            {iaArticles.map((article, i) => (
-              <motion.div
-                key={article.id}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-              >
-                <Link to={`/article/${article.slug}`} className="group block relative aspect-[4/5] rounded-2xl md:rounded-[2.5rem] overflow-hidden border border-white/10">
-                  <img src={article.imageUrl} alt={article.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" referrerPolicy="no-referrer" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
-                  <div className="absolute bottom-0 left-0 p-4 md:p-8 w-full">
-                    <span className="text-[8px] md:text-[10px] font-bold text-blue-400 uppercase tracking-widest mb-2 md:mb-3 block">Inteligência Artificial</span>
-                    <h3 className="text-sm md:text-xl font-bold text-white mb-2 md:mb-4 line-clamp-3 leading-tight group-hover:text-blue-400 transition-colors">
-                      {article.title}
-                    </h3>
-                  </div>
                 </Link>
               </motion.div>
             ))}
