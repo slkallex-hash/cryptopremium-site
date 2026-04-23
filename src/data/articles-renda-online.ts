@@ -1,6 +1,7 @@
 import { Article } from "./articles";
 
 export const rendaOnlineArticles: Article[] = [
+  /*
   {
     id: "ren-1",
     slug: "como-monetizar-seu-blog-em-2026",
@@ -53,6 +54,7 @@ export const rendaOnlineArticles: Article[] = [
     readTime: "5 min",
     trending: true,
   },
+  */
   {
     id: "ren-2",
     slug: "freelancer-web3-como-ganhar-em-criptomoedas-trabalhando-remoto",
@@ -459,6 +461,7 @@ export const rendaOnlineArticles: Article[] = [
     date: new Date(Date.now() - 345600000).toISOString(),
     readTime: "5 min",
   },
+  /*
   {
     id: "ren-6",
     slug: "staking-de-criptomoedas-renda-passiva",
@@ -657,6 +660,7 @@ export const rendaOnlineArticles: Article[] = [
     date: new Date().toISOString(),
     readTime: "5 min",
   },
+  */
   {
     id: "ren-8",
     slug: "programas-de-afiliados-exchanges-cripto",

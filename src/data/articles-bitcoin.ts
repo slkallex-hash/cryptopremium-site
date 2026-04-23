@@ -1,6 +1,7 @@
 import { Article } from "./articles";
 
 export const bitcoinArticles: Article[] = [
+  /*
   {
     id: "btc-1",
     slug: "bitcoin-ultrapassa-150k-dolares-novo-recorde-historico",
@@ -84,6 +85,7 @@ export const bitcoinArticles: Article[] = [
     metaDescription: "Bitcoin rompe a barreira histórica de US$ 150.000 em 2026. Entenda os motivos da alta, o impacto institucional e o que esperar para os próximos meses.",
     keywords: ["bitcoin hoje", "preço bitcoin 2026", "criptomoedas", "investimento institucional", "halving bitcoin"]
   },
+  */
   {
     id: "btc-2",
     slug: "bancos-centrais-e-bitcoin-a-mudanca-de-paradigma",
