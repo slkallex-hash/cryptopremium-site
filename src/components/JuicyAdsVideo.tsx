@@ -23,7 +23,7 @@ export function JuicyAdsVideo() {
                 <!-- JuicyAds v3.0 -->
                 <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
                 <ins id="1116250" data-width="308" data-height="286"></ins>
-                <script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':1116250});</script>
+                <script type="text/javascript" data-cfasync="false" async>window.adsbyjuicy = window.adsbyjuicy || []; window.adsbyjuicy.push({'adzone':1116250});</script>
                 <!--JuicyAds END-->
               </body>
             </html>
