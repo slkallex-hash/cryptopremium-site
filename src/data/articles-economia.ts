@@ -1,6 +1,7 @@
 import { Article } from "./articles";
 
 export const economiaArticles: Article[] = [
+  /*
   {
     id: "eco-breaking-1",
     slug: "mercado-reage-novo-movimento-fed-surpreende-investidores-2026",
@@ -202,6 +203,7 @@ export const economiaArticles: Article[] = [
     trending: true,
     tags: ["Inflação", "Dólar", "Bitcoin", "Patrimônio"],
   },
+  */
   {
     id: "eco-2",
     slug: "brics-desdolarizacao-e-o-novo-sistema-financeiro-multipolar",

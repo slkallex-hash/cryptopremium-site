@@ -1,10 +1,9 @@
 import { Article } from "./articles";
 
-export const tutoriaisArticles: Article[] = Array.from({ length: 20 }).map((_, i) => ({
+export const tutoriaisArticles: Article[] = Array.from({ length: 19 }).map((_, i) => ({
   id: `tutoriais-${i + 1}`,
   slug: `tutoriais-artigo-${i + 1}`,
   title: [
-    "Como Proteger sua Privacidade no Windows 11",
     "Guia Completo: Como usar o ChatGPT para produtividade",
     "Tutorial: Criando seu primeiro site com IA",
     "Como configurar uma VPN segura em 5 minutos",

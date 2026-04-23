@@ -1,6 +1,7 @@
 import { Article } from "./articles";
 
 export const investimentosArticles: Article[] = [
+  /*
   {
     id: "inv-1",
     slug: "estrategia-dca-dollar-cost-averaging-criptomoedas",
@@ -105,6 +106,7 @@ export const investimentosArticles: Article[] = [
     readTime: "4 min",
     trending: true,
   },
+  */
   {
     id: "inv-2",
     slug: "staking-de-criptomoedas-como-gerar-renda-passiva",
