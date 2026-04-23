@@ -318,56 +318,6 @@ export function Home() {
         </div>
       </section>
 
-      {/* PREMIUM CTA - NOVO SECTION */}
-      <section className="py-20 bg-black overflow-hidden relative">
-        <div className="absolute inset-0 bg-blue-600/5 blur-[120px] rounded-full -translate-x-1/2"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="glass p-12 md:p-20 rounded-[3rem] border border-blue-500/30 flex flex-col lg:flex-row items-center justify-between gap-12 shadow-[0_0_50px_rgba(59,130,246,0.1)]">
-            <div className="max-w-2xl text-center lg:text-left">
-              <span className="px-4 py-1.5 bg-blue-500/10 text-blue-400 text-xs font-bold rounded-full uppercase tracking-[0.2em] mb-6 inline-block border border-blue-500/20">
-                TechFront Premium
-              </span>
-              <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-8 leading-tight">
-                Domine o futuro com <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">análises exclusivas</span>
-              </h2>
-              <p className="text-zinc-400 text-xl mb-10 leading-relaxed">
-                Relatórios semanais sobre IA, sinais de mercado cripto e insights que você não encontra em nenhum outro lugar.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link to="/premium" className="px-10 py-5 bg-blue-600 text-white font-bold text-lg rounded-full hover:bg-blue-500 transition-all shadow-xl shadow-blue-500/20">
-                  Assinar Agora
-                </Link>
-                <Link to="/sobre" className="px-10 py-5 glass text-white font-bold text-lg rounded-full hover:bg-white/10 transition-all border border-white/10">
-                  Saiba Mais
-                </Link>
-              </div>
-            </div>
-            <div className="relative w-full max-w-md aspect-square lg:aspect-auto lg:h-80">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-3xl rotate-6 opacity-20 blur-2xl"></div>
-              <div className="relative h-full bg-zinc-900 border border-white/10 rounded-3xl p-8 flex flex-col justify-center">
-                <div className="space-y-6">
-                  {[1, 2, 3].map((i) => (
-                    <div key={i} className="flex items-center gap-4">
-                      <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center">
-                        <Zap className="w-5 h-5 text-blue-400" />
-                      </div>
-                      <div className="flex-1 h-2 bg-zinc-800 rounded-full overflow-hidden">
-                        <div className="h-full bg-blue-500 w-3/4 animate-pulse"></div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <div className="mt-10 pt-10 border-t border-white/5 text-center">
-                  <span className="text-3xl font-bold text-white">R$ 29,90</span>
-                  <span className="text-zinc-500 text-sm ml-2">/mês</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* REAL TIME FEED SECTION */}
       <section ref={realTimeRef} className="py-16 lg:py-24 border-t border-white/5 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
