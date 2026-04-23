@@ -220,43 +220,6 @@ export function Home() {
         </div>
       </section>
 
-      {/* TENDÊNCIAS - NOVO SECTION */}
-      <section className="py-24 bg-zinc-950 border-b border-white/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-4 mb-12">
-            <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
-              <TrendingUp className="w-6 h-6 text-blue-500" />
-            </div>
-            <h2 className="text-3xl font-display font-bold text-white tracking-tight">
-              Tendências da Semana
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
-            {featuredArticles.map((article, i) => (
-              <motion.div
-                key={article.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
-              >
-                <Link to={`/article/${article.slug}`} className="group block relative h-40 md:h-64 rounded-2xl md:rounded-[2rem] overflow-hidden border border-white/10">
-                  <img src={article.imageUrl} alt={article.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" referrerPolicy="no-referrer" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
-                  <div className="absolute bottom-0 left-0 p-4 md:p-8 w-full">
-                    <span className="text-[8px] md:text-[10px] font-bold text-blue-400 uppercase tracking-widest mb-1 md:mb-2 block">{article.category}</span>
-                    <h3 className="text-xs md:text-lg font-bold text-white mb-1 md:mb-2 line-clamp-2 leading-tight group-hover:text-blue-400 transition-colors">
-                      {article.title}
-                    </h3>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* GRID DE NOTÍCIAS RECENTES */}
       <section className="py-24 bg-zinc-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
