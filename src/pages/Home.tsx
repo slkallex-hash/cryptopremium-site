@@ -202,7 +202,7 @@ export function Home() {
                   </div>
                   <div className="flex flex-col justify-center">
                     <div className="flex items-center gap-3 mb-3">
-                      <span className="text-[10px] font-bold text-emerald-500 uppercase tracking-widest">Bitcoin & Altcoins</span>
+                      <span className="text-[10px] font-bold text-emerald-500 uppercase tracking-widest">Mercado Cripto</span>
                       <span className="text-[10px] text-zinc-600">•</span>
                       <span className="text-[10px] text-zinc-400 font-bold uppercase tracking-widest">{article.readTime}</span>
                     </div>

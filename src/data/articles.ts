@@ -1,5 +1,4 @@
 import { bitcoinArticles } from "./articles-bitcoin";
-import { altcoinsArticles } from "./articles-altcoins";
 import { economiaArticles } from "./articles-economia";
 import { investimentosArticles } from "./articles-investimentos";
 import { rendaOnlineArticles } from "./articles-renda-online";
@@ -43,7 +42,6 @@ export const categories: Category[] = [
 
 export const articles: Article[] = [
   ...bitcoinArticles,
-  ...altcoinsArticles,
   ...tutoriaisArticles,
   ...economiaArticles,
   ...investimentosArticles,
