@@ -4,7 +4,7 @@ export const internetArticles: Article[] = Array.from({ length: 20 }).map((_, i)
   id: `internet-${i + 1}`,
   slug: `internet-artigo-${i + 1}`,
   title: [
-    "A Evolução da Internet: Do 5G ao 6G",
+    "A infraestrutura global: Como novos cabos submarinos mudam a internet",
     "Cibersegurança em 2026: Como se proteger",
     "O fim dos cookies e o futuro do marketing digital",
     "Redes Sociais: O impacto na saúde mental",

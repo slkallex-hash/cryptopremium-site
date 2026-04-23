@@ -101,9 +101,6 @@ export function Home() {
                   <p className="text-zinc-300 text-lg md:text-2xl mb-10 max-w-3xl line-clamp-2 font-light leading-relaxed">
                     {mainFeatured.excerpt}
                   </p>
-                  <button className="px-10 py-5 bg-white text-black font-bold text-lg rounded-full hover:bg-blue-500 hover:text-white transition-all flex items-center gap-3 shadow-xl hover:shadow-blue-500/40">
-                    Ler agora <ChevronRight className="w-6 h-6" />
-                  </button>
                 </div>
               </Link>
             </motion.div>
@@ -161,12 +158,9 @@ export function Home() {
                       {timeMarkers[i+2]}
                     </span>
                   </div>
-                  <h3 className="text-sm md:text-lg font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-3 leading-tight mb-4 md:mb-6">
+                  <h3 className="text-sm md:text-lg font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-3 leading-tight mb-2 md:mb-4">
                     {article.title}
                   </h3>
-                  <div className="flex items-center text-[10px] md:text-xs text-zinc-500 font-bold uppercase tracking-widest group-hover:text-white transition-colors">
-                    Ler agora <ChevronRight className="w-3 h-3 md:w-4 md:h-4 ml-1 md:ml-2 group-hover:translate-x-2 transition-transform" />
-                  </div>
                 </Link>
               </motion.div>
             ))}
@@ -208,9 +202,6 @@ export function Home() {
                     <h3 className="text-sm md:text-xl font-bold text-white mb-2 md:mb-4 line-clamp-3 leading-tight group-hover:text-blue-400 transition-colors">
                       {article.title}
                     </h3>
-                    <div className="flex items-center text-[10px] md:text-xs text-zinc-400 font-bold uppercase tracking-widest">
-                      Ler agora <ChevronRight className="w-3 h-3 md:w-4 md:h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                    </div>
                   </div>
                 </Link>
               </motion.div>
@@ -263,12 +254,9 @@ export function Home() {
                     <h3 className="text-lg md:text-2xl font-bold text-white mb-4 line-clamp-2 leading-tight group-hover:text-emerald-400 transition-colors">
                       {article.title}
                     </h3>
-                    <p className="hidden md:block text-zinc-400 text-sm line-clamp-2 mb-4 font-light">
+                    <p className="hidden md:block text-zinc-400 text-sm line-clamp-2 font-light">
                       {article.excerpt}
                     </p>
-                    <div className="flex items-center text-xs text-emerald-500 font-bold uppercase tracking-widest">
-                      Análise Completa <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-2 transition-transform" />
-                    </div>
                   </div>
                 </Link>
               </motion.div>
@@ -367,9 +355,6 @@ export function Home() {
                         <Clock className="w-2.5 h-2.5 md:w-3 md:h-3" /> {article.readTime}
                       </p>
                     </div>
-                    <Link to={`/article/${article.slug}`} className="text-[10px] md:text-xs font-bold text-blue-500 uppercase tracking-widest hover:text-blue-400 flex items-center group/btn">
-                      Ler agora <ChevronRight className="w-3 h-3 md:w-4 md:h-4 ml-1 group-hover/btn:translate-x-2 transition-transform" />
-                    </Link>
                   </div>
                 </div>
               </motion.article>

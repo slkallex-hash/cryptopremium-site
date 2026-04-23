@@ -4,7 +4,7 @@ export const appsArticles: Article[] = Array.from({ length: 20 }).map((_, i) => 
   id: `apps-${i + 1}`,
   slug: `aplicativos-artigo-${i + 1}`,
   title: [
-    "Os 10 Melhores Apps de Produtividade para 2026",
+    "O impacto da inteligência artificial nos apps de produtividade",
     "Como o novo app de finanças está mudando o mercado",
     "Apps de Saúde Mental: O que realmente funciona?",
     "A revolução dos apps de edição de vídeo mobile",
