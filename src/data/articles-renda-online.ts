@@ -561,6 +561,7 @@ export const rendaOnlineArticles: Article[] = [
     date: new Date().toISOString(),
     readTime: "4 min",
   },
+  /*
   {
     id: "ren-7",
     slug: "emprestimos-defi-lending-renda-online",
