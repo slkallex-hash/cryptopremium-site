@@ -19,11 +19,6 @@ export function Home() {
     new Date(b.date).getTime() - new Date(a.date).getTime()
   ).slice(1, 7);
 
-  // Get latest articles for the general grid
-  const latestArticles = [...articles].sort((a, b) => 
-    new Date(b.date).getTime() - new Date(a.date).getTime()
-  ).slice(0, 6);
-
   // Get Crypto articles for "Criptomoedas agora"
   const cryptoArticles = articles.filter(a => a.category === "criptomoedas").slice(0, 4);
 
@@ -204,67 +199,6 @@ export function Home() {
                   </div>
                 </Link>
               </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* GRID DE NOTÍCIAS RECENTES */}
-      <section className="py-24 bg-zinc-950">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-end mb-16 text-left">
-            <div>
-              <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6 tracking-tight">
-                Últimas Notícias
-              </h2>
-              <p className="text-zinc-400 text-xl font-light">
-                O que há de mais novo no universo da tecnologia.
-              </p>
-            </div>
-            <Link to="/category/todas" className="hidden sm:flex items-center text-blue-500 hover:text-blue-400 transition-colors font-bold uppercase tracking-widest text-sm">
-              Ver todas <ArrowRight className="w-5 h-5 ml-2" />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10 text-left">
-            {latestArticles.map((article, i) => (
-              <motion.article 
-                key={article.id}
-                className="group flex flex-col"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
-              >
-                <Link to={`/article/${article.slug}`} className="relative w-full aspect-[16/10] overflow-hidden rounded-2xl md:rounded-[2rem] border border-white/5 mb-4 md:mb-6">
-                  <img 
-                    src={article.imageUrl} 
-                    alt={article.title} 
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute top-3 left-3 md:top-6 md:left-6">
-                    <span className="px-2 md:px-4 py-1 md:py-1.5 bg-black/80 backdrop-blur-xl text-blue-400 text-[8px] md:text-[10px] font-bold uppercase tracking-widest rounded-full border border-white/10">
-                      {article.category}
-                    </span>
-                  </div>
-                </Link>
-                <div className="flex-grow flex flex-col">
-                  <h3 className="text-sm md:text-2xl font-bold text-white mb-2 md:mb-4 line-clamp-2 group-hover:text-blue-400 transition-colors leading-tight">
-                    <Link to={`/article/${article.slug}`}>{article.title}</Link>
-                  </h3>
-                  <p className="hidden md:block text-zinc-400 text-base mb-6 line-clamp-2 font-light leading-relaxed">
-                    {article.excerpt}
-                  </p>
-                  <div className="flex items-center justify-between mt-auto pt-3 md:pt-6 border-t border-white/5">
-                    <div className="flex items-center gap-2 md:gap-4">
-                      <p className="text-[8px] md:text-[10px] text-zinc-500 font-bold uppercase tracking-widest flex items-center gap-1 md:gap-2">
-                        <Clock className="w-2.5 h-2.5 md:w-3 md:h-3" /> {article.readTime}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </motion.article>
             ))}
           </div>
         </div>
