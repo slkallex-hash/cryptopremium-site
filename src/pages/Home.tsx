@@ -2,18 +2,10 @@ import { Zap, TrendingUp, Clock, ChevronRight, ArrowRight, Activity, Newspaper }
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { articles, authors } from "../data/articles";
-import { RealTimeNewsFeed } from "../components/RealTimeNewsFeed";
 import { JuicyAdsVideo } from "../components/JuicyAdsVideo";
 import { motion } from "motion/react";
-import { useRef } from "react";
 
 export function Home() {
-  const realTimeRef = useRef<HTMLDivElement>(null);
-  
-  const scrollToRealTime = () => {
-    realTimeRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   // Get featured articles (trending)
   const featuredArticles = [...articles].sort((a, b) => 
     new Date(b.date).getTime() - new Date(a.date).getTime()
@@ -31,9 +23,6 @@ export function Home() {
   const latestArticles = [...articles].sort((a, b) => 
     new Date(b.date).getTime() - new Date(a.date).getTime()
   ).slice(0, 6);
-
-  // Get "Most Read" (using trending articles)
-  const mostRead = articles.filter(a => a.trending).slice(0, 6);
 
   // Get Crypto articles for "Criptomoedas agora"
   const cryptoArticles = articles.filter(a => a.category === "criptomoedas").slice(0, 4);
@@ -281,86 +270,10 @@ export function Home() {
         </div>
       </section>
 
-      {/* REAL TIME FEED SECTION */}
-      <section ref={realTimeRef} className="py-16 lg:py-24 border-t border-white/5 scroll-mt-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <RealTimeNewsFeed />
-        </div>
-      </section>
-
-      {/* MAIS LIDAS & NEWSLETTER */}
-      <section className="py-16 lg:py-24 border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 text-left">
-            
-            {/* Mais Lidas */}
-            <div className="lg:col-span-2">
-              <h2 className="text-3xl font-display font-bold text-white mb-12 flex items-center gap-4">
-                <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
-                  <TrendingUp className="w-5 h-5 text-blue-500" />
-                </div>
-                Mais Lidas
-              </h2>
-              <div className="grid grid-cols-2 gap-4 md:gap-8">
-                {mostRead.map((item, i) => (
-                  <motion.div
-                    key={item.id}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: i * 0.05 }}
-                  >
-                    <Link to={`/article/${item.slug}`} className="flex flex-col sm:flex-row gap-3 md:gap-6 items-start group p-3 md:p-4 rounded-2xl md:rounded-3xl hover:bg-white/5 transition-all border border-transparent hover:border-white/5">
-                      <div className="text-3xl md:text-5xl font-display font-bold text-zinc-800 group-hover:text-blue-500/20 transition-colors shrink-0 leading-none">
-                        {i + 1}
-                      </div>
-                      <div className="flex gap-3 md:gap-4">
-                        <div className="w-12 h-12 md:w-20 md:h-20 shrink-0 rounded-lg md:rounded-xl overflow-hidden border border-white/10">
-                          <img src={item.imageUrl} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerPolicy="no-referrer" />
-                        </div>
-                        <div>
-                          <div className="flex items-center gap-1.5 md:gap-2 mb-1 md:mb-2">
-                            <span className="text-[8px] md:text-[10px] font-bold text-blue-400 uppercase tracking-widest">{item.category}</span>
-                            <span className="text-[8px] md:text-[10px] text-zinc-600 font-bold uppercase tracking-widest">• {item.readTime}</span>
-                          </div>
-                          <h3 className="text-[10px] md:text-base font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-2 leading-tight">
-                            {item.title}
-                          </h3>
-                        </div>
-                      </div>
-                    </Link>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-
-            {/* Sidebar / Ads */}
-            <div className="space-y-8">
-              {/* Ad Slot */}
-              <JuicyAdsVideo />
-
-              {/* Top Authors Mini */}
-              <div className="glass p-8 rounded-3xl border border-white/5">
-                <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
-                  <Activity className="w-5 h-5 text-blue-500" /> Especialistas
-                </h3>
-                <div className="space-y-6">
-                  {authors.slice(0, 3).map(author => (
-                    <Link key={author.id} to={`/author/${author.id}`} className="flex items-center gap-4 group">
-                      <img src={author.imageUrl} alt={author.name} className="w-10 h-10 rounded-full object-cover border border-white/10 group-hover:border-blue-500 transition-colors" referrerPolicy="no-referrer" />
-                      <div>
-                        <h4 className="text-sm font-bold text-white group-hover:text-blue-400 transition-colors">{author.name}</h4>
-                        <p className="text-[10px] text-zinc-500 uppercase tracking-widest">{author.role}</p>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
+      {/* Ad Break Before Experts */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <JuicyAdsVideo />
+      </div>
 
       {/* TOP AUTHORS SECTION */}
       <section className="py-24 bg-zinc-950 border-t border-white/5">
@@ -410,6 +323,11 @@ export function Home() {
           </div>
         </div>
       </section>
+
+      {/* Ad Break Before Footer */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <JuicyAdsVideo />
+      </div>
 
       {/* FOOTER CTA REMOVED AS DUPLICATED IN LAYOUT */}
     </div>
